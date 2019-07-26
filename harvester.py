@@ -51,12 +51,12 @@ def main():
 
     counter = 0
 
-    logging.basicConfig(level=logging.DEBUGop)
+    logging.basicConfig(level=logging.DEBUG)
     # logging.basicConfig(level=logging.INFO)
 
     args = get_parser().parse_args()
 
-    logging.debug("OAI-PMH testing on dspace.mit.edu")
+    logging.debug("OAI-PMH harvesting from %s", args.hostname)
     logging.debug("From date = %s", args.from_date)
 
     base_request =  args.hostname + '/oai/request'
@@ -81,7 +81,7 @@ def main():
      })
 
     # with open('/Users/carlj/Developer/Python/oai-pmh/response/dspace.mit.edu_ocw_from-2019-03-01_mods_response.xml', 'wb') as items:
-    with open('/Users/carlj/Developer/Python/oai-pmh/dspace.mit.edu_everything_from-2019-03-01_mods_response.xml', 'wb') as items:
+    with open('out.xml', 'wb') as items:
 
         for records in responses:
             counter += 1
