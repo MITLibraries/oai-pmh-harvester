@@ -8,6 +8,7 @@ import sys
 import io
 import argparse
 import logging
+from datetime import date, timedelta
 
 #  sample test community URL's
 #  test community (Abdul Latif Jameel Poverty Action Lab):  http://dspace.mit.edu/handle/1721.1/39118
@@ -26,71 +27,54 @@ def get_parser():
     # Get parser object
     # from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
     parser = argparse.ArgumentParser()
-    parser.add_argument('--verbose', help = "show help message and exit")
-    parser.add_argument('-host', action='store',  dest='hostname', help='Set hostname', default="https://dspace.mit.edu")
-    parser.add_argument('-from', action='store',  dest='from_date', help='Set from date', default="2019-03-01")
-    parser.add_argument('-until', action='store',  dest='until',  help='Until date', default="2019-06-03")
-    parser.add_argument('-metadata-type', action='store',  dest='metadata-type',  help='Add metadata type (e.g. mods, mets, oai_dc, qdc)', default="mods")
+
+    parser.add_argument('-host', action='store',  dest='host', help='Set hostname', default="https://dspace.mit.edu/oai/request")
+
+    yesterday = (date.today() - timedelta(days=1)).strftime('%Y-%m-%d')
+    parser.add_argument('-from', action='store',  dest='from_date', help='Set from date, ex: 2019-03-01', default=yesterday)
+
+    tomorrow = (date.today() + timedelta(days=1)).strftime('%Y-%m-%d')
+    parser.add_argument('-until', action='store',  dest='until',  help='Until date, ex: 2019-03-01', default=tomorrow)
+
+    parser.add_argument('-format', action='store',  dest='format',  help='Add metadata type (e.g. mods, mets, oai_dc, qdc)', default="oai_dc")
+
+    parser.add_argument('-out', action='store',  dest='out',  help='Filepath to write output, default is current directory out.xml', default="out.xml")
 
     return parser
 
 
-def get_collection(handle):
-
-    logging.debug("Will get collection by handle URL")
-
-
-def list_collections(handle):
-
-    logging.debug("list all available collections")
-
-
 def main():
-
-    # uri = URI('https://dspace.mit.edu/oai/request?verb=ListRecords&metadataPrefix=oai_dc')
-
     counter = 0
 
     logging.basicConfig(level=logging.DEBUG)
-    # logging.basicConfig(level=logging.INFO)
 
     args = get_parser().parse_args()
 
-    logging.debug("OAI-PMH harvesting from %s", args.hostname)
+    logging.debug("OAI-PMH harvesting from %s", args.host)
     logging.debug("From date = %s", args.from_date)
 
-    base_request =  args.hostname + '/oai/request'
-
-    # sickle = Sickle('http://dome.mit.edu/oai/request')
-    # records = sickle.ListRecords(
-        # **{'metadataPrefix': 'mets',
-  #       'set': 'hdl_1721.3_45936'
-  #       })
-
-
-    mysickle = Sickle('https://dspace.mit.edu/oai/request', iterator=OAIItemIterator)
-
-    # mysickle = Sickle('https://dspace.mit.edu/oai/request')
-
-    # harvesting everything from dspace.mit.edu from the last 3 months
+    mysickle = Sickle(args.host, iterator=OAIItemIterator)
 
     responses = mysickle.ListRecords(
-        **{'metadataPrefix': 'mods',
+        **{'metadataPrefix': args.format,
         # 'set': 'hdl_1721.1_33972'
         'from': args.from_date
      })
 
-    # with open('/Users/carlj/Developer/Python/oai-pmh/response/dspace.mit.edu_ocw_from-2019-03-01_mods_response.xml', 'wb') as items:
-    with open('out.xml', 'wb') as items:
+    with open(args.out, 'wb') as f:
+        f.write('<records>'.encode())
 
         for records in responses:
+            f.write(records.raw.encode('utf8'))
+            logging.debug(counter)
             counter += 1
-            if responses.resumption_token:
-               items.write(records.raw.encode('utf8'))
-               logging.debug(counter)
+
+        f.write('</records>'.encode())
 
     logging.debug("Total records: %i", counter)
     logging.debug("Done.")
 
     exit(0)
+
+
 if __name__ == "__main__": main()
