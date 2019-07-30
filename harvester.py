@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 from sickle import Sickle
-from sickle.iterator import OAIResponseIterator
 from sickle.iterator import OAIItemIterator
 import logging
 from datetime import date, timedelta
@@ -10,14 +9,22 @@ import click
 yesterday = (date.today() - timedelta(days=1)).strftime('%Y-%m-%d')
 tomorrow = (date.today() + timedelta(days=1)).strftime('%Y-%m-%d')
 
+
 @click.command()
-@click.option('--host', default="https://dspace.mit.edu/oai/request", help='hostname of OAI-PMH server to harvest from')
-@click.option('--from_date', default=yesterday, help='from date format: YYYY-MM-DD')
-@click.option('--until', default=tomorrow, help='until date format: YYYY-MM-DD')
-@click.option('--format', default='oai_dc', help='Add metadata type (e.g. mods, mets, oai_dc, qdc)')
+@click.option('--host',
+              default="https://dspace.mit.edu/oai/request",
+              help='hostname of OAI-PMH server to harvest from')
+@click.option('--from_date',
+              default=yesterday,
+              help='from date format: YYYY-MM-DD')
+@click.option('--until',
+              default=tomorrow,
+              help='until date format: YYYY-MM-DD')
+@click.option('--format',
+              default='oai_dc',
+              help='Add metadata type (e.g. mods, mets, oai_dc, qdc)')
 @click.option('--out', default='out.xml', help='Filepath to write output')
 @click.option('--verbose', help='Enable debug output', is_flag=True)
-
 def harvest(host, from_date, until, format, out, verbose):
     counter = 0
 
@@ -36,9 +43,9 @@ def harvest(host, from_date, until, format, out, verbose):
 
     responses = mysickle.ListRecords(
         **{'metadataPrefix': format,
-        # 'set': 'hdl_1721.1_33972'
-        'from': from_date
-     })
+           # 'set': 'hdl_1721.1_33972'
+           'from': from_date
+           })
 
     with open(out, 'wb') as f:
         f.write('<records>'.encode())
