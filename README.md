@@ -6,12 +6,13 @@ Scripts for harvesting from repositories using OAI-PMH
 Do this before proceeding to other commands:
 - `pipenv install`
 - `pipenv shell`
+- `pipenv install --editable .`
 
 To perform a harvest with all default settings:
-- `python harvester.py`
+- `harvest`
 
 To see configuration options:
-- `python harvester.py -h`
+- `harvest --help`
 
 
 ## Development
