@@ -1,2 +1,5 @@
 out.xml
 tmp/*
+dist/*
+build/*
+*.egg-info
