@@ -7,8 +7,11 @@ setup(
     include_package_data=True,
     install_requires=[
         'Click',
+        'sickle',
     ],
     entry_points={
-        'console_scripts': ['harvest=harvester.cli:harvest']
+        'console_scripts': [
+            'harvest=harvester.cli:harvest'
+        ]
     },
 )
