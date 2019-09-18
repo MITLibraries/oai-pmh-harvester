@@ -8,8 +8,7 @@ setup(
     install_requires=[
         'Click',
     ],
-    entry_points='''
-        [console_scripts]
-        harvest=harvester.cli:harvest
-    ''',
+    entry_points={
+        'console_scripts': ['harvest=harvester.cli:harvest']
+    },
 )
