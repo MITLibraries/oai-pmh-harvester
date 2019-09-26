@@ -37,3 +37,15 @@ To run this locally in Docker while maintaining the ability to see the output fi
 ```
 docker run -it -v '/FULL/PATH/TO/WHERE/YOU/WANT/FILES/tmp:/app/tmp' harvester --host https://aspace-staff-dev.mit.edu/oai --from_date 2019-09-10 --verbose --out tmp/out.xml --format oai_ead
 ```
+
+## S3 Output
+
+You can save to s3 by passing an s3 url as the --out in a format like:
+```
+--out s3://AWS_KEY:AWS_SECRET_KEY@BUCKET_NAME/FILENAME.xml
+```
+
+If you have your credentials stored locally, you can omit the passed params like:
+```
+--out s3://BUCKET_NAME/FILENAME.xml
+```

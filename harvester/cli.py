@@ -5,6 +5,7 @@ from sickle.iterator import OAIItemIterator
 import logging
 from datetime import date, timedelta
 import click
+from smart_open import open
 
 yesterday = (date.today() - timedelta(days=1)).strftime('%Y-%m-%d')
 tomorrow = (date.today() + timedelta(days=1)).strftime('%Y-%m-%d')
