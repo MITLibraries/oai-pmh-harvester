@@ -8,6 +8,8 @@ verify_ssl = true
 [packages]
 sickle = "*"
 click = "*"
+smart-open = "*"
+boto3 = "*"
 
 [requires]
 python_version = "3.7"
