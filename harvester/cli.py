@@ -45,7 +45,8 @@ def harvest(host, from_date, until, format, out, verbose):
     responses = mysickle.ListRecords(
         **{'metadataPrefix': format,
            # 'set': 'hdl_1721.1_33972'
-           'from': from_date
+           'from': from_date,
+           'until': until
            })
 
     with open(out, 'wb') as f:
