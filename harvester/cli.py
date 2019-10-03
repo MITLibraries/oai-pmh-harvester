@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 
+from datetime import date, timedelta
+import logging
+import sys
+
+import click
 from sickle import Sickle
 from sickle.iterator import OAIItemIterator
 from sickle.oaiexceptions import NoRecordsMatch
-import logging
-from datetime import date, timedelta
-import click
 from smart_open import open
-import sys
 
 yesterday = (date.today() - timedelta(days=1)).strftime('%Y-%m-%d')
 tomorrow = (date.today() + timedelta(days=1)).strftime('%Y-%m-%d')
