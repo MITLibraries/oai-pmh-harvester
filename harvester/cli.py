@@ -7,6 +7,7 @@ import logging
 from datetime import date, timedelta
 import click
 from smart_open import open
+import sys
 
 yesterday = (date.today() - timedelta(days=1)).strftime('%Y-%m-%d')
 tomorrow = (date.today() + timedelta(days=1)).strftime('%Y-%m-%d')
@@ -53,7 +54,7 @@ def harvest(host, from_date, until, format, out, verbose):
     except NoRecordsMatch:
         logging.info("No records harvested: the combination of the values of "
                      "the arguments results in an empty list.")
-        exit()
+        sys.exit()
 
     with open(out, 'wb') as f:
         f.write('<records>'.encode())
