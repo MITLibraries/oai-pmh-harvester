@@ -1,10 +1,13 @@
 #!/usr/bin/env python
 
+from datetime import date, timedelta
+import logging
+import sys
+
+import click
 from sickle import Sickle
 from sickle.iterator import OAIItemIterator
-import logging
-from datetime import date, timedelta
-import click
+from sickle.oaiexceptions import NoRecordsMatch
 from smart_open import open
 
 yesterday = (date.today() - timedelta(days=1)).strftime('%Y-%m-%d')
@@ -42,12 +45,17 @@ def harvest(host, from_date, until, format, out, verbose):
 
     mysickle = Sickle(host, iterator=OAIItemIterator)
 
-    responses = mysickle.ListRecords(
-        **{'metadataPrefix': format,
-           # 'set': 'hdl_1721.1_33972'
-           'from': from_date,
-           'until': until
-           })
+    try:
+        responses = mysickle.ListRecords(
+            **{'metadataPrefix': format,
+               # 'set': 'hdl_1721.1_33972'
+               'from': from_date,
+               'until': until
+               })
+    except NoRecordsMatch:
+        logging.info("No records harvested: the combination of the values of "
+                     "the arguments results in an empty list.")
+        sys.exit()
 
     with open(out, 'wb') as f:
         f.write('<records>'.encode())
@@ -60,8 +68,6 @@ def harvest(host, from_date, until, format, out, verbose):
         f.write('</records>'.encode())
 
     logging.info("Total records: %i", counter)
-
-    exit(0)
 
 
 if __name__ == "__main__":
