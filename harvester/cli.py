@@ -46,7 +46,7 @@ def harvest(host, from_date, until, format, out, verbose):
     mysickle = Sickle(host, iterator=OAIItemIterator)
 
     try:
-        responses = mysickle.ListRecords(
+        responses = mysickle.ListIdentifiers(
             **{'metadataPrefix': format,
                # 'set': 'hdl_1721.1_33972'
                'from': from_date,
@@ -57,17 +57,27 @@ def harvest(host, from_date, until, format, out, verbose):
                      "the arguments results in an empty list.")
         sys.exit()
 
+    identifier_list = []
+
+    for records in responses:
+        identifier_list.append(records.identifier)
+
+    logging.info(f"Identifier count to harvest: {len(identifier_list)}")
+
     with open(out, 'wb') as f:
         f.write('<records>'.encode())
 
-        for records in responses:
-            f.write(records.raw.encode('utf8'))
+        for identifier in identifier_list:
+            r = mysickle.GetRecord(identifier=identifier,
+                                   metadataPrefix=format)
+            f.write(r.raw.encode('utf8'))
             logging.debug(counter)
+            logging.debug(r.raw)
             counter += 1
 
         f.write('</records>'.encode())
 
-    logging.info("Total records: %i", counter)
+    logging.info("Total records harvested: %i", counter)
 
 
 if __name__ == "__main__":
