@@ -26,10 +26,11 @@ tomorrow = (date.today() + timedelta(days=1)).strftime('%Y-%m-%d')
               help='until date format: YYYY-MM-DD')
 @click.option('--format',
               default='oai_dc',
-              help='Add metadata type (e.g. mods, mets, oai_dc, qdc)')
+              help='Add metadata type (e.g. mods, mets, oai_dc, qdc, ore)')
+@click.option('--set', default=None, help='set to be harvested.')
 @click.option('--out', default='out.xml', help='Filepath to write output')
 @click.option('--verbose', help='Enable debug output', is_flag=True)
-def harvest(host, from_date, until, format, out, verbose):
+def harvest(host, from_date, until, format, out, set, verbose):
     counter = 0
 
     if verbose:
@@ -44,14 +45,15 @@ def harvest(host, from_date, until, format, out, verbose):
     logging.info("Outfile = %s", out)
 
     mysickle = Sickle(host, iterator=OAIItemIterator)
-
+    params = {'metadataPrefix': format,
+              'from': from_date,
+              'until': until
+              }
+    if set is not None:
+        params['set'] = set
     try:
         responses = mysickle.ListIdentifiers(
-            **{'metadataPrefix': format,
-               # 'set': 'hdl_1721.1_33972'
-               'from': from_date,
-               'until': until
-               })
+            **params)
     except NoRecordsMatch:
         logging.info("No records harvested: the combination of the values of "
                      "the arguments results in an empty list.")
