@@ -11,6 +11,26 @@ help: ## Print this message
 install:
 	pipenv install
 
+### Linting commands ###
+lint: bandit black flake8 isort mypy # Lint the repo
+
+bandit:
+	pipenv run bandit -r harvester
+
+black:
+	pipenv run black --check --diff harvester
+
+flake8:
+	pipenv run flake8 harvester
+
+isort:
+	pipenv run isort harvester --diff
+
+mypy:
+	pipenv run mypy harvester
+
+
+### Docker commands ###
 dist: ## Build docker container
 	docker build -t $(ECR_REGISTRY)/oaiharvester-stage:latest \
 		-t $(ECR_REGISTRY)/oaiharvester-stage:`git describe --always` \
