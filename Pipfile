@@ -7,10 +7,11 @@ verify_ssl = true
 flake8 = "*"
 
 [packages]
-sickle = "*"
-click = "*"
-smart-open = "*"
 boto3 = "*"
+click = "*"
+sickle = "*"
+smart-open = "*"
+
 
 [requires]
-python_version = "3.7"
+python_version = "3.10"
