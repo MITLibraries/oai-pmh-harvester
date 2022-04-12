@@ -1,79 +1,170 @@
+"""harvester.cli module."""
+import json
 import logging
 import sys
-from datetime import date, timedelta
 
 import click
+import smart_open
 from sickle import Sickle
-from sickle.iterator import OAIItemIterator
 from sickle.oaiexceptions import NoRecordsMatch
-from smart_open import open
 
-yesterday = (date.today() - timedelta(days=1)).strftime("%Y-%m-%d")
-tomorrow = (date.today() + timedelta(days=1)).strftime("%Y-%m-%d")
+logger = logging.getLogger(__name__)
 
 
-@click.command()
+@click.group()
 @click.option(
+    "-h",
     "--host",
-    default="https://dspace.mit.edu/oai/request",
-    help="hostname of OAI-PMH server to harvest from",
+    required=True,
+    help="Hostname of OAI-PMH server to harvest from, e.g. "
+    "https://dspace.mit.edu/oai/request.",
 )
-@click.option("--from_date", default=yesterday, help="from date format: YYYY-MM-DD")
-@click.option("--until", default=tomorrow, help="until date format: YYYY-MM-DD")
 @click.option(
-    "--format",
-    default="oai_dc",
-    help="Add metadata type (e.g. mods, mets, oai_dc, qdc, ore)",
+    "-o",
+    "--output_file",
+    required=True,
+    help="Filepath to write output to. Can be a local filepath or an S3 URI, e.g. "
+    "S3://bucketname/filename.xml.",
 )
-@click.option("--set", default=None, help="set to be harvested.")
-@click.option("--out", default="out.xml", help="Filepath to write output")
-@click.option("--verbose", help="Enable debug output", is_flag=True)
-def harvest(host, from_date, until, format, out, set, verbose):
-    counter = 0
-
+@click.option("-v", "--verbose", help="Optional: enable debug output.", is_flag=True)
+@click.pass_context
+def main(ctx, host, output_file, verbose):
+    ctx.ensure_object(dict)
+    ctx.obj["HOST"] = host
+    ctx.obj["OUT"] = output_file
     if verbose:
-        logging.basicConfig(level=logging.DEBUG)
+        logging.basicConfig(
+            format="%(asctime)s %(levelname)s %(name)s.%(funcName)s() line %(lineno)d: "
+            "%(message)s"
+        )
+        logger.setLevel(logging.DEBUG)
     else:
-        logging.basicConfig(level=logging.INFO)
+        logging.basicConfig(
+            format="%(asctime)s %(levelname)s %(name)s.%(funcName)s(): %(message)s"
+        )
+        logger.setLevel(logging.INFO)
 
-    logging.info("OAI-PMH harvesting from %s", host)
-    logging.info("From date = %s", from_date)
-    logging.info("Until date = %s", until)
-    logging.info("Metadata format = %s", format)
-    logging.info("Outfile = %s", out)
 
-    mysickle = Sickle(host, iterator=OAIItemIterator)
-    params = {"metadataPrefix": format, "from": from_date, "until": until}
-    if set is not None:
-        params["set"] = set
+@main.command()
+@click.option(
+    "-m",
+    "--metadata-format",
+    default="oai_dc",
+    show_default=True,
+    help="Optional: specify alternate metadata format for harvested records (e.g. "
+    "mods, mets, oai_dc, qdc, ore).",
+)
+@click.option(
+    "-f",
+    "--from-date",
+    default=None,
+    help="Optional: starting date to harvest records from, in format YYYY-MM-DD. "
+    "Limits harvest to records added/updated on or after the provided date.",
+)
+@click.option(
+    "-u",
+    "--until-date",
+    default=None,
+    help="Optional: ending date to harvest records from, in format YYYY-MM-DD. "
+    "Limits harvest to records added/updated on or before the provided date.",
+)
+@click.option(
+    "-s",
+    "--set-spec",
+    default=None,
+    show_default=True,
+    help="Optional: SetSpec of set to be harvested. Limits harvest to records in the "
+    "provided set.",
+)
+@click.pass_context
+def harvest(ctx, metadata_format, from_date, until_date, set_spec):
+    """Harvest records from an OAI-PMH compliant source and write to an output file."""
+    logger.info(
+        "OAI-PMH harvesting from source %s with parameters: metadata_format=%s, "
+        "from_date=%s, until_date = %s, set=%s",
+        ctx.obj["HOST"],
+        metadata_format,
+        from_date,
+        until_date,
+        set_spec,
+    )
+
+    mysickle = Sickle(ctx.obj["HOST"])
+    params = {"metadataPrefix": "oai_dc"}
+    if from_date:
+        params["from"] = from_date
+    if until_date:
+        params["until"] = until_date
+    if set_spec:
+        params["set"] = set_spec
     try:
         responses = mysickle.ListIdentifiers(**params)
     except NoRecordsMatch:
-        logging.info(
-            "No records harvested: the combination of the values of the arguments "
-            "results in an empty list."
+        logger.error(
+            "No records harvested: the combination of the provided options results in "
+            "an empty list."
         )
         sys.exit()
 
-    identifier_list = []
-    for records in responses:
-        identifier_list.append(records.identifier)
-    logging.info(f"Identifier count to harvest: {len(identifier_list)}")
+    identifiers = [record.identifier for record in responses]
+    total_records = len(identifiers)
+    logger.info("Number of records found to harvest: %d", total_records)
 
-    with open(out, "wb") as f:
-        f.write("<records>".encode())
+    with smart_open.open(ctx.obj["OUT"], "wb+") as file:
+        logger.info("Writing output to file %s", ctx.obj["OUT"])
+        file.write("<records>".encode())
 
-        for identifier in identifier_list:
-            r = mysickle.GetRecord(identifier=identifier, metadataPrefix=format)
-            f.write(r.raw.encode("utf8"))
-            logging.debug(counter)
-            logging.debug(r.raw)
-            counter += 1
+        counter_total = 0
+        counter_deleted = 0
+        counter_active = 0
 
-        f.write("</records>".encode())
+        for identifier in identifiers:
+            counter_total += 1
+            logger.debug(
+                "Retrieving record %d of %d with identifier=%s",
+                counter_total,
+                total_records,
+                identifier,
+            )
+            record = mysickle.GetRecord(
+                identifier=identifier, metadataPrefix=metadata_format
+            )
+            logger.debug(
+                "Record retrieved:\n  Deleted:%s\n  Header:%s\n  Raw:%s\n",
+                record.deleted,
+                record.header,
+                record.raw,
+            )
+            if record.deleted is False:
+                counter_active += 1
+                file.write(record.raw.encode("utf8"))
+            else:
+                counter_deleted += 1
 
-    logging.info("Total records harvested: %i", counter)
+        file.write("</records>".encode())
+
+    logger.info(
+        "Total records harvested: %d\n  Active records: %s\n  Deleted records: %s",
+        counter_total,
+        counter_active,
+        counter_deleted,
+    )
 
 
-if __name__ == "__main__":
-    harvest()
+@main.command()
+@click.pass_context
+def setlist(ctx):
+    mysickle = Sickle(ctx.obj["HOST"])
+
+    logger.info("Getting set list from %s", ctx.obj["HOST"])
+    try:
+        responses = mysickle.ListSets()
+    except Exception as e:
+        logger.error(e)
+        sys.exit()
+
+    sets = [{"Set name": set.setName, "Set spec": set.setSpec} for set in responses]
+    with open(ctx.obj["OUT"], "w+") as file:
+        file.write(json.dumps(sets, indent=2))
+
+    logger.info("Finished harvesting set list, wrote output to file %s", ctx.obj["OUT"])

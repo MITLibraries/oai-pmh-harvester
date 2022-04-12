@@ -3,6 +3,12 @@ name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
 
+[packages]
+boto3 = "*"
+click = "*"
+sickle = "*"
+smart-open = "*"
+
 [dev-packages]
 flake8 = "*"
 bandit = "*"
@@ -10,11 +16,8 @@ black = "*"
 isort = "*"
 mypy = "*"
 
-[packages]
-boto3 = "*"
-click = "*"
-sickle = "*"
-smart-open = "*"
-
 [requires]
 python_version = "3.10"
+
+[scripts]
+oai = "python -c \"from harvester.cli import main; main()\""
