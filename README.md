@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/github/MITLibraries/oai-pmh-harvester/badge.svg?branch=rdi-updates)](https://coveralls.io/github/MITLibraries/oai-pmh-harvester?branch=rdi-updates)
+
 # oai-pmh-harvester
 
 CLI app for harvesting from repositories using OAI-PMH.
