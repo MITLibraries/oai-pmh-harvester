@@ -4,17 +4,19 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [packages]
-boto3 = "*"
 click = "*"
 sickle = "*"
-smart-open = "*"
+smart-open = {extras = ["s3"], version = "*"}
 
 [dev-packages]
-flake8 = "*"
 bandit = "*"
+coverage = "*"
 black = "*"
+flake8 = "*"
 isort = "*"
 mypy = "*"
+pytest = "*"
+vcrpy = "*"
 
 [requires]
 python_version = "3.10"
