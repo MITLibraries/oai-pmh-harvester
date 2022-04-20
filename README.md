@@ -6,7 +6,7 @@ CLI app for harvesting from repositories using OAI-PMH.
 
 To install and run tests:
 - `make install`
-- `make tests`
+- `make test`
 
 To view available commands and main options:
 - `pipenv run oai --help`
