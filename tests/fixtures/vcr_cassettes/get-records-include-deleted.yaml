@@ -1,0 +1,102 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?metadataPrefix=oai_dc&from=2017-12-14&until=2017-12-14&verb=ListIdentifiers
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA4ySX2vbMBTFv4rQu60/TpZWyCqDMVZIWaEZjL4ETbqpBbbkWUrjfvvJSZM1He0K
+        ehDS7557z5Hk1di16BGG6IKvMSspRuBNsM4/1PjH6mtxga+UnKgipqcWYgOQUHrqocYJxkTG2GLU
+        DLCpcUw6OUP2XDmd58rvn6+L25tvKAv4WOMmpV4QstvtytCD14Np3CPEMgwPJKOEl5TgAyzG6M4K
+        dtUe45Qy8vNmeWca6HThfG7rDeSq6ETcHy6DyZNMhj7SD30EevaRbVms5ACxDz7CF51Accp5QWcF
+        u1wxLuaVqOi9JGdILvi9hZimpH/VeOliurbgk9u4HD1GHSRtddK3OUc31jhot7YGo80QuhpzyhYF
+        4wWbrSgV+3WP0TaXt29cqslSzJ5s7LWBsnOpBLslJAuT51nkcaPkq3mUbEBbGND0oNv8ahZaSDAZ
+        dydKZSlxLi/YgrOSEcb4YvZJkhewzO5yK9316sXAbC5oJeaXOa6/9zJCuuvBKBO69UFxvbiglSTH
+        ixPR2PY/hAknYjZ9nPdFXiPkkEPe/JPQ8UOoPwAAAP//AwAGRRYMQgMAAA==
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Tue, 19 Apr 2022 12:53:30 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F112746&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA4ySX2/bIBTFvwri3cbgZGkRppo07Y/UatWaSlNfIga3NZINniGN++0HcZM2e2j7
+        ZIv7O/fec0BcTH2HHmEM1rsG07LCCJz2xrqHBt+uvxZn+EKKTBUhPnUQWoCI4tMADY4wRTKFDqN2
+        hPsGh6ii1WTPlfk8KX9+/lFcX31HqYELDW5jHDghu92u9AM4NerWPkIo/fhAEkpYWRE8w3wK9kSw
+        q/cYqypKfl9d3ugWelVYl8Y6DUkVLA/7w0uv0ybZ0EfmoY9Azz6SLYOlGCEM3gX4oiJIVjFWVIuC
+        nq8p48ua1/ROkBMkCf5uIcSc9J8Gf4P4C7QfDUbWgIv23sLYYK8sN2FQGsrexhLMltMVoyUllLLV
+        4hNGPURlVFTXKW877RUbo7HMDkKycKomJNXJ82hx+JHiOD7vNX9bUAZGlG9wm67JQAcRstOX/eR7
+        6wnyChZpzTRM9UPKh64Kygq6WNMlr2q+PE/5vNRFgHgzgJba95u542Z1VtWCHApHojXdO4T2R2KR
+        X8rbTf5HyJyDzGHNwZBXYR0egfwHAAD//wMARuZMJDYDAAA=
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Tue, 19 Apr 2022 12:53:31 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

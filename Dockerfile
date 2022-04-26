@@ -12,5 +12,5 @@ RUN pipenv install --system --ignore-pipfile --deploy
 COPY --from=wheel /app/dist/harvest*-py3-none-any.whl .
 RUN pip3 install harvest*-py3-none-any.whl
 
-ENTRYPOINT ["harvest"]
+ENTRYPOINT ["oai"]
 CMD ["--help"]

@@ -1,17 +1,14 @@
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
 
 setup(
-    name='harvester',
-    version='0.1',
+    name="harvester",
+    version="1.0",
     packages=find_packages(),
     include_package_data=True,
-    install_requires=[
-        'Click',
-        'sickle',
-    ],
+    install_requires=["click", "sickle", "smart_open"],
     entry_points={
-        'console_scripts': [
-            'harvest=harvester.cli:harvest'
+        "console_scripts": [
+            "oai=harvester.cli:main",
         ]
     },
 )

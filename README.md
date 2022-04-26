@@ -1,22 +1,20 @@
+[![Coverage Status](https://coveralls.io/repos/github/MITLibraries/oai-pmh-harvester/badge.svg?branch=rdi-updates)](https://coveralls.io/github/MITLibraries/oai-pmh-harvester?branch=rdi-updates)
+
 # oai-pmh-harvester
 
-Scripts for harvesting from repositories using OAI-PMH
+CLI app for harvesting from repositories using OAI-PMH.
 
 ## Harvesting
 
-Do this before proceeding to other commands:
+To install and run tests:
+- `make install`
+- `make test`
 
-- `pipenv install`
-- `pipenv shell`
-- `pipenv install --editable .`
+To view available commands and main options:
+- `pipenv run oai --help`
 
-To perform a harvest with all default settings:
-
-- `harvest`
-
-To see configuration options:
-
-- `harvest --help`
+To run a harvest:
+- `pipenv run oai -h [host repo oai-pmh url] -o [path to output file] harvest [any additional desired options]`
 
 ## Development
 
@@ -25,7 +23,7 @@ Clone the repo and install the dependencies using [Pipenv](https://docs.pipenv.o
 ```bash
 git git@github.com:MITLibraries/oai-pmh-harvester.git
 cd oai-pmh-harvester
-pipenv install --dev
+make install
 ```
 
 ## Docker
@@ -33,26 +31,26 @@ pipenv install --dev
 To build and run in docker:
 
 ```bash
-docker build -t harvester .
-docker run -it harvester
+make dist
+docker run -it oaiharvester
 ```
 
 To run this locally in Docker while maintaining the ability to see the output file, you can do something like:
 
 ```bash
-docker run -it -v '/FULL/PATH/TO/WHERE/YOU/WANT/FILES/tmp:/app/tmp' harvester --host https://aspace-staff-dev.mit.edu/oai --from_date 2019-09-10 --verbose --out tmp/out.xml --format oai_ead
+docker run -it --volume '/FULL/PATH/TO/WHERE/YOU/WANT/FILES/tmp:/app/tmp' oaiharvester -h https://aspace-staff-dev.mit.edu/oai -o tmp/out.xml harvest -m oai_ead
 ```
 
 ## S3 Output
 
-You can save to s3 by passing an s3 url as the --out in a format like:
+You can save to s3 by passing an s3 url as the --output-file (-o) in a format like:
 
 ```bash
---out s3://AWS_KEY:AWS_SECRET_KEY@BUCKET_NAME/FILENAME.xml
+-o s3://AWS_KEY:AWS_SECRET_KEY@BUCKET_NAME/FILENAME.xml
 ```
 
 If you have your credentials stored locally, you can omit the passed params like:
 
 ```bash
---out s3://BUCKET_NAME/FILENAME.xml
+-o s3://BUCKET_NAME/FILENAME.xml
 ```

@@ -1,0 +1,202 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?metadataPrefix=oai_dc&from=2022-01-01&until=2022-01-10&set=hdl_1721.1_49432&verb=ListIdentifiers
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Thu, 14 Apr 2022 14:56:53 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?resumptionToken=oai_dc%2F2022-01-01T00%3A00%3A00Z%2F2022-01-10T00%3A00%3A00Z%2Fhdl_1721.1_49432%2F100&verb=ListIdentifiers
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Thu, 14 Apr 2022 14:56:53 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?resumptionToken=oai_dc%2F2022-01-01T00%3A00%3A00Z%2F2022-01-10T00%3A00%3A00Z%2Fhdl_1721.1_49432%2F200&verb=ListIdentifiers
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA9xabW/TMBD+K1G+N36PHSsNQkIIpCGQViTEl6kkhka0SagzNvj1XJJtrAOpx0dO
+        srTVPTu+p/f2XFw+uz3sk+/hGNu+W6ci42kSurpv2u7LOn2/ebly6bOqnKRWcfyxD3EXwpiMP4aw
+        TsdwO7LbuE+T3TF8Xqdx3I5tzWa5bJqHlW+fv169e/MqgQ26uE534zh4xm5ubrJ+CN32WO/a7yFm
+        /fELA1EmM87SRdjfxvZkwY2axSTngn14c3FZ78Jhu2o7eGxXB1gVWx/nyYu+hpNMCmGel2CE7vQA
+        tZq0Ko8hDn0Xw4vtGCrJpVxxvRJ6I7Q3uTf6Y8lORGDBt+sQxwnpT+v0oo3j6yZ0Y/u5BejTBISv
+        D8N05E3/NcC5+2171dRs2VrA2HDu5/HxYVLwR5O7Zn8lrBSZuNKFVnKCKa0mzSKo1sRhW4fs0I5Z
+        aK4Zg+3Z3ZHK+3+q8smxqnIXtk04VmX7MFnBSn+6m18ey4SyyupMluyReNmA+vADHYbqQReAyXhu
+        vMwBpt/flzGMl0Ooq7o/nKhSsvtvHkSeavsXkbo/EVHnd3kswu5V/2cInEFAoDYi92r+5chBYKR0
+        5yEA45XcK+1FQQ8CqwqFdQSZey4IQiCtxToC115TjAUyLxAQ5BtReAODoBXo3CEywhILtPXS0YPA
+        2cKetQGz4crD0JogAIpjUmI+RQJjvJEUIcC4wQIBFEbK0IPASo6oCpaUaBSsIwgBhEMcBMAihJcE
+        CyMIhhwZDCUEA4IAOM5xNgD8wJIsjp11BQKAxQY0waLIOYFJiGaqCzX3gqAbGKiNERDYjXBQFHpO
+        0Q0chiYvVsAF+AI9CKxG0WR111ajyA6sKCSWI0oJFIEeBI5bZMvMTS0zTbAydE7jrGCiyc4LiizR
+        ohxhLo4V+AJFR7DF+cJoKY6BHRDMB1AYYWiyuQuGimDP0FnrkMUx2ADFtweaC3THUNIkSMphiuN8
+        DoXSS4rZwCmEFSyRAFCgmBC1y9GtcwMUiSAEBgYOAjFbAcHK0GqJ6RepuW1aeEWxXWILTCxY2qZg
+        BQSTIvzFQLAQZU6SKENGwPCDOSMQvVjhlMW8T54hMIriizSpCyEwALipNqR4rcI5ibQBgIDmFStA
+        wJwFQE4USRPliBxDkabmufXSekGwVWKVxpRFc8OMF57/D1bw5A5oAocb9mEM063My/ZnWKdSizSp
+        r4+xP8KHlMHiP65s3l9UrX4BAAD//wMAuh7lmNorAAA=
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Thu, 14 Apr 2022 14:56:54 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1
