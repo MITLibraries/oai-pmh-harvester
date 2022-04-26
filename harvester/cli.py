@@ -30,7 +30,7 @@ logger = logging.getLogger(__name__)
 def main(ctx, host, output_file, verbose):
     ctx.ensure_object(dict)
     ctx.obj["HOST"] = host
-    ctx.obj["OUT"] = output_file
+    ctx.obj["OUTPUT_FILE"] = output_file
     if verbose:
         logging.basicConfig(
             format="%(asctime)s %(levelname)s %(name)s.%(funcName)s() line %(lineno)d: "
@@ -109,8 +109,8 @@ def harvest(ctx, metadata_format, from_date, until_date, set_spec, exclude_delet
         len(identifiers),
     )
     records = oai_client.get_records(identifiers, exclude_deleted)
-    logger.info("Writing records to output file: %s", ctx.obj["OUT"])
-    count = write_records(records, ctx.obj["OUT"])
+    logger.info("Writing records to output file: %s", ctx.obj["OUTPUT_FILE"])
+    count = write_records(records, ctx.obj["OUTPUT_FILE"])
     logger.info(
         "Harvest completed. Total records harvested (%sincluding deleted records): %d",
         "not " if exclude_deleted else "",
@@ -121,10 +121,14 @@ def harvest(ctx, metadata_format, from_date, until_date, set_spec, exclude_delet
 @main.command()
 @click.pass_context
 def setlist(ctx):
-    """Get set info from an OAI-PMH compliant source and write to an output file."""
+    """Get set info from an OAI-PMH compliant source and write to an output file.
+
+    Uses the OAI-PMH ListSets verbs to retrieve all sets from a repository, and writes
+    the set names and specs to a JSON output file.
+    """
     oai_client = OAIClient(ctx.obj["HOST"])
     logger.info("Getting set list from source: %s", ctx.obj["HOST"])
     sets = oai_client.get_sets()
-    logger.info("Writing setlist to output file %s", ctx.obj["OUT"])
-    write_sets(sets, ctx.obj["OUT"])
+    logger.info("Writing setlist to output file %s", ctx.obj["OUTPUT_FILE"])
+    write_sets(sets, ctx.obj["OUTPUT_FILE"])
     logger.info("Setlist completed")

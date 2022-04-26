@@ -8,10 +8,10 @@ help: ## Print this message
 	@awk 'BEGIN { FS = ":.*##"; print "Usage:  make <target>\n\nTargets:" } \
 /^[-_[:alpha:]]+:.?*##/ { printf "  %-15s%s\n", $$1, $$2 }' $(MAKEFILE_LIST)
 
-install:
+install: ## Install script and dependencies
 	pipenv install --dev
 
-test:
+test: ## Run tests and print a coverage report
 	pipenv run coverage run --source=harvester -m pytest
 	pipenv run coverage report -m
 
@@ -19,7 +19,7 @@ coveralls: test
 	pipenv run coverage lcov -o ./coverage/lcov.info
 
 ### Linting commands ###
-lint: bandit black flake8 isort mypy # Lint the repo
+lint: bandit black flake8 isort mypy ## Lint the repo
 
 bandit:
 	pipenv run bandit -r harvester
