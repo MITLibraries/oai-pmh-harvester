@@ -11,7 +11,7 @@ defaults:
 env:
   AWS_REGION: "us-east-1"
   AWS_ACCOUNT_ID: "222053980223"
-  IAM_ROLE: "timdex-transmogrifier-gha-dev"
+  IAM_ROLE: "timdex-oaiharvester-gha-dev"
 
 jobs:
   deploy:
