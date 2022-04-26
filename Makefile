@@ -1,4 +1,4 @@
-.PHONY: install test lint dist update publish promote
+.PHONY: install test coveralls lint bandit black flake8 isort mypy update dist-dev update publish-dev
 SHELL=/bin/bash
 ECR_REGISTRY=222053980223.dkr.ecr.us-east-1.amazonaws.com
 DATETIME:=$(shell date -u +%Y%m%dT%H%M%SZ)

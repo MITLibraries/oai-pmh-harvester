@@ -31,7 +31,7 @@ make install
 To build and run in docker:
 
 ```bash
-make dist
+make dist-dev
 docker run -it oaiharvester
 ```
 
