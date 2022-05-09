@@ -7,6 +7,7 @@ verify_ssl = true
 click = "*"
 sickle = "*"
 smart-open = {extras = ["s3"], version = "*"}
+sentry-sdk = "*"
 
 [dev-packages]
 bandit = "*"

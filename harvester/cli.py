@@ -1,8 +1,10 @@
 """harvester.cli module."""
 import logging
+import os
 import sys
 
 import click
+import sentry_sdk
 from sickle.oaiexceptions import NoRecordsMatch
 
 from harvester.oai import OAIClient, write_records, write_sets
@@ -31,6 +33,12 @@ def main(ctx, host, output_file, verbose):
     ctx.ensure_object(dict)
     ctx.obj["HOST"] = host
     ctx.obj["OUTPUT_FILE"] = output_file
+    env = os.getenv("WORKSPACE")
+    if sentry_dsn := os.getenv("SENTRY_DSN"):
+        sentry_sdk.init(sentry_dsn, environment=env)
+        logger.info(
+            "Sentry DSN found, exceptions will be sent to Sentry with env=%s", env
+        )
     if verbose:
         logging.basicConfig(
             format="%(asctime)s %(levelname)s %(name)s.%(funcName)s() line %(lineno)d: "
