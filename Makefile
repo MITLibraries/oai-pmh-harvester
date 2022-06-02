@@ -1,7 +1,10 @@
 .PHONY: install test coveralls lint bandit black flake8 isort mypy update dist-dev update publish-dev
 SHELL=/bin/bash
-ECR_REGISTRY=222053980223.dkr.ecr.us-east-1.amazonaws.com
 DATETIME:=$(shell date -u +%Y%m%dT%H%M%SZ)
+### This is the Terraform-generated header for oai-pmh-harvester-dev
+ECR_NAME_DEV:=oai-pmh-harvester-dev
+ECR_URL_DEV:=222053980223.dkr.ecr.us-east-1.amazonaws.com/oai-pmh-harvester-dev
+### End of Terraform-generated header ###
 
 help: ## Print this message
 	@awk 'BEGIN { FS = ":.*##"; print "Usage:  make <target>\n\nTargets:" } \
@@ -39,13 +42,14 @@ update: install ## Update all Python dependencies
 	pipenv clean
 	pipenv update --dev
 
-### Docker commands ###
-dist-dev: ## Build docker image
-	docker build --platform linux/amd64 -t $(ECR_REGISTRY)/timdex-oaiharvester-dev:latest \
-		-t $(ECR_REGISTRY)/timdex-oaiharvester-dev:`git describe --always` \
-		-t oaiharvester:latest .
+### Developer Deploy Commands ###
+dist-dev: ## Build docker container (intended for developer-based manual build)
+	docker build --platform linux/amd64 \
+	    -t $(ECR_URL_DEV):latest \
+		-t $(ECR_URL_DEV):`git describe --always` \
+		-t $(ECR_NAME_DEV):latest .
 
-publish-dev: dist-dev ## Build, tag and push
-	docker login -u AWS -p $$(aws ecr get-login-password --region us-east-1) $(ECR_REGISTRY)
-	docker push $(ECR_REGISTRY)/timdex-oaiharvester-dev:latest
-	docker push $(ECR_REGISTRY)/timdex-oaiharvester-dev:`git describe --always`
+publish-dev: dist-dev ## Build, tag and push (intended for developer-based manual publish)
+	docker login -u AWS -p $$(aws ecr get-login-password --region us-east-1) $(ECR_URL_DEV)
+	docker push $(ECR_URL_DEV):latest
+	docker push $(ECR_URL_DEV):`git describe --always`
