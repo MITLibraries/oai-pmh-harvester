@@ -1,4 +1,4 @@
-"""transmogrifier.config module."""
+"""harvester.config module."""
 import logging
 import os
 
