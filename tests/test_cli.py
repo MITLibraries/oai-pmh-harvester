@@ -1,5 +1,3 @@
-import logging
-
 import vcr
 
 from harvester.cli import main
@@ -8,8 +6,6 @@ from harvester.cli import main
 @vcr.use_cassette("tests/fixtures/vcr_cassettes/get-records-exclude-deleted.yaml")
 def test_harvest_all_options_except_set_spec(caplog, monkeypatch, cli_runner, tmp_path):
     monkeypatch.setenv("SENTRY_DSN", "https://1234567890@00000.ingest.sentry.io/123456")
-    monkeypatch.setenv("WORKSPACE", "test")
-    caplog.set_level(logging.DEBUG)
     with cli_runner.isolated_filesystem(temp_dir=tmp_path):
         filepath = tmp_path / "records.xml"
         result = cli_runner.invoke(
@@ -31,6 +27,8 @@ def test_harvest_all_options_except_set_spec(caplog, monkeypatch, cli_runner, tm
             ],
         )
         assert result.exit_code == 0
+
+        assert "Logger 'root' configured with level=DEBUG" in caplog.text
         assert (
             "Sentry DSN found, exceptions will be sent to Sentry with env=test"
             in caplog.text
@@ -56,7 +54,6 @@ def test_harvest_all_options_except_set_spec(caplog, monkeypatch, cli_runner, tm
 
 @vcr.use_cassette("tests/fixtures/vcr_cassettes/harvest-from-set.yaml")
 def test_harvest_no_options_except_set_spec(caplog, cli_runner, tmp_path):
-    caplog.set_level(logging.INFO)
     with cli_runner.isolated_filesystem(temp_dir=tmp_path):
         filepath = tmp_path / "records.xml"
         result = cli_runner.invoke(
@@ -72,6 +69,10 @@ def test_harvest_no_options_except_set_spec(caplog, cli_runner, tmp_path):
             ],
         )
         assert result.exit_code == 0
+        assert "Logger 'root' configured with level=INFO" in caplog.text
+        assert (
+            "No Sentry DSN found, exceptions will not be sent to Sentry" in caplog.text
+        )
         assert (
             "OAI-PMH harvesting from source https://dspace.mit.edu/oai/request with "
             "parameters: metadata_format=oai_dc, from_date=None, until_date="
