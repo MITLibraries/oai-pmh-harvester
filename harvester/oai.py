@@ -74,8 +74,12 @@ def write_records(records: Iterator, filepath: str) -> int:
     with smart_open.open(filepath, "wb") as file:
         file.write("<records>\n".encode())
         for record in records:
-            count += 1
             file.write("  ".encode() + record.raw.encode() + "\n".encode())
+            count += 1
+            if count % 1000 == 0:
+                logger.info(
+                    "Status update: %s records written to output file so far!", count
+                )
         file.write("</records>".encode())
     return count
 

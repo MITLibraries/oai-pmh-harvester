@@ -1,12 +1,13 @@
 """harvester.cli module."""
 import logging
-import os
 import sys
+from datetime import timedelta
+from time import perf_counter
 
 import click
-import sentry_sdk
 from sickle.oaiexceptions import NoRecordsMatch
 
+from harvester.config import configure_logger, configure_sentry
 from harvester.oai import OAIClient, write_records, write_sets
 
 logger = logging.getLogger(__name__)
@@ -31,25 +32,13 @@ logger = logging.getLogger(__name__)
 @click.pass_context
 def main(ctx, host, output_file, verbose):
     ctx.ensure_object(dict)
+    ctx.obj["START_TIME"] = perf_counter()
     ctx.obj["HOST"] = host
     ctx.obj["OUTPUT_FILE"] = output_file
-    env = os.getenv("WORKSPACE")
-    if sentry_dsn := os.getenv("SENTRY_DSN"):
-        sentry_sdk.init(sentry_dsn, environment=env)
-        logger.info(
-            "Sentry DSN found, exceptions will be sent to Sentry with env=%s", env
-        )
-    if verbose:
-        logging.basicConfig(
-            format="%(asctime)s %(levelname)s %(name)s.%(funcName)s() line %(lineno)d: "
-            "%(message)s"
-        )
-        logger.setLevel(logging.DEBUG)
-    else:
-        logging.basicConfig(
-            format="%(asctime)s %(levelname)s %(name)s.%(funcName)s(): %(message)s"
-        )
-        logger.setLevel(logging.INFO)
+
+    root_logger = logging.getLogger()
+    logger.info(configure_logger(root_logger, verbose))
+    logger.info(configure_sentry())
 
 
 @main.command()
@@ -123,6 +112,10 @@ def harvest(ctx, metadata_format, from_date, until_date, set_spec, exclude_delet
         "Harvest completed. Total records harvested (%sincluding deleted records): %d",
         "not " if exclude_deleted else "",
         count,
+    )
+    elapsed_time = perf_counter() - ctx.obj["START_TIME"]
+    logger.info(
+        "Total time to complete harvest: %s", str(timedelta(seconds=elapsed_time))
     )
 
 
