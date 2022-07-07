@@ -7,6 +7,8 @@ import smart_open
 from sickle import Sickle
 from sickle.models import Record
 
+from harvester.config import DEFAULT_RETRY_AFTER, MAX_RETRIES, RETRY_STATUS_CODES
+
 logger = logging.getLogger(__name__)
 
 
@@ -20,7 +22,12 @@ class OAIClient:
         set_spec: Optional[str] = None,
     ) -> None:
         self.source_url = source_url
-        self.client = Sickle(self.source_url)
+        self.client = Sickle(
+            self.source_url,
+            default_retry_after=DEFAULT_RETRY_AFTER,
+            max_retries=MAX_RETRIES,
+            retry_status_codes=RETRY_STATUS_CODES,
+        )
         self.metadata_format = metadata_format
         self._set_params(metadata_format, from_date, until_date, set_spec)
 

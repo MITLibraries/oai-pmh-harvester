@@ -4,6 +4,10 @@ import os
 
 import sentry_sdk
 
+DEFAULT_RETRY_AFTER = 10
+MAX_RETRIES = 3
+RETRY_STATUS_CODES = (429, 500, 503)
+
 
 def configure_logger(logger: logging.Logger, verbose: bool) -> str:
     if verbose:
