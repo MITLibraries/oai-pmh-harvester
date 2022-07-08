@@ -1,11 +1,13 @@
 """oai.py module."""
 import json
 import logging
-from typing import Iterator, Optional
+import os
+from typing import Iterator, Literal, Optional
 
 import smart_open
 from sickle import Sickle
 from sickle.models import Record
+from sickle.oaiexceptions import IdDoesNotExist
 
 from harvester.config import DEFAULT_RETRY_AFTER, MAX_RETRIES, RETRY_STATUS_CODES
 
@@ -49,25 +51,26 @@ class OAIClient:
             params["set"] = set_spec
         self.params = params
 
-    def get_identifiers(self) -> list[str]:
-        responses = self.client.ListIdentifiers(**self.params)
-        return [record.identifier for record in responses]
+    def get_identifiers(self, exclude_deleted: bool) -> Iterator[str]:
+        responses = self.client.ListIdentifiers(
+            ignore_deleted=exclude_deleted, **self.params
+        )
+        for record in responses:
+            yield record.identifier
 
-    def get_records(
-        self, identifiers: list[str], exclude_deleted: bool
-    ) -> Iterator[Record]:
+    def get_records(self, identifiers: Iterator[str]) -> Iterator[Record]:
         for identifier in identifiers:
-            record = self.client.GetRecord(
-                identifier=identifier, metadataPrefix=self.metadata_format
-            )
-            logger.debug(
-                "Record retrieved:\n  Deleted:%s\n  Header:%s\n  Raw:%s\n",
-                record.deleted,
-                record.header,
-                record.raw,
-            )
-            if exclude_deleted is True and record.deleted is True:
-                continue
+            try:
+                record = self.client.GetRecord(
+                    identifier=identifier, metadataPrefix=self.metadata_format
+                )
+                logger.debug("Record retrieved: %s", identifier)
+            except IdDoesNotExist:
+                logger.warning(
+                    "Identifier %s retrieved in identifiers list returned 'id does not "
+                    "exist' during getRecord request",
+                    identifier,
+                )
             yield record
 
     def get_sets(self):
@@ -75,17 +78,34 @@ class OAIClient:
         sets = [{"Set name": set.setName, "Set spec": set.setSpec} for set in responses]
         return sets
 
+    def list_records(self, exclude_deleted: bool) -> Iterator[Record]:
+        return self.client.ListRecords(ignore_deleted=exclude_deleted, **self.params)
+
+    def retrieve_records(
+        self, method: Literal["get", "list"], exclude_deleted: bool
+    ) -> Iterator[Record]:
+        if method == "get":
+            identifiers = self.get_identifiers(exclude_deleted)
+            return self.get_records(identifiers)
+        elif method == "list":
+            return self.list_records(exclude_deleted)
+        else:
+            raise ValueError(
+                'Method must be either "get" or "list", method provided was "{method}"'
+            )
+
 
 def write_records(records: Iterator, filepath: str) -> int:
     count = 0
     with smart_open.open(filepath, "wb") as file:
-        file.write("<records>\n".encode())
+        file.write('<?xml version="1.0" encoding="UTF-8"?>\n<records>\n'.encode())
         for record in records:
             file.write("  ".encode() + record.raw.encode() + "\n".encode())
             count += 1
-            if count % 1000 == 0:
+            if count % int(os.getenv("STATUS_UPDATE_INTERVAL", "1000")) == 0:
                 logger.info(
-                    "Status update: %s records written to output file so far!", count
+                    "Status update: %s records written to output file so far!",
+                    count,
                 )
         file.write("</records>".encode())
     return count

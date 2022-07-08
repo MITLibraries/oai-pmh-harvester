@@ -17,6 +17,8 @@ def test_harvest_all_options_except_set_spec(caplog, monkeypatch, cli_runner, tm
                 filepath,
                 "-v",
                 "harvest",
+                "--method",
+                "get",
                 "-m",
                 "oai_dc",
                 "-f",
@@ -35,17 +37,10 @@ def test_harvest_all_options_except_set_spec(caplog, monkeypatch, cli_runner, tm
         )
         assert (
             "OAI-PMH harvesting from source https://dspace.mit.edu/oai/request with "
-            "parameters: metadata_format=oai_dc, from_date=2017-12-14, until_date="
-            "2017-12-14, set=None, exclude_deleted=True" in caplog.text
-        )
-        assert (
-            "Number of records to harvest (including deleted records): 1" in caplog.text
+            "parameters: method=get, metadata_format=oai_dc, from_date=2017-12-14, "
+            "until_date=2017-12-14, set=None, exclude_deleted=True" in caplog.text
         )
         assert "Writing records to output file:" in caplog.text
-        assert (
-            "Record retrieved:\n  Deleted:True\n  Header:"
-            '<header xmlns="http://www.openarchives.org/OAI/2.0/" ' in caplog.text
-        )
         assert (
             "Harvest completed. Total records harvested (not including deleted "
             "records): 0" in caplog.text
@@ -75,11 +70,8 @@ def test_harvest_no_options_except_set_spec(caplog, cli_runner, tmp_path):
         )
         assert (
             "OAI-PMH harvesting from source https://dspace.mit.edu/oai/request with "
-            "parameters: metadata_format=oai_dc, from_date=None, until_date="
-            "None, set=com_1721.1_140587, exclude_deleted=False" in caplog.text
-        )
-        assert (
-            "Number of records to harvest (including deleted records): 58"
+            "parameters: method=list, metadata_format=oai_dc, from_date=None, "
+            "until_date=None, set=com_1721.1_140587, exclude_deleted=False"
             in caplog.text
         )
         assert "Writing records to output file:" in caplog.text
@@ -101,6 +93,8 @@ def test_harvest_no_records(caplog, cli_runner, tmp_path):
                 "-o",
                 filepath,
                 "harvest",
+                "--method",
+                "get",
                 "-s",
                 "com_1721.1_100263",
             ],

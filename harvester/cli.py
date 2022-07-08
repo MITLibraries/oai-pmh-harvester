@@ -43,6 +43,15 @@ def main(ctx, host, output_file, verbose):
 
 @main.command()
 @click.option(
+    "--method",
+    default="list",
+    show_default=True,
+    help="Record retrieval method to use. Default 'list' method is faster and should "
+    "be used in most cases; 'get' method should be used for ArchivesSpace due to "
+    "errors retrieving a full record set with the 'list' method.",
+    type=click.Choice(["get", "list"], case_sensitive=False),
+)
+@click.option(
     "-m",
     "--metadata-format",
     default="oai_dc",
@@ -78,36 +87,37 @@ def main(ctx, host, output_file, verbose):
     is_flag=True,
 )
 @click.pass_context
-def harvest(ctx, metadata_format, from_date, until_date, set_spec, exclude_deleted):
+def harvest(
+    ctx, method, metadata_format, from_date, until_date, set_spec, exclude_deleted
+):
     """Harvest records from an OAI-PMH compliant source and write to an output file."""
     logger.info(
-        "OAI-PMH harvesting from source %s with parameters: metadata_format=%s, "
-        "from_date=%s, until_date=%s, set=%s, exclude_deleted=%s",
+        "OAI-PMH harvesting from source %s with parameters: method=%s, "
+        "metadata_format=%s, from_date=%s, until_date=%s, set=%s, exclude_deleted=%s",
         ctx.obj["HOST"],
+        method,
         metadata_format,
         from_date,
         until_date,
         set_spec,
         exclude_deleted,
     )
+
     oai_client = OAIClient(
         ctx.obj["HOST"], metadata_format, from_date, until_date, set_spec
     )
+    records = oai_client.retrieve_records(method, exclude_deleted=exclude_deleted)
+
+    logger.info("Writing records to output file: %s", ctx.obj["OUTPUT_FILE"])
     try:
-        identifiers = oai_client.get_identifiers()
+        count = write_records(records, ctx.obj["OUTPUT_FILE"])
     except NoRecordsMatch:
         logger.error(
             "No records harvested: the combination of the provided options results in "
             "an empty list."
         )
         sys.exit()
-    logger.info(
-        "Number of records to harvest (including deleted records): %d",
-        len(identifiers),
-    )
-    records = oai_client.get_records(identifiers, exclude_deleted)
-    logger.info("Writing records to output file: %s", ctx.obj["OUTPUT_FILE"])
-    count = write_records(records, ctx.obj["OUTPUT_FILE"])
+
     logger.info(
         "Harvest completed. Total records harvested (%sincluding deleted records): %d",
         "not " if exclude_deleted else "",

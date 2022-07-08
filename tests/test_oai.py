@@ -42,7 +42,7 @@ def test_get_identifiers():
         until_date="2022-01-10",
         set_spec="hdl_1721.1_49432",
     )
-    identifiers = oai_client.get_identifiers()
+    identifiers = list(oai_client.get_identifiers(False))
     assert len(identifiers) == 241
     assert "oai:dspace.mit.edu:1721.1/137340.2" in identifiers
 
@@ -57,7 +57,8 @@ def test_get_identifiers_no_matches_raises_exception():
         set_spec="hdl_1721.1_49432",
     )
     with pytest.raises(NoRecordsMatch):
-        oai_client.get_identifiers()
+        identifiers = oai_client.get_identifiers(False)
+        next(identifiers)
 
 
 @vcr.use_cassette("tests/fixtures/vcr_cassettes/get-records-include-deleted.yaml")
@@ -68,8 +69,8 @@ def test_get_records_include_deleted():
         from_date="2017-12-14",
         until_date="2017-12-14",
     )
-    identifiers = oai_client.get_identifiers()
-    records = oai_client.get_records(identifiers, exclude_deleted=False)
+    identifiers = oai_client.get_identifiers(exclude_deleted=False)
+    records = oai_client.get_records(identifiers)
     for record in records:
         assert (
             '<header status="deleted"><identifier>oai:dspace.mit.edu:1721.1/112746'
@@ -85,8 +86,53 @@ def test_get_records_exclude_deleted():
         from_date="2017-12-14",
         until_date="2017-12-14",
     )
-    identifiers = oai_client.get_identifiers()
-    records = oai_client.get_records(identifiers, exclude_deleted=True)
+    identifiers = oai_client.get_identifiers(exclude_deleted=True)
+    records = oai_client.get_records(identifiers)
+    assert len(list(records)) == 0
+
+
+@vcr.use_cassette("tests/fixtures/vcr_cassettes/record-not-found.yaml")
+def test_get_records_id_not_found_logs_warning(caplog):
+    oai_client = OAIClient(
+        "https://dspace.mit.edu/oai/request",
+        metadata_format="oai_dc",
+        from_date="2021-11-09T03:30:00Z",
+        until_date="2021-11-09T04:00:00Z",
+    )
+    identifiers = oai_client.get_identifiers(exclude_deleted=False)
+    records = oai_client.get_records(identifiers)
+    list(records)
+    assert (
+        "Identifier oai:dspace.mit.edu:1721.1/137785 retrieved in identifiers list "
+        "returned 'id does not exist' during getRecord request" in caplog.text
+    )
+
+
+@vcr.use_cassette("tests/fixtures/vcr_cassettes/list-records-include-deleted.yaml")
+def test_list_records_include_deleted():
+    oai_client = OAIClient(
+        "https://dspace.mit.edu/oai/request",
+        metadata_format="oai_dc",
+        from_date="2017-12-14",
+        until_date="2017-12-14",
+    )
+    records = oai_client.list_records(exclude_deleted=False)
+    for record in records:
+        assert (
+            '<header status="deleted"><identifier>oai:dspace.mit.edu:1721.1/112746'
+            "</identifier>" in record.raw
+        )
+
+
+@vcr.use_cassette("tests/fixtures/vcr_cassettes/list-records-exclude-deleted.yaml")
+def test_list_records_exclude_deleted():
+    oai_client = OAIClient(
+        "https://dspace.mit.edu/oai/request",
+        metadata_format="oai_dc",
+        from_date="2017-12-14",
+        until_date="2017-12-14",
+    )
+    records = oai_client.list_records(exclude_deleted=True)
     assert len(list(records)) == 0
 
 
@@ -100,23 +146,56 @@ def test_get_sets():
     } in sets
 
 
+@vcr.use_cassette("tests/fixtures/vcr_cassettes/get-records-include-deleted.yaml")
+def test_retrieve_records_get_method():
+    oai_client = OAIClient(
+        "https://dspace.mit.edu/oai/request",
+        metadata_format="oai_dc",
+        from_date="2017-12-14",
+        until_date="2017-12-14",
+    )
+    records = oai_client.retrieve_records(method="get", exclude_deleted=False)
+    assert len(list(records)) == 1
+
+
+@vcr.use_cassette("tests/fixtures/vcr_cassettes/list-records-include-deleted.yaml")
+def test_retrieve_records_list_method():
+    oai_client = OAIClient(
+        "https://dspace.mit.edu/oai/request",
+        metadata_format="oai_dc",
+        from_date="2017-12-14",
+        until_date="2017-12-14",
+    )
+    records = oai_client.retrieve_records(method="list", exclude_deleted=False)
+    assert len(list(records)) == 1
+
+
+def test_retrieve_records_wrong_method_raises_error():
+    oai_client = OAIClient("https://dspace.mit.edu/oai/request")
+    with pytest.raises(ValueError):
+        oai_client.retrieve_records(method="wrong", exclude_deleted=False)
+
+
 @vcr.use_cassette("tests/fixtures/vcr_cassettes/write-records.yaml")
-def test_write_records(tmp_path):
+def test_write_records(caplog, monkeypatch, tmp_path):
+    monkeypatch.setenv("STATUS_UPDATE_INTERVAL", "10")
     oai_client = OAIClient(
         "https://dspace.mit.edu/oai/request",
         metadata_format="oai_dc",
         from_date="2022-03-01",
         until_date="2022-03-01",
     )
-    identifiers = oai_client.get_identifiers()
-    records = oai_client.get_records(identifiers, exclude_deleted=True)
+    records = oai_client.retrieve_records(method="get", exclude_deleted=True)
     filepath = tmp_path / "records.xml"
     count = write_records(records, filepath)
     with open(filepath) as file:
         contents = file.read()
-        assert contents.startswith("<records>\n  <record ")
+        assert contents.startswith(
+            '<?xml version="1.0" encoding="UTF-8"?>\n<records>\n  <record '
+        )
         assert contents.endswith("</record>\n</records>")
     assert count == 44
+    assert "Status update: 40 records written to output file so far!" in caplog.text
 
 
 def test_write_sets(tmp_path):
