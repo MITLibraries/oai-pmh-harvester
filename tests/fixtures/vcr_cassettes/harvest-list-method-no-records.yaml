@@ -1,0 +1,51 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?metadataPrefix=oai_dc&set=com_1721.1_100263&verb=ListRecords
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA4yRQU/DMAyF/0rke5u0FTBVbRESQiBtMMGQEJcppIZGWpMSG9r9e9IxDrtxs6zv
+        +fnZ1eXU78Q3BrLe1ZClCgQ641vrPmp43twkC7hsqplKiPc7pA6RBe8HrIFxYjnRDkQX8L0GYs3W
+        yAOXzv2ofLi6S9arWxEHOKqhYx5KKcdxTP2ATgfT2W+k1IcPGVGZp0rCL1xOZE8EY3HAcqUy+bJa
+        PpkOe51YF22dwagiW9KhufQmbjIH+o+f+A90zBFjtdBUAWnwjvBaMza5yvNELZLsfJMVZXFW5uq1
+        kidIFHx+IfF86bcalpb4EY0PLYHokXWrWa/jDe1Ug9d22xoQhFyD8f02u8izNNtmSuXnBTTzthTX
+        bWnQBtPecortl5RRJ4821V/RVBiCDyI+NP7L+aPpSrPpoLn3op8rJPEeIe5QRFXYV/Kgaqq/1M0P
+        AAAA//8DAB0k/FonAgAA
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Tue, 16 Aug 2022 13:35:20 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

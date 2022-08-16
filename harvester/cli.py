@@ -106,13 +106,12 @@ def harvest(
     oai_client = OAIClient(
         ctx.obj["HOST"], metadata_format, from_date, until_date, set_spec
     )
-    records = oai_client.retrieve_records(method, exclude_deleted=exclude_deleted)
-
-    logger.info("Writing records to output file: %s", ctx.obj["OUTPUT_FILE"])
     try:
+        records = oai_client.retrieve_records(method, exclude_deleted=exclude_deleted)
+        logger.info("Writing records to output file: %s", ctx.obj["OUTPUT_FILE"])
         count = write_records(records, ctx.obj["OUTPUT_FILE"])
     except NoRecordsMatch:
-        logger.error(
+        logger.info(
             "No records harvested: the combination of the provided options results in "
             "an empty list."
         )
