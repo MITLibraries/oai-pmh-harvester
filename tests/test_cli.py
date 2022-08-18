@@ -81,8 +81,8 @@ def test_harvest_no_options_except_set_spec(caplog, cli_runner, tmp_path):
         )
 
 
-@vcr.use_cassette("tests/fixtures/vcr_cassettes/harvest-no-records.yaml")
-def test_harvest_no_records(caplog, cli_runner, tmp_path):
+@vcr.use_cassette("tests/fixtures/vcr_cassettes/harvest-get-method-no-records.yaml")
+def test_harvest_no_records_get_method(caplog, cli_runner, tmp_path):
     with cli_runner.isolated_filesystem(temp_dir=tmp_path):
         filepath = tmp_path / "records.xml"
         result = cli_runner.invoke(
@@ -95,6 +95,29 @@ def test_harvest_no_records(caplog, cli_runner, tmp_path):
                 "harvest",
                 "--method",
                 "get",
+                "-s",
+                "com_1721.1_100263",
+            ],
+        )
+        assert result.exit_code == 0
+        assert (
+            "No records harvested: the combination of the provided options results in "
+            "an empty list." in caplog.text
+        )
+
+
+@vcr.use_cassette("tests/fixtures/vcr_cassettes/harvest-list-method-no-records.yaml")
+def test_harvest_no_records_list_method(caplog, cli_runner, tmp_path):
+    with cli_runner.isolated_filesystem(temp_dir=tmp_path):
+        filepath = tmp_path / "records.xml"
+        result = cli_runner.invoke(
+            main,
+            [
+                "-h",
+                "https://dspace.mit.edu/oai/request",
+                "-o",
+                filepath,
+                "harvest",
                 "-s",
                 "com_1721.1_100263",
             ],
