@@ -20,7 +20,7 @@ pytest = "*"
 vcrpy = "*"
 
 [requires]
-python_version = "3.10"
+python_version = "3.11"
 
 [scripts]
 oai = "python -c \"from harvester.cli import main; main()\""
