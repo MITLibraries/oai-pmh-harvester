@@ -14,7 +14,7 @@ install: ## Install script and dependencies
 	pipenv install --dev
 
 test: ## Run tests and print a coverage report
-	pipenv run coverage run --source=harvester -m pytest
+	pipenv run coverage run --source=harvester -m pytest -vv
 	pipenv run coverage report -m
 
 coveralls: test

@@ -3,7 +3,7 @@ import vcr
 from harvester.cli import main
 
 
-@vcr.use_cassette("tests/fixtures/vcr_cassettes/get-records-exclude-deleted.yaml")
+@vcr.use_cassette("tests/fixtures/vcr_cassettes/cli-all-options-except-set-spec.yaml")
 def test_harvest_all_options_except_set_spec(caplog, monkeypatch, cli_runner, tmp_path):
     monkeypatch.setenv("SENTRY_DSN", "https://1234567890@00000.ingest.sentry.io/123456")
     with cli_runner.isolated_filesystem(temp_dir=tmp_path):
@@ -24,7 +24,9 @@ def test_harvest_all_options_except_set_spec(caplog, monkeypatch, cli_runner, tm
                 "-f",
                 "2017-12-14",
                 "-u",
-                "2017-12-14",
+                "2019-04-05",
+                "-sr",
+                "oai:dspace.mit.edu:1721.1/115850",
                 "--exclude-deleted",
             ],
         )
@@ -38,12 +40,18 @@ def test_harvest_all_options_except_set_spec(caplog, monkeypatch, cli_runner, tm
         assert (
             "OAI-PMH harvesting from source https://dspace.mit.edu/oai/request with "
             "parameters: method=get, metadata_format=oai_dc, from_date=2017-12-14, "
-            "until_date=2017-12-14, set=None, exclude_deleted=True" in caplog.text
+            "until_date=2019-04-05, set=None, skip_record=('oai:dspace.mit.edu:1721.1/"
+            "115850',), exclude_deleted=True" in caplog.text
         )
         assert "Writing records to output file:" in caplog.text
         assert (
+            "Skipped retrieving record with identifier "
+            "oai:dspace.mit.edu:1721.1/115850 because it is in the skip list"
+            in caplog.text
+        )
+        assert (
             "Harvest completed. Total records harvested (not including deleted "
-            "records): 0" in caplog.text
+            "records): 15" in caplog.text
         )
 
 
@@ -71,8 +79,8 @@ def test_harvest_no_options_except_set_spec(caplog, cli_runner, tmp_path):
         assert (
             "OAI-PMH harvesting from source https://dspace.mit.edu/oai/request with "
             "parameters: method=list, metadata_format=oai_dc, from_date=None, "
-            "until_date=None, set=com_1721.1_140587, exclude_deleted=False"
-            in caplog.text
+            "until_date=None, set=com_1721.1_140587, skip_record=(), "
+            "exclude_deleted=False" in caplog.text
         )
         assert "Writing records to output file:" in caplog.text
         assert (
@@ -127,6 +135,26 @@ def test_harvest_no_records_list_method(caplog, cli_runner, tmp_path):
             "No records harvested: the combination of the provided options results in "
             "an empty list." in caplog.text
         )
+
+
+def test_harvest_list_method_and_skip_record_aborts(caplog, cli_runner):
+    result = cli_runner.invoke(
+        main,
+        [
+            "-h",
+            "https://dspace.mit.edu/oai/request",
+            "-o",
+            "fake-path",
+            "harvest",
+            "-sr",
+            "12345",
+        ],
+    )
+    assert result.exit_code == 0
+    assert (
+        "Option --skip-record can only be used with the 'get' --method option."
+        in caplog.text
+    )
 
 
 @vcr.use_cassette("tests/fixtures/vcr_cassettes/get-sets.yaml")

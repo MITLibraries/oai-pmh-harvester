@@ -7,13 +7,16 @@ CLI app for harvesting from repositories using OAI-PMH.
 ## Harvesting
 
 To install and run tests:
+
 - `make install`
 - `make test`
 
 To view available commands and main options:
+
 - `pipenv run oai --help`
 
 To run a harvest:
+
 - `pipenv run oai -h [host repo oai-pmh url] -o [path to output file] harvest [any additional desired options]`
 
 ## Development
@@ -55,7 +58,9 @@ If you have your credentials stored locally, you can omit the passed params like
 -o s3://BUCKET_NAME/FILENAME.xml
 ```
 
-## Required ENV
-`SENTRY_DSN` = If set to a valid Sentry DSN, enables Sentry exception monitoring. This is not needed for local development.
-`STATUS_UPDATE_INTERVAL` = The transform process logs the # of records transformed every nth record (1000 by default). Set this env variable to any integer to change the frequency of logging status updates. Can be useful for development/debugging.
-`WORKSPACE` = Set to `dev` for local development, this will be set to `stage` and `prod` in those environments by Terraform.
+## ENV variables
+
+- `RECORD_SKIP_LIST` = Required if a source has records that cause errors during harvest, otherwise those records will cause the harvest process to crash. Space-separated list of OAI-PMH record identifiers to skip during harvest, e.g. `RECORD_SKIP_LIST=record1 record2`. Note: this only works if the harvest method used is "get".
+- `SENTRY_DSN` = Optional in dev. If set to a valid Sentry DSN, enables Sentry exception monitoring. This is not needed for local development.
+- `STATUS_UPDATE_INTERVAL` = Optional. The transform process logs the # of records transformed every nth record (1000 by default). Set this env variable to any integer to change the frequency of logging status updates. Can be useful for development/debugging.
+- `WORKSPACE` = Required. Set to `dev` for local development, this will be set to `stage` and `prod` in those environments by Terraform.

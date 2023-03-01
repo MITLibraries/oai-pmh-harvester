@@ -82,32 +82,57 @@ def main(ctx, host, output_file, verbose):
     "provided set.",
 )
 @click.option(
+    "-sr",
+    "--skip-record",
+    envvar="RECORD_SKIP_LIST",
+    multiple=True,
+    show_default=True,
+    help="Optional: OAI-PMH identifier of record to skip during harvest. Can be "
+    "repeated to skip multiple records.",
+)
+@click.option(
     "--exclude-deleted",
     help="Optional: exclude deleted records from harvest.",
     is_flag=True,
 )
 @click.pass_context
 def harvest(
-    ctx, method, metadata_format, from_date, until_date, set_spec, exclude_deleted
+    ctx,
+    method,
+    metadata_format,
+    from_date,
+    until_date,
+    set_spec,
+    skip_record,
+    exclude_deleted,
 ):
     """Harvest records from an OAI-PMH compliant source and write to an output file."""
     logger.info(
         "OAI-PMH harvesting from source %s with parameters: method=%s, "
-        "metadata_format=%s, from_date=%s, until_date=%s, set=%s, exclude_deleted=%s",
+        "metadata_format=%s, from_date=%s, until_date=%s, set=%s, skip_record=%s, "
+        "exclude_deleted=%s",
         ctx.obj["HOST"],
         method,
         metadata_format,
         from_date,
         until_date,
         set_spec,
+        skip_record,
         exclude_deleted,
     )
 
     oai_client = OAIClient(
         ctx.obj["HOST"], metadata_format, from_date, until_date, set_spec
     )
+    if method == "list" and len(skip_record) > 0:
+        logger.error(
+            "Option --skip-record can only be used with the 'get' --method option."
+        )
+        sys.exit()
     try:
-        records = oai_client.retrieve_records(method, exclude_deleted=exclude_deleted)
+        records = oai_client.retrieve_records(
+            method, exclude_deleted=exclude_deleted, skip_records=skip_record or None
+        )
         logger.info("Writing records to output file: %s", ctx.obj["OUTPUT_FILE"])
         count = write_records(records, ctx.obj["OUTPUT_FILE"])
     except NoRecordsMatch:

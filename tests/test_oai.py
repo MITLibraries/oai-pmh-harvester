@@ -108,6 +108,20 @@ def test_get_records_id_not_found_logs_warning(caplog):
     )
 
 
+@vcr.use_cassette("tests/fixtures/vcr_cassettes/get-records-include-deleted.yaml")
+def test_get_records_id_in_skip_list_skips_record():
+    skips = ["oai:dspace.mit.edu:1721.1/112746", "a-different-id"]
+    oai_client = OAIClient(
+        "https://dspace.mit.edu/oai/request",
+        metadata_format="oai_dc",
+        from_date="2017-12-14",
+        until_date="2017-12-14",
+    )
+    identifiers = oai_client.get_identifiers(exclude_deleted=False)
+    records = oai_client.get_records(identifiers, skip_list=skips)
+    assert len(list(records)) == 0
+
+
 @vcr.use_cassette("tests/fixtures/vcr_cassettes/list-records-include-deleted.yaml")
 def test_list_records_include_deleted():
     oai_client = OAIClient(
