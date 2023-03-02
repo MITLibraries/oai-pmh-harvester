@@ -87,8 +87,10 @@ def main(ctx, host, output_file, verbose):
     envvar="RECORD_SKIP_LIST",
     multiple=True,
     show_default=True,
-    help="Optional: OAI-PMH identifier of record to skip during harvest. Can be "
-    "repeated to skip multiple records.",
+    help="Optional: OAI-PMH identifier of record to skip during harvest. Only works if "
+    "the harvest method used is 'get'. Can be repeated to skip multiple records, e.g. "
+    "'-sr oai:12345 -sr oai:67890'. Can also be set via ENV variable, see README for "
+    "details.",
 )
 @click.option(
     "--exclude-deleted",
