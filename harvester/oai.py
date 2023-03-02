@@ -58,8 +58,17 @@ class OAIClient:
         for record in responses:
             yield record.identifier
 
-    def get_records(self, identifiers: Iterator[str]) -> Iterator[Record]:
+    def get_records(
+        self, identifiers: Iterator[str], skip_list: Optional[tuple[str]] = None
+    ) -> Iterator[Record]:
         for identifier in identifiers:
+            if skip_list and identifier in skip_list:
+                logger.warning(
+                    "Skipped retrieving record with identifier %s because it is in the "
+                    "skip list",
+                    identifier,
+                )
+                continue
             try:
                 record = self.client.GetRecord(
                     identifier=identifier, metadataPrefix=self.metadata_format
@@ -71,6 +80,7 @@ class OAIClient:
                     "exist' during getRecord request",
                     identifier,
                 )
+                continue
             yield record
 
     def get_sets(self):
@@ -82,11 +92,14 @@ class OAIClient:
         return self.client.ListRecords(ignore_deleted=exclude_deleted, **self.params)
 
     def retrieve_records(
-        self, method: Literal["get", "list"], exclude_deleted: bool
+        self,
+        method: Literal["get", "list"],
+        exclude_deleted: bool,
+        skip_records: Optional[tuple[str]] = None,
     ) -> Iterator[Record]:
         if method == "get":
             identifiers = self.get_identifiers(exclude_deleted)
-            return self.get_records(identifiers)
+            return self.get_records(identifiers, skip_list=skip_records)
         elif method == "list":
             return self.list_records(exclude_deleted)
         else:

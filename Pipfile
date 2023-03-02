@@ -5,14 +5,14 @@ verify_ssl = true
 
 [packages]
 click = "*"
+sentry-sdk = "*"
 sickle = "*"
 smart-open = {extras = ["s3"], version = "*"}
-sentry-sdk = "*"
 
 [dev-packages]
 bandit = "*"
-coverage = "*"
 black = "*"
+coverage = "*"
 flake8 = "*"
 isort = "*"
 mypy = "*"
