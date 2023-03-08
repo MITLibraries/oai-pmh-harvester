@@ -137,23 +137,28 @@ def test_harvest_no_records_list_method(caplog, cli_runner, tmp_path):
         )
 
 
-def test_harvest_list_method_and_skip_record_aborts(caplog, cli_runner):
+@vcr.use_cassette("tests/fixtures/vcr_cassettes/harvest-from-set.yaml")
+def test_harvest_list_method_and_skip_record_logs_warning(caplog, cli_runner, tmp_path):
+    with cli_runner.isolated_filesystem(temp_dir=tmp_path):
+        filepath = tmp_path / "records.xml"
     result = cli_runner.invoke(
         main,
         [
             "-h",
             "https://dspace.mit.edu/oai/request",
             "-o",
-            "fake-path",
+            filepath,
             "harvest",
+            "-s",
+            "com_1721.1_140587",
             "-sr",
             "12345",
         ],
     )
     assert result.exit_code == 0
     assert (
-        "Option --skip-record can only be used with the 'get' --method option."
-        in caplog.text
+        "Option --skip-record only works with the 'get' --method option, these records "
+        "will not be skipped during harvest: ('12345',)" in caplog.text
     )
 
 

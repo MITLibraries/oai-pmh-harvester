@@ -127,10 +127,11 @@ def harvest(
         ctx.obj["HOST"], metadata_format, from_date, until_date, set_spec
     )
     if method == "list" and len(skip_record) > 0:
-        logger.error(
-            "Option --skip-record can only be used with the 'get' --method option."
+        logger.warning(
+            "Option --skip-record only works with the 'get' --method option, these "
+            "records will not be skipped during harvest: %s",
+            skip_record,
         )
-        sys.exit()
     try:
         records = oai_client.retrieve_records(
             method, exclude_deleted=exclude_deleted, skip_records=skip_record or None
