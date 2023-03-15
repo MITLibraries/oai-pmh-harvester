@@ -1,5 +1,8 @@
-### This is the Terraform-generated stage-build.yml workflow for the oai-pmh-harvester-stage app repository ###
-name: Stage Build and Deploy Fargate Container
+### This is the Terraform-generated dev-build.yml workflow for the oai-pmh-harvester-stage app repository ###
+### If this is a Lambda repo, uncomment the FUNCTION line at the end of the document     ###
+### If the container requires any additional pre-build commands, uncomment and edit      ###
+### the PREBUILD line at the end of the document.                                        ###
+name: Stage Container Build and Deploy
 on:
   workflow_dispatch:
   push:
@@ -10,10 +13,12 @@ on:
 
 jobs:
   deploy:
-    name: Stage Deploy Fargate Container
-    uses: mitlibraries/.github/.github/workflows/fargate-shared-deploy-stage.yml@main
+    name: Stage Container Deploy
+    uses: mitlibraries/.github/.github/workflows/ecr-shared-deploy-stage.yml@main
     secrets: inherit
     with:
       AWS_REGION: "us-east-1"
       GHA_ROLE: "oai-pmh-harvester-gha-stage"
       ECR: "oai-pmh-harvester-stage"
+      # FUNCTION: ""
+      # PREBUILD: 
