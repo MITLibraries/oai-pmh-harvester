@@ -1,15 +1,24 @@
 """oai.py module."""
+
 import json
 import logging
 import os
-from typing import Iterator, Literal, Optional
+from typing import Any, Iterator, Literal, Optional
 
+from requests import HTTPError
 import smart_open
 from sickle import Sickle
 from sickle.models import Record
-from sickle.oaiexceptions import IdDoesNotExist
+from sickle.oaiexceptions import IdDoesNotExist, OAIError
 
-from harvester.config import DEFAULT_RETRY_AFTER, MAX_RETRIES, RETRY_STATUS_CODES
+from harvester.config import (
+    DEFAULT_RETRY_AFTER,
+    MAX_RETRIES,
+    RETRY_STATUS_CODES,
+    MAX_ALLOWED_ERRORS,
+)
+from harvester.exceptions import MaxAllowedErrorsReached
+from harvester.utils import send_sentry_message
 
 logger = logging.getLogger(__name__)
 
@@ -22,13 +31,15 @@ class OAIClient:
         from_date: Optional[str] = None,
         until_date: Optional[str] = None,
         set_spec: Optional[str] = None,
+        max_retries: Optional[int] = MAX_RETRIES,
+        retry_status_codes: list[int] = RETRY_STATUS_CODES,
     ) -> None:
         self.source_url = source_url
         self.client = Sickle(
             self.source_url,
             default_retry_after=DEFAULT_RETRY_AFTER,
-            max_retries=MAX_RETRIES,
-            retry_status_codes=RETRY_STATUS_CODES,
+            max_retries=max_retries,
+            retry_status_codes=retry_status_codes,
         )
         self.metadata_format = metadata_format
         self._set_params(metadata_format, from_date, until_date, set_spec)
@@ -59,9 +70,23 @@ class OAIClient:
             yield record.identifier
 
     def get_records(
-        self, identifiers: Iterator[str], skip_list: Optional[tuple[str]] = None
+        self,
+        identifiers: Iterator[str],
+        skip_list: Optional[tuple[str]] = None,
+        max_allowed_errors: int = MAX_ALLOWED_ERRORS,
     ) -> Iterator[Record]:
+        failed_records: list[tuple[str, Any | str | None]] = []
         for identifier in identifiers:
+            if len(failed_records) == max_allowed_errors:
+                message = (
+                    f"OAI harvest ABORTED, max errors reached: {max_allowed_errors}."
+                )
+                send_sentry_message(
+                    message,
+                    {"failed_records": failed_records},
+                )
+                raise MaxAllowedErrorsReached(message)
+
             if skip_list and identifier in skip_list:
                 logger.warning(
                     "Skipped retrieving record with identifier %s because it is in the "
@@ -74,6 +99,9 @@ class OAIClient:
                     identifier=identifier, metadataPrefix=self.metadata_format
                 )
                 logger.debug("Record retrieved: %s", identifier)
+            except (HTTPError, OAIError) as e:
+                failed_records.append((identifier, getattr(e.request, "url", None)))
+                continue
             except IdDoesNotExist:
                 logger.warning(
                     "Identifier %s retrieved in identifiers list returned 'id does not "
@@ -82,6 +110,13 @@ class OAIClient:
                 )
                 continue
             yield record
+
+        if len(failed_records) > 0:
+            send_sentry_message(
+                f"OAI harvest COMPLETED, but with errors: {len(failed_records)} "
+                f"records skipped.",
+                {"failed_records": failed_records},
+            )
 
     def get_sets(self):
         responses = self.client.ListSets()
@@ -104,7 +139,7 @@ class OAIClient:
             return self.list_records(exclude_deleted)
         else:
             raise ValueError(
-                'Method must be either "get" or "list", method provided was "{method}"'
+                f'Method must be either "get" or "list", method provided was "{method}"'
             )
 
 

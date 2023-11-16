@@ -3,13 +3,14 @@ import vcr
 from sickle import Sickle
 from sickle.oaiexceptions import NoRecordsMatch
 
+from harvester.exceptions import MaxAllowedErrorsReached
 from harvester.oai import OAIClient, write_records, write_sets
 
 
 def test_oai_client_init_with_defaults():
     client = OAIClient("https://example.com/oai")
     assert client.source_url == "https://example.com/oai"
-    assert type(client.client) == Sickle
+    assert isinstance(client.client, Sickle)
     assert client.metadata_format is None
     assert client.params == {}
 
@@ -23,7 +24,7 @@ def test_oai_client_init_with_args():
         set_spec="collection_12",
     )
     assert client.source_url == "https://example.com/oai"
-    assert type(client.client) == Sickle
+    assert isinstance(client.client, Sickle)
     assert client.metadata_format == "oai_dc"
     assert client.params == {
         "metadataPrefix": "oai_dc",
@@ -222,3 +223,46 @@ def test_write_sets(tmp_path):
             '[\n  {\n    "Set name": "A majestic collection",\n    '
             '"Set spec": "12345"\n  }\n]'
         )
+
+
+@vcr.use_cassette("tests/fixtures/vcr_cassettes/get-records-two-errors.yaml")
+def test_complete_harvest_with_skipped_errors_and_report(mock_sentry_capture_message):
+    oai_client = OAIClient(
+        "https://dspace.mit.edu/oai/request",
+        metadata_format="oai_dc",
+        retry_status_codes=tuple(),  # skip retrying any HTTP codes
+    )
+    identifiers = [
+        "oai:dspace.mit.edu:1721.1/152958",
+        "oai:dspace.mit.edu:1721.1/152786",  # threw 500 error at time of recording
+        "oai:dspace.mit.edu:1721.1/147573",  # threw 500 error at time of recording
+        "oai:dspace.mit.edu:1721.1/152939",
+    ]
+    records = list(oai_client.get_records((identifier for identifier in identifiers)))
+    assert len(records) == 2
+    assert mock_sentry_capture_message.called
+
+
+@vcr.use_cassette("tests/fixtures/vcr_cassettes/get-records-two-errors.yaml")
+def test_aborted_harvest_with_max_errors_reached_and_report(
+    mock_sentry_capture_message,
+):
+    oai_client = OAIClient(
+        "https://dspace.mit.edu/oai/request",
+        metadata_format="oai_dc",
+        retry_status_codes=tuple(),
+    )
+    identifiers = [
+        "oai:dspace.mit.edu:1721.1/152958",
+        "oai:dspace.mit.edu:1721.1/152786",  # threw 500 error at time of recording
+        "oai:dspace.mit.edu:1721.1/147573",  # threw 500 error at time of recording
+        "oai:dspace.mit.edu:1721.1/152939",
+    ]
+    with pytest.raises(MaxAllowedErrorsReached):
+        _ = list(
+            oai_client.get_records(
+                (identifier for identifier in identifiers),
+                max_allowed_errors=1,  # set max errors to 1
+            )
+        )
+    assert mock_sentry_capture_message.called
