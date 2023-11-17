@@ -12,6 +12,12 @@ def send_sentry_message(
 
     This allows both reporting information without raising an Exception, and optionally
     including additional information in the sent Sentry message via "scopes".
+
+    :param message: primary message string for Sentry message
+    :param scopes: dictionary of key/value pairs which become additional information
+        in the Sentry message
+    :param level: string of [info,debug,warning,error] that will set the severity of the
+        message in Sentry
     """
     with sentry_sdk.push_scope() as scope:
         if scopes:
