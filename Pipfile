@@ -8,6 +8,7 @@ click = "*"
 sentry-sdk = "*"
 sickle = "*"
 smart-open = {extras = ["s3"], version = "*"}
+urllib3 = "==1.26.18"
 
 [dev-packages]
 bandit = "*"
@@ -17,7 +18,7 @@ flake8 = "*"
 isort = "*"
 mypy = "*"
 pytest = "*"
-vcrpy = "*"
+vcrpy = "==4.2.1"
 
 [requires]
 python_version = "3.11"

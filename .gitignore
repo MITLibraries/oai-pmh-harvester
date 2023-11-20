@@ -107,5 +107,6 @@ tmp/*
 out.xml
 .DS_Store
 .vscode
+.idea
 
 output/
