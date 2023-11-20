@@ -100,6 +100,9 @@ class OAIClient:
                 )
                 logger.debug("Record retrieved: %s", identifier)
             except (HTTPError, OAIError) as e:
+                logger.warning(
+                    "GetRecord error for identifier %s, reporting to Sentry", identifier
+                )
                 failed_records.append((identifier, getattr(e.request, "url", None)))
                 continue
             except IdDoesNotExist:
