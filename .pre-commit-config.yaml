@@ -1,0 +1,29 @@
+default_language_version:
+  python: python3.11 # set for project python version
+repos:
+  - repo: local
+    hooks:
+      - id: black-apply
+        name: black-apply
+        entry: pipenv run black
+        language: system
+        pass_filenames: true
+        types: ["python"]
+      - id: mypy
+        name: mypy
+        entry: pipenv run mypy
+        language: system
+        pass_filenames: true
+        types: ["python"]
+        exclude: "tests/"
+      - id: ruff-apply
+        name: ruff-apply
+        entry: pipenv run ruff check --fix
+        language: system
+        pass_filenames: true
+        types: ["python"]
+      - id: safety
+        name: safety
+        entry: pipenv check
+        language: system
+        pass_filenames: false
