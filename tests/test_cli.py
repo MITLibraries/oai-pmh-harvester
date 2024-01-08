@@ -4,11 +4,11 @@ from harvester.cli import main
 
 
 @vcr.use_cassette("tests/fixtures/vcr_cassettes/cli-all-options-except-set-spec.yaml")
-def test_harvest_all_options_except_set_spec(caplog, monkeypatch, cli_runner, tmp_path):
+def test_harvest_all_options_except_set_spec(caplog, monkeypatch, runner, tmp_path):
     monkeypatch.setenv("SENTRY_DSN", "https://1234567890@00000.ingest.sentry.io/123456")
-    with cli_runner.isolated_filesystem(temp_dir=tmp_path):
+    with runner.isolated_filesystem(temp_dir=tmp_path):
         filepath = tmp_path / "records.xml"
-        result = cli_runner.invoke(
+        result = runner.invoke(
             main,
             [
                 "-h",
@@ -56,10 +56,10 @@ def test_harvest_all_options_except_set_spec(caplog, monkeypatch, cli_runner, tm
 
 
 @vcr.use_cassette("tests/fixtures/vcr_cassettes/harvest-from-set.yaml")
-def test_harvest_no_options_except_set_spec(caplog, cli_runner, tmp_path):
-    with cli_runner.isolated_filesystem(temp_dir=tmp_path):
+def test_harvest_no_options_except_set_spec(caplog, runner, tmp_path):
+    with runner.isolated_filesystem(temp_dir=tmp_path):
         filepath = tmp_path / "records.xml"
-        result = cli_runner.invoke(
+        result = runner.invoke(
             main,
             [
                 "-h",
@@ -88,10 +88,10 @@ def test_harvest_no_options_except_set_spec(caplog, cli_runner, tmp_path):
 
 
 @vcr.use_cassette("tests/fixtures/vcr_cassettes/harvest-get-method-no-records.yaml")
-def test_harvest_no_records_get_method(caplog, cli_runner, tmp_path):
-    with cli_runner.isolated_filesystem(temp_dir=tmp_path):
+def test_harvest_no_records_get_method(caplog, runner, tmp_path):
+    with runner.isolated_filesystem(temp_dir=tmp_path):
         filepath = tmp_path / "records.xml"
-        result = cli_runner.invoke(
+        result = runner.invoke(
             main,
             [
                 "-h",
@@ -113,10 +113,10 @@ def test_harvest_no_records_get_method(caplog, cli_runner, tmp_path):
 
 
 @vcr.use_cassette("tests/fixtures/vcr_cassettes/harvest-list-method-no-records.yaml")
-def test_harvest_no_records_list_method(caplog, cli_runner, tmp_path):
-    with cli_runner.isolated_filesystem(temp_dir=tmp_path):
+def test_harvest_no_records_list_method(caplog, runner, tmp_path):
+    with runner.isolated_filesystem(temp_dir=tmp_path):
         filepath = tmp_path / "records.xml"
-        result = cli_runner.invoke(
+        result = runner.invoke(
             main,
             [
                 "-h",
@@ -136,10 +136,10 @@ def test_harvest_no_records_list_method(caplog, cli_runner, tmp_path):
 
 
 @vcr.use_cassette("tests/fixtures/vcr_cassettes/harvest-from-set.yaml")
-def test_harvest_list_method_and_skip_record_logs_warning(caplog, cli_runner, tmp_path):
-    with cli_runner.isolated_filesystem(temp_dir=tmp_path):
+def test_harvest_list_method_and_skip_record_logs_warning(caplog, runner, tmp_path):
+    with runner.isolated_filesystem(temp_dir=tmp_path):
         filepath = tmp_path / "records.xml"
-    result = cli_runner.invoke(
+    result = runner.invoke(
         main,
         [
             "-h",
@@ -161,10 +161,10 @@ def test_harvest_list_method_and_skip_record_logs_warning(caplog, cli_runner, tm
 
 
 @vcr.use_cassette("tests/fixtures/vcr_cassettes/get-sets.yaml")
-def test_setlist(caplog, cli_runner, tmp_path):
-    with cli_runner.isolated_filesystem(temp_dir=tmp_path):
+def test_setlist(caplog, runner, tmp_path):
+    with runner.isolated_filesystem(temp_dir=tmp_path):
         filepath = tmp_path / "sets.json"
-        result = cli_runner.invoke(
+        result = runner.invoke(
             main,
             [
                 "-h",

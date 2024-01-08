@@ -10,7 +10,7 @@ def _test_env(monkeypatch):
 
 
 @pytest.fixture
-def cli_runner():
+def runner():
     return CliRunner()
 
 
