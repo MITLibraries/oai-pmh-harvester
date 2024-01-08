@@ -18,6 +18,7 @@ mypy = "*"
 pre-commit = "*"
 pytest = "*"
 ruff = "*"
+types-requests = "*"
 vcrpy = "==4.2.1"
 
 [requires]

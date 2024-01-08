@@ -73,9 +73,7 @@ def test_harvest_no_options_except_set_spec(caplog, cli_runner, tmp_path):
         )
         assert result.exit_code == 0
         assert "Logger 'root' configured with level=INFO" in caplog.text
-        assert (
-            "No Sentry DSN found, exceptions will not be sent to Sentry" in caplog.text
-        )
+        assert "No Sentry DSN found, exceptions will not be sent to Sentry" in caplog.text
         assert (
             "OAI-PMH harvesting from source https://dspace.mit.edu/oai/request with "
             "parameters: method=list, metadata_format=oai_dc, from_date=None, "

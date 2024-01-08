@@ -1,8 +1,11 @@
+# ruff: noqa: EXE002, FBT001
+
 """harvester.cli module."""
 import logging
 import sys
 from datetime import timedelta
 from time import perf_counter
+from typing import Literal
 
 import click
 from sickle.oaiexceptions import NoRecordsMatch
@@ -30,7 +33,7 @@ logger = logging.getLogger(__name__)
 )
 @click.option("-v", "--verbose", help="Optional: enable debug output.", is_flag=True)
 @click.pass_context
-def main(ctx, host, output_file, verbose):
+def main(ctx: click.Context, host: str, output_file: str, verbose: bool) -> None:
     ctx.ensure_object(dict)
     ctx.obj["START_TIME"] = perf_counter()
     ctx.obj["HOST"] = host
@@ -99,15 +102,15 @@ def main(ctx, host, output_file, verbose):
 )
 @click.pass_context
 def harvest(
-    ctx,
-    method,
-    metadata_format,
-    from_date,
-    until_date,
-    set_spec,
-    skip_record,
-    exclude_deleted,
-):
+    ctx: click.Context,
+    method: Literal["get", "list"],
+    metadata_format: str,
+    from_date: str,
+    until_date: str,
+    set_spec: str,
+    skip_record: tuple[str] | None,
+    exclude_deleted: bool,
+) -> None:
     """Harvest records from an OAI-PMH compliant source and write to an output file."""
     logger.info(
         "OAI-PMH harvesting from source %s with parameters: method=%s, "
@@ -126,7 +129,7 @@ def harvest(
     oai_client = OAIClient(
         ctx.obj["HOST"], metadata_format, from_date, until_date, set_spec
     )
-    if method == "list" and len(skip_record) > 0:
+    if method == "list" and skip_record:
         logger.warning(
             "Option --skip-record only works with the 'get' --method option, these "
             "records will not be skipped during harvest: %s",
@@ -158,7 +161,7 @@ def harvest(
 
 @main.command()
 @click.pass_context
-def setlist(ctx):
+def setlist(ctx: click.Context) -> None:
     """Get set info from an OAI-PMH compliant source and write to an output file.
 
     Uses the OAI-PMH ListSets verbs to retrieve all sets from a repository, and writes

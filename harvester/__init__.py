@@ -1,3 +1,1 @@
-"""
-Harvester
-"""
+"""Harvester."""

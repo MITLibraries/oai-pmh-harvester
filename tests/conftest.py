@@ -1,20 +1,17 @@
-import os
+from unittest.mock import patch
 
 import pytest
 from click.testing import CliRunner
-from unittest.mock import patch
 
 
 @pytest.fixture(autouse=True)
-def test_env():
-    os.environ = {"WORKSPACE": "test"}
-    yield
+def _test_env(monkeypatch):
+    monkeypatch.setenv("WORKSPACE", "test")
 
 
 @pytest.fixture
 def cli_runner():
-    runner = CliRunner()
-    return runner
+    return CliRunner()
 
 
 @pytest.fixture

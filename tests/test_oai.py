@@ -43,8 +43,9 @@ def test_get_identifiers():
         until_date="2022-01-10",
         set_spec="hdl_1721.1_49432",
     )
-    identifiers = list(oai_client.get_identifiers(False))
-    assert len(identifiers) == 241
+    identifiers = list(oai_client.get_identifiers(exclude_deleted=False))
+    expected_identifiers_count = 241
+    assert len(identifiers) == expected_identifiers_count
     assert "oai:dspace.mit.edu:1721.1/137340.2" in identifiers
 
 
@@ -57,8 +58,8 @@ def test_get_identifiers_no_matches_raises_exception():
         until_date="2021-12-26",
         set_spec="hdl_1721.1_49432",
     )
+    identifiers = oai_client.get_identifiers(exclude_deleted=False)
     with pytest.raises(NoRecordsMatch):
-        identifiers = oai_client.get_identifiers(False)
         next(identifiers)
 
 
@@ -187,7 +188,10 @@ def test_retrieve_records_list_method():
 
 def test_retrieve_records_wrong_method_raises_error():
     oai_client = OAIClient("https://dspace.mit.edu/oai/request")
-    with pytest.raises(ValueError):
+    with pytest.raises(
+        ValueError,
+        match='Method must be either "get" or "list", method provided was "wrong"',
+    ):
         oai_client.retrieve_records(method="wrong", exclude_deleted=False)
 
 
@@ -209,7 +213,8 @@ def test_write_records(caplog, monkeypatch, tmp_path):
             '<?xml version="1.0" encoding="UTF-8"?>\n<records>\n  <record '
         )
         assert contents.endswith("</record>\n</records>")
-    assert count == 44
+    expected_records_count = 44
+    assert count == expected_records_count
     assert "Status update: 40 records written to output file so far!" in caplog.text
 
 
@@ -230,7 +235,7 @@ def test_complete_harvest_with_skipped_errors_and_report(mock_sentry_capture_mes
     oai_client = OAIClient(
         "https://dspace.mit.edu/oai/request",
         metadata_format="oai_dc",
-        retry_status_codes=tuple(),  # skip retrying any HTTP codes
+        retry_status_codes=(),  # skip retrying any HTTP codes
     )
     identifiers = [
         "oai:dspace.mit.edu:1721.1/152958",
@@ -238,8 +243,9 @@ def test_complete_harvest_with_skipped_errors_and_report(mock_sentry_capture_mes
         "oai:dspace.mit.edu:1721.1/147573",  # threw 500 error at time of recording
         "oai:dspace.mit.edu:1721.1/152939",
     ]
-    records = list(oai_client.get_records((identifier for identifier in identifiers)))
-    assert len(records) == 2
+    records = list(oai_client.get_records(identifier for identifier in identifiers))
+    expected_records_count = 2
+    assert len(records) == expected_records_count
     assert mock_sentry_capture_message.called
 
 
@@ -250,7 +256,7 @@ def test_aborted_harvest_with_max_errors_reached_and_report(
     oai_client = OAIClient(
         "https://dspace.mit.edu/oai/request",
         metadata_format="oai_dc",
-        retry_status_codes=tuple(),
+        retry_status_codes=(),
     )
     identifiers = [
         "oai:dspace.mit.edu:1721.1/152958",

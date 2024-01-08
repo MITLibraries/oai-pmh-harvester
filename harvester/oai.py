@@ -1,21 +1,24 @@
+# ruff: noqa: FBT001, UP012
+
 """oai.py module."""
 
 import json
 import logging
 import os
-from typing import Any, Iterator, Literal, Optional
+from collections.abc import Iterator
+from typing import Any, Literal
 
-from requests import HTTPError
 import smart_open
+from requests import HTTPError
 from sickle import Sickle
 from sickle.models import Record
 from sickle.oaiexceptions import IdDoesNotExist, OAIError
 
 from harvester.config import (
     DEFAULT_RETRY_AFTER,
+    MAX_ALLOWED_ERRORS,
     MAX_RETRIES,
     RETRY_STATUS_CODES,
-    MAX_ALLOWED_ERRORS,
 )
 from harvester.exceptions import MaxAllowedErrorsReached
 from harvester.utils import send_sentry_message
@@ -27,11 +30,11 @@ class OAIClient:
     def __init__(
         self,
         source_url: str,
-        metadata_format: Optional[str] = None,
-        from_date: Optional[str] = None,
-        until_date: Optional[str] = None,
-        set_spec: Optional[str] = None,
-        max_retries: Optional[int] = MAX_RETRIES,
+        metadata_format: str | None = None,
+        from_date: str | None = None,
+        until_date: str | None = None,
+        set_spec: str | None = None,
+        max_retries: int | None = MAX_RETRIES,
         retry_status_codes: list[int] = RETRY_STATUS_CODES,
     ) -> None:
         self.source_url = source_url
@@ -46,10 +49,10 @@ class OAIClient:
 
     def _set_params(
         self,
-        metadata_format: Optional[str],
-        from_date: Optional[str],
-        until_date: Optional[str],
-        set_spec: Optional[str],
+        metadata_format: str | None = None,
+        from_date: str | None = None,
+        until_date: str | None = None,
+        set_spec: str | None = None,
     ) -> None:
         params = {}
         if metadata_format:
@@ -72,7 +75,7 @@ class OAIClient:
     def get_records(
         self,
         identifiers: Iterator[str],
-        skip_list: Optional[tuple[str]] = None,
+        skip_list: tuple[str] | None = None,
         max_allowed_errors: int = MAX_ALLOWED_ERRORS,
     ) -> Iterator[Record]:
         failed_records: list[tuple[str, Any | str | None]] = []
@@ -121,10 +124,12 @@ class OAIClient:
                 {"failed_records": failed_records},
             )
 
-    def get_sets(self):
+    def get_sets(self) -> list[dict]:
         responses = self.client.ListSets()
-        sets = [{"Set name": set.setName, "Set spec": set.setSpec} for set in responses]
-        return sets
+        return [
+            {"Set name": response_set.setName, "Set spec": response_set.setSpec}
+            for response_set in responses
+        ]
 
     def list_records(self, exclude_deleted: bool) -> Iterator[Record]:
         return self.client.ListRecords(ignore_deleted=exclude_deleted, **self.params)
@@ -133,17 +138,16 @@ class OAIClient:
         self,
         method: Literal["get", "list"],
         exclude_deleted: bool,
-        skip_records: Optional[tuple[str]] = None,
+        skip_records: tuple[str] | None = None,
     ) -> Iterator[Record]:
         if method == "get":
             identifiers = self.get_identifiers(exclude_deleted)
             return self.get_records(identifiers, skip_list=skip_records)
-        elif method == "list":
+        if method == "list":
             return self.list_records(exclude_deleted)
-        else:
-            raise ValueError(
-                f'Method must be either "get" or "list", method provided was "{method}"'
-            )
+
+        message = f'Method must be either "get" or "list", method provided was "{method}"'
+        raise ValueError(message)
 
 
 def write_records(records: Iterator, filepath: str) -> int:

@@ -1,3 +1,5 @@
+# ruff: noqa: FBT001
+
 """harvester.config module."""
 import logging
 import os
