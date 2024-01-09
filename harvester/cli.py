@@ -21,17 +21,19 @@ logger = logging.getLogger(__name__)
     "-h",
     "--host",
     required=True,
-    help="Hostname of OAI-PMH server to harvest from, e.g. "
-    "https://dspace.mit.edu/oai/request.",
+    help="Hostname of server for an OAI-PMH compliant source.",
 )
 @click.option(
     "-o",
     "--output-file",
     required=True,
-    help="Filepath to write output to. Can be a local filepath or an S3 URI, e.g. "
-    "S3://bucketname/filename.xml.",
+    help="Filepath for generated output (either an XML file with harvested metadata or "
+    "a JSON file describing set structure of an OAI-PMH compliant source). "
+    "This value can be a local filepath or an S3 URI.",
 )
-@click.option("-v", "--verbose", help="Optional: enable debug output.", is_flag=True)
+@click.option(
+    "-v", "--verbose", help="Pass to log at debug level instead of info", is_flag=True
+)
 @click.pass_context
 def main(ctx: click.Context, host: str, output_file: str, verbose: bool) -> None:
     ctx.ensure_object(dict)
@@ -49,7 +51,7 @@ def main(ctx: click.Context, host: str, output_file: str, verbose: bool) -> None
     "--method",
     default="list",
     show_default=True,
-    help="Record retrieval method to use. Default 'list' method is faster and should "
+    help="Method for record retrieval. The 'list' method is faster and should "
     "be used in most cases; 'get' method should be used for ArchivesSpace due to "
     "errors retrieving a full record set with the 'list' method.",
     type=click.Choice(["get", "list"], case_sensitive=False),
@@ -59,29 +61,28 @@ def main(ctx: click.Context, host: str, output_file: str, verbose: bool) -> None
     "--metadata-format",
     default="oai_dc",
     show_default=True,
-    help="Optional: specify alternate metadata format for harvested records (e.g. "
-    "mods, mets, oai_dc, qdc, ore).",
+    help="Alternate metadata format for harvested records. A record should only be "
+    "returned if the format specified can be disseminated from the item identified "
+    "by the value of the identifier argument.",
 )
 @click.option(
     "-f",
     "--from-date",
     default=None,
-    help="Optional: starting date to harvest records from, in format YYYY-MM-DD. "
-    "Limits harvest to records added/updated on or after the provided date.",
+    help="Filter for files modified on or after this date; format YYYY-MM-DD.",
 )
 @click.option(
     "-u",
     "--until-date",
     default=None,
-    help="Optional: ending date to harvest records from, in format YYYY-MM-DD. "
-    "Limits harvest to records added/updated on or before the provided date.",
+    help="Filter for files modified before this date; format YYYY-MM-DD.",
 )
 @click.option(
     "-s",
     "--set-spec",
     default=None,
     show_default=True,
-    help="Optional: SetSpec of set to be harvested. Limits harvest to records in the "
+    help="SetSpec of set to be harvested. Limits harvest to records in the "
     "provided set.",
 )
 @click.option(
@@ -90,14 +91,14 @@ def main(ctx: click.Context, host: str, output_file: str, verbose: bool) -> None
     envvar="RECORD_SKIP_LIST",
     multiple=True,
     show_default=True,
-    help="Optional: OAI-PMH identifier of record to skip during harvest. Only works if "
-    "the harvest method used is 'get'. Can be repeated to skip multiple records, e.g. "
-    "'-sr oai:12345 -sr oai:67890'. Can also be set via ENV variable, see README for "
-    "details.",
+    help="Set of OAI-PMH identifiers for records to skip during a harvest. Only works "
+    "when --method=get. Multiple identifiers can be provided using the syntax: "
+    "'-sr oai:12345 -sr oai:67890'. Values can also be retrieved through the "
+    "RECORD_SKIP_LIST env var (see README for more details).",
 )
 @click.option(
     "--exclude-deleted",
-    help="Optional: exclude deleted records from harvest.",
+    help="Pass to exclude deleted records from harvest.",
     is_flag=True,
 )
 @click.pass_context
@@ -111,7 +112,7 @@ def harvest(
     skip_record: tuple[str] | None,
     exclude_deleted: bool,
 ) -> None:
-    """Harvest records from an OAI-PMH compliant source and write to an output file."""
+    """Harvest command to retrieve records from an OAI-PMH compliant source."""
     logger.info(
         "OAI-PMH harvesting from source %s with parameters: method=%s, "
         "metadata_format=%s, from_date=%s, until_date=%s, set=%s, skip_record=%s, "
@@ -162,7 +163,7 @@ def harvest(
 @main.command()
 @click.pass_context
 def setlist(ctx: click.Context) -> None:
-    """Get set info from an OAI-PMH compliant source and write to an output file.
+    """Create a JSON file describing the set structure of an OAI-PMH compliant source.
 
     Uses the OAI-PMH ListSets verbs to retrieve all sets from a repository, and writes
     the set names and specs to a JSON output file.
