@@ -1,4 +1,4 @@
-# ruff: noqa: EXE002, FBT001
+# ruff: noqa: FBT001
 
 """harvester.cli module."""
 import logging
