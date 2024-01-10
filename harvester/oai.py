@@ -4,7 +4,6 @@
 
 import json
 import logging
-import os
 from collections.abc import Iterator
 from typing import Any, Literal
 
@@ -19,11 +18,14 @@ from harvester.config import (
     MAX_ALLOWED_ERRORS,
     MAX_RETRIES,
     RETRY_STATUS_CODES,
+    Config,
 )
 from harvester.exceptions import MaxAllowedErrorsReached
 from harvester.utils import send_sentry_message
 
 logger = logging.getLogger(__name__)
+
+CONFIG = Config()
 
 
 class OAIClient:
@@ -157,7 +159,7 @@ def write_records(records: Iterator, filepath: str) -> int:
         for record in records:
             file.write("  ".encode() + record.raw.encode() + "\n".encode())
             count += 1
-            if count % int(os.getenv("STATUS_UPDATE_INTERVAL", "1000")) == 0:
+            if count % int(CONFIG.STATUS_UPDATE_INTERVAL) == 0:
                 logger.info(
                     "Status update: %s records written to output file so far!",
                     count,

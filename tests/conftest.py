@@ -3,10 +3,18 @@ from unittest.mock import patch
 import pytest
 from click.testing import CliRunner
 
+from harvester.config import Config
+
 
 @pytest.fixture(autouse=True)
 def _test_env(monkeypatch):
+    monkeypatch.setenv("SENTRY_DSN", "None")
     monkeypatch.setenv("WORKSPACE", "test")
+
+
+@pytest.fixture
+def config():
+    return Config()
 
 
 @pytest.fixture

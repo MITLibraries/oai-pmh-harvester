@@ -10,10 +10,12 @@ from typing import Literal
 import click
 from sickle.oaiexceptions import NoRecordsMatch
 
-from harvester.config import configure_logger, configure_sentry
+from harvester.config import Config
 from harvester.oai import OAIClient, write_records, write_sets
 
 logger = logging.getLogger(__name__)
+
+CONFIG = Config()
 
 
 @click.group()
@@ -40,10 +42,9 @@ def main(ctx: click.Context, host: str, output_file: str, verbose: bool) -> None
     ctx.obj["START_TIME"] = perf_counter()
     ctx.obj["HOST"] = host
     ctx.obj["OUTPUT_FILE"] = output_file
-
-    root_logger = logging.getLogger()
-    logger.info(configure_logger(root_logger, verbose))
-    logger.info(configure_sentry())
+    logger.info(CONFIG.configure_logger(verbose))
+    logger.info(CONFIG.configure_sentry())
+    CONFIG.check_required_env_vars()
 
 
 @main.command()
