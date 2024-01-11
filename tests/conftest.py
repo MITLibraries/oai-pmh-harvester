@@ -1,20 +1,25 @@
-import os
+from unittest.mock import patch
 
 import pytest
 from click.testing import CliRunner
-from unittest.mock import patch
+
+from harvester.config import Config
 
 
 @pytest.fixture(autouse=True)
-def test_env():
-    os.environ = {"WORKSPACE": "test"}
-    yield
+def _test_env(monkeypatch):
+    monkeypatch.setenv("SENTRY_DSN", "None")
+    monkeypatch.setenv("WORKSPACE", "test")
 
 
 @pytest.fixture
-def cli_runner():
-    runner = CliRunner()
-    return runner
+def config():
+    return Config()
+
+
+@pytest.fixture
+def runner():
+    return CliRunner()
 
 
 @pytest.fixture

@@ -7,7 +7,7 @@ def send_sentry_message(
     message: str,
     scopes: dict | None = None,
     level: str = "warning",
-):
+) -> str | None:
     """Send message directly to Sentry.
 
     This allows both reporting information without raising an Exception, and optionally
@@ -24,5 +24,4 @@ def send_sentry_message(
         if scopes:
             for scope_key, scope_value in scopes.items():
                 scope.set_extra(scope_key, scope_value)
-        send_receipt = sentry_sdk.capture_message(message, level=level)
-        return send_receipt
+        return sentry_sdk.capture_message(message, level=level)

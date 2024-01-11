@@ -13,11 +13,12 @@ urllib3 = "==1.26.18"
 [dev-packages]
 bandit = "*"
 black = "*"
-coverage = "*"
-flake8 = "*"
-isort = "*"
+coveralls = "*"
 mypy = "*"
+pre-commit = "*"
 pytest = "*"
+ruff = "*"
+types-requests = "*"
 vcrpy = "==4.2.1"
 
 [requires]
