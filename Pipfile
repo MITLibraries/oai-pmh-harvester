@@ -8,21 +8,21 @@ click = "*"
 sentry-sdk = "*"
 sickle = "*"
 smart-open = {extras = ["s3"], version = "*"}
-urllib3 = "==1.26.18"
+urllib3 = "*"
 
 [dev-packages]
-bandit = "*"
 black = "*"
 coveralls = "*"
 mypy = "*"
 pre-commit = "*"
 pytest = "*"
 ruff = "*"
+safety = "*"
 types-requests = "*"
-vcrpy = "==4.2.1"
+vcrpy = "*"
 
 [requires]
-python_version = "3.11"
+python_version = "3.12"
 
 [scripts]
 oai = "python -c \"from harvester.cli import main; main()\""
