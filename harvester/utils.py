@@ -1,12 +1,14 @@
 """utils.py module."""
 
+from typing import Literal
+
 import sentry_sdk
 
 
 def send_sentry_message(
     message: str,
     scopes: dict | None = None,
-    level: str = "warning",
+    level: Literal["fatal", "critical", "error", "warning", "info", "debug"] = "warning",
 ) -> str | None:
     """Send message directly to Sentry.
 
