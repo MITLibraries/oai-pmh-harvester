@@ -9,20 +9,17 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1
+      - python-requests/2.32.3
     method: GET
     uri: https://dspace.mit.edu/oai/request?metadataPrefix=oai_dc&from=2017-12-14&until=2017-12-14&verb=ListRecords
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAAA4ySXWvbMBSG/4rQva2PJHMmZJXBGBukrKwpjN4ETTqpBbblWUrj/vtJSdMlg7UF
-        XRx0nvPxvpK8mroWPcIYnO9rzEqKEfTGW9c/1Phu/aVY4islM1WE+NRCaAAiik8D1DjCFMkUWoya
-        EbY1DlFHZ8iBK/N9qvz+6Vtxc/0VpQZ9qHET4yAI2e/3pR+g16Np3COE0o8PJKGEl5TgIyym4C4K
-        9rMDxill5Of16tY00OnC9WlsbyBVBSfC4XLlTdokC3rPPPQe6FlHkmWxkiOEwfcBPusIilPOC1ql
-        s+ZMLJaCzu8luUBSwe8dhJid/lXjlQvxBxg/2oBRB1FbHfVN8tBNNfbabazBaDv6rsacsqpgvGDz
-        NaXicO4x2vXRtf9JqiwnJD02DNpA2blYgt0RkhqT5z3kKVDybJe8Zg6UbEBbGFF+0F16NQstRMjC
-        nYU0eutgVKmduBwhWMVZyQhjvJp/kOQMlklhGqe7QZ0tzRaCzsTiY7Lrb14GiLcDGGV8tzl23FRL
-        OpPklHghGtu+QRj/Qszzx3m9yb8IOfqgsl1HY8iFXadfof4AAAD//wMAAvLJMkcDAAA=
+      string: <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl"
+        href="static/style.xsl"?><OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"><responseDate>2024-06-03T19:51:16Z</responseDate><request
+        verb="ListRecords" metadataPrefix="oai_dc" from="2017-12-14T00:00:00Z" until="2017-12-14T00:00:00Z">https://dspace.mit.edu//oai/request</request><ListRecords><record><header
+        status="deleted"><identifier>oai:dspace.mit.edu:1721.1/112746</identifier><datestamp>2017-12-14T15:03:59Z</datestamp><setSpec>com_1721.1_7803</setSpec><setSpec>hdl_1721.1_7803</setSpec><setSpec>col_1721.1_42001</setSpec><setSpec>hdl_1721.1_42001</setSpec></header></record></ListRecords></OAI-PMH>
     headers:
       Connection:
       - close
@@ -31,7 +28,7 @@ interactions:
       Content-Type:
       - text/xml;charset=UTF-8
       Date:
-      - Thu, 07 Jul 2022 21:58:04 GMT
+      - Mon, 03 Jun 2024 19:51:16 GMT
       Set-cookie:
       - HttpOnly;Secure
       Strict-Transport-Security:

@@ -9,44 +9,57 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.31.0
+      - python-requests/2.32.3
     method: GET
     uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F152958&metadataPrefix=oai_dc&verb=GetRecord
   response:
     body:
-      string: !!binary |
-        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
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-06-03T19:51:22Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/152958\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/152958</identifier><datestamp>2023-11-14T04:00:09Z</datestamp><setSpec>com_1721.1_7582</setSpec><setSpec>hdl_1721.1_7582</setSpec><setSpec>com_1721.1_7581</setSpec><setSpec>hdl_1721.1_7581</setSpec><setSpec>col_1721.1_131022</setSpec><setSpec>hdl_1721.1_131022</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Studying Electronic Textures with Coherent Lensless Imaging</dc:title>\n
+        \  <dc:creator>Levitan, Abraham Lewis</dc:creator>\n   <dc:contributor>Comin,
+        Riccardo</dc:contributor>\n   <dc:contributor>Massachusetts Institute of Technology.
+        Department of Physics</dc:contributor>\n   <dc:description>X-ray microscopes
+        have opened our collective eyes to the richness of nanoscale texture in systems
+        such as correlated and quantum materials. These microscopes draw their power
+        from the combination of short wavelengths, which provide high resolution,
+        and interaction with atomic resonances, which makes them sensitive to subtle
+        changes in electronic structure. However, x-ray microscopy remains an area
+        where the main limits are technological rather than fundamental. Therefore,
+        major progress is still possible with methodological improvements.&#xd;\n&#xd;\nIn
+        the past twenty years, research has exploded into the use of coherent x-ray
+        light to improve the quality and resolution of x-ray microscopes. In many
+        cases, using coherent light makes it possible to remove the objective lens
+        in a microscope, replacing it with an algorithmic analysis of the direct scattering
+        data. This can increase the quality and resolution of the resulting quantitative
+        images.&#xd;\n&#xd;\nIn this thesis, I present the results from a collection
+        of projects aimed at using coherent imaging methods to study the real-space
+        texture of electronic phases of matter with soft x-ray light. I first discuss
+        the methods we developed and implemented to counteract the experimental errors
+        that we found to be ubiquitous in our data, focusing on ptychography, the
+        most commonly used lensless imaging method. Then, I turn to the development
+        of an entirely new single-shot lensless imaging method, randomized probe imaging
+        (RPI).&#xd;\n&#xd;\nRPI has proven to be reliable and robust across a broad
+        range of scenarios. The remainder of the thesis is devoted to applications
+        of RPI at a free electron laser and a synchrotron. Also reported are further
+        projects designed to improve the method, as well as attempts to expand our
+        understanding of the mechanisms behind it and its limitations. I sincerely
+        hope that the availability of RPI will help bring x-ray imaging to a broader
+        group of scientists and lead to a better understanding of the nanoscale details
+        of electronic texture.</dc:description>\n   <dc:description>Ph.D.</dc:description>\n
+        \  <dc:date>2023-11-13T19:57:16Z</dc:date>\n   <dc:date>2023-11-13T19:57:16Z</dc:date>\n
+        \  <dc:date>2023-06</dc:date>\n   <dc:date>2023-10-25T18:00:00.654Z</dc:date>\n
+        \  <dc:type>Thesis</dc:type>\n   <dc:identifier>https://hdl.handle.net/1721.1/152958</dc:identifier>\n
+        \  <dc:rights>In Copyright - Educational Use Permitted</dc:rights>\n   <dc:rights>Copyright
+        retained by author(s)</dc:rights>\n   <dc:rights>https://rightsstatements.org/page/InC-EDU/1.0/</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:publisher>Massachusetts
+        Institute of Technology</dc:publisher>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
     headers:
       Connection:
       - close
@@ -55,7 +68,7 @@ interactions:
       Content-Type:
       - text/xml;charset=UTF-8
       Date:
-      - Thu, 16 Nov 2023 15:51:19 GMT
+      - Mon, 03 Jun 2024 19:51:22 GMT
       Set-cookie:
       - HttpOnly;Secure
       Strict-Transport-Security:
@@ -83,176 +96,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.31.0
+      - python-requests/2.32.3
     method: GET
     uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F152786&metadataPrefix=oai_dc&verb=GetRecord
   response:
     body:
-      string: !!binary |
-        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
-        6pwfAAA=
-    headers:
-      Connection:
-      - close
-      Content-Encoding:
-      - gzip
-      Content-Language:
-      - en
-      Content-Length:
-      - '1373'
-      Content-Type:
-      - text/html;charset=utf-8
-      Date:
-      - Thu, 16 Nov 2023 15:51:19 GMT
-      Set-cookie:
-      - HttpOnly;Secure
-      Strict-Transport-Security:
-      - max-age=63072000
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-XSS-Protection:
-      - 1; mode=block
-    status:
-      code: 500
-      message: Internal Server Error
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.31.0
-    method: GET
-    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F147573&metadataPrefix=oai_dc&verb=GetRecord
-  response:
-    body:
-      string: !!binary |
-        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
-        6pwfAAA=
-    headers:
-      Connection:
-      - close
-      Content-Encoding:
-      - gzip
-      Content-Language:
-      - en
-      Content-Length:
-      - '1373'
-      Content-Type:
-      - text/html;charset=utf-8
-      Date:
-      - Thu, 16 Nov 2023 15:51:19 GMT
-      Set-cookie:
-      - HttpOnly;Secure
-      Strict-Transport-Security:
-      - max-age=63072000
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-XSS-Protection:
-      - 1; mode=block
-    status:
-      code: 500
-      message: Internal Server Error
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.31.0
-    method: GET
-    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F152939&metadataPrefix=oai_dc&verb=GetRecord
-  response:
-    body:
-      string: !!binary |
-        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
-        AA==
+      string: ""
     headers:
       Connection:
       - close
@@ -261,7 +110,128 @@ interactions:
       Content-Type:
       - text/xml;charset=UTF-8
       Date:
-      - Thu, 16 Nov 2023 15:51:20 GMT
+      - Mon, 03 Jun 2024 19:51:22 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 500
+      message: Internal Server Error
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F147573&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: ""
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Mon, 03 Jun 2024 19:51:23 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 500
+      message: Internal Server Error
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F152939&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-06-03T19:51:23Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/152939\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/152939</identifier><datestamp>2024-01-24T19:51:25Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Mechanisms of Shock Dissipation in Semicrystalline Polyethylene</dc:title>\n
+        \  <dc:creator>Mikhail, John P.</dc:creator>\n   <dc:creator>Rutledge, Gregory
+        C.</dc:creator>\n   <dc:contributor>Massachusetts Institute of Technology.
+        Department of Chemical Engineering</dc:contributor>\n   <dc:contributor>Massachusetts
+        Institute of Technology. Institute for Soldier Nanotechnologies</dc:contributor>\n
+        \  <dc:description>Semicrystalline polymers are lightweight, multiphase materials
+        that exhibit attractive shock dissipation characteristics and have potential
+        applications as protective armor for people and equipment. For shocks of 10
+        GPa or less, we analyzed various mechanisms for the storage and dissipation
+        of shock wave energy in a realistic, united atom (UA) model of semicrystalline
+        polyethylene. Systems characterized by different levels of crystallinity were
+        simulated using equilibrium molecular dynamics with a Hugoniostat to ensure
+        that the resulting states conform to the Rankine&amp;ndash;Hugoniot conditions.
+        To determine the role of structural rearrangements, order parameters and configuration
+        time series were collected during the course of the shock simulations. We
+        conclude that the major mechanisms responsible for the storage and dissipation
+        of shock energy in semicrystalline polyethylene are those associated with
+        plastic deformation and melting of the crystalline domain. For this UA model,
+        plastic deformation occurs primarily through fine crystallographic slip and
+        the formation of kink bands, whose long period decreases with increasing shock
+        pressure.</dc:description>\n   <dc:date>2023-11-13T16:58:51Z</dc:date>\n   <dc:date>2023-11-13T16:58:51Z</dc:date>\n
+        \  <dc:date>2023-10-30</dc:date>\n   <dc:date>2023-11-10T14:57:56Z</dc:date>\n
+        \  <dc:type>Article</dc:type>\n   <dc:type>http://purl.org/eprint/type/JournalArticle</dc:type>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/152939</dc:identifier>\n   <dc:identifier>Polymers
+        15 (21): 4262 (2023)</dc:identifier>\n   <dc:identifier>PUBLISHER_CC</dc:identifier>\n
+        \  <dc:relation>http://dx.doi.org/10.3390/polym15214262</dc:relation>\n   <dc:rights>Creative
+        Commons Attribution</dc:rights>\n   <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:publisher>Multidisciplinary
+        Digital Publishing Institute</dc:publisher>\n   <dc:source>Multidisciplinary
+        Digital Publishing Institute</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Mon, 03 Jun 2024 19:51:23 GMT
       Set-cookie:
       - HttpOnly;Secure
       Strict-Transport-Security:

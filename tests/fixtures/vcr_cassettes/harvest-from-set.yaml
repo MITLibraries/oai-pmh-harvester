@@ -9,121 +9,931 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1
+      - python-requests/2.32.3
     method: GET
     uri: https://dspace.mit.edu/oai/request?metadataPrefix=oai_dc&set=com_1721.1_140587&verb=ListRecords
   response:
     body:
-      string: !!binary |
-        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
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-06-03T19:51:07Z</responseDate><request
+        verb=\"ListRecords\" metadataPrefix=\"oai_dc\" set=\"com_1721.1_140587\">https://dspace.mit.edu//oai/request</request><ListRecords><record><header><identifier>oai:dspace.mit.edu:1721.1/140717</identifier><datestamp>2022-02-24T20:08:43Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Doubles</dc:title>\n   <dc:creator>Brody, Martin</dc:creator>\n
+        \  <dc:subject>Experimental Music Studio</dc:subject>\n   <dc:description>This
+        is now the only master of Doubles with reverb (2 exist without any reverb).
+        Cut 2 of 2, wet, msp</dc:description>\n   <dc:date>2022-02-24T20:08:20Z</dc:date>\n
+        \  <dc:date>2022-02-24T20:08:20Z</dc:date>\n   <dc:date>1984-10</dc:date>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/140717</dc:identifier>\n   <dc:relation>MIT
+        Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These materials
+        are made available for use in research, teaching and private study, pursuant
+        to U.S. Copyright Law and the Music Modernization Act. The user must assume
+        full responsibility for any use of the materials, including but not limited
+        to, infringement of copyright and publication rights of reproduced materials.
+        Any materials used for academic research or otherwise should be fully credited
+        with the source. The original creators may retain copyright to the materials.</dc:rights>\n
+        \  <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140745</identifier><datestamp>2022-02-24T20:48:22Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Story Space Master</dc:title>\n   <dc:creator>Kenney, Diana</dc:creator>\n
+        \  <dc:subject>Experimental Music Studio</dc:subject>\n   <dc:description>section
+        III of dance</dc:description>\n   <dc:date>2022-02-24T20:46:58Z</dc:date>\n
+        \  <dc:date>2022-02-24T20:46:58Z</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140745</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140727</identifier><datestamp>2022-02-24T20:23:38Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Of Vines in Winter (1984)</dc:title>\n   <dc:creator>Various
+        Artists</dc:creator>\n   <dc:subject>Experimental Music Studio</dc:subject>\n
+        \  <dc:description>Dan Leary and Pamela Day</dc:description>\n   <dc:date>2022-02-24T20:23:10Z</dc:date>\n
+        \  <dc:date>2022-02-24T20:23:10Z</dc:date>\n   <dc:date>1984</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140727</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140728</identifier><datestamp>2022-02-24T20:24:02Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Trapped in Convert (1979)</dc:title>\n   <dc:creator>Boulanger,
+        Richard</dc:creator>\n   <dc:subject>Experimental Music Studio</dc:subject>\n
+        \  <dc:description>Duration: 4 min.</dc:description>\n   <dc:date>2022-02-24T20:23:38Z</dc:date>\n
+        \  <dc:date>2022-02-24T20:23:38Z</dc:date>\n   <dc:date>1979</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140728</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140693</identifier><datestamp>2022-02-25T01:29:32Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Mind Machine</dc:title>\n   <dc:creator>Le Poulin, Edward</dc:creator>\n
+        \  <dc:subject>Experimental Music Studio</dc:subject>\n   <dc:description>February
+        6, 1985. Channel One: Pass Straight through and Channel Two: Process</dc:description>\n
+        \  <dc:date>2022-02-24T19:41:48Z</dc:date>\n   <dc:date>2022-02-24T19:41:48Z</dc:date>\n
+        \  <dc:date>1985-02</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140693</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140732</identifier><datestamp>2022-02-24T20:30:02Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>The Act of Listening</dc:title>\n   <dc:creator>Bamberger, Jeanne</dc:creator>\n
+        \  <dc:subject>Experimental Music Studio</dc:subject>\n   <dc:date>2022-02-24T20:29:24Z</dc:date>\n
+        \  <dc:date>2022-02-24T20:29:24Z</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140732</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140724</identifier><datestamp>2022-02-24T20:19:46Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Special Indulgence</dc:title>\n   <dc:creator>Thorman, Marc</dc:creator>\n
+        \  <dc:subject>Experimental Music Studio</dc:subject>\n   <dc:description>Master,
+        February 9, 1985</dc:description>\n   <dc:date>2022-02-24T20:18:53Z</dc:date>\n
+        \  <dc:date>2022-02-24T20:18:53Z</dc:date>\n   <dc:date>1985-02</dc:date>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/140724</dc:identifier>\n   <dc:relation>MIT
+        Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These materials
+        are made available for use in research, teaching and private study, pursuant
+        to U.S. Copyright Law and the Music Modernization Act. The user must assume
+        full responsibility for any use of the materials, including but not limited
+        to, infringement of copyright and publication rights of reproduced materials.
+        Any materials used for academic research or otherwise should be fully credited
+        with the source. The original creators may retain copyright to the materials.</dc:rights>\n
+        \  <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140736</identifier><datestamp>2022-02-24T20:32:24Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Voicings Lecture</dc:title>\n   <dc:creator>Dodge, Charles</dc:creator>\n
+        \  <dc:subject>Experimental Music Studio</dc:subject>\n   <dc:description>18-Feb-84</dc:description>\n
+        \  <dc:date>2022-02-24T20:32:10Z</dc:date>\n   <dc:date>2022-02-24T20:32:10Z</dc:date>\n
+        \  <dc:date>1984-02</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140736</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140744</identifier><datestamp>2022-02-24T20:46:58Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Live Performances</dc:title>\n   <dc:creator>Various Artists</dc:creator>\n
+        \  <dc:subject>Experimental Music Studio</dc:subject>\n   <dc:description>Performance
+        on May 13, 1982. Buell, Hamel, Frederick, Maine</dc:description>\n   <dc:date>2022-02-24T20:43:59Z</dc:date>\n
+        \  <dc:date>2022-02-24T20:43:59Z</dc:date>\n   <dc:date>1982-05</dc:date>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/140744</dc:identifier>\n   <dc:relation>MIT
+        Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These materials
+        are made available for use in research, teaching and private study, pursuant
+        to U.S. Copyright Law and the Music Modernization Act. The user must assume
+        full responsibility for any use of the materials, including but not limited
+        to, infringement of copyright and publication rights of reproduced materials.
+        Any materials used for academic research or otherwise should be fully credited
+        with the source. The original creators may retain copyright to the materials.</dc:rights>\n
+        \  <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140708</identifier><datestamp>2022-02-24T19:54:37Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Vents (for tape alone), Reel 1 of 1</dc:title>\n   <dc:creator>Horner,
+        Andrew</dc:creator>\n   <dc:subject>Experimental Music Studio</dc:subject>\n
+        \  <dc:description>Computer master, class concert, spring 1986, tone and channel
+        keeps at head.</dc:description>\n   <dc:date>2022-02-24T19:53:33Z</dc:date>\n
+        \  <dc:date>2022-02-24T19:53:33Z</dc:date>\n   <dc:date>1986-04</dc:date>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/140708</dc:identifier>\n   <dc:relation>MIT
+        Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These materials
+        are made available for use in research, teaching and private study, pursuant
+        to U.S. Copyright Law and the Music Modernization Act. The user must assume
+        full responsibility for any use of the materials, including but not limited
+        to, infringement of copyright and publication rights of reproduced materials.
+        Any materials used for academic research or otherwise should be fully credited
+        with the source. The original creators may retain copyright to the materials.</dc:rights>\n
+        \  <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140683</identifier><datestamp>2022-02-24T19:27:03Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Summer 1979, 4ch pieces</dc:title>\n   <dc:creator>Various Artists</dc:creator>\n
+        \  <dc:subject>Experimental Music Studio</dc:subject>\n   <dc:description>July
+        27, 1979. Composers: Peter Child, John Rimmer, Arthur Campbell, Pamela Marshall</dc:description>\n
+        \  <dc:date>2022-02-24T19:26:49Z</dc:date>\n   <dc:date>2022-02-24T19:26:49Z</dc:date>\n
+        \  <dc:date>1979-07</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140683</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140737</identifier><datestamp>2022-02-24T20:33:12Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Inaugural Concert of the MIT Experimental Music Studio, Kresge
+        Auditorium</dc:title>\n   <dc:creator>Various Artists</dc:creator>\n   <dc:subject>Experimental
+        Music Studio</dc:subject>\n   <dc:description>Concert held on February 27,
+        1976. Edwin Dugger: Music for Synthesizer and 6 instruments (1966), Barry
+        Vercoe Synapse for Viola and Computer (1976), Milton Babbitt Philomel (1964)</dc:description>\n
+        \  <dc:date>2022-02-24T20:32:24Z</dc:date>\n   <dc:date>2022-02-24T20:32:24Z</dc:date>\n
+        \  <dc:date>1976-02</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140737</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140723</identifier><datestamp>2022-02-24T20:18:52Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>They Took the Crosstown Bus (1982)</dc:title>\n   <dc:creator>Stautner,
+        John</dc:creator>\n   <dc:subject>Experimental Music Studio</dc:subject>\n
+        \  <dc:date>2022-02-24T20:16:56Z</dc:date>\n   <dc:date>2022-02-24T20:16:56Z</dc:date>\n
+        \  <dc:date>1982</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140723</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140692</identifier><datestamp>2022-02-24T19:41:47Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Finale, Act I, Little Prince (1982), Voyage to the Earth, Laser
+        Ballet</dc:title>\n   <dc:creator>Dashow, James</dc:creator>\n   <dc:subject>Experimental
+        Music Studio</dc:subject>\n   <dc:description>Stereo mixdown from quad original</dc:description>\n
+        \  <dc:date>2022-02-24T19:41:23Z</dc:date>\n   <dc:date>2022-02-24T19:41:23Z</dc:date>\n
+        \  <dc:date>1982</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140692</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140722</identifier><datestamp>2022-02-24T20:16:56Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Sphaera Concert Dub (Computer part)</dc:title>\n   <dc:creator>Albright,
+        William</dc:creator>\n   <dc:subject>Experimental Music Studio</dc:subject>\n
+        \  <dc:description>Concert on April 19, 1985</dc:description>\n   <dc:date>2022-02-24T20:13:32Z</dc:date>\n
+        \  <dc:date>2022-02-24T20:13:32Z</dc:date>\n   <dc:date>1985-04</dc:date>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/140722</dc:identifier>\n   <dc:relation>MIT
+        Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These materials
+        are made available for use in research, teaching and private study, pursuant
+        to U.S. Copyright Law and the Music Modernization Act. The user must assume
+        full responsibility for any use of the materials, including but not limited
+        to, infringement of copyright and publication rights of reproduced materials.
+        Any materials used for academic research or otherwise should be fully credited
+        with the source. The original creators may retain copyright to the materials.</dc:rights>\n
+        \  <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140699</identifier><datestamp>2022-02-24T19:46:38Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>The Waves, 1984, Reel 1 of 1</dc:title>\n   <dc:creator>Dodge,
+        Charles</dc:creator>\n   <dc:creator>Child, Peter</dc:creator>\n   <dc:subject>Experimental
+        Music Studio</dc:subject>\n   <dc:description>Concert tape, Aril 10 1984.
+        Vocals by Joan La Barbara. Duration: 12 min., 30 sec.</dc:description>\n   <dc:date>2022-02-24T19:46:06Z</dc:date>\n
+        \  <dc:date>2022-02-24T19:46:06Z</dc:date>\n   <dc:date>1984-04</dc:date>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/140699</dc:identifier>\n   <dc:relation>MIT
+        Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These materials
+        are made available for use in research, teaching and private study, pursuant
+        to U.S. Copyright Law and the Music Modernization Act. The user must assume
+        full responsibility for any use of the materials, including but not limited
+        to, infringement of copyright and publication rights of reproduced materials.
+        Any materials used for academic research or otherwise should be fully credited
+        with the source. The original creators may retain copyright to the materials.</dc:rights>\n
+        \  <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140696</identifier><datestamp>2022-02-24T19:44:43Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Spring 1983 Class Concert Live Recording, May 12, 1983</dc:title>\n
+        \  <dc:creator>Various Artists</dc:creator>\n   <dc:subject>Experimental Music
+        Studio</dc:subject>\n   <dc:description>Composers and Tracks: Eric Charry,
+        \"Slow Agbekor for Computer and Atsimevu (Ewe Master Drum)\"; Jean-Joseph
+        Cote, \"Schizo Scherzo Blues\"; Jamshied Sharifi, \"Interlude from Rain.\"Concert
+        tape. Includes insert describing the concert, May 12, 1983.</dc:description>\n
+        \  <dc:date>2022-02-24T19:43:28Z</dc:date>\n   <dc:date>2022-02-24T19:43:28Z</dc:date>\n
+        \  <dc:date>1983-05</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140696</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140733</identifier><datestamp>2022-02-24T20:30:44Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Frippertronics Vol 1</dc:title>\n   <dc:creator>Leary, Dan</dc:creator>\n
+        \  <dc:subject>Experimental Music Studio</dc:subject>\n   <dc:date>2022-02-24T20:30:03Z</dc:date>\n
+        \  <dc:date>2022-02-24T20:30:03Z</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140733</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140734</identifier><datestamp>2022-02-24T20:31:47Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>The Act of Listening</dc:title>\n   <dc:creator>Bamberger, Jeanne</dc:creator>\n
+        \  <dc:subject>Experimental Music Studio</dc:subject>\n   <dc:description>4-Jan-88</dc:description>\n
+        \  <dc:date>2022-02-24T20:30:45Z</dc:date>\n   <dc:date>2022-02-24T20:30:45Z</dc:date>\n
+        \  <dc:date>1988-04</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140734</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140712</identifier><datestamp>2022-02-24T20:02:31Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Shadow Dance (1982), for Harp and Computer by Peter Nelson and
+        Microvariations (1979), for Computer by Graham Hair</dc:title>\n   <dc:creator>Various
+        Artists</dc:creator>\n   <dc:subject>Experimental Music Studio</dc:subject>\n
+        \  <dc:description>Shadow Dance was a live performance on July, 1982 at Kreage
+        Auditorium, MIT, with Susan Allen on harp. Microvariations was recorded and
+        premiered at MIT on July, 1979. Peter Nelson and Graham Hair</dc:description>\n
+        \  <dc:date>2022-02-24T19:59:53Z</dc:date>\n   <dc:date>2022-02-24T19:59:53Z</dc:date>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/140712</dc:identifier>\n   <dc:relation>MIT
+        Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These materials
+        are made available for use in research, teaching and private study, pursuant
+        to U.S. Copyright Law and the Music Modernization Act. The user must assume
+        full responsibility for any use of the materials, including but not limited
+        to, infringement of copyright and publication rights of reproduced materials.
+        Any materials used for academic research or otherwise should be fully credited
+        with the source. The original creators may retain copyright to the materials.</dc:rights>\n
+        \  <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140687</identifier><datestamp>2022-02-24T19:35:38Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Any Resemblance is Purely Coincidental</dc:title>\n   <dc:creator>Dodge,
+        Charles</dc:creator>\n   <dc:creator>Child, Peter</dc:creator>\n   <dc:subject>Experimental
+        Music Studio</dc:subject>\n   <dc:description>Computer part, dub of master
+        for September 24, 1983 concert</dc:description>\n   <dc:date>2022-02-24T19:31:45Z</dc:date>\n
+        \  <dc:date>2022-02-24T19:31:45Z</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140687</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140694</identifier><datestamp>2022-02-24T19:42:52Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Untitled</dc:title>\n   <dc:creator>Various Artists</dc:creator>\n
+        \  <dc:subject>Experimental Music Studio</dc:subject>\n   <dc:description>Inside
+        of box reads, \"First ten minutes are very good!\" Tape label reads, \"Melkley--
+        Short Waves\u2026Kildiss-- Concrete Acoustics\u2026and tape machine (?), Le
+        Poulin-- Waldorf synthesizer\", Donald James Melkley (?), Ike Kildiss, and
+        Edward Le Poulin</dc:description>\n   <dc:date>2022-02-24T19:41:49Z</dc:date>\n
+        \  <dc:date>2022-02-24T19:41:49Z</dc:date>\n   <dc:date>1978-10</dc:date>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/140694</dc:identifier>\n   <dc:relation>MIT
+        Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These materials
+        are made available for use in research, teaching and private study, pursuant
+        to U.S. Copyright Law and the Music Modernization Act. The user must assume
+        full responsibility for any use of the materials, including but not limited
+        to, infringement of copyright and publication rights of reproduced materials.
+        Any materials used for academic research or otherwise should be fully credited
+        with the source. The original creators may retain copyright to the materials.</dc:rights>\n
+        \  <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140705</identifier><datestamp>2022-02-24T19:50:46Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Of Vines in Winter</dc:title>\n   <dc:creator>Leary, Dan</dc:creator>\n
+        \  <dc:subject>Experimental Music Studio</dc:subject>\n   <dc:description>Computer
+        part</dc:description>\n   <dc:date>2022-02-24T19:50:17Z</dc:date>\n   <dc:date>2022-02-24T19:50:17Z</dc:date>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/140705</dc:identifier>\n   <dc:relation>MIT
+        Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These materials
+        are made available for use in research, teaching and private study, pursuant
+        to U.S. Copyright Law and the Music Modernization Act. The user must assume
+        full responsibility for any use of the materials, including but not limited
+        to, infringement of copyright and publication rights of reproduced materials.
+        Any materials used for academic research or otherwise should be fully credited
+        with the source. The original creators may retain copyright to the materials.</dc:rights>\n
+        \  <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140725</identifier><datestamp>2022-02-24T20:20:29Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Etudes Tableaux (1985) Revised</dc:title>\n   <dc:creator>Hair,
+        Graham</dc:creator>\n   <dc:subject>Experimental Music Studio</dc:subject>\n
+        \  <dc:description>March 31, 1986. Duration: 7 min., 20 sec. Tone at 0 VU.</dc:description>\n
+        \  <dc:date>2022-02-24T20:19:47Z</dc:date>\n   <dc:date>2022-02-24T20:19:47Z</dc:date>\n
+        \  <dc:date>1986-03</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140725</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140739</identifier><datestamp>2022-02-24T20:37:37Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Inaugural Concert of the MIT Experimental Music Studio, Kresge
+        Auditorium</dc:title>\n   <dc:creator>Various Artists</dc:creator>\n   <dc:subject>Experimental
+        Music Studio</dc:subject>\n   <dc:description>Concert held on February 27,
+        1976. Edwin Dugger: Music for Synthesizer and 6 instruments (1966), Barry
+        Vercoe: Synapse for Viola and Computer (1976), Milton Babbitt: Philomel (1964)</dc:description>\n
+        \  <dc:date>2022-02-24T20:35:22Z</dc:date>\n   <dc:date>2022-02-24T20:35:22Z</dc:date>\n
+        \  <dc:date>1976-02</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140739</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140685</identifier><datestamp>2022-02-24T19:30:46Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Folk Images</dc:title>\n   <dc:creator>Lansky, Paul</dc:creator>\n
+        \  <dc:subject>Experimental Music Studio</dc:subject>\n   <dc:description>Tracks
+        include: \"Pine Ridge,\" \"Tender Ladies,\" \"Pretty Polly,\" \"Alberta,\"
+        and \"Barbara Allen.\" Duration= 23 min. Realized using the IBM 3033, and
+        the facilities of the Winham Laboratory at Princeton University (1980-81).
+        Violin source: Cyrus Stevens.</dc:description>\n   <dc:date>2022-02-24T19:28:03Z</dc:date>\n
+        \  <dc:date>2022-02-24T19:28:03Z</dc:date>\n   <dc:date>1981</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140685</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140695</identifier><datestamp>2022-02-24T19:43:28Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>String Quartet, No. 4, September 24, 1983 performance at MIT,
+        Reel 1 of 1</dc:title>\n   <dc:creator>Hoffmann, Richard</dc:creator>\n   <dc:subject>Experimental
+        Music Studio</dc:subject>\n   <dc:description>Atlantic String Quartet performance,
+        January 3, 1984.</dc:description>\n   <dc:date>2022-02-24T19:42:52Z</dc:date>\n
+        \  <dc:date>2022-02-24T19:42:52Z</dc:date>\n   <dc:date>1984-01</dc:date>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/140695</dc:identifier>\n   <dc:relation>MIT
+        Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These materials
+        are made available for use in research, teaching and private study, pursuant
+        to U.S. Copyright Law and the Music Modernization Act. The user must assume
+        full responsibility for any use of the materials, including but not limited
+        to, infringement of copyright and publication rights of reproduced materials.
+        Any materials used for academic research or otherwise should be fully credited
+        with the source. The original creators may retain copyright to the materials.</dc:rights>\n
+        \  <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140719</identifier><datestamp>2022-02-24T20:12:12Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Transition #2 (1982): Concert Master</dc:title>\n   <dc:creator>Kaske,
+        Stephen</dc:creator>\n   <dc:subject>Experimental Music Studio</dc:subject>\n
+        \  <dc:date>2022-02-24T20:08:50Z</dc:date>\n   <dc:date>2022-02-24T20:08:50Z</dc:date>\n
+        \  <dc:date>1982</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140719</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140720</identifier><datestamp>2022-02-24T20:13:02Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Special Indulgence (1982)</dc:title>\n   <dc:creator>Thorman,
+        Marc</dc:creator>\n   <dc:subject>Experimental Music Studio</dc:subject>\n
+        \  <dc:description>Duration: 2 min., 15 sec.</dc:description>\n   <dc:date>2022-02-24T20:12:13Z</dc:date>\n
+        \  <dc:date>2022-02-24T20:12:13Z</dc:date>\n   <dc:date>1982</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140720</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140726</identifier><datestamp>2022-02-24T20:23:09Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Transition #2: Revised Version-- Used for September 24, 1983
+        Concert</dc:title>\n   <dc:creator>Kaske, Stephen</dc:creator>\n   <dc:subject>Experimental
+        Music Studio</dc:subject>\n   <dc:description>Computer part</dc:description>\n
+        \  <dc:date>2022-02-24T20:20:29Z</dc:date>\n   <dc:date>2022-02-24T20:20:29Z</dc:date>\n
+        \  <dc:date>1983</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140726</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140713</identifier><datestamp>2022-02-24T20:03:07Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Birth</dc:title>\n   <dc:creator>Bret</dc:creator>\n   <dc:subject>Experimental
+        Music Studio</dc:subject>\n   <dc:description>Click at beginning, needs splice.</dc:description>\n
+        \  <dc:date>2022-02-24T20:02:31Z</dc:date>\n   <dc:date>2022-02-24T20:02:31Z</dc:date>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/140713</dc:identifier>\n   <dc:relation>MIT
+        Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These materials
+        are made available for use in research, teaching and private study, pursuant
+        to U.S. Copyright Law and the Music Modernization Act. The user must assume
+        full responsibility for any use of the materials, including but not limited
+        to, infringement of copyright and publication rights of reproduced materials.
+        Any materials used for academic research or otherwise should be fully credited
+        with the source. The original creators may retain copyright to the materials.</dc:rights>\n
+        \  <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140718</identifier><datestamp>2022-02-24T20:08:50Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Tetrahedron</dc:title>\n   <dc:creator>Curtis, Madelyn</dc:creator>\n
+        \  <dc:subject>Experimental Music Studio</dc:subject>\n   <dc:description>Duration:
+        54 sec.</dc:description>\n   <dc:date>2022-02-24T20:08:43Z</dc:date>\n   <dc:date>2022-02-24T20:08:43Z</dc:date>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/140718</dc:identifier>\n   <dc:relation>MIT
+        Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These materials
+        are made available for use in research, teaching and private study, pursuant
+        to U.S. Copyright Law and the Music Modernization Act. The user must assume
+        full responsibility for any use of the materials, including but not limited
+        to, infringement of copyright and publication rights of reproduced materials.
+        Any materials used for academic research or otherwise should be fully credited
+        with the source. The original creators may retain copyright to the materials.</dc:rights>\n
+        \  <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140691</identifier><datestamp>2022-02-24T19:41:22Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Untitled</dc:title>\n   <dc:creator>Morgan</dc:creator>\n   <dc:subject>Experimental
+        Music Studio</dc:subject>\n   <dc:date>2022-02-24T19:39:32Z</dc:date>\n   <dc:date>2022-02-24T19:39:32Z</dc:date>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/140691</dc:identifier>\n   <dc:relation>MIT
+        Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These materials
+        are made available for use in research, teaching and private study, pursuant
+        to U.S. Copyright Law and the Music Modernization Act. The user must assume
+        full responsibility for any use of the materials, including but not limited
+        to, infringement of copyright and publication rights of reproduced materials.
+        Any materials used for academic research or otherwise should be fully credited
+        with the source. The original creators may retain copyright to the materials.</dc:rights>\n
+        \  <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140741</identifier><datestamp>2022-02-24T20:42:58Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Summer 1980 Concert</dc:title>\n   <dc:creator>Various Artists</dc:creator>\n
+        \  <dc:subject>Experimental Music Studio</dc:subject>\n   <dc:description>Lunn
+        Echos for piano and Computer, Risberg Discrete and Continuous Space, Miller
+        a Dream for Elizabeth, Balaban In My Future (Computer part only), Turturro,
+        Brody Turkish Rondo, Balaban In My Future (little girl and computer) 4ch dbx
+        15ips, summer workshop performance</dc:description>\n   <dc:date>2022-02-24T20:42:10Z</dc:date>\n
+        \  <dc:date>2022-02-24T20:42:10Z</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140741</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140731</identifier><datestamp>2022-02-24T20:29:24Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Wind Quintet Sources</dc:title>\n   <dc:creator>Brody, Martin</dc:creator>\n
+        \  <dc:subject>Experimental Music Studio</dc:subject>\n   <dc:description>28-Jul-84</dc:description>\n
+        \  <dc:date>2022-02-24T20:26:26Z</dc:date>\n   <dc:date>2022-02-24T20:26:26Z</dc:date>\n
+        \  <dc:date>1984-07</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140731</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140684</identifier><datestamp>2022-02-24T19:28:03Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Class Tape, May 12, 1983, Reel 2 of 2</dc:title>\n   <dc:creator>Various
+        Artists</dc:creator>\n   <dc:subject>Experimental Music Studio</dc:subject>\n
+        \  <dc:description>Spring 1983. Live recording, Composers: Aaron Spencer,
+        Erik Spjut, Eric Charry, Marc Thorman, Wes York, Jean-Joseph Cote, David Place,
+        Kevin Jones, Jamshied Sharifi. Includes insert for the performance with track
+        list for reels 1 and 2.</dc:description>\n   <dc:date>2022-02-24T19:27:03Z</dc:date>\n
+        \  <dc:date>2022-02-24T19:27:03Z</dc:date>\n   <dc:date>1983</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140684</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140747</identifier><datestamp>2022-02-24T20:49:37Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>NSCOR</dc:title>\n   <dc:subject>Experimental Music Studio</dc:subject>\n
+        \  <dc:date>2022-02-24T20:48:40Z</dc:date>\n   <dc:date>2022-02-24T20:48:40Z</dc:date>\n
+        \  <dc:date>1985</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140747</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140729</identifier><datestamp>2022-02-24T20:24:46Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Untitled</dc:title>\n   <dc:creator>Leary, Dan</dc:creator>\n
+        \  <dc:subject>Experimental Music Studio</dc:subject>\n   <dc:date>2022-02-24T20:24:02Z</dc:date>\n
+        \  <dc:date>2022-02-24T20:24:02Z</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140729</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140706</identifier><datestamp>2022-02-24T19:52:15Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Poi (1979)</dc:title>\n   <dc:creator>Rimmer, John</dc:creator>\n
+        \  <dc:subject>Experimental Music Studio</dc:subject>\n   <dc:date>2022-02-24T19:50:46Z</dc:date>\n
+        \  <dc:date>2022-02-24T19:50:46Z</dc:date>\n   <dc:date>1979</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140706</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140742</identifier><datestamp>2022-02-24T20:43:41Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Electronic &amp; Computer music of James Dashow May 2, 1983</dc:title>\n
+        \  <dc:subject>Experimental Music Studio</dc:subject>\n   <dc:date>2022-02-24T20:42:59Z</dc:date>\n
+        \  <dc:date>2022-02-24T20:42:59Z</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140742</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140690</identifier><datestamp>2022-02-24T19:39:32Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Moments Musicaux, computer part master, Reel 1 of 1, 1981</dc:title>\n
+        \  <dc:creator>Brody, Martin</dc:creator>\n   <dc:subject>Experimental Music
+        Studio</dc:subject>\n   <dc:date>2022-02-24T19:38:50Z</dc:date>\n   <dc:date>2022-02-24T19:38:50Z</dc:date>\n
+        \  <dc:date>1981</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140690</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140740</identifier><datestamp>2022-02-24T20:42:10Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Concert Tape</dc:title>\n   <dc:subject>Experimental Music Studio</dc:subject>\n
+        \  <dc:date>2022-02-24T20:37:38Z</dc:date>\n   <dc:date>2022-02-24T20:37:38Z</dc:date>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/140740</dc:identifier>\n   <dc:relation>MIT
+        Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These materials
+        are made available for use in research, teaching and private study, pursuant
+        to U.S. Copyright Law and the Music Modernization Act. The user must assume
+        full responsibility for any use of the materials, including but not limited
+        to, infringement of copyright and publication rights of reproduced materials.
+        Any materials used for academic research or otherwise should be fully credited
+        with the source. The original creators may retain copyright to the materials.</dc:rights>\n
+        \  <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140689</identifier><datestamp>2022-02-24T19:38:50Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>In Winter Shine, Reel 1 of 1, 1983</dc:title>\n   <dc:creator>Dashow,
+        James</dc:creator>\n   <dc:subject>Experimental Music Studio</dc:subject>\n
+        \  <dc:description>Recorded September 29, 1984</dc:description>\n   <dc:date>2022-02-24T19:36:54Z</dc:date>\n
+        \  <dc:date>2022-02-24T19:36:54Z</dc:date>\n   <dc:date>1984-08</dc:date>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/140689</dc:identifier>\n   <dc:relation>MIT
+        Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These materials
+        are made available for use in research, teaching and private study, pursuant
+        to U.S. Copyright Law and the Music Modernization Act. The user must assume
+        full responsibility for any use of the materials, including but not limited
+        to, infringement of copyright and publication rights of reproduced materials.
+        Any materials used for academic research or otherwise should be fully credited
+        with the source. The original creators may retain copyright to the materials.</dc:rights>\n
+        \  <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140738</identifier><datestamp>2022-02-24T20:35:22Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Untitled</dc:title>\n   <dc:creator>Various Artists</dc:creator>\n
+        \  <dc:subject>Experimental Music Studio</dc:subject>\n   <dc:description>Vercoe
+        Synapse for Viola and Computer, Child Three Brief Impressions for Computer,
+        Smith Spinner Web, Daughtery Stryt, Deusenberry Moduletude, Balaban In my
+        Future, Wright A Dream for Elizabeth</dc:description>\n   <dc:date>2022-02-24T20:33:12Z</dc:date>\n
+        \  <dc:date>2022-02-24T20:33:12Z</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140738</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140746</identifier><datestamp>2022-02-24T20:48:40Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Obdjekt</dc:title>\n   <dc:creator>Leary, Dan</dc:creator>\n
+        \  <dc:subject>Experimental Music Studio</dc:subject>\n   <dc:date>2022-02-24T20:48:22Z</dc:date>\n
+        \  <dc:date>2022-02-24T20:48:22Z</dc:date>\n   <dc:date>1982</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140746</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140721</identifier><datestamp>2022-02-24T20:13:32Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Sphaera</dc:title>\n   <dc:creator>Albright, William</dc:creator>\n
+        \  <dc:subject>Experimental Music Studio</dc:subject>\n   <dc:description>Computer
+        master (direct from computer), performance July 29, 1985 information included
+        as an insert and taped to the box.</dc:description>\n   <dc:date>2022-02-24T20:13:02Z</dc:date>\n
+        \  <dc:date>2022-02-24T20:13:02Z</dc:date>\n   <dc:date>1985-07</dc:date>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/140721</dc:identifier>\n   <dc:relation>MIT
+        Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These materials
+        are made available for use in research, teaching and private study, pursuant
+        to U.S. Copyright Law and the Music Modernization Act. The user must assume
+        full responsibility for any use of the materials, including but not limited
+        to, infringement of copyright and publication rights of reproduced materials.
+        Any materials used for academic research or otherwise should be fully credited
+        with the source. The original creators may retain copyright to the materials.</dc:rights>\n
+        \  <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140701</identifier><datestamp>2022-02-24T19:50:17Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>The Waves (1984), Computer Master</dc:title>\n   <dc:creator>Dodge,
+        Charles</dc:creator>\n   <dc:creator>Child, Peter</dc:creator>\n   <dc:subject>Experimental
+        Music Studio</dc:subject>\n   <dc:description>Duration: 12 min., 30 sec.</dc:description>\n
+        \  <dc:date>2022-02-24T19:46:38Z</dc:date>\n   <dc:date>2022-02-24T19:46:38Z</dc:date>\n
+        \  <dc:date>1984</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140701</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140743</identifier><datestamp>2022-02-24T20:43:59Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Radio Summer 1982 WMBR</dc:title>\n   <dc:creator>Thorman, Marc</dc:creator>\n
+        \  <dc:creator>Place, David</dc:creator>\n   <dc:subject>Experimental Music
+        Studio</dc:subject>\n   <dc:date>2022-02-24T20:43:42Z</dc:date>\n   <dc:date>2022-02-24T20:43:42Z</dc:date>\n
+        \  <dc:date>1982</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140743</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140697</identifier><datestamp>2022-02-24T19:46:06Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Place, The History of Flight, Part 1 (1982)</dc:title>\n   <dc:subject>Experimental
+        Music Studio</dc:subject>\n   <dc:date>2022-02-24T19:44:43Z</dc:date>\n   <dc:date>2022-02-24T19:44:43Z</dc:date>\n
+        \  <dc:date>1982</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140697</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140735</identifier><datestamp>2022-02-24T20:32:10Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>CMU Channel Lecture</dc:title>\n   <dc:subject>Experimental Music
+        Studio</dc:subject>\n   <dc:date>2022-02-24T20:31:48Z</dc:date>\n   <dc:date>2022-02-24T20:31:48Z</dc:date>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/140735</dc:identifier>\n   <dc:relation>MIT
+        Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These materials
+        are made available for use in research, teaching and private study, pursuant
+        to U.S. Copyright Law and the Music Modernization Act. The user must assume
+        full responsibility for any use of the materials, including but not limited
+        to, infringement of copyright and publication rights of reproduced materials.
+        Any materials used for academic research or otherwise should be fully credited
+        with the source. The original creators may retain copyright to the materials.</dc:rights>\n
+        \  <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140715</identifier><datestamp>2022-02-24T20:07:59Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>String Quartet No. 4, Live recording</dc:title>\n   <dc:creator>Hoffmann,
+        Richard</dc:creator>\n   <dc:subject>Experimental Music Studio</dc:subject>\n
+        \  <dc:description>Concert, dub of WBUR recording from August 24, 1983. Duration:
+        18 min., 39 sec.</dc:description>\n   <dc:date>2022-02-24T20:05:02Z</dc:date>\n
+        \  <dc:date>2022-02-24T20:05:02Z</dc:date>\n   <dc:date>1983-08</dc:date>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/140715</dc:identifier>\n   <dc:relation>MIT
+        Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These materials
+        are made available for use in research, teaching and private study, pursuant
+        to U.S. Copyright Law and the Music Modernization Act. The user must assume
+        full responsibility for any use of the materials, including but not limited
+        to, infringement of copyright and publication rights of reproduced materials.
+        Any materials used for academic research or otherwise should be fully credited
+        with the source. The original creators may retain copyright to the materials.</dc:rights>\n
+        \  <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140707</identifier><datestamp>2022-02-24T19:53:33Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Persistence of Vision</dc:title>\n   <dc:creator>Trobaugh, Tom</dc:creator>\n
+        \  <dc:subject>Experimental Music Studio</dc:subject>\n   <dc:description>Master
+        recording</dc:description>\n   <dc:date>2022-02-24T19:52:15Z</dc:date>\n   <dc:date>2022-02-24T19:52:15Z</dc:date>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/140707</dc:identifier>\n   <dc:relation>MIT
+        Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These materials
+        are made available for use in research, teaching and private study, pursuant
+        to U.S. Copyright Law and the Music Modernization Act. The user must assume
+        full responsibility for any use of the materials, including but not limited
+        to, infringement of copyright and publication rights of reproduced materials.
+        Any materials used for academic research or otherwise should be fully credited
+        with the source. The original creators may retain copyright to the materials.</dc:rights>\n
+        \  <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140686</identifier><datestamp>2022-02-24T19:31:44Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Turenas (Stereo)</dc:title>\n   <dc:creator>Chowning, John M.</dc:creator>\n
+        \  <dc:subject>Experimental Music Studio</dc:subject>\n   <dc:date>2022-02-24T19:30:46Z</dc:date>\n
+        \  <dc:date>2022-02-24T19:30:46Z</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140686</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140688</identifier><datestamp>2022-02-24T19:36:53Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>In Winter Shine, Reel 1 of 1, July 14, 1986</dc:title>\n   <dc:creator>Dashow,
+        James</dc:creator>\n   <dc:subject>Experimental Music Studio</dc:subject>\n
+        \  <dc:description>Engineered by Greg Tucker, July 14, 1986. Channel assignment:
+        ch 1: left front; ch 2: left rear; ch 3: right front; ch 4: right rear. Duration:
+        11 min., 45 sec.</dc:description>\n   <dc:date>2022-02-24T19:35:38Z</dc:date>\n
+        \  <dc:date>2022-02-24T19:35:38Z</dc:date>\n   <dc:date>1986-07</dc:date>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/140688</dc:identifier>\n   <dc:relation>MIT
+        Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These materials
+        are made available for use in research, teaching and private study, pursuant
+        to U.S. Copyright Law and the Music Modernization Act. The user must assume
+        full responsibility for any use of the materials, including but not limited
+        to, infringement of copyright and publication rights of reproduced materials.
+        Any materials used for academic research or otherwise should be fully credited
+        with the source. The original creators may retain copyright to the materials.</dc:rights>\n
+        \  <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140716</identifier><datestamp>2022-02-24T20:08:20Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>String Quartet No. 4 (1978), for String Quartet and Computer:
+        String Quartet of the Oesterreichischer Rundfunk</dc:title>\n   <dc:creator>Hoffmann,
+        Richard</dc:creator>\n   <dc:subject>Experimental Music Studio</dc:subject>\n
+        \  <dc:description>Live performance, Vienna, January 1982</dc:description>\n
+        \  <dc:date>2022-02-24T20:07:59Z</dc:date>\n   <dc:date>2022-02-24T20:07:59Z</dc:date>\n
+        \  <dc:date>1982-01</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140716</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140714</identifier><datestamp>2022-02-24T20:05:02Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Spinner Web (1979)</dc:title>\n   <dc:creator>Smith, Edith</dc:creator>\n
+        \  <dc:subject>Experimental Music Studio</dc:subject>\n   <dc:description>Duration:
+        3min., 30 sec.</dc:description>\n   <dc:date>2022-02-24T20:03:07Z</dc:date>\n
+        \  <dc:date>2022-02-24T20:03:07Z</dc:date>\n   <dc:date>1979</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140714</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140709</identifier><datestamp>2022-02-24T19:59:52Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Untitled</dc:title>\n   <dc:creator>Le Poulin , Edward</dc:creator>\n
+        \  <dc:subject>Experimental Music Studio</dc:subject>\n   <dc:description>Note
+        on reel states, \"Chicken Tail out.\"</dc:description>\n   <dc:date>2022-02-24T19:54:37Z</dc:date>\n
+        \  <dc:date>2022-02-24T19:54:37Z</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140709</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record><record><header><identifier>oai:dspace.mit.edu:1721.1/140730</identifier><datestamp>2022-02-24T20:26:26Z</datestamp><setSpec>com_1721.1_140587</setSpec><setSpec>hdl_1721.1_140587</setSpec><setSpec>col_1721.1_140682</setSpec><setSpec>hdl_1721.1_140682</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Synclavier II Music Scores</dc:title>\n   <dc:creator>Various
+        Artists</dc:creator>\n   <dc:subject>Experimental Music Studio</dc:subject>\n
+        \  <dc:description>Denny Jaeger &amp; Michel Rubini</dc:description>\n   <dc:date>2022-02-24T20:24:46Z</dc:date>\n
+        \  <dc:date>2022-02-24T20:24:46Z</dc:date>\n   <dc:date>1982</dc:date>\n   <dc:identifier>https://hdl.handle.net/1721.1/140730</dc:identifier>\n
+        \  <dc:relation>MIT Experimental Music Studio recordings</dc:relation>\n   <dc:rights>These
+        materials are made available for use in research, teaching and private study,
+        pursuant to U.S. Copyright Law and the Music Modernization Act. The user must
+        assume full responsibility for any use of the materials, including but not
+        limited to, infringement of copyright and publication rights of reproduced
+        materials. Any materials used for academic research or otherwise should be
+        fully credited with the source. The original creators may retain copyright
+        to the materials.</dc:rights>\n   <dc:format>audio/x-wav</dc:format>\n</oai_dc:dc></metadata></record></ListRecords></OAI-PMH>"
     headers:
       Connection:
       - close
@@ -132,7 +942,7 @@ interactions:
       Content-Type:
       - text/xml;charset=UTF-8
       Date:
-      - Thu, 07 Jul 2022 19:12:52 GMT
+      - Mon, 03 Jun 2024 19:51:07 GMT
       Set-cookie:
       - HttpOnly;Secure
       Strict-Transport-Security:

@@ -44,7 +44,7 @@ def test_get_identifiers():
         set_spec="hdl_1721.1_49432",
     )
     identifiers = list(oai_client.get_identifiers(exclude_deleted=False))
-    expected_identifiers_count = 241
+    expected_identifiers_count = 171
     assert len(identifiers) == expected_identifiers_count
     assert "oai:dspace.mit.edu:1721.1/137340.2" in identifiers
 
@@ -213,9 +213,9 @@ def test_write_records(caplog, monkeypatch, tmp_path):
             '<?xml version="1.0" encoding="UTF-8"?>\n<records>\n  <record '
         )
         assert contents.endswith("</record>\n</records>")
-    expected_records_count = 44
+    expected_records_count = 32
     assert count == expected_records_count
-    assert "Status update: 40 records written to output file so far!" in caplog.text
+    assert "Status update: 30 records written to output file so far!" in caplog.text
 
 
 def test_write_sets(tmp_path):

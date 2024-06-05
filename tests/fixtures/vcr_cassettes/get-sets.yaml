@@ -9,44 +9,119 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.27.1
+      - python-requests/2.32.3
     method: GET
     uri: https://dspace.mit.edu/oai/request?verb=ListSets
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAAA7xaXXPaOBT9KxoedrIzCdgGB5MFOnykbTpJyoTsdmdfOsK+Ac3aEivJJPTX75WB
-        rZ3RbOzW0IcOAfuc66urcz/k/ruXJCYbkIoJPmi4TadBgIciYnw5aPz++P4iaLwb9s1VF0pvY1Ar
-        AE30dg2DhoYX3XpRcYOsJDwNGkpTzcJWdl3TfI93fh7dXMzuPhIE4GrQWGm9vmq1np+fm2INnMpw
-        xTagmkIuW3hpy2s6rcbu4qsXxQo3PLezyzzHcVt/3t3OwxUk9IJxpOUh4F2KXansy1sRoiXmgcrw
-        kTIX7Z8DHytqDPsS1FpwBVOqYeg5nnfhdC7c3qPbvvLbV233r36rcAne8E8KShtPLwaNW6b0HLRq
-        DA21Qu5IrWkIzYTpJkRpqyUoa+3v6R8+DPuH+4Z9BTr7b76GcBiK5Kvb9dym+7Xdc92g3zr8Yi65
-        pwkMR4sojckteuWJfMIvICYzgcboLRmFxlX424KcfbqYjW5/ze7Pbss+vWJbRfEJ2XLPFvQc17Wx
-        IeQGyCii6+zDRHAtheFfCEm1kFtyNhpNKjzXkZlyz+Q7weWljQmkyEICOZJ1qrNwpjGZgmJLniMs
-        /UxHZsrHYLfd9t5geu238iFXO3je8o4XODZwJsmjpBx3tNw5iDyAAiMU5Q2vGztnt+s43mXbBh7H
-        lAsJ5IMU6bq0rbXgFe3rdK0bKtYgOc020x1oDLvrFy1pphFVrK0b/bVvO2+gz4SmakXeo8SxmH0D
-        Wc3VNcPnre84ftC1wUt9TiZprFMJ54TyiDxCuOIiFksjYpPH8mp5NI68Tnb8np2BPbGQ4dLecA1x
-        zJZYvUCWXmbpIma7OkCVV8lj8uTXxe30fGvqVKsnIaNzcs/ClYipIqNm+ZWoDzVv66XftoMyysmM
-        hsY1ZJSARDdgxoAlumkC6CeJq4wpflIhlo7NlY8p3w+sIpdqcXEz/aEkWxNkvurp9nrWzbXd0iiV
-        lJ2TP5q4nGSORSstX+LUCJu3NnADmxSPabIQgmAxXMHEn8XKx7Dn4icrmKQLqlCnVhBj2i0fqfUg
-        FjKN51trmzG2EOq/qiAT0mu+ZBxwF/DlPvwrZJzj0bxSDZuUjiHGViAy1WaScoYtwWH7jicVhaJu
-        +MJatAPftpPHIpVLs7aSlc8qNaDlbOs4XmBdvzTEDCVNdjontyKtYGBdkDkre92ua+s3ximLzXQh
-        XwvMpFhKmpQ2t3bsnN2X3Y51W+/DCNMo9n8bM3GIyH0axrhZcJuARKr5VmlIFDmbjO6v5+Vj+VSU
-        BZ32Pdv2yVGOMQlwlLE7xiNFfqHJ+jdyR8MVCkL5wDoqT0HfvZ61Y8kRTdgGa4c7iFgVla8Rt9Bp
-        Os4bftmv8E6GN0wKnuCP1IxSsN7c/kgHeiLO/HP6nTcoP8RiYWq4FeVLIPOQmcK6/DMdA/9Vjei/
-        QSBZtJ+doPRUKhVrRC7MX6wNZQ74hnOx2c0aGDcKGaWhJlPYYPJcmxVHPbmZTSsMAk9EmXvKrt+2
-        jVMKlPsOOptnzXUaMTBKeVNBmo/IklevwLPOG3M0D2DGF2bCXn5z1AlbqOyw+HoL9imGcD8jPRRi
-        s2z0gl3z2eRhMqtS6p2Ar7Aarm+N5iZ5L+QCV3cKz7A9J59khda8NtCcpd4lSroN1NSTWqxX6B7T
-        woWrtHyaqA+0GOGONY2ahdqPmk3WyQlClTCvF7swp+l1ulZwscQgy04D7LOh8uYfiaJwKuT0rMGH
-        uQW71f2AFOuXg361vkhmcg5unbt560uVE6GjMhUnaG7PGqdIJWEFXBmyG+PCHS+mnlxfcL2hcbpL
-        SCjWj9cV9Oi0zIUpaODZ+p7iyY2J9UNfMGYZZ/mq5DgMr3eUVc4LFHciglgR8UQ+pgnlP7G1jsmV
-        32Ntz7MN1HJUWarKCdLntWYJ+3YIhennCvvs+GzF6bttKLsjw3Swr6ozmv8blZ9N5qObCuewJ+Ut
-        zq469g3OFch9GXtLnzF1pzza/flBAjU2jQUmSRNDSjONViL57ftKc62TUhdmAo71GM1QC/Rumux7
-        xO8zwf1whVy/hOjxzN9nk+tZBTE9HWnxTK/rWGVOYijROD7H9ARY6XDysUKJVx/qqzmqVcKwpiVf
-        hPw7cwldg1RY+8ZZGVzl8PQI8PkKtRfYXWI2JJmyJTPThdHujZvyJWp9qIWzUtcJrHqzXYA0ExDs
-        Jg4Tqv1YYbrlNDHfosyU9/lRiYqdjPX9HHN0sqCqwhzvJ5EKE5V2YKsQDRJK1xJUpfitA66gDH7g
-        22axGd4DxCi0EdHix06X60GXoNJkbX57FH+jmKD56xg0ZG+HsW8waATddoOEqUQFHTScxrCF/1zT
-        1L26FRG/v1J2eMVt+C8AAAD//wMAYIYAzBQoAAA=
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-06-03T19:51:07Z</responseDate><request
+        verb=\"ListSets\">https://dspace.mit.edu//oai/request</request><ListSets><set><setSpec>com_1721.1_155103</setSpec><setName>01.
+        The Organizational Ombud's Role: Functions, Standards of Practice, and Effectiveness
+        and Value</setName></set><set><setSpec>hdl_1721.1_155103</setSpec><setName>01.
+        The Organizational Ombud's Role: Functions, Standards of Practice, and Effectiveness
+        and Value</setName></set><set><setSpec>com_1721.1_155108</setSpec><setName>02.
+        Ombuds Case Material, Stories, and Teaching Notes</setName></set><set><setSpec>hdl_1721.1_155108</setSpec><setName>02.
+        Ombuds Case Material, Stories, and Teaching Notes</setName></set><set><setSpec>com_1721.1_155114</setSpec><setName>03.
+        Integrated Conflict Management Systems (ICMS) and the Organizational Ombuds\u2019
+        Role Therein</setName></set><set><setSpec>hdl_1721.1_155114</setSpec><setName>03.
+        Integrated Conflict Management Systems (ICMS) and the Organizational Ombuds\u2019
+        Role Therein</setName></set><set><setSpec>com_1721.1_155116</setSpec><setName>04.
+        Micro-inequities (including Micro-aggressions) and Micro-affirmations</setName></set><set><setSpec>hdl_1721.1_155116</setSpec><setName>04.
+        Micro-inequities (including Micro-aggressions) and Micro-affirmations</setName></set><set><setSpec>com_1721.1_155117</setSpec><setName>05.
+        Bystanders and the Bystanders of Bystanders</setName></set><set><setSpec>hdl_1721.1_155117</setSpec><setName>05.
+        Bystanders and the Bystanders of Bystanders</setName></set><set><setSpec>com_1721.1_155120</setSpec><setName>06.
+        Harassment and Bullying</setName></set><set><setSpec>hdl_1721.1_155120</setSpec><setName>06.
+        Harassment and Bullying</setName></set><set><setSpec>com_1721.1_155122</setSpec><setName>07.
+        Negotiation and Conflict Management</setName></set><set><setSpec>hdl_1721.1_155122</setSpec><setName>07.
+        Negotiation and Conflict Management</setName></set><set><setSpec>com_1721.1_155124</setSpec><setName>08.
+        Mentoring and Mentoring Frameworks</setName></set><set><setSpec>hdl_1721.1_155124</setSpec><setName>08.
+        Mentoring and Mentoring Frameworks</setName></set><set><setSpec>com_1721.1_155126</setSpec><setName>09.
+        Androgyny and Gender Roles</setName></set><set><setSpec>hdl_1721.1_155126</setSpec><setName>09.
+        Androgyny and Gender Roles</setName></set><set><setSpec>com_1721.1_155128</setSpec><setName>10.
+        Promoting Equity in Organizations</setName></set><set><setSpec>hdl_1721.1_155128</setSpec><setName>10.
+        Promoting Equity in Organizations</setName></set><set><setSpec>com_1721.1_155141</setSpec><setName>11.
+        Early Research: Child Care Economics and African and Black Entrepreneurship</setName></set><set><setSpec>hdl_1721.1_155141</setSpec><setName>11.
+        Early Research: Child Care Economics and African and Black Entrepreneurship</setName></set><set><setSpec>com_1721.1_39118</setSpec><setName>Abdul
+        Latif Jameel Poverty Action Lab (J-PAL)</setName></set><set><setSpec>hdl_1721.1_39118</setSpec><setName>Abdul
+        Latif Jameel Poverty Action Lab (J-PAL)</setName></set><set><setSpec>com_1721.1_89011</setSpec><setName>Active
+        Adaptive Control Laboratory (AACL)</setName></set><set><setSpec>hdl_1721.1_89011</setSpec><setName>Active
+        Adaptive Control Laboratory (AACL)</setName></set><set><setSpec>com_1721.1_50866</setSpec><setName>Aerospace
+        Computational Design Laboratory</setName></set><set><setSpec>hdl_1721.1_50866</setSpec><setName>Aerospace
+        Computational Design Laboratory</setName></set><set><setSpec>com_1721.1_37332</setSpec><setName>Aerospace
+        Control Laboratory</setName></set><set><setSpec>hdl_1721.1_37332</setSpec><setName>Aerospace
+        Control Laboratory</setName></set><set><setSpec>com_1721.1_145263</setSpec><setName>AIA</setName></set><set><setSpec>hdl_1721.1_145263</setSpec><setName>AIA</setName></set><set><setSpec>com_1721.1_34280</setSpec><setName>Air
+        Transportation Research</setName></set><set><setSpec>hdl_1721.1_34280</setSpec><setName>Air
+        Transportation Research</setName></set><set><setSpec>com_1721.1_100263</setSpec><setName>Allanore
+        Group</setName></set><set><setSpec>hdl_1721.1_100263</setSpec><setName>Allanore
+        Group</setName></set><set><setSpec>com_1721.1_100471</setSpec><setName>Alternative
+        Metal Extraction</setName></set><set><setSpec>hdl_1721.1_100471</setSpec><setName>Alternative
+        Metal Extraction</setName></set><set><setSpec>com_1721.1_100264</setSpec><setName>Alternative
+        Potash Fertilizer</setName></set><set><setSpec>hdl_1721.1_100264</setSpec><setName>Alternative
+        Potash Fertilizer</setName></set><set><setSpec>com_1721.1_140587</setSpec><setName>Art,
+        Culture, and Technology (ACT)</setName></set><set><setSpec>hdl_1721.1_140587</setSpec><setName>Art,
+        Culture, and Technology (ACT)</setName></set><set><setSpec>com_1721.1_5459</setSpec><setName>Artificial
+        Intelligence Lab Publications</setName></set><set><setSpec>hdl_1721.1_5459</setSpec><setName>Artificial
+        Intelligence Lab Publications</setName></set><set><setSpec>com_1721.1_114958</setSpec><setName>Ashford,
+        Nicholas A.</setName></set><set><setSpec>hdl_1721.1_114958</setSpec><setName>Ashford,
+        Nicholas A.</setName></set><set><setSpec>com_1721.1_16538</setSpec><setName>Asian
+        Pacific American Legal Center (APALC)</setName></set><set><setSpec>hdl_1721.1_16538</setSpec><setName>Asian
+        Pacific American Legal Center (APALC)</setName></set><set><setSpec>com_1721.1_55583</setSpec><setName>Auto-ID
+        Laboratory</setName></set><set><setSpec>hdl_1721.1_55583</setSpec><setName>Auto-ID
+        Laboratory</setName></set><set><setSpec>com_1721.1_87997</setSpec><setName>Ayyadurai,
+        V. A. Shiva</setName></set><set><setSpec>hdl_1721.1_87997</setSpec><setName>Ayyadurai,
+        V. A. Shiva</setName></set><set><setSpec>com_1721.1_88181</setSpec><setName>Bamboo
+        Data</setName></set><set><setSpec>hdl_1721.1_88181</setSpec><setName>Bamboo
+        Data</setName></set><set><setSpec>com_1721.1_121172</setSpec><setName>Barabas,
+        Chelsea</setName></set><set><setSpec>hdl_1721.1_121172</setSpec><setName>Barabas,
+        Chelsea</setName></set><set><setSpec>com_1721.1_102532</setSpec><setName>Bates
+        Research and Engineering Center</setName></set><set><setSpec>hdl_1721.1_102532</setSpec><setName>Bates
+        Research and Engineering Center</setName></set><set><setSpec>com_1721.1_16539</setSpec><setName>Beloved
+        Community Center (BCC)</setName></set><set><setSpec>hdl_1721.1_16539</setSpec><setName>Beloved
+        Community Center (BCC)</setName></set><set><setSpec>com_1721.1_103853</setSpec><setName>Bourg,
+        Chris</setName></set><set><setSpec>hdl_1721.1_103853</setSpec><setName>Bourg,
+        Chris</setName></set><set><setSpec>com_1721.1_40282</setSpec><setName>Bucciarelli,
+        Louis</setName></set><set><setSpec>hdl_1721.1_40282</setSpec><setName>Bucciarelli,
+        Louis</setName></set><set><setSpec>com_1721.1_97716</setSpec><setName>Building
+        Technology Program</setName></set><set><setSpec>hdl_1721.1_97716</setSpec><setName>Building
+        Technology Program</setName></set><set><setSpec>com_1721.1_153230</setSpec><setName>Cavicchi,
+        Elizabeth</setName></set><set><setSpec>hdl_1721.1_153230</setSpec><setName>Cavicchi,
+        Elizabeth</setName></set><set><setSpec>com_1721.1_67472</setSpec><setName>Center
+        for Advanced Nuclear Energy Systems (CANES)</setName></set><set><setSpec>hdl_1721.1_67472</setSpec><setName>Center
+        for Advanced Nuclear Energy Systems (CANES)</setName></set><set><setSpec>com_1721.1_88529</setSpec><setName>Center
+        for Brains, Minds &amp; Machines</setName></set><set><setSpec>hdl_1721.1_88529</setSpec><setName>Center
+        for Brains, Minds &amp; Machines</setName></set><set><setSpec>com_1721.1_122963</setSpec><setName>Center
+        for Civic Media</setName></set><set><setSpec>hdl_1721.1_122963</setSpec><setName>Center
+        for Civic Media</setName></set><set><setSpec>com_1721.1_33226</setSpec><setName>Center
+        for Computational Science and Engineering (CCSE)</setName></set><set><setSpec>hdl_1721.1_33226</setSpec><setName>Center
+        for Computational Science and Engineering (CCSE)</setName></set><set><setSpec>com_1721.1_34009</setSpec><setName>Center
+        for Energy and Environmental Policy Research</setName></set><set><setSpec>hdl_1721.1_34009</setSpec><setName>Center
+        for Energy and Environmental Policy Research</setName></set><set><setSpec>com_1721.1_3549</setSpec><setName>Center
+        for Global Change Science</setName></set><set><setSpec>hdl_1721.1_3549</setSpec><setName>Center
+        for Global Change Science</setName></set><set><setSpec>com_1721.1_55585</setSpec><setName>Center
+        for Grid Computing</setName></set><set><setSpec>hdl_1721.1_55585</setSpec><setName>Center
+        for Grid Computing</setName></set><set><setSpec>com_1721.1_3764</setSpec><setName>Center
+        for Innovation in Product Development (CIPD)</setName></set><set><setSpec>hdl_1721.1_3764</setSpec><setName>Center
+        for Innovation in Product Development (CIPD)</setName></set><set><setSpec>com_1721.1_7530</setSpec><setName>Center
+        for International Studies (CIS)</setName></set><set><setSpec>hdl_1721.1_7530</setSpec><setName>Center
+        for International Studies (CIS)</setName></set><set><setSpec>com_1721.1_18211</setSpec><setName>Center
+        for Real Estate</setName></set><set><setSpec>hdl_1721.1_18211</setSpec><setName>Center
+        for Real Estate</setName></set><set><setSpec>com_1721.1_16165</setSpec><setName>Center
+        for Reflective Community Practice (CRCP)</setName></set><set><setSpec>hdl_1721.1_16165</setSpec><setName>Center
+        for Reflective Community Practice (CRCP)</setName></set><set><setSpec>com_1721.1_143475</setSpec><setName>Center
+        for Theoretical Physics</setName></set><set><setSpec>hdl_1721.1_143475</setSpec><setName>Center
+        for Theoretical Physics</setName></set><set><setSpec>com_1721.1_18154</setSpec><setName>C.
+        Forbes Dewey, Jr.</setName></set><set><setSpec>hdl_1721.1_18154</setSpec><setName>C.
+        Forbes Dewey, Jr.</setName></set><set><setSpec>com_1721.1_26400</setSpec><setName>Christopher
+        A. Schuh</setName></set><set><setSpec>hdl_1721.1_26400</setSpec><setName>Christopher
+        A. Schuh</setName></set><set><setSpec>com_1721.1_18203</setSpec><setName>City
+        Design and Development</setName></set><set><setSpec>hdl_1721.1_18203</setSpec><setName>City
+        Design and Development</setName></set><set><setSpec>com_1721.1_119473</setSpec><setName>Cognitive
+        Artificial Intelligence</setName></set><set><setSpec>hdl_1721.1_119473</setSpec><setName>Cognitive
+        Artificial Intelligence</setName></set><resumptionToken completeListSize=\"966\"
+        cursor=\"0\">////100</resumptionToken></ListSets></OAI-PMH>"
     headers:
       Connection:
       - close
@@ -55,7 +130,7 @@ interactions:
       Content-Type:
       - text/xml;charset=UTF-8
       Date:
-      - Tue, 19 Apr 2022 13:53:31 GMT
+      - Mon, 03 Jun 2024 19:51:07 GMT
       Set-cookie:
       - HttpOnly;Secure
       Strict-Transport-Security:
@@ -83,42 +158,111 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.27.1
+      - python-requests/2.32.3
     method: GET
     uri: https://dspace.mit.edu/oai/request?resumptionToken=%2F%2F%2F%2F100&verb=ListSets
   response:
     body:
-      string: !!binary |
-        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
+      string: <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl"
+        href="static/style.xsl"?><OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"><responseDate>2024-06-03T19:51:08Z</responseDate><request
+        verb="ListSets" resumptionToken="////100">https://dspace.mit.edu//oai/request</request><ListSets><set><setSpec>com_1721.1_67902</setSpec><setName>Flight
+        Transportation Laboratory</setName></set><set><setSpec>hdl_1721.1_67902</setSpec><setName>Flight
+        Transportation Laboratory</setName></set><set><setSpec>com_1721.1_100166</setSpec><setName>Fluid
+        Interfaces</setName></set><set><setSpec>hdl_1721.1_100166</setSpec><setName>Fluid
+        Interfaces</setName></set><set><setSpec>com_1721.1_153222</setSpec><setName>FrED
+        and FrED Factory</setName></set><set><setSpec>hdl_1721.1_153222</setSpec><setName>FrED
+        and FrED Factory</setName></set><set><setSpec>com_1721.1_68161</setSpec><setName>Gabrieli
+        Lab at MIT</setName></set><set><setSpec>hdl_1721.1_68161</setSpec><setName>Gabrieli
+        Lab at MIT</setName></set><set><setSpec>com_1721.1_104381</setSpec><setName>Gas
+        Turbine Laboratory</setName></set><set><setSpec>hdl_1721.1_104381</setSpec><setName>Gas
+        Turbine Laboratory</setName></set><set><setSpec>com_1721.1_55718</setSpec><setName>GeoNumerics
+        Group</setName></set><set><setSpec>hdl_1721.1_55718</setSpec><setName>GeoNumerics
+        Group</setName></set><set><setSpec>com_1721.1_55915</setSpec><setName>GeoSpatial
+        Data Center</setName></set><set><setSpec>hdl_1721.1_55915</setSpec><setName>GeoSpatial
+        Data Center</setName></set><set><setSpec>com_1721.1_34282</setSpec><setName>Global
+        Airline Industry</setName></set><set><setSpec>hdl_1721.1_34282</setSpec><setName>Global
+        Airline Industry</setName></set><set><setSpec>com_1721.1_76636</setSpec><setName>Hackl,
+        Martin</setName></set><set><setSpec>hdl_1721.1_76636</setSpec><setName>Hackl,
+        Martin</setName></set><set><setSpec>com_1721.1_114147</setSpec><setName>Harris,
+        Ellen T.</setName></set><set><setSpec>hdl_1721.1_114147</setSpec><setName>Harris,
+        Ellen T.</setName></set><set><setSpec>com_1721.1_7889</setSpec><setName>Harvard-MIT
+        Program of Health Sciences and Technology</setName></set><set><setSpec>hdl_1721.1_7889</setSpec><setName>Harvard-MIT
+        Program of Health Sciences and Technology</setName></set><set><setSpec>com_1721.1_6749</setSpec><setName>Hatsopoulos
+        Microfluids Laboratory (HML)</setName></set><set><setSpec>hdl_1721.1_6749</setSpec><setName>Hatsopoulos
+        Microfluids Laboratory (HML)</setName></set><set><setSpec>com_1721.1_79431</setSpec><setName>Haystack
+        Observatory</setName></set><set><setSpec>hdl_1721.1_79431</setSpec><setName>Haystack
+        Observatory</setName></set><set><setSpec>com_1721.1_61395</setSpec><setName>Heat
+        Transfer Laboratory</setName></set><set><setSpec>hdl_1721.1_61395</setSpec><setName>Heat
+        Transfer Laboratory</setName></set><set><setSpec>com_1721.1_118158</setSpec><setName>Henry
+        Cohn</setName></set><set><setSpec>hdl_1721.1_118158</setSpec><setName>Henry
+        Cohn</setName></set><set><setSpec>com_1721.1_150954</setSpec><setName>Hidden
+        Planets Lab</setName></set><set><setSpec>hdl_1721.1_150954</setSpec><setName>Hidden
+        Planets Lab</setName></set><set><setSpec>com_1721.1_7932</setSpec><setName>History</setName></set><set><setSpec>hdl_1721.1_7932</setSpec><setName>History</setName></set><set><setSpec>com_1721.1_122003</setSpec><setName>Hosler,
+        Dorothy</setName></set><set><setSpec>hdl_1721.1_122003</setSpec><setName>Hosler,
+        Dorothy</setName></set><set><setSpec>com_1721.1_18205</setSpec><setName>Housing,
+        Community, and Economic Development</setName></set><set><setSpec>hdl_1721.1_18205</setSpec><setName>Housing,
+        Community, and Economic Development</setName></set><set><setSpec>com_1721.1_119480</setSpec><setName>Human
+        Language Science</setName></set><set><setSpec>hdl_1721.1_119480</setSpec><setName>Human
+        Language Science</setName></set><set><setSpec>com_1721.1_46717</setSpec><setName>Humans
+        and Automation Laboratory</setName></set><set><setSpec>hdl_1721.1_46717</setSpec><setName>Humans
+        and Automation Laboratory</setName></set><set><setSpec>com_1721.1_100472</setSpec><setName>Hydrothermal
+        treatment</setName></set><set><setSpec>hdl_1721.1_100472</setSpec><setName>Hydrothermal
+        treatment</setName></set><set><setSpec>com_1721.1_155139</setSpec><setName>III.
+        Promoting Health-Related Equity in the Workplace</setName></set><set><setSpec>hdl_1721.1_155139</setSpec><setName>III.
+        Promoting Health-Related Equity in the Workplace</setName></set><set><setSpec>com_1721.1_155136</setSpec><setName>II.
+        Promoting Equity in Higher Education</setName></set><set><setSpec>hdl_1721.1_155136</setSpec><setName>II.
+        Promoting Equity in Higher Education</setName></set><set><setSpec>com_1721.1_102514</setSpec><setName>Initiative
+        for Health Systems Innovation</setName></set><set><setSpec>hdl_1721.1_102514</setSpec><setName>Initiative
+        for Health Systems Innovation</setName></set><set><setSpec>com_1721.1_143678</setSpec><setName>Initiative
+        for Knowledge and Innovation in Manufacturing</setName></set><set><setSpec>hdl_1721.1_143678</setSpec><setName>Initiative
+        for Knowledge and Innovation in Manufacturing</setName></set><set><setSpec>com_1721.1_102293</setSpec><setName>Institute
+        for Data, Systems, and Society</setName></set><set><setSpec>hdl_1721.1_102293</setSpec><setName>Institute
+        for Data, Systems, and Society</setName></set><set><setSpec>com_1721.1_55587</setSpec><setName>Intelligent
+        Engineering Systems Laboratory (IESL)</setName></set><set><setSpec>hdl_1721.1_55587</setSpec><setName>Intelligent
+        Engineering Systems Laboratory (IESL)</setName></set><set><setSpec>com_1721.1_91214</setSpec><setName>Intelligent
+        Transportation Systems Laboratory</setName></set><set><setSpec>hdl_1721.1_91214</setSpec><setName>Intelligent
+        Transportation Systems Laboratory</setName></set><set><setSpec>com_1721.1_34281</setSpec><setName>International
+        Center for Air Transportation</setName></set><set><setSpec>hdl_1721.1_34281</setSpec><setName>International
+        Center for Air Transportation</setName></set><set><setSpec>com_1721.1_18206</setSpec><setName>International
+        Development and Regional Planning</setName></set><set><setSpec>hdl_1721.1_18206</setSpec><setName>International
+        Development and Regional Planning</setName></set><set><setSpec>com_1721.1_100477</setSpec><setName>International
+        Workshop</setName></set><set><setSpec>hdl_1721.1_100477</setSpec><setName>International
+        Workshop</setName></set><set><setSpec>com_1721.1_131249</setSpec><setName>Internet
+        Policy Research Initiative</setName></set><set><setSpec>hdl_1721.1_131249</setSpec><setName>Internet
+        Policy Research Initiative</setName></set><set><setSpec>com_1721.1_155129</setSpec><setName>I.
+        Promoting Equity in Organizations</setName></set><set><setSpec>hdl_1721.1_155129</setSpec><setName>I.
+        Promoting Equity in Organizations</setName></set><set><setSpec>com_1721.1_145476</setSpec><setName>iTeams</setName></set><set><setSpec>hdl_1721.1_145476</setSpec><setName>iTeams</setName></set><set><setSpec>com_1721.1_116985</setSpec><setName>Ito,
+        Joi</setName></set><set><setSpec>hdl_1721.1_116985</setSpec><setName>Ito,
+        Joi</setName></set><set><setSpec>com_1721.1_129684</setSpec><setName>JTL-Transit
+        Lab</setName></set><set><setSpec>hdl_1721.1_129684</setSpec><setName>JTL-Transit
+        Lab</setName></set><set><setSpec>com_1721.1_97893</setSpec><setName>Julia
+        Language</setName></set><set><setSpec>hdl_1721.1_97893</setSpec><setName>Julia
+        Language</setName></set><set><setSpec>com_1721.1_26398</setSpec><setName>Krystyn
+        J. Van Vliet</setName></set><set><setSpec>hdl_1721.1_26398</setSpec><setName>Krystyn
+        J. Van Vliet</setName></set><set><setSpec>com_1721.1_112352</setSpec><setName>Laboratory
+        for Aviation and the Environment</setName></set><set><setSpec>hdl_1721.1_112352</setSpec><setName>Laboratory
+        for Aviation and the Environment</setName></set><set><setSpec>com_1721.1_1775</setSpec><setName>Laboratory
+        for Information and Decision Systems (LIDS)</setName></set><set><setSpec>hdl_1721.1_1775</setSpec><setName>Laboratory
+        for Information and Decision Systems (LIDS)</setName></set><set><setSpec>com_1721.1_70032</setSpec><setName>Laboratory
+        for Nuclear Science</setName></set><set><setSpec>hdl_1721.1_70032</setSpec><setName>Laboratory
+        for Nuclear Science</setName></set><set><setSpec>com_1721.1_29810</setSpec><setName>LCS
+        Publications</setName></set><set><setSpec>hdl_1721.1_29810</setSpec><setName>LCS
+        Publications</setName></set><set><setSpec>com_1721.1_80738</setSpec><setName>Lean
+        Advancement Initiative (LAI)</setName></set><set><setSpec>hdl_1721.1_80738</setSpec><setName>Lean
+        Advancement Initiative (LAI)</setName></set><set><setSpec>com_1721.1_97458</setSpec><setName>Lincoln
+        Laboratory</setName></set><set><setSpec>hdl_1721.1_97458</setSpec><setName>Lincoln
+        Laboratory</setName></set><set><setSpec>com_1721.1_88180</setSpec><setName>LJ
+        Gibson Group</setName></set><set><setSpec>hdl_1721.1_88180</setSpec><setName>LJ
+        Gibson Group</setName></set><set><setSpec>com_1721.1_126567</setSpec><setName>LLSC</setName></set><set><setSpec>hdl_1721.1_126567</setSpec><setName>LLSC</setName></set><set><setSpec>com_1721.1_29795</setSpec><setName>Man
+        Vehicle Laboratory </setName></set><set><setSpec>hdl_1721.1_29795</setSpec><setName>Man
+        Vehicle Laboratory </setName></set><set><setSpec>com_1721.1_18162</setSpec><setName>Martin
+        Z. Bazant</setName></set><set><setSpec>hdl_1721.1_18162</setSpec><setName>Martin
+        Z. Bazant</setName></set><set><setSpec>com_1721.1_68160</setSpec><setName>McGovern
+        Institute for Brain Research at MIT</setName></set><set><setSpec>hdl_1721.1_68160</setSpec><setName>McGovern
+        Institute for Brain Research at MIT</setName></set><resumptionToken completeListSize="966"
+        cursor="1">////200</resumptionToken></ListSets></OAI-PMH>
     headers:
       Connection:
       - close
@@ -127,7 +271,7 @@ interactions:
       Content-Type:
       - text/xml;charset=UTF-8
       Date:
-      - Tue, 19 Apr 2022 13:53:31 GMT
+      - Mon, 03 Jun 2024 19:51:07 GMT
       Set-cookie:
       - HttpOnly;Secure
       Strict-Transport-Security:
@@ -155,43 +299,105 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.27.1
+      - python-requests/2.32.3
     method: GET
     uri: https://dspace.mit.edu/oai/request?resumptionToken=%2F%2F%2F%2F200&verb=ListSets
   response:
     body:
-      string: !!binary |
-        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
-        40tN4/8AAAD//wMAW4eqfwYmAAA=
+      string: '<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl"
+        href="static/style.xsl"?><OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"><responseDate>2024-06-03T19:51:08Z</responseDate><request
+        verb="ListSets" resumptionToken="////200">https://dspace.mit.edu//oai/request</request><ListSets><set><setSpec>com_1721.1_29813</setSpec><setName>Project
+        MAC</setName></set><set><setSpec>hdl_1721.1_29813</setSpec><setName>Project
+        MAC</setName></set><set><setSpec>com_1721.1_153516</setSpec><setName>Proto
+        Ventures</setName></set><set><setSpec>hdl_1721.1_153516</setSpec><setName>Proto
+        Ventures</setName></set><set><setSpec>com_1721.1_80745</setSpec><setName>PTSI
+        Project</setName></set><set><setSpec>hdl_1721.1_80745</setSpec><setName>PTSI
+        Project</setName></set><set><setSpec>com_1721.1_88530</setSpec><setName>Publications</setName></set><set><setSpec>hdl_1721.1_88530</setSpec><setName>Publications</setName></set><set><setSpec>com_1721.1_141461</setSpec><setName>Publications</setName></set><set><setSpec>hdl_1721.1_141461</setSpec><setName>Publications</setName></set><set><setSpec>com_1721.1_18119</setSpec><setName>Publications</setName></set><set><setSpec>hdl_1721.1_18119</setSpec><setName>Publications</setName></set><set><setSpec>com_1721.1_16536</setSpec><setName>Race
+        &amp; Democracy Reflection Project</setName></set><set><setSpec>hdl_1721.1_16536</setSpec><setName>Race
+        &amp; Democracy Reflection Project</setName></set><set><setSpec>com_1721.1_62799</setSpec><setName>Raskar,
+        Ramesh</setName></set><set><setSpec>hdl_1721.1_62799</setSpec><setName>Raskar,
+        Ramesh</setName></set><set><setSpec>com_1721.1_18170</setSpec><setName>Regional
+        and Local Government in Comparative Perspective</setName></set><set><setSpec>hdl_1721.1_18170</setSpec><setName>Regional
+        and Local Government in Comparative Perspective</setName></set><set><setSpec>com_1721.1_126724</setSpec><setName>Reports</setName></set><set><setSpec>hdl_1721.1_126724</setSpec><setName>Reports</setName></set><set><setSpec>com_1721.1_126521</setSpec><setName>Research
+        Computing</setName></set><set><setSpec>hdl_1721.1_126521</setSpec><setName>Research
+        Computing</setName></set><set><setSpec>com_1721.1_4058</setSpec><setName>Research
+        Laboratory for Electronics (RLE)</setName></set><set><setSpec>hdl_1721.1_4058</setSpec><setName>Research
+        Laboratory for Electronics (RLE)</setName></set><set><setSpec>com_1721.1_88001</setSpec><setName>Research
+        Papers</setName></set><set><setSpec>hdl_1721.1_88001</setSpec><setName>Research
+        Papers</setName></set><set><setSpec>com_1721.1_49816</setSpec><setName>RLE
+        Progress Reports</setName></set><set><setSpec>hdl_1721.1_49816</setSpec><setName>RLE
+        Progress Reports</setName></set><set><setSpec>com_1721.1_62234</setSpec><setName>Robotics
+        Research Datasets</setName></set><set><setSpec>hdl_1721.1_62234</setSpec><setName>Robotics
+        Research Datasets</setName></set><set><setSpec>com_1721.1_7508</setSpec><setName>Rosenholtz,
+        Ruth</setName></set><set><setSpec>hdl_1721.1_7508</setSpec><setName>Rosenholtz,
+        Ruth</setName></set><set><setSpec>com_1721.1_155102</setSpec><setName>Rowe,
+        Mary</setName></set><set><setSpec>hdl_1721.1_155102</setSpec><setName>Rowe,
+        Mary</setName></set><set><setSpec>com_1721.1_91273</setSpec><setName>Scheller
+        Teacher Education Program</setName></set><set><setSpec>hdl_1721.1_91273</setSpec><setName>Scheller
+        Teacher Education Program</setName></set><set><setSpec>com_1721.1_7911</setSpec><setName>Science,
+        Technology &amp; Society</setName></set><set><setSpec>hdl_1721.1_7911</setSpec><setName>Science,
+        Technology &amp; Society</setName></set><set><setSpec>com_1721.1_46703</setSpec><setName>Sheila
+        E. Widnall</setName></set><set><setSpec>hdl_1721.1_46703</setSpec><setName>Sheila
+        E. Widnall</setName></set><set><setSpec>com_1721.1_18164</setSpec><setName>Sigurdur
+        Helgason</setName></set><set><setSpec>hdl_1721.1_18164</setSpec><setName>Sigurdur
+        Helgason</setName></set><set><setSpec>com_1721.1_3649</setSpec><setName>Singapore-MIT
+        Alliance (SMA)</setName></set><set><setSpec>hdl_1721.1_3649</setSpec><setName>Singapore-MIT
+        Alliance (SMA)</setName></set><set><setSpec>com_1721.1_1777</setSpec><setName>Sloan
+        School of Management</setName></set><set><setSpec>hdl_1721.1_1777</setSpec><setName>Sloan
+        School of Management</setName></set><set><setSpec>com_1721.1_16541</setSpec><setName>Southern
+        Echo </setName></set><set><setSpec>hdl_1721.1_16541</setSpec><setName>Southern
+        Echo </setName></set><set><setSpec>com_1721.1_146855</setSpec><setName>Space
+        Enabled Research Group</setName></set><set><setSpec>hdl_1721.1_146855</setSpec><setName>Space
+        Enabled Research Group</setName></set><set><setSpec>com_1721.1_92405</setSpec><setName>Space
+        Systems Laboratory</setName></set><set><setSpec>hdl_1721.1_92405</setSpec><setName>Space
+        Systems Laboratory</setName></set><set><setSpec>com_1721.1_108620</setSpec><setName>Space,
+        Telecommunication, Astronomy, &amp; Radiation Lab</setName></set><set><setSpec>hdl_1721.1_108620</setSpec><setName>Space,
+        Telecommunication, Astronomy, &amp; Radiation Lab</setName></set><set><setSpec>com_1721.1_18117</setSpec><setName>Speech
+        Communication Group</setName></set><set><setSpec>hdl_1721.1_18117</setSpec><setName>Speech
+        Communication Group</setName></set><set><setSpec>com_1721.1_18210</setSpec><setName>SPURS/Humphrey
+        Fellows</setName></set><set><setSpec>hdl_1721.1_18210</setSpec><setName>SPURS/Humphrey
+        Fellows</setName></set><set><setSpec>com_1721.1_45561</setSpec><setName>Steven
+        G. Johnson</setName></set><set><setSpec>hdl_1721.1_45561</setSpec><setName>Steven
+        G. Johnson</setName></set><set><setSpec>com_1721.1_116033</setSpec><setName>Steven
+        L. Kleiman</setName></set><set><setSpec>hdl_1721.1_116033</setSpec><setName>Steven
+        L. Kleiman</setName></set><set><setSpec>com_1721.1_108817</setSpec><setName>STL
+        Real Estate Entrepreneurship Lab</setName></set><set><setSpec>hdl_1721.1_108817</setSpec><setName>STL
+        Real Estate Entrepreneurship Lab</setName></set><set><setSpec>com_1721.1_100473</setSpec><setName>Stonemeal</setName></set><set><setSpec>hdl_1721.1_100473</setSpec><setName>Stonemeal</setName></set><set><setSpec>com_1721.1_18201</setSpec><setName>Studios,
+        Workshops, and Practicum Classes</setName></set><set><setSpec>hdl_1721.1_18201</setSpec><setName>Studios,
+        Workshops, and Practicum Classes</setName></set><set><setSpec>com_1721.1_107234</setSpec><setName>Supply
+        Chain Management</setName></set><set><setSpec>hdl_1721.1_107234</setSpec><setName>Supply
+        Chain Management</setName></set><set><setSpec>com_1721.1_100490</setSpec><setName>Suspension
+        electrolysis</setName></set><set><setSpec>hdl_1721.1_100490</setSpec><setName>Suspension
+        electrolysis</setName></set><set><setSpec>com_1721.1_153262</setSpec><setName>Sustainable
+        Design Lab</setName></set><set><setSpec>hdl_1721.1_153262</setSpec><setName>Sustainable
+        Design Lab</setName></set><set><setSpec>com_1721.1_18185</setSpec><setName>Synthetic
+        Biology</setName></set><set><setSpec>hdl_1721.1_18185</setSpec><setName>Synthetic
+        Biology</setName></set><set><setSpec>com_1721.1_7920</setSpec><setName>Systems
+        Design &amp; Management</setName></set><set><setSpec>hdl_1721.1_7920</setSpec><setName>Systems
+        Design &amp; Management</setName></set><set><setSpec>com_1721.1_7925</setSpec><setName>Technology
+        and Policy Program</setName></set><set><setSpec>hdl_1721.1_7925</setSpec><setName>Technology
+        and Policy Program</setName></set><set><setSpec>com_1721.1_16542</setSpec><setName>Texas
+        LEADS: Local Empowerment for Accessible and Diverse Schools</setName></set><set><setSpec>hdl_1721.1_16542</setSpec><setName>Texas
+        LEADS: Local Empowerment for Accessible and Diverse Schools</setName></set><set><setSpec>com_1721.1_55345</setSpec><setName>The
+        Big Data Problem</setName></set><set><setSpec>hdl_1721.1_55345</setSpec><setName>The
+        Big Data Problem</setName></set><set><setSpec>com_1721.1_97454</setSpec><setName>The
+        Inter-University Committee  on International Migration</setName></set><set><setSpec>hdl_1721.1_97454</setSpec><setName>The
+        Inter-University Committee  on International Migration</setName></set><set><setSpec>com_1721.1_65422</setSpec><setName>Tokmakoff,
+        Andrei</setName></set><set><setSpec>hdl_1721.1_65422</setSpec><setName>Tokmakoff,
+        Andrei</setName></set><set><setSpec>com_1721.1_102235</setSpec><setName>Trancik,
+        Jessika E.</setName></set><set><setSpec>hdl_1721.1_102235</setSpec><setName>Trancik,
+        Jessika E.</setName></set><set><setSpec>com_1721.1_147125</setSpec><setName>Trancik
+        Lab</setName></set><set><setSpec>hdl_1721.1_147125</setSpec><setName>Trancik
+        Lab</setName></set><set><setSpec>com_1721.1_78859</setSpec><setName>Trope
+        Tank</setName></set><set><setSpec>hdl_1721.1_78859</setSpec><setName>Trope
+        Tank</setName></set><set><setSpec>com_1721.1_18131</setSpec><setName>Unpublished</setName></set><set><setSpec>hdl_1721.1_18131</setSpec><setName>Unpublished</setName></set><set><setSpec>com_1721.1_89474</setSpec><setName>Urban
+        Climate Adaptation Project</setName></set><set><setSpec>hdl_1721.1_89474</setSpec><setName>Urban
+        Climate Adaptation Project</setName></set><set><setSpec>com_1721.1_18209</setSpec><setName>Urban
+        Information Systems</setName></set><set><setSpec>hdl_1721.1_18209</setSpec><setName>Urban
+        Information Systems</setName></set><resumptionToken completeListSize="966"
+        cursor="2">////300</resumptionToken></ListSets></OAI-PMH>'
     headers:
       Connection:
       - close
@@ -200,7 +406,7 @@ interactions:
       Content-Type:
       - text/xml;charset=UTF-8
       Date:
-      - Tue, 19 Apr 2022 13:53:31 GMT
+      - Mon, 03 Jun 2024 19:51:08 GMT
       Set-cookie:
       - HttpOnly;Secure
       Strict-Transport-Security:
@@ -228,40 +434,102 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.27.1
+      - python-requests/2.32.3
     method: GET
     uri: https://dspace.mit.edu/oai/request?resumptionToken=%2F%2F%2F%2F300&verb=ListSets
   response:
     body:
-      string: !!binary |
-        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
+      string: '<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl"
+        href="static/style.xsl"?><OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"><responseDate>2024-06-03T19:51:08Z</responseDate><request
+        verb="ListSets" resumptionToken="////300">https://dspace.mit.edu//oai/request</request><ListSets><set><setSpec>col_1721.1_50867</setSpec><setName>Aerospace
+        Computational Design Laboratory: Technical Reports</setName></set><set><setSpec>hdl_1721.1_50867</setSpec><setName>Aerospace
+        Computational Design Laboratory: Technical Reports</setName></set><set><setSpec>col_1721.1_37333</setSpec><setName>Aerospace
+        Control Laboratory: Manuscripts</setName></set><set><setSpec>hdl_1721.1_37333</setSpec><setName>Aerospace
+        Control Laboratory: Manuscripts</setName></set><set><setSpec>col_1721.1_37334</setSpec><setName>Aerospace
+        Control Laboratory: Technical Reports</setName></set><set><setSpec>hdl_1721.1_37334</setSpec><setName>Aerospace
+        Control Laboratory: Technical Reports</setName></set><set><setSpec>col_1721.1_5460</setSpec><setName>AI
+        Memos (1959 - 2004)</setName></set><set><setSpec>hdl_1721.1_5460</setSpec><setName>AI
+        Memos (1959 - 2004)</setName></set><set><setSpec>col_1721.1_97459</setSpec><setName>Air
+        Traffic Control - Technical Report Series</setName></set><set><setSpec>hdl_1721.1_97459</setSpec><setName>Air
+        Traffic Control - Technical Report Series</setName></set><set><setSpec>col_1721.1_5461</setSpec><setName>AI
+        Technical Reports (1964 - 2004)</setName></set><set><setSpec>hdl_1721.1_5461</setSpec><setName>AI
+        Technical Reports (1964 - 2004)</setName></set><set><setSpec>col_1721.1_39813</setSpec><setName>AI
+        Working Papers (1971 - 1995)</setName></set><set><setSpec>hdl_1721.1_39813</setSpec><setName>AI
+        Working Papers (1971 - 1995)</setName></set><set><setSpec>col_1721.1_155127</setSpec><setName>Androgyny
+        and Gender Roles</setName></set><set><setSpec>hdl_1721.1_155127</setSpec><setName>Androgyny
+        and Gender Roles</setName></set><set><setSpec>col_1721.1_33973</setSpec><setName>Anthropology
+        (21A) - Archived</setName></set><set><setSpec>hdl_1721.1_33973</setSpec><setName>Anthropology
+        (21A) - Archived</setName></set><set><setSpec>col_1721.1_33974</setSpec><setName>Architecture
+        (4) - Archived</setName></set><set><setSpec>hdl_1721.1_33974</setSpec><setName>Architecture
+        (4) - Archived</setName></set><set><setSpec>col_1721.1_114174</setSpec><setName>Articles
+        archive</setName></set><set><setSpec>hdl_1721.1_114174</setSpec><setName>Articles
+        archive</setName></set><set><setSpec>col_1721.1_141482</setSpec><setName>Articles
+        &amp; Book Chapters</setName></set><set><setSpec>hdl_1721.1_141482</setSpec><setName>Articles
+        &amp; Book Chapters</setName></set><set><setSpec>col_1721.1_79695</setSpec><setName>Astro-
+        and Geoinformatics Series</setName></set><set><setSpec>hdl_1721.1_79695</setSpec><setName>Astro-
+        and Geoinformatics Series</setName></set><set><setSpec>col_1721.1_33975</setSpec><setName>Athletics,
+        Physical Education and Recreation (PE) -</setName></set><set><setSpec>hdl_1721.1_33975</setSpec><setName>Athletics,
+        Physical Education and Recreation (PE) -</setName></set><set><setSpec>col_1721.1_147645</setSpec><setName>Atomic
+        EDM</setName></set><set><setSpec>hdl_1721.1_147645</setSpec><setName>Atomic
+        EDM</setName></set><set><setSpec>col_1721.1_18236</setSpec><setName>Audio--paragraphs</setName></set><set><setSpec>hdl_1721.1_18236</setSpec><setName>Audio--paragraphs</setName></set><set><setSpec>col_1721.1_18237</setSpec><setName>Audio--sentences</setName></set><set><setSpec>hdl_1721.1_18237</setSpec><setName>Audio--sentences</setName></set><set><setSpec>col_1721.1_18238</setSpec><setName>Audio--syllables</setName></set><set><setSpec>hdl_1721.1_18238</setSpec><setName>Audio--syllables</setName></set><set><setSpec>col_1721.1_110849</setSpec><setName>Bamboo
+        Data</setName></set><set><setSpec>hdl_1721.1_110849</setSpec><setName>Bamboo
+        Data</setName></set><set><setSpec>col_1721.1_33977</setSpec><setName>Biological
+        Engineering (20) - Archived</setName></set><set><setSpec>hdl_1721.1_33977</setSpec><setName>Biological
+        Engineering (20) - Archived</setName></set><set><setSpec>col_1721.1_33976</setSpec><setName>Biological
+        Engineering (BE) - Archived</setName></set><set><setSpec>hdl_1721.1_33976</setSpec><setName>Biological
+        Engineering (BE) - Archived</setName></set><set><setSpec>col_1721.1_33978</setSpec><setName>Biology
+        (7) - Archived</setName></set><set><setSpec>hdl_1721.1_33978</setSpec><setName>Biology
+        (7) - Archived</setName></set><set><setSpec>col_1721.1_91673</setSpec><setName>Book
+        Chapters</setName></set><set><setSpec>hdl_1721.1_91673</setSpec><setName>Book
+        Chapters</setName></set><set><setSpec>col_1721.1_147066</setSpec><setName>Books</setName></set><set><setSpec>hdl_1721.1_147066</setSpec><setName>Books</setName></set><set><setSpec>col_1721.1_7352</setSpec><setName>Books</setName></set><set><setSpec>hdl_1721.1_7352</setSpec><setName>Books</setName></set><set><setSpec>col_1721.1_141479</setSpec><setName>Books</setName></set><set><setSpec>hdl_1721.1_141479</setSpec><setName>Books</setName></set><set><setSpec>col_1721.1_142301</setSpec><setName>Books</setName></set><set><setSpec>hdl_1721.1_142301</setSpec><setName>Books</setName></set><set><setSpec>col_1721.1_123445</setSpec><setName>Bound
+        by War</setName></set><set><setSpec>hdl_1721.1_123445</setSpec><setName>Bound
+        by War</setName></set><set><setSpec>col_1721.1_33979</setSpec><setName>Brain
+        and Cognitive Sciences (9) - Archived</setName></set><set><setSpec>hdl_1721.1_33979</setSpec><setName>Brain
+        and Cognitive Sciences (9) - Archived</setName></set><set><setSpec>col_1721.1_81425</setSpec><setName>Case
+        Studies</setName></set><set><setSpec>hdl_1721.1_81425</setSpec><setName>Case
+        Studies</setName></set><set><setSpec>col_1721.1_88072</setSpec><setName>Case
+        Studies</setName></set><set><setSpec>hdl_1721.1_88072</setSpec><setName>Case
+        Studies</setName></set><set><setSpec>col_1721.1_5462</setSpec><setName>CBCL
+        Memos (1993 - 2004)</setName></set><set><setSpec>hdl_1721.1_5462</setSpec><setName>CBCL
+        Memos (1993 - 2004)</setName></set><set><setSpec>col_1721.1_88531</setSpec><setName>CBMM
+        Memo Series</setName></set><set><setSpec>hdl_1721.1_88531</setSpec><setName>CBMM
+        Memo Series</setName></set><set><setSpec>col_1721.1_111653</setSpec><setName>CBMM
+        Publications - Other</setName></set><set><setSpec>hdl_1721.1_111653</setSpec><setName>CBMM
+        Publications - Other</setName></set><set><setSpec>col_1721.1_114211</setSpec><setName>Characterizing
+        extension policy and private irrigation supply chain linkages Lessons from
+        Senegal</setName></set><set><setSpec>hdl_1721.1_114211</setSpec><setName>Characterizing
+        extension policy and private irrigation supply chain linkages Lessons from
+        Senegal</setName></set><set><setSpec>col_1721.1_35731</setSpec><setName>Chemical
+        and Pharmaceutical Engineering (CPE)</setName></set><set><setSpec>hdl_1721.1_35731</setSpec><setName>Chemical
+        and Pharmaceutical Engineering (CPE)</setName></set><set><setSpec>col_1721.1_33980</setSpec><setName>Chemical
+        Engineering (10) - Archived</setName></set><set><setSpec>hdl_1721.1_33980</setSpec><setName>Chemical
+        Engineering (10) - Archived</setName></set><set><setSpec>col_1721.1_33981</setSpec><setName>Chemistry
+        (5) - Archived</setName></set><set><setSpec>hdl_1721.1_33981</setSpec><setName>Chemistry
+        (5) - Archived</setName></set><set><setSpec>col_1721.1_88516</setSpec><setName>China
+        Energy and Climate Project Reports</setName></set><set><setSpec>hdl_1721.1_88516</setSpec><setName>China
+        Energy and Climate Project Reports</setName></set><set><setSpec>col_1721.1_7934</setSpec><setName>China
+        Marches West: the Qing Conquest of Central Eurasia</setName></set><set><setSpec>hdl_1721.1_7934</setSpec><setName>China
+        Marches West: the Qing Conquest of Central Eurasia</setName></set><set><setSpec>col_1721.1_122964</setSpec><setName>Civic
+        Media</setName></set><set><setSpec>hdl_1721.1_122964</setSpec><setName>Civic
+        Media</setName></set><set><setSpec>col_1721.1_33982</setSpec><setName>Civil
+        and Environmental Engineering (1) - Archived</setName></set><set><setSpec>hdl_1721.1_33982</setSpec><setName>Civil
+        and Environmental Engineering (1) - Archived</setName></set><set><setSpec>col_1721.1_119476</setSpec><setName>CMHI
+        Reports</setName></set><set><setSpec>hdl_1721.1_119476</setSpec><setName>CMHI
+        Reports</setName></set><set><setSpec>col_1721.1_114208</setSpec><setName>Co-creating
+        a culture of evaluation within a grassroots women-led organization in India</setName></set><set><setSpec>hdl_1721.1_114208</setSpec><setName>Co-creating
+        a culture of evaluation within a grassroots women-led organization in India</setName></set><set><setSpec>col_1721.1_18186</setSpec><setName>Communications</setName></set><set><setSpec>hdl_1721.1_18186</setSpec><setName>Communications</setName></set><set><setSpec>col_1721.1_33983</setSpec><setName>Comparative
+        Media Studies (CMS) - Archived</setName></set><set><setSpec>hdl_1721.1_33983</setSpec><setName>Comparative
+        Media Studies (CMS) - Archived</setName></set><set><setSpec>col_1721.1_97512</setSpec><setName>Comparative
+        Media Studies/Writing (CMS-W) - Archived</setName></set><set><setSpec>hdl_1721.1_97512</setSpec><setName>Comparative
+        Media Studies/Writing (CMS-W) - Archived</setName></set><set><setSpec>col_1721.1_35730</setSpec><setName>Computational
+        Engineering (CE)</setName></set><set><setSpec>hdl_1721.1_35730</setSpec><setName>Computational
+        Engineering (CE)</setName></set><set><setSpec>col_1721.1_35732</setSpec><setName>Computation
+        and Systems Biology (CSB)</setName></set><set><setSpec>hdl_1721.1_35732</setSpec><setName>Computation
+        and Systems Biology (CSB)</setName></set><set><setSpec>col_1721.1_3651</setSpec><setName>Computer
+        Science (CS)</setName></set><set><setSpec>hdl_1721.1_3651</setSpec><setName>Computer
+        Science (CS)</setName></set><resumptionToken completeListSize="966" cursor="3">////400</resumptionToken></ListSets></OAI-PMH>'
     headers:
       Connection:
       - close
@@ -270,7 +538,7 @@ interactions:
       Content-Type:
       - text/xml;charset=UTF-8
       Date:
-      - Tue, 19 Apr 2022 13:53:31 GMT
+      - Mon, 03 Jun 2024 19:51:08 GMT
       Set-cookie:
       - HttpOnly;Secure
       Strict-Transport-Security:
@@ -298,42 +566,117 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.27.1
+      - python-requests/2.32.3
     method: GET
     uri: https://dspace.mit.edu/oai/request?resumptionToken=%2F%2F%2F%2F400&verb=ListSets
   response:
     body:
-      string: !!binary |
-        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
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-06-03T19:51:08Z</responseDate><request
+        verb=\"ListSets\" resumptionToken=\"////400\">https://dspace.mit.edu//oai/request</request><ListSets><set><setSpec>col_1721.1_67705</setSpec><setName>ERL
+        Industry Consortia Technical Reports</setName></set><set><setSpec>hdl_1721.1_67705</setSpec><setName>ERL
+        Industry Consortia Technical Reports</setName></set><set><setSpec>col_1721.1_83560</setSpec><setName>Events</setName></set><set><setSpec>hdl_1721.1_83560</setSpec><setName>Events</setName></set><set><setSpec>col_1721.1_85664</setSpec><setName>Experimental
+        Study Group (ES) - Archived</setName></set><set><setSpec>hdl_1721.1_85664</setSpec><setName>Experimental
+        Study Group (ES) - Archived</setName></set><set><setSpec>col_1721.1_33988</setSpec><setName>Experimental
+        Study Group (ESG) - Archived</setName></set><set><setSpec>hdl_1721.1_33988</setSpec><setName>Experimental
+        Study Group (ESG) - Archived</setName></set><set><setSpec>col_1721.1_96123</setSpec><setName>Experiment
+        Data: Mechanistic Origins of Bombardier Beetle (Brachinini) Explosion-Induced
+        Defensive Spray Pulsation</setName></set><set><setSpec>hdl_1721.1_96123</setSpec><setName>Experiment
+        Data: Mechanistic Origins of Bombardier Beetle (Brachinini) Explosion-Induced
+        Defensive Spray Pulsation</setName></set><set><setSpec>col_1721.1_105478</setSpec><setName>Fermi
+        DM Decay Limits</setName></set><set><setSpec>hdl_1721.1_105478</setSpec><setName>Fermi
+        DM Decay Limits</setName></set><set><setSpec>col_1721.1_142302</setSpec><setName>Final
+        Report</setName></set><set><setSpec>hdl_1721.1_142302</setSpec><setName>Final
+        Report</setName></set><set><setSpec>col_1721.1_67903</setSpec><setName>Flight
+        Transportation Laboratory Reports</setName></set><set><setSpec>hdl_1721.1_67903</setSpec><setName>Flight
+        Transportation Laboratory Reports</setName></set><set><setSpec>col_1721.1_100167</setSpec><setName>Fluid
+        Interfaces - Conference Proceedings</setName></set><set><setSpec>hdl_1721.1_100167</setSpec><setName>Fluid
+        Interfaces - Conference Proceedings</setName></set><set><setSpec>col_1721.1_114201</setSpec><setName>Food
+        Aid Packaging Evaluation in Djibouti, Ethiopia &amp; South Africa</setName></set><set><setSpec>hdl_1721.1_114201</setSpec><setName>Food
+        Aid Packaging Evaluation in Djibouti, Ethiopia &amp; South Africa</setName></set><set><setSpec>col_1721.1_1781</setSpec><setName>Ford-MIT
+        Alliance</setName></set><set><setSpec>hdl_1721.1_1781</setSpec><setName>Ford-MIT
+        Alliance</setName></set><set><setSpec>col_1721.1_33989</setSpec><setName>Foreign
+        Languages and Literatures (21F) - Archived</setName></set><set><setSpec>hdl_1721.1_33989</setSpec><setName>Foreign
+        Languages and Literatures (21F) - Archived</setName></set><set><setSpec>col_1721.1_68162</setSpec><setName>Gabrieli
+        Lab - Supplemental Materials</setName></set><set><setSpec>hdl_1721.1_68162</setSpec><setName>Gabrieli
+        Lab - Supplemental Materials</setName></set><set><setSpec>col_1721.1_34284</setSpec><setName>GAL
+        - Presentations</setName></set><set><setSpec>hdl_1721.1_34284</setSpec><setName>GAL
+        - Presentations</setName></set><set><setSpec>col_1721.1_34283</setSpec><setName>GAL
+        - Reports and Papers</setName></set><set><setSpec>hdl_1721.1_34283</setSpec><setName>GAL
+        - Reports and Papers</setName></set><set><setSpec>col_1721.1_104382</setSpec><setName>Gas
+        Turbine Laboratory Reports</setName></set><set><setSpec>hdl_1721.1_104382</setSpec><setName>Gas
+        Turbine Laboratory Reports</setName></set><set><setSpec>col_1721.1_128235</setSpec><setName>GCLOG
+        Capstone Projects</setName></set><set><setSpec>hdl_1721.1_128235</setSpec><setName>GCLOG
+        Capstone Projects</setName></set><set><setSpec>col_1721.1_98079</setSpec><setName>Global
+        Studies and Languages (21G) - Archived</setName></set><set><setSpec>hdl_1721.1_98079</setSpec><setName>Global
+        Studies and Languages (21G) - Archived</setName></set><set><setSpec>col_1721.1_131023</setSpec><setName>Graduate
+        Theses</setName></set><set><setSpec>hdl_1721.1_131023</setSpec><setName>Graduate
+        Theses</setName></set><set><setSpec>col_1721.1_46718</setSpec><setName>HAL
+        Reports</setName></set><set><setSpec>hdl_1721.1_46718</setSpec><setName>HAL
+        Reports</setName></set><set><setSpec>col_1721.1_155121</setSpec><setName>Harassment
+        and Bullying</setName></set><set><setSpec>hdl_1721.1_155121</setSpec><setName>Harassment
+        and Bullying</setName></set><set><setSpec>col_1721.1_79432</setSpec><setName>Haystack
+        Technical Reports</setName></set><set><setSpec>hdl_1721.1_79432</setSpec><setName>Haystack
+        Technical Reports</setName></set><set><setSpec>col_1721.1_33990</setSpec><setName>Health
+        Sciences and Technology (HST) - Archived</setName></set><set><setSpec>hdl_1721.1_33990</setSpec><setName>Health
+        Sciences and Technology (HST) - Archived</setName></set><set><setSpec>col_1721.1_61396</setSpec><setName>Heat
+        Transfer Laboratory Technical Reports</setName></set><set><setSpec>hdl_1721.1_61396</setSpec><setName>Heat
+        Transfer Laboratory Technical Reports</setName></set><set><setSpec>col_1721.1_3652</setSpec><setName>High
+        Performance Computation for Engineered Systems (HPCES)</setName></set><set><setSpec>hdl_1721.1_3652</setSpec><setName>High
+        Performance Computation for Engineered Systems (HPCES)</setName></set><set><setSpec>col_1721.1_5551</setSpec><setName>Historical
+        Essays on Heat Transfer and Heat Engineering at MIT</setName></set><set><setSpec>hdl_1721.1_5551</setSpec><setName>Historical
+        Essays on Heat Transfer and Heat Engineering at MIT</setName></set><set><setSpec>col_1721.1_33991</setSpec><setName>History
+        (21H) - Archived</setName></set><set><setSpec>hdl_1721.1_33991</setSpec><setName>History
+        (21H) - Archived</setName></set><set><setSpec>col_1721.1_119671</setSpec><setName>HLS
+        Reports</setName></set><set><setSpec>hdl_1721.1_119671</setSpec><setName>HLS
+        Reports</setName></set><set><setSpec>col_1721.1_6750</setSpec><setName>HML
+        Preprints 2003</setName></set><set><setSpec>hdl_1721.1_6750</setSpec><setName>HML
+        Preprints 2003</setName></set><set><setSpec>col_1721.1_6751</setSpec><setName>HML
+        Preprints 2004</setName></set><set><setSpec>hdl_1721.1_6751</setSpec><setName>HML
+        Preprints 2004</setName></set><set><setSpec>col_1721.1_7624</setSpec><setName>HML
+        Preprints 2005</setName></set><set><setSpec>hdl_1721.1_7624</setSpec><setName>HML
+        Preprints 2005</setName></set><set><setSpec>col_1721.1_33950</setSpec><setName>HML
+        Preprints (for all years)</setName></set><set><setSpec>hdl_1721.1_33950</setSpec><setName>HML
+        Preprints (for all years)</setName></set><set><setSpec>col_1721.1_102515</setSpec><setName>HSI
+        Papers</setName></set><set><setSpec>hdl_1721.1_102515</setSpec><setName>HSI
+        Papers</setName></set><set><setSpec>col_1721.1_123320</setSpec><setName>Humanitarian
+        Supply Chain Lab</setName></set><set><setSpec>hdl_1721.1_123320</setSpec><setName>Humanitarian
+        Supply Chain Lab</setName></set><set><setSpec>col_1721.1_34286</setSpec><setName>ICAT
+        - Presentations</setName></set><set><setSpec>hdl_1721.1_34286</setSpec><setName>ICAT
+        - Presentations</setName></set><set><setSpec>col_1721.1_34285</setSpec><setName>ICAT
+        - Reports and Papers</setName></set><set><setSpec>hdl_1721.1_34285</setSpec><setName>ICAT
+        - Reports and Papers</setName></set><set><setSpec>col_1721.1_155142</setSpec><setName>I.
+        Economics of Child Care</setName></set><set><setSpec>hdl_1721.1_155142</setSpec><setName>I.
+        Economics of Child Care</setName></set><set><setSpec>col_1721.1_155143</setSpec><setName>II.
+        African Entrepreneurship and Black Entrepreneurship</setName></set><set><setSpec>hdl_1721.1_155143</setSpec><setName>II.
+        African Entrepreneurship and Black Entrepreneurship</setName></set><set><setSpec>col_1721.1_155111</setSpec><setName>III.
+        Ombuds Articles that Draw Indirectly on De-Identified Case Material</setName></set><set><setSpec>hdl_1721.1_155111</setSpec><setName>III.
+        Ombuds Articles that Draw Indirectly on De-Identified Case Material</setName></set><set><setSpec>col_1721.1_155106</setSpec><setName>III.
+        Some Self-Help Materials from an Ombuds Office</setName></set><set><setSpec>hdl_1721.1_155106</setSpec><setName>III.
+        Some Self-Help Materials from an Ombuds Office</setName></set><set><setSpec>col_1721.1_155110</setSpec><setName>II.
+        Ombuds Articles that Include De-Identified, Disguised Case Material</setName></set><set><setSpec>hdl_1721.1_155110</setSpec><setName>II.
+        Ombuds Articles that Include De-Identified, Disguised Case Material</setName></set><set><setSpec>col_1721.1_155105</setSpec><setName>II.
+        The Effectiveness and Value of Organizational Ombuds</setName></set><set><setSpec>hdl_1721.1_155105</setSpec><setName>II.
+        The Effectiveness and Value of Organizational Ombuds</setName></set><set><setSpec>col_1721.1_3767</setSpec><setName>Implementation
+        Dynamics (ID)</setName></set><set><setSpec>hdl_1721.1_3767</setSpec><setName>Implementation
+        Dynamics (ID)</setName></set><set><setSpec>col_1721.1_3768</setSpec><setName>Incentives
+        and Boundaries (IB)</setName></set><set><setSpec>hdl_1721.1_3768</setSpec><setName>Incentives
+        and Boundaries (IB)</setName></set><set><setSpec>col_1721.1_145266</setSpec><setName>Information</setName></set><set><setSpec>hdl_1721.1_145266</setSpec><setName>Information</setName></set><set><setSpec>col_1721.1_3769</setSpec><setName>Information
+        Flow Modeling (IFM)</setName></set><set><setSpec>hdl_1721.1_3769</setSpec><setName>Information
+        Flow Modeling (IFM)</setName></set><set><setSpec>col_1721.1_3653</setSpec><setName>Innovation
+        in Manufacturing Systems and Technology (IMST)</setName></set><set><setSpec>hdl_1721.1_3653</setSpec><setName>Innovation
+        in Manufacturing Systems and Technology (IMST)</setName></set><set><setSpec>col_1721.1_112137</setSpec><setName>Institute
+        for Data, Systems, and Society: IDSS  - Archived</setName></set><set><setSpec>hdl_1721.1_112137</setSpec><setName>Institute
+        for Data, Systems, and Society: IDSS  - Archived</setName></set><set><setSpec>col_1721.1_155115</setSpec><setName>Integrated
+        Conflict Management Systems (ICMS) and the Organizational Ombuds\u2019 Role
+        Therein</setName></set><set><setSpec>hdl_1721.1_155115</setSpec><setName>Integrated
+        Conflict Management Systems (ICMS) and the Organizational Ombuds\u2019 Role
+        Therein</setName></set><set><setSpec>col_1721.1_91215</setSpec><setName>Intelligent
+        Transporation Systems Lab - Working Papers</setName></set><set><setSpec>hdl_1721.1_91215</setSpec><setName>Intelligent
+        Transporation Systems Lab - Working Papers</setName></set><resumptionToken
+        completeListSize=\"966\" cursor=\"4\">////500</resumptionToken></ListSets></OAI-PMH>"
     headers:
       Connection:
       - close
@@ -342,7 +685,7 @@ interactions:
       Content-Type:
       - text/xml;charset=UTF-8
       Date:
-      - Tue, 19 Apr 2022 13:53:31 GMT
+      - Mon, 03 Jun 2024 19:51:08 GMT
       Set-cookie:
       - HttpOnly;Secure
       Strict-Transport-Security:
@@ -370,34 +713,111 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.27.1
+      - python-requests/2.32.3
     method: GET
     uri: https://dspace.mit.edu/oai/request?resumptionToken=%2F%2F%2F%2F500&verb=ListSets
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAAA7yaW2/bNhTHvwqhhyEFautuyZntIkhbJEOyGbOLDXspFPnE5iqJGkk78T79juSk
-        kwQG1YVJHgLDpn7nz+Nzo6zZh8c0IQfggrJsbthjyyCQxWxDs+3c+LL+PAqND4tZsWok5DEBsQOQ
-        RB5zmBsSHqX5KBKD7Djczw0hI0ljs1w3Lt7HK3+7uB4tb68IAjIxN3ZS5uem+fDwMGY5ZBGPd/QA
-        Ysz41sSlpjO2TOO0+PxR0NoFD265zLEs2/zz9mYV7yCNRjRDs1kMeJWg56J884bFqKTYUBt7pM2i
-        p33gtjbGYsZB5CwT8DGSsHAsxxlZ3sierm333HfPXfuvmVlbghf8swchC0/fzY0bKuQKpDAIrtqn
-        eaF1zb4BCjbxz7csY1GIEqhqI/IohnFK5Rg2e9NkETWfaLPnF4vZM3ExEyDLf6sc4kXMkq924Nhj
-        +6s98b1gZj5/Uiz5NUphscTvnmVRQq4zCfxA4UGUq8oPy1cN5m6jn1nX6Tv6dephVnVaju9OVNAd
-        k2zLo3zXQeBgWEWZ62GGKFlHQWNBzsJ3ZEQuTlG+aa1RJ7aqNggsFTWJ5D3j6QkoIZZ7zBVytrx4
-        116xZnRVteN7oYJNlgzL4x+Mf8MCSpZRjhHWXq82aCMalLHPEorVGoN/FVMs+UDO7KB3YLyChWqu
-        ebYX+EoT+T4pSz35eMyitIjDn6I0//mU0Vn5EQq4pZhDxev2GflGJhu7DNUmhewSR8NAVUW2h932
-        BdDoKuKHoqetJOPRFsinQ5TsT56hGfmyjbJN1F7zK5uq7CqceoGy1nLII16k2CXGLVYELBLkMqEp
-        dnByuYuyLbTezqvZqO4jtAJXbUNAJkv3tA8aDbSqNivwlM2in7bhtGbn9rSJ04Grzz+TH+6VsHsi
-        d1D2hC5TkE5yQ7Oy3mjRrJHcmDN/GO99NeskN2Z41YCgRbNOcsPPyjOCFj9rJFc0TwOs30oyiwGK
-        s3HJ/WWf0OgSe5Bj2V5r2frhDeXqfHkR7ndSrhfe6GYvuGWzj6Ug2OPJmrGkW0vTgaz1tdDWrVIT
-        sppzjm2rh1deHCZTgl/OdVacgU4z1NN8/p7cXq/JDb3jOKJAhw74BuaquwumykGxaqyYxPHMVLoO
-        EohZKgiG5AH4tjDdfmuvbau+L3V7/m7ru+PWEO8ylrDt8X1p91N2oJxlaVH2ElIcvOJjlz2+nd3K
-        fn3PfSFo/sYzObmiAqf99tvQgauq8131GYqzA2TFHUdziTVvy6F9NGljNqZZW3nUWK+uOw2xPSkN
-        Lb4yX5BCPtPiXPw75IzLTsJ0ICsqnckkUM46+zuM347T/3BY7bztWOoO20eaBlq1803sUPk99JE2
-        HFaLOswqfV4bTqto83x/orw31kfacFjVa2E4VU7PvZw2GFZTZvtTfcqGwhrKNPpsKKyhTF8KDIbV
-        qq2n/tmgX7UdCqv5zLGV5/R+PhsKq/nMnWrLgOGwhs80ZsBQWD0D1He3embAQFhj3tDWA4bDasr8
-        UHn07KdsKKweZ462GW04rBFnGqvGUFj1lz5rov4FpY+y4bCGz3R2p+6wxnMWBA/peQISyucm6L8w
-        N8LANUi854LxueEbi+JBjNIFjUuR+P/DFs+PhSz+AwAA//8DAEAn7SNIIwAA
+      string: '<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl"
+        href="static/style.xsl"?><OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"><responseDate>2024-06-03T19:51:09Z</responseDate><request
+        verb="ListSets" resumptionToken="////500">https://dspace.mit.edu//oai/request</request><ListSets><set><setSpec>col_1721.1_100266</setSpec><setName>Microfluidic
+        - data</setName></set><set><setSpec>hdl_1721.1_100266</setSpec><setName>Microfluidic
+        - data</setName></set><set><setSpec>col_1721.1_100469</setSpec><setName>Microfluidic
+        - papers</setName></set><set><setSpec>hdl_1721.1_100469</setSpec><setName>Microfluidic
+        - papers</setName></set><set><setSpec>col_1721.1_100470</setSpec><setName>Microfluidic
+        - supplemental materials</setName></set><set><setSpec>hdl_1721.1_100470</setSpec><setName>Microfluidic
+        - supplemental materials</setName></set><set><setSpec>col_1721.1_155118</setSpec><setName>Micro-inequities
+        (including Micro-aggressions) and Micro-affirmations</setName></set><set><setSpec>hdl_1721.1_155118</setSpec><setName>Micro-inequities
+        (including Micro-aggressions) and Micro-affirmations</setName></set><set><setSpec>col_1721.1_97457</setSpec><setName>Millstone
+        Technical Reports</setName></set><set><setSpec>hdl_1721.1_97457</setSpec><setName>Millstone
+        Technical Reports</setName></set><set><setSpec>col_1721.1_123315</setSpec><setName>MIT
+        AgeLab</setName></set><set><setSpec>hdl_1721.1_123315</setSpec><setName>MIT
+        AgeLab</setName></set><set><setSpec>col_1721.1_117273</setSpec><setName>MIT
+        Auto-ID Laboratory</setName></set><set><setSpec>hdl_1721.1_117273</setSpec><setName>MIT
+        Auto-ID Laboratory</setName></set><set><setSpec>col_1721.1_141478</setSpec><setName>MIT
+        Courses</setName></set><set><setSpec>hdl_1721.1_141478</setSpec><setName>MIT
+        Courses</setName></set><set><setSpec>col_1721.1_81436</setSpec><setName>MIT
+        Dept. of Economics Graduate Student Research Papers Series</setName></set><set><setSpec>hdl_1721.1_81436</setSpec><setName>MIT
+        Dept. of Economics Graduate Student Research Papers Series</setName></set><set><setSpec>col_1721.1_63243</setSpec><setName>MIT
+        Dept. of Economics Working Papers Series</setName></set><set><setSpec>hdl_1721.1_63243</setSpec><setName>MIT
+        Dept. of Economics Working Papers Series</setName></set><set><setSpec>col_1721.1_140682</setSpec><setName>MIT
+        Experimental Music Studio recordings</setName></set><set><setSpec>hdl_1721.1_140682</setSpec><setName>MIT
+        Experimental Music Studio recordings</setName></set><set><setSpec>col_1721.1_123317</setSpec><setName>MIT
+        FreightLab</setName></set><set><setSpec>hdl_1721.1_123317</setSpec><setName>MIT
+        FreightLab</setName></set><set><setSpec>col_1721.1_113702</setSpec><setName>MIT
+        General Circulation Model</setName></set><set><setSpec>hdl_1721.1_113702</setSpec><setName>MIT
+        General Circulation Model</setName></set><set><setSpec>col_1721.1_7532</setSpec><setName>MIT
+        Japan Program Working Paper Series</setName></set><set><setSpec>hdl_1721.1_7532</setSpec><setName>MIT
+        Japan Program Working Paper Series</setName></set><set><setSpec>col_1721.1_153613</setSpec><setName>MIT
+        Libraries Publications and Presentations</setName></set><set><setSpec>hdl_1721.1_153613</setSpec><setName>MIT
+        Libraries Publications and Presentations</setName></set><set><setSpec>col_1721.1_109884</setSpec><setName>MIT
+        Media Lab Open Agriculture Initiative (OpenAg)</setName></set><set><setSpec>hdl_1721.1_109884</setSpec><setName>MIT
+        Media Lab Open Agriculture Initiative (OpenAg)</setName></set><set><setSpec>col_1721.1_108816</setSpec><setName>MIT
+        Media Lab Research: Distributed and Swarm Robotic Systems</setName></set><set><setSpec>hdl_1721.1_108816</setSpec><setName>MIT
+        Media Lab Research: Distributed and Swarm Robotic Systems</setName></set><set><setSpec>col_1721.1_123316</setSpec><setName>MIT
+        Megacity Logistics Lab</setName></set><set><setSpec>hdl_1721.1_123316</setSpec><setName>MIT
+        Megacity Logistics Lab</setName></set><set><setSpec>col_1721.1_49433</setSpec><setName>MIT
+        Open Access Articles</setName></set><set><setSpec>hdl_1721.1_49433</setSpec><setName>MIT
+        Open Access Articles</setName></set><set><setSpec>col_1721.1_121131</setSpec><setName>MIT
+        Open Access Articles submission</setName></set><set><setSpec>hdl_1721.1_121131</setSpec><setName>MIT
+        Open Access Articles submission</setName></set><set><setSpec>col_1721.1_1787</setSpec><setName>MIT
+        Press Out of Print Books</setName></set><set><setSpec>hdl_1721.1_1787</setSpec><setName>MIT
+        Press Out of Print Books</setName></set><set><setSpec>col_1721.1_5539</setSpec><setName>MIT
+        Program on Information Quality</setName></set><set><setSpec>hdl_1721.1_5539</setSpec><setName>MIT
+        Program on Information Quality</setName></set><set><setSpec>col_1721.1_96971</setSpec><setName>MIT
+        Sea Grant Technical Reports</setName></set><set><setSpec>hdl_1721.1_96971</setSpec><setName>MIT
+        Sea Grant Technical Reports</setName></set><set><setSpec>col_1721.1_123318</setSpec><setName>MIT
+        Sustainable Supply Chains</setName></set><set><setSpec>hdl_1721.1_123318</setSpec><setName>MIT
+        Sustainable Supply Chains</setName></set><set><setSpec>col_1721.1_141484</setSpec><setName>MIT
+        Theses</setName></set><set><setSpec>hdl_1721.1_141484</setSpec><setName>MIT
+        Theses</setName></set><set><setSpec>col_1721.1_7295</setSpec><setName>MIT
+        Workplace Center Teaching Cases</setName></set><set><setSpec>hdl_1721.1_7295</setSpec><setName>MIT
+        Workplace Center Teaching Cases</setName></set><set><setSpec>col_1721.1_7296</setSpec><setName>MIT
+        Workplace Center Working Papers</setName></set><set><setSpec>hdl_1721.1_7296</setSpec><setName>MIT
+        Workplace Center Working Papers</setName></set><set><setSpec>col_1721.1_96537</setSpec><setName>MITx
+        Working Papers</setName></set><set><setSpec>hdl_1721.1_96537</setSpec><setName>MITx
+        Working Papers</setName></set><set><setSpec>col_1721.1_3654</setSpec><setName>Molecular
+        Engineering of Biological and Chemical Systems (MEBCS)</setName></set><set><setSpec>hdl_1721.1_3654</setSpec><setName>Molecular
+        Engineering of Biological and Chemical Systems (MEBCS)</setName></set><set><setSpec>col_1721.1_100482</setSpec><setName>Molten
+        oxide - data</setName></set><set><setSpec>hdl_1721.1_100482</setSpec><setName>Molten
+        oxide - data</setName></set><set><setSpec>col_1721.1_100483</setSpec><setName>Molten
+        oxide - papers</setName></set><set><setSpec>hdl_1721.1_100483</setSpec><setName>Molten
+        oxide - papers</setName></set><set><setSpec>col_1721.1_100484</setSpec><setName>Molten
+        oxide - supplemental materials</setName></set><set><setSpec>hdl_1721.1_100484</setSpec><setName>Molten
+        oxide - supplemental materials</setName></set><set><setSpec>col_1721.1_100486</setSpec><setName>Molten
+        sulfides - data</setName></set><set><setSpec>hdl_1721.1_100486</setSpec><setName>Molten
+        sulfides - data</setName></set><set><setSpec>col_1721.1_100488</setSpec><setName>Molten
+        sulfides - papers</setName></set><set><setSpec>hdl_1721.1_100488</setSpec><setName>Molten
+        sulfides - papers</setName></set><set><setSpec>col_1721.1_100489</setSpec><setName>Molten
+        sulfides - supplemental materials</setName></set><set><setSpec>hdl_1721.1_100489</setSpec><setName>Molten
+        sulfides - supplemental materials</setName></set><set><setSpec>col_1721.1_18239</setSpec><setName>Multichannel
+        recordings</setName></set><set><setSpec>hdl_1721.1_18239</setSpec><setName>Multichannel
+        recordings</setName></set><set><setSpec>col_1721.1_33998</setSpec><setName>Music
+        and Theater Arts (21M) - Archived</setName></set><set><setSpec>hdl_1721.1_33998</setSpec><setName>Music
+        and Theater Arts (21M) - Archived</setName></set><set><setSpec>col_1721.1_126770</setSpec><setName>NASEM
+        Post-Hurricane Supply Chain Resilience</setName></set><set><setSpec>hdl_1721.1_126770</setSpec><setName>NASEM
+        Post-Hurricane Supply Chain Resilience</setName></set><set><setSpec>col_1721.1_88182</setSpec><setName>Natural
+        Moso Bamboo</setName></set><set><setSpec>hdl_1721.1_88182</setSpec><setName>Natural
+        Moso Bamboo</setName></set><set><setSpec>col_1721.1_88019</setSpec><setName>NECSTLAB
+        Technical Reports</setName></set><set><setSpec>hdl_1721.1_88019</setSpec><setName>NECSTLAB
+        Technical Reports</setName></set><set><setSpec>col_1721.1_155123</setSpec><setName>Negotiation
+        and Conflict Management</setName></set><set><setSpec>hdl_1721.1_155123</setSpec><setName>Negotiation
+        and Conflict Management</setName></set><set><setSpec>col_1721.1_130926</setSpec><setName>Neutron
+        Physics</setName></set><set><setSpec>hdl_1721.1_130926</setSpec><setName>Neutron
+        Physics</setName></set><set><setSpec>col_1721.1_145264</setSpec><setName>News</setName></set><set><setSpec>hdl_1721.1_145264</setSpec><setName>News</setName></set><set><setSpec>col_1721.1_83516</setSpec><setName>News
+        and Published Articles</setName></set><set><setSpec>hdl_1721.1_83516</setSpec><setName>News
+        and Published Articles</setName></set><set><setSpec>col_1721.1_76749</setSpec><setName>Notes</setName></set><set><setSpec>hdl_1721.1_76749</setSpec><setName>Notes</setName></set><set><setSpec>col_1721.1_105479</setSpec><setName>NPTFit</setName></set><set><setSpec>hdl_1721.1_105479</setSpec><setName>NPTFit</setName></set><set><setSpec>col_1721.1_67476</setSpec><setName>Nuclear
+        Energy and Sustainability Program (NES) - Technical Reports</setName></set><set><setSpec>hdl_1721.1_67476</setSpec><setName>Nuclear
+        Energy and Sustainability Program (NES) - Technical Reports</setName></set><set><setSpec>col_1721.1_67474</setSpec><setName>Nuclear
+        Fuel Cycle Technology and Policy Program (NFC) - Technical Reports</setName></set><set><setSpec>hdl_1721.1_67474</setSpec><setName>Nuclear
+        Fuel Cycle Technology and Policy Program (NFC) - Technical Reports</setName></set><set><setSpec>col_1721.1_33999</setSpec><setName>Nuclear
+        Science and Engineering (22) - Archived</setName></set><set><setSpec>hdl_1721.1_33999</setSpec><setName>Nuclear
+        Science and Engineering (22) - Archived</setName></set><set><setSpec>col_1721.1_67477</setSpec><setName>Nuclear
+        Space Applications (NSA) - Technical Reports</setName></set><set><setSpec>hdl_1721.1_67477</setSpec><setName>Nuclear
+        Space Applications (NSA) - Technical Reports</setName></set><resumptionToken
+        completeListSize="966" cursor="5">////600</resumptionToken></ListSets></OAI-PMH>'
     headers:
       Connection:
       - close
@@ -406,7 +826,7 @@ interactions:
       Content-Type:
       - text/xml;charset=UTF-8
       Date:
-      - Tue, 19 Apr 2022 13:53:31 GMT
+      - Mon, 03 Jun 2024 19:51:09 GMT
       Set-cookie:
       - HttpOnly;Secure
       Strict-Transport-Security:
@@ -434,30 +854,68 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.27.1
+      - python-requests/2.32.3
     method: GET
     uri: https://dspace.mit.edu/oai/request?resumptionToken=%2F%2F%2F%2F600&verb=ListSets
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAAA7SaW2/TMBSA/0rkJ5Bo4kturtogJEAgjYG2ISFeppKaNdA2IXbZ4NeTpJuorXba
-        sXL2MFWtfb7z2al9knr28m6zDn6rVlf1dk5YSEmgtmW9rLY3c/L56u0kJy+LWd9qos2ftdIrpUxg
-        /jRqToy6M9GdXpNg1arvc6LNwlRlNLQL+/e7nh9fvZ98+vAu6AJs9ZysjGmmUXR7exvWjdou2nJV
-        /VY6rNubqGsa8ZBGZN94eqcrq8OtGJpxSln05cPZZblSm8Wk2nbYbam6Xrqa6uHNs7rsMumFnsIL
-        ntLo3qPTWpJi1ird1FutXi+MKjjlfELjCZNXTEwTMRX86yyymnQdfu2UNv1If5uTs0qbS2U0CbpW
-        u03T53pV/1RdwlH3l1JKij4p3WW11M2iVOGmMqFa7qKoXlTRfbTZw4ti9hCxmGllhn+XjSqLsl5f
-        s4yzkF2znLN0Fj180jc5X2xUcaG06o2DT239Q5VGD22Gj4ZXTsTVcuyIdo48GzvHMSI648hHH8cR
-        Ih7kyNMkF6PmOFJEK8c0G3euR4p4ONeUZvTxkLtv62q/2AAmfMSwB9nmmZRy9GRHjHqQq+R58mjU
-        C9XUrQkuVVspHTy7uHj+5IxHj32QdyxzdnTmzt70l9dNt57r+/gvgvM6DLrNKnjGZJw+PX80hu0h
-        KIzBPTxwGAceCU3jGMYQUA80hu2RJDBGPDAykAcOw/ZIj9YEpxmJhwcOw/bIgIzUwwOHYXvkQEbm
-        4YHDsDyy47XmaUY+MHKIBxLD9uBAhvTwwGHYHjFsbWfUwwOHYXukDMZgHh44DMfjaH1+mrHfayXM
-        A4Vhe0ggQ3h44DAcD1jNwGIfDxSG5ZFz4FglcA8khu0hchhj2GsTCvLAYdgeydFnBacZmYcHDsP2
-        SI/eo51m5B4eOAzb4/hzkdMM6eGBw7A9JOza5cNemzCQBw7D8pAMNlacwT2QGI4HbG3n3McDheF4
-        wO45ufDxQGE4HrCamg97bcJhHigMxwP2bIknPh4ojEMP1hX7MEYK9sBiOB6wewOe+XigMGyPDLgm
-        7vdaAfLAYTgewDVR+nigMBwP2JooqI8HCsPyYBxWiwoG90Bi2B7AewOx32tjkAcOw/GA1dRC+Hig
-        MGyPHMiIPTxwGLaHhO1RIvHwwGFYHlzAah+x32sTiAcSw/GA1T4i8/FAYTgewLUk9/FAYTgewO+g
-        9PFAYVgeksK+g/F+r4X8zonFsD04bM5j5uGBw7A9gM/IYu7hMRrDOWcWlPWmWSujhnNj1V81J3km
-        SFDuWl23c5KSoj+IlvXXg9O1i/j/sNnDsbjiHwAAAP//AwBge5etSCgAAA==
+      string: '<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl"
+        href="static/style.xsl"?><OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"><responseDate>2024-06-03T19:51:09Z</responseDate><request
+        verb="ListSets" resumptionToken="////600">https://dspace.mit.edu//oai/request</request><ListSets><set><setSpec>col_1721.1_1791</setSpec><setName>Program
+        on Science, Technology, and Environmental Policy</setName></set><set><setSpec>hdl_1721.1_1791</setSpec><setName>Program
+        on Science, Technology, and Environmental Policy</setName></set><set><setSpec>col_1721.1_5435</setSpec><setName>Project
+        History</setName></set><set><setSpec>hdl_1721.1_5435</setSpec><setName>Project
+        History</setName></set><set><setSpec>col_1721.1_155137</setSpec><setName>Promoting
+        Equity in Higher Education</setName></set><set><setSpec>hdl_1721.1_155137</setSpec><setName>Promoting
+        Equity in Higher Education</setName></set><set><setSpec>col_1721.1_155140</setSpec><setName>Promoting
+        Health-Related Equity in the Workplace</setName></set><set><setSpec>hdl_1721.1_155140</setSpec><setName>Promoting
+        Health-Related Equity in the Workplace</setName></set><set><setSpec>col_1721.1_55385</setSpec><setName>Provenance/Pedigree</setName></set><set><setSpec>hdl_1721.1_55385</setSpec><setName>Provenance/Pedigree</setName></set><set><setSpec>col_1721.1_102516</setSpec><setName>PTSI</setName></set><set><setSpec>hdl_1721.1_102516</setSpec><setName>PTSI</setName></set><set><setSpec>col_1721.1_102550</setSpec><setName>PTSI
+        Final Report</setName></set><set><setSpec>hdl_1721.1_102550</setSpec><setName>PTSI
+        Final Report</setName></set><set><setSpec>col_1721.1_103855</setSpec><setName>Publications</setName></set><set><setSpec>hdl_1721.1_103855</setSpec><setName>Publications</setName></set><set><setSpec>col_1721.1_26678</setSpec><setName>Publications</setName></set><set><setSpec>hdl_1721.1_26678</setSpec><setName>Publications</setName></set><set><setSpec>col_1721.1_18165</setSpec><setName>Publications</setName></set><set><setSpec>hdl_1721.1_18165</setSpec><setName>Publications</setName></set><set><setSpec>col_1721.1_30600</setSpec><setName>Publications</setName></set><set><setSpec>hdl_1721.1_30600</setSpec><setName>Publications</setName></set><set><setSpec>col_1721.1_18163</setSpec><setName>Publications</setName></set><set><setSpec>hdl_1721.1_18163</setSpec><setName>Publications</setName></set><set><setSpec>col_1721.1_18228</setSpec><setName>Publications</setName></set><set><setSpec>hdl_1721.1_18228</setSpec><setName>Publications</setName></set><set><setSpec>col_1721.1_26584</setSpec><setName>Publications</setName></set><set><setSpec>hdl_1721.1_26584</setSpec><setName>Publications</setName></set><set><setSpec>col_1721.1_26672</setSpec><setName>Publications</setName></set><set><setSpec>hdl_1721.1_26672</setSpec><setName>Publications</setName></set><set><setSpec>col_1721.1_18161</setSpec><setName>Publications</setName></set><set><setSpec>hdl_1721.1_18161</setSpec><setName>Publications</setName></set><set><setSpec>col_1721.1_18217</setSpec><setName>Publications</setName></set><set><setSpec>hdl_1721.1_18217</setSpec><setName>Publications</setName></set><set><setSpec>col_1721.1_26399</setSpec><setName>Publications</setName></set><set><setSpec>hdl_1721.1_26399</setSpec><setName>Publications</setName></set><set><setSpec>col_1721.1_18213</setSpec><setName>Publications</setName></set><set><setSpec>hdl_1721.1_18213</setSpec><setName>Publications</setName></set><set><setSpec>col_1721.1_26401</setSpec><setName>Publications</setName></set><set><setSpec>hdl_1721.1_26401</setSpec><setName>Publications</setName></set><set><setSpec>col_1721.1_18155</setSpec><setName>Publications</setName></set><set><setSpec>hdl_1721.1_18155</setSpec><setName>Publications</setName></set><set><setSpec>col_1721.1_18157</setSpec><setName>Publications</setName></set><set><setSpec>hdl_1721.1_18157</setSpec><setName>Publications</setName></set><set><setSpec>col_1721.1_18159</setSpec><setName>Publications</setName></set><set><setSpec>hdl_1721.1_18159</setSpec><setName>Publications</setName></set><set><setSpec>col_1721.1_18897</setSpec><setName>Publications</setName></set><set><setSpec>hdl_1721.1_18897</setSpec><setName>Publications</setName></set><set><setSpec>col_1721.1_45562</setSpec><setName>Publications</setName></set><set><setSpec>hdl_1721.1_45562</setSpec><setName>Publications</setName></set><set><setSpec>col_1721.1_153231</setSpec><setName>Publications</setName></set><set><setSpec>hdl_1721.1_153231</setSpec><setName>Publications</setName></set><set><setSpec>col_1721.1_91572</setSpec><setName>Publications</setName></set><set><setSpec>hdl_1721.1_91572</setSpec><setName>Publications</setName></set><set><setSpec>col_1721.1_86180</setSpec><setName>Publications</setName></set><set><setSpec>hdl_1721.1_86180</setSpec><setName>Publications</setName></set><set><setSpec>col_1721.1_112095</setSpec><setName>Publications</setName></set><set><setSpec>hdl_1721.1_112095</setSpec><setName>Publications</setName></set><set><setSpec>col_1721.1_141102</setSpec><setName>Publications
+        and Working Papers</setName></set><set><setSpec>hdl_1721.1_141102</setSpec><setName>Publications
+        and Working Papers</setName></set><set><setSpec>col_1721.1_18107</setSpec><setName>Publications
+        and Working Papers</setName></set><set><setSpec>hdl_1721.1_18107</setSpec><setName>Publications
+        and Working Papers</setName></set><set><setSpec>col_1721.1_18168</setSpec><setName>Publications
+        and Working Papers</setName></set><set><setSpec>hdl_1721.1_18168</setSpec><setName>Publications
+        and Working Papers</setName></set><set><setSpec>col_1721.1_5444</setSpec><setName>Publications
+        and Working Papers</setName></set><set><setSpec>hdl_1721.1_5444</setSpec><setName>Publications
+        and Working Papers</setName></set><set><setSpec>col_1721.1_32529</setSpec><setName>Publications
+        and Working Papers</setName></set><set><setSpec>hdl_1721.1_32529</setSpec><setName>Publications
+        and Working Papers</setName></set><set><setSpec>col_1721.1_5443</setSpec><setName>Publications
+        and Working Papers</setName></set><set><setSpec>hdl_1721.1_5443</setSpec><setName>Publications
+        and Working Papers</setName></set><set><setSpec>col_1721.1_18105</setSpec><setName>Publications
+        and Working Papers</setName></set><set><setSpec>hdl_1721.1_18105</setSpec><setName>Publications
+        and Working Papers</setName></set><set><setSpec>col_1721.1_18109</setSpec><setName>Publications
+        and Working Papers</setName></set><set><setSpec>hdl_1721.1_18109</setSpec><setName>Publications
+        and Working Papers</setName></set><set><setSpec>col_1721.1_5436</setSpec><setName>Publications
+        and Working Papers</setName></set><set><setSpec>hdl_1721.1_5436</setSpec><setName>Publications
+        and Working Papers</setName></set><set><setSpec>col_1721.1_5531</setSpec><setName>Publications
+        and Working Papers</setName></set><set><setSpec>hdl_1721.1_5531</setSpec><setName>Publications
+        and Working Papers</setName></set><set><setSpec>col_1721.1_5529</setSpec><setName>Publications
+        and Working Papers</setName></set><set><setSpec>hdl_1721.1_5529</setSpec><setName>Publications
+        and Working Papers</setName></set><set><setSpec>col_1721.1_34016</setSpec><setName>Publications
+        and Working Papers</setName></set><set><setSpec>hdl_1721.1_34016</setSpec><setName>Publications
+        and Working Papers</setName></set><set><setSpec>col_1721.1_5530</setSpec><setName>Publications
+        and Working Papers</setName></set><set><setSpec>hdl_1721.1_5530</setSpec><setName>Publications
+        and Working Papers</setName></set><set><setSpec>col_1721.1_18111</setSpec><setName>Publications
+        and Working Papers</setName></set><set><setSpec>hdl_1721.1_18111</setSpec><setName>Publications
+        and Working Papers</setName></set><set><setSpec>col_1721.1_62236</setSpec><setName>Radish:
+        Robotics Research Datasets</setName></set><set><setSpec>hdl_1721.1_62236</setSpec><setName>Radish:
+        Robotics Research Datasets</setName></set><set><setSpec>col_1721.1_5437</setSpec><setName>Raw
+        Data and Research</setName></set><set><setSpec>hdl_1721.1_5437</setSpec><setName>Raw
+        Data and Research</setName></set><set><setSpec>col_1721.1_18110</setSpec><setName>Raw
+        Data and Research</setName></set><set><setSpec>hdl_1721.1_18110</setSpec><setName>Raw
+        Data and Research</setName></set><set><setSpec>col_1721.1_32530</setSpec><setName>Raw
+        Data and Research</setName></set><set><setSpec>hdl_1721.1_32530</setSpec><setName>Raw
+        Data and Research</setName></set><set><setSpec>col_1721.1_141103</setSpec><setName>Raw
+        Data and Research</setName></set><set><setSpec>hdl_1721.1_141103</setSpec><setName>Raw
+        Data and Research</setName></set><set><setSpec>col_1721.1_18169</setSpec><setName>Raw
+        Data and Research</setName></set><set><setSpec>hdl_1721.1_18169</setSpec><setName>Raw
+        Data and Research</setName></set><set><setSpec>col_1721.1_18076</setSpec><setName>Raw
+        Data and Research</setName></set><set><setSpec>hdl_1721.1_18076</setSpec><setName>Raw
+        Data and Research</setName></set><resumptionToken completeListSize="966" cursor="6">////700</resumptionToken></ListSets></OAI-PMH>'
     headers:
       Connection:
       - close
@@ -466,7 +924,7 @@ interactions:
       Content-Type:
       - text/xml;charset=UTF-8
       Date:
-      - Tue, 19 Apr 2022 13:53:32 GMT
+      - Mon, 03 Jun 2024 19:51:09 GMT
       Set-cookie:
       - HttpOnly;Secure
       Strict-Transport-Security:
@@ -494,31 +952,117 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.27.1
+      - python-requests/2.32.3
     method: GET
     uri: https://dspace.mit.edu/oai/request?resumptionToken=%2F%2F%2F%2F700&verb=ListSets
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAAA7SaXW/bNhSG/4qgqxaYJX7ogzJsFQO2YQXSNmhStOhNoclcLMyWNJFp0v76SVSC
-        hQIK5BV6chEYDsWHjxjzPZS5e3V/PgVf9WCart2HPGJhoNu6OzTtzT78cP3HRoWvyt3UamPst5M2
-        R61tYL/1eh9afW/je3MKg+Og/96Hxla2qWPXLpreH6989+vrzeWbP4Oxg9bsw6O1/TaO7+7uoq7X
-        bTXUx+arNlE33MRj01hELA7nxtt703gX3EnXTDDG409vLq7qoz5Xm6YdsW2tx6tMszXuzYuuHkcy
-        CT2HFzyn0YPHqHUIy92gTd+1Rv9WWV0KJsSGJRteXHO5TeVWis+72GsyXvDvrTZ2utN/7cOLxtgr
-        bU0YjK1uz/001uvuHz0OOB5/csbCchqUGUd1MH1V6+jc2EgfbuO4q5r4obfd44ty99hjuTPaul9X
-        va7Lujt94bngEf+SpioVu/jxL1OTt9VZl+8vfg8uh+5mHIkJ3uu+G+wvwdsuClghgxe8yIqX7irX
-        2L1aMI4HeobvkTOMkazwoGE89cgYBxkp7EHF8D0kyMgmRs4gDxqG75FlGCNf4UHD8D1UgTHUCg8a
-        hufBGcgocA8ihu8hFMLgjDkGhzxoGL5HxjEGX+FBw/A9FJRRnIkVHjQMz0Mw8F5J3IOI4XsIaG3n
-        zGVtLiAPGobvkaUYI13hQcNYeEAZxVm2xoOEsfDIMUa+xoOE4XnIBJzzOWsl4kHE8D1ykFGs8KBh
-        +B6FhBicrfCgYXgeCccyinPcg4jhe0gso/ictQnkQcPwPVKshuNyhQcNw/fIoZqa82SFBw3D80gZ
-        tpbwOWtTxIOI4XtIcC3JVnjQMHwPsKbm+QoPGobnkWHPZDifszZDPIgYvocE/3fnrM0hDxqG75Fj
-        taiYs1ZBHjQMzyPn2L0Sc9ZCzxOJGL5HimWtcFmroOc+RAzfIwHn3GWtgvbnRAzfQ2JronBZq6B9
-        FBFj8fnA9mrCZa2C6l0ixsIDnHOXtQqqr4gYC48EY7isVVCeEzF8D4bV1MJlrYLynIjh52ABfgZd
-        1iosz2kYizzH9gaSrfCgYSw8sDmXLmsVWJeQMBYeWM0g56yF6hIixsIDW0uky9oCqkuIGAsPbK8m
-        XdYWUF1CxFh4YGuJdFlbQHUJEcP3AL/zki5rC6guIWL4HglW+0iXtQVUlxAxFh7gZ9BlbQHVJUSM
-        xf4cXNtd1hbYcwYaxsIDm/PEZW0BPmcgYTzxSFj6o5LhWtfHtqmr0wPDPHvgP6/TJyMdJymXPyr/
-        Px4bq4PLqtfD84e5vsfF+big7s79SVvtzrs13/U+VLkMg/p2MN2wD/OwnA7QKcbcAbynl449/n9I
-        7vE4X/kfAAAA//8DALifMAwAKQAA
+      string: <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl"
+        href="static/style.xsl"?><OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"><responseDate>2024-06-03T19:51:09Z</responseDate><request
+        verb="ListSets" resumptionToken="////700">https://dspace.mit.edu//oai/request</request><ListSets><set><setSpec>col_1721.1_50740</setSpec><setName>RLE
+        Progress Report, No. 010 (1948)</setName></set><set><setSpec>hdl_1721.1_50740</setSpec><setName>RLE
+        Progress Report, No. 010 (1948)</setName></set><set><setSpec>col_1721.1_50761</setSpec><setName>RLE
+        Progress Report, No. 011 (1948)</setName></set><set><setSpec>hdl_1721.1_50761</setSpec><setName>RLE
+        Progress Report, No. 011 (1948)</setName></set><set><setSpec>col_1721.1_50763</setSpec><setName>RLE
+        Progress Report, No. 012 (1949)</setName></set><set><setSpec>hdl_1721.1_50763</setSpec><setName>RLE
+        Progress Report, No. 012 (1949)</setName></set><set><setSpec>col_1721.1_50793</setSpec><setName>RLE
+        Progress Report, No. 013 (1949)</setName></set><set><setSpec>hdl_1721.1_50793</setSpec><setName>RLE
+        Progress Report, No. 013 (1949)</setName></set><set><setSpec>col_1721.1_50794</setSpec><setName>RLE
+        Progress Report, No. 014 (1949)</setName></set><set><setSpec>hdl_1721.1_50794</setSpec><setName>RLE
+        Progress Report, No. 014 (1949)</setName></set><set><setSpec>col_1721.1_50823</setSpec><setName>RLE
+        Progress Report, No. 015 (1949)</setName></set><set><setSpec>hdl_1721.1_50823</setSpec><setName>RLE
+        Progress Report, No. 015 (1949)</setName></set><set><setSpec>col_1721.1_50838</setSpec><setName>RLE
+        Progress Report, No. 016 (1950)</setName></set><set><setSpec>hdl_1721.1_50838</setSpec><setName>RLE
+        Progress Report, No. 016 (1950)</setName></set><set><setSpec>col_1721.1_50852</setSpec><setName>RLE
+        Progress Report, No. 017 (1950)</setName></set><set><setSpec>hdl_1721.1_50852</setSpec><setName>RLE
+        Progress Report, No. 017 (1950)</setName></set><set><setSpec>col_1721.1_50869</setSpec><setName>RLE
+        Progress Report, No. 018 (1950)</setName></set><set><setSpec>hdl_1721.1_50869</setSpec><setName>RLE
+        Progress Report, No. 018 (1950)</setName></set><set><setSpec>col_1721.1_50883</setSpec><setName>RLE
+        Progress Report, No. 019 (1950)</setName></set><set><setSpec>hdl_1721.1_50883</setSpec><setName>RLE
+        Progress Report, No. 019 (1950)</setName></set><set><setSpec>col_1721.1_50898</setSpec><setName>RLE
+        Progress Report, No. 020 (1951)</setName></set><set><setSpec>hdl_1721.1_50898</setSpec><setName>RLE
+        Progress Report, No. 020 (1951)</setName></set><set><setSpec>col_1721.1_50913</setSpec><setName>RLE
+        Progress Report, No. 021 (1951)</setName></set><set><setSpec>hdl_1721.1_50913</setSpec><setName>RLE
+        Progress Report, No. 021 (1951)</setName></set><set><setSpec>col_1721.1_50914</setSpec><setName>RLE
+        Progress Report, No. 022 (1951)</setName></set><set><setSpec>hdl_1721.1_50914</setSpec><setName>RLE
+        Progress Report, No. 022 (1951)</setName></set><set><setSpec>col_1721.1_50915</setSpec><setName>RLE
+        Progress Report, No. 023 (1951)</setName></set><set><setSpec>hdl_1721.1_50915</setSpec><setName>RLE
+        Progress Report, No. 023 (1951)</setName></set><set><setSpec>col_1721.1_50916</setSpec><setName>RLE
+        Progress Report, No. 024 (1952)</setName></set><set><setSpec>hdl_1721.1_50916</setSpec><setName>RLE
+        Progress Report, No. 024 (1952)</setName></set><set><setSpec>col_1721.1_50917</setSpec><setName>RLE
+        Progress Report, No. 025 (1952)</setName></set><set><setSpec>hdl_1721.1_50917</setSpec><setName>RLE
+        Progress Report, No. 025 (1952)</setName></set><set><setSpec>col_1721.1_51010</setSpec><setName>RLE
+        Progress Report, No. 026 (1952)</setName></set><set><setSpec>hdl_1721.1_51010</setSpec><setName>RLE
+        Progress Report, No. 026 (1952)</setName></set><set><setSpec>col_1721.1_51011</setSpec><setName>RLE
+        Progress Report, No. 027 (1952)</setName></set><set><setSpec>hdl_1721.1_51011</setSpec><setName>RLE
+        Progress Report, No. 027 (1952)</setName></set><set><setSpec>col_1721.1_51073</setSpec><setName>RLE
+        Progress Report, No. 028 (1953)</setName></set><set><setSpec>hdl_1721.1_51073</setSpec><setName>RLE
+        Progress Report, No. 028 (1953)</setName></set><set><setSpec>col_1721.1_51074</setSpec><setName>RLE
+        Progress Report, No. 029 (1953)</setName></set><set><setSpec>hdl_1721.1_51074</setSpec><setName>RLE
+        Progress Report, No. 029 (1953)</setName></set><set><setSpec>col_1721.1_51075</setSpec><setName>RLE
+        Progress Report, No. 030 (1953)</setName></set><set><setSpec>hdl_1721.1_51075</setSpec><setName>RLE
+        Progress Report, No. 030 (1953)</setName></set><set><setSpec>col_1721.1_51122</setSpec><setName>RLE
+        Progress Report, No. 031 (1953)</setName></set><set><setSpec>hdl_1721.1_51122</setSpec><setName>RLE
+        Progress Report, No. 031 (1953)</setName></set><set><setSpec>col_1721.1_51138</setSpec><setName>RLE
+        Progress Report, No. 032 (1954)</setName></set><set><setSpec>hdl_1721.1_51138</setSpec><setName>RLE
+        Progress Report, No. 032 (1954)</setName></set><set><setSpec>col_1721.1_51139</setSpec><setName>RLE
+        Progress Report, No. 033 (1954)</setName></set><set><setSpec>hdl_1721.1_51139</setSpec><setName>RLE
+        Progress Report, No. 033 (1954)</setName></set><set><setSpec>col_1721.1_51189</setSpec><setName>RLE
+        Progress Report, No. 034 (1954)</setName></set><set><setSpec>hdl_1721.1_51189</setSpec><setName>RLE
+        Progress Report, No. 034 (1954)</setName></set><set><setSpec>col_1721.1_51190</setSpec><setName>RLE
+        Progress Report, No. 035 (1954)</setName></set><set><setSpec>hdl_1721.1_51190</setSpec><setName>RLE
+        Progress Report, No. 035 (1954)</setName></set><set><setSpec>col_1721.1_51236</setSpec><setName>RLE
+        Progress Report, No. 036 (1955)</setName></set><set><setSpec>hdl_1721.1_51236</setSpec><setName>RLE
+        Progress Report, No. 036 (1955)</setName></set><set><setSpec>col_1721.1_51237</setSpec><setName>RLE
+        Progress Report, No. 037 (1955)</setName></set><set><setSpec>hdl_1721.1_51237</setSpec><setName>RLE
+        Progress Report, No. 037 (1955)</setName></set><set><setSpec>col_1721.1_51238</setSpec><setName>RLE
+        Progress Report, No. 038 (1955)</setName></set><set><setSpec>hdl_1721.1_51238</setSpec><setName>RLE
+        Progress Report, No. 038 (1955)</setName></set><set><setSpec>col_1721.1_51239</setSpec><setName>RLE
+        Progress Report, No. 039 (1955)</setName></set><set><setSpec>hdl_1721.1_51239</setSpec><setName>RLE
+        Progress Report, No. 039 (1955)</setName></set><set><setSpec>col_1721.1_51900</setSpec><setName>RLE
+        Progress Report, No. 040 (1956)</setName></set><set><setSpec>hdl_1721.1_51900</setSpec><setName>RLE
+        Progress Report, No. 040 (1956)</setName></set><set><setSpec>col_1721.1_51928</setSpec><setName>RLE
+        Progress Report, No. 041 (1956)</setName></set><set><setSpec>hdl_1721.1_51928</setSpec><setName>RLE
+        Progress Report, No. 041 (1956)</setName></set><set><setSpec>col_1721.1_51952</setSpec><setName>RLE
+        Progress Report, No. 042 (1956)</setName></set><set><setSpec>hdl_1721.1_51952</setSpec><setName>RLE
+        Progress Report, No. 042 (1956)</setName></set><set><setSpec>col_1721.1_51976</setSpec><setName>RLE
+        Progress Report, No. 043 (1956)</setName></set><set><setSpec>hdl_1721.1_51976</setSpec><setName>RLE
+        Progress Report, No. 043 (1956)</setName></set><set><setSpec>col_1721.1_52013</setSpec><setName>RLE
+        Progress Report, No. 044 (1957)</setName></set><set><setSpec>hdl_1721.1_52013</setSpec><setName>RLE
+        Progress Report, No. 044 (1957)</setName></set><set><setSpec>col_1721.1_52041</setSpec><setName>RLE
+        Progress Report, No. 045 (1957)</setName></set><set><setSpec>hdl_1721.1_52041</setSpec><setName>RLE
+        Progress Report, No. 045 (1957)</setName></set><set><setSpec>col_1721.1_52068</setSpec><setName>RLE
+        Progress Report, No. 046 (1957)</setName></set><set><setSpec>hdl_1721.1_52068</setSpec><setName>RLE
+        Progress Report, No. 046 (1957)</setName></set><set><setSpec>col_1721.1_52095</setSpec><setName>RLE
+        Progress Report, No. 047 (1957)</setName></set><set><setSpec>hdl_1721.1_52095</setSpec><setName>RLE
+        Progress Report, No. 047 (1957)</setName></set><set><setSpec>col_1721.1_52117</setSpec><setName>RLE
+        Progress Report, No. 048 (1958)</setName></set><set><setSpec>hdl_1721.1_52117</setSpec><setName>RLE
+        Progress Report, No. 048 (1958)</setName></set><set><setSpec>col_1721.1_52145</setSpec><setName>RLE
+        Progress Report, No. 049 (1958)</setName></set><set><setSpec>hdl_1721.1_52145</setSpec><setName>RLE
+        Progress Report, No. 049 (1958)</setName></set><set><setSpec>col_1721.1_52168</setSpec><setName>RLE
+        Progress Report, No. 050 (1958)</setName></set><set><setSpec>hdl_1721.1_52168</setSpec><setName>RLE
+        Progress Report, No. 050 (1958)</setName></set><set><setSpec>col_1721.1_52189</setSpec><setName>RLE
+        Progress Report, No. 051 (1958)</setName></set><set><setSpec>hdl_1721.1_52189</setSpec><setName>RLE
+        Progress Report, No. 051 (1958)</setName></set><set><setSpec>col_1721.1_52212</setSpec><setName>RLE
+        Progress Report, No. 052 (1959)</setName></set><set><setSpec>hdl_1721.1_52212</setSpec><setName>RLE
+        Progress Report, No. 052 (1959)</setName></set><set><setSpec>col_1721.1_52245</setSpec><setName>RLE
+        Progress Report, No. 053 (1959)</setName></set><set><setSpec>hdl_1721.1_52245</setSpec><setName>RLE
+        Progress Report, No. 053 (1959)</setName></set><set><setSpec>col_1721.1_52274</setSpec><setName>RLE
+        Progress Report, No. 054 (1959)</setName></set><set><setSpec>hdl_1721.1_52274</setSpec><setName>RLE
+        Progress Report, No. 054 (1959)</setName></set><set><setSpec>col_1721.1_53335</setSpec><setName>RLE
+        Progress Report, No. 055 (1959)</setName></set><set><setSpec>hdl_1721.1_53335</setSpec><setName>RLE
+        Progress Report, No. 055 (1959)</setName></set><set><setSpec>col_1721.1_53355</setSpec><setName>RLE
+        Progress Report, No. 056 (1960)</setName></set><set><setSpec>hdl_1721.1_53355</setSpec><setName>RLE
+        Progress Report, No. 056 (1960)</setName></set><set><setSpec>col_1721.1_53386</setSpec><setName>RLE
+        Progress Report, No. 057 (1960)</setName></set><set><setSpec>hdl_1721.1_53386</setSpec><setName>RLE
+        Progress Report, No. 057 (1960)</setName></set><set><setSpec>col_1721.1_53418</setSpec><setName>RLE
+        Progress Report, No. 058 (1960)</setName></set><set><setSpec>hdl_1721.1_53418</setSpec><setName>RLE
+        Progress Report, No. 058 (1960)</setName></set><set><setSpec>col_1721.1_53448</setSpec><setName>RLE
+        Progress Report, No. 059 (1960)</setName></set><set><setSpec>hdl_1721.1_53448</setSpec><setName>RLE
+        Progress Report, No. 059 (1960)</setName></set><resumptionToken completeListSize="966"
+        cursor="7">////800</resumptionToken></ListSets></OAI-PMH>
     headers:
       Connection:
       - close
@@ -527,7 +1071,7 @@ interactions:
       Content-Type:
       - text/xml;charset=UTF-8
       Date:
-      - Tue, 19 Apr 2022 13:53:32 GMT
+      - Mon, 03 Jun 2024 19:51:09 GMT
       Set-cookie:
       - HttpOnly;Secure
       Strict-Transport-Security:
@@ -555,38 +1099,116 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.27.1
+      - python-requests/2.32.3
     method: GET
     uri: https://dspace.mit.edu/oai/request?resumptionToken=%2F%2F%2F%2F800&verb=ListSets
   response:
     body:
-      string: !!binary |
-        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
+      string: '<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl"
+        href="static/style.xsl"?><OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"><responseDate>2024-06-03T19:51:10Z</responseDate><request
+        verb="ListSets" resumptionToken="////800">https://dspace.mit.edu//oai/request</request><ListSets><set><setSpec>col_1721.1_56393</setSpec><setName>RLE
+        Progress Report, No. 110 (1973)</setName></set><set><setSpec>hdl_1721.1_56393</setSpec><setName>RLE
+        Progress Report, No. 110 (1973)</setName></set><set><setSpec>col_1721.1_56412</setSpec><setName>RLE
+        Progress Report, No. 111 (1973)</setName></set><set><setSpec>hdl_1721.1_56412</setSpec><setName>RLE
+        Progress Report, No. 111 (1973)</setName></set><set><setSpec>col_1721.1_56431</setSpec><setName>RLE
+        Progress Report, No. 112 (1974)</setName></set><set><setSpec>hdl_1721.1_56431</setSpec><setName>RLE
+        Progress Report, No. 112 (1974)</setName></set><set><setSpec>col_1721.1_56458</setSpec><setName>RLE
+        Progress Report, No. 113 (1974)</setName></set><set><setSpec>hdl_1721.1_56458</setSpec><setName>RLE
+        Progress Report, No. 113 (1974)</setName></set><set><setSpec>col_1721.1_56479</setSpec><setName>RLE
+        Progress Report, No. 114 (1974)</setName></set><set><setSpec>hdl_1721.1_56479</setSpec><setName>RLE
+        Progress Report, No. 114 (1974)</setName></set><set><setSpec>col_1721.1_56505</setSpec><setName>RLE
+        Progress Report, No. 115 (1975)</setName></set><set><setSpec>hdl_1721.1_56505</setSpec><setName>RLE
+        Progress Report, No. 115 (1975)</setName></set><set><setSpec>col_1721.1_56533</setSpec><setName>RLE
+        Progress Report, No. 116 (1975)</setName></set><set><setSpec>hdl_1721.1_56533</setSpec><setName>RLE
+        Progress Report, No. 116 (1975)</setName></set><set><setSpec>col_1721.1_56582</setSpec><setName>RLE
+        Progress Report, No. 117 (1975)</setName></set><set><setSpec>hdl_1721.1_56582</setSpec><setName>RLE
+        Progress Report, No. 117 (1975)</setName></set><set><setSpec>col_1721.1_56610</setSpec><setName>RLE
+        Progress Report, No. 118 (1976)</setName></set><set><setSpec>hdl_1721.1_56610</setSpec><setName>RLE
+        Progress Report, No. 118 (1976)</setName></set><set><setSpec>col_1721.1_56635</setSpec><setName>RLE
+        Progress Report, No. 119 (1977)</setName></set><set><setSpec>hdl_1721.1_56635</setSpec><setName>RLE
+        Progress Report, No. 119 (1977)</setName></set><set><setSpec>col_1721.1_56676</setSpec><setName>RLE
+        Progress Report, No. 120 (1978)</setName></set><set><setSpec>hdl_1721.1_56676</setSpec><setName>RLE
+        Progress Report, No. 120 (1978)</setName></set><set><setSpec>col_1721.1_56715</setSpec><setName>RLE
+        Progress Report, No. 121 (1979)</setName></set><set><setSpec>hdl_1721.1_56715</setSpec><setName>RLE
+        Progress Report, No. 121 (1979)</setName></set><set><setSpec>col_1721.1_56751</setSpec><setName>RLE
+        Progress Report, No. 122 (1980)</setName></set><set><setSpec>hdl_1721.1_56751</setSpec><setName>RLE
+        Progress Report, No. 122 (1980)</setName></set><set><setSpec>col_1721.1_56746</setSpec><setName>RLE
+        Progress Report, No. 123 (1981)</setName></set><set><setSpec>hdl_1721.1_56746</setSpec><setName>RLE
+        Progress Report, No. 123 (1981)</setName></set><set><setSpec>col_1721.1_56732</setSpec><setName>RLE
+        Progress Report, No. 124 (1982)</setName></set><set><setSpec>hdl_1721.1_56732</setSpec><setName>RLE
+        Progress Report, No. 124 (1982)</setName></set><set><setSpec>col_1721.1_56717</setSpec><setName>RLE
+        Progress Report, No. 125 (1983)</setName></set><set><setSpec>hdl_1721.1_56717</setSpec><setName>RLE
+        Progress Report, No. 125 (1983)</setName></set><set><setSpec>col_1721.1_56716</setSpec><setName>RLE
+        Progress Report, No. 126 (1984)</setName></set><set><setSpec>hdl_1721.1_56716</setSpec><setName>RLE
+        Progress Report, No. 126 (1984)</setName></set><set><setSpec>col_1721.1_56714</setSpec><setName>RLE
+        Progress Report, No. 127 (1985)</setName></set><set><setSpec>hdl_1721.1_56714</setSpec><setName>RLE
+        Progress Report, No. 127 (1985)</setName></set><set><setSpec>col_1721.1_56708</setSpec><setName>RLE
+        Progress Report, No. 128 (1986)</setName></set><set><setSpec>hdl_1721.1_56708</setSpec><setName>RLE
+        Progress Report, No. 128 (1986)</setName></set><set><setSpec>col_1721.1_56692</setSpec><setName>RLE
+        Progress Report, No. 129 (1987)</setName></set><set><setSpec>hdl_1721.1_56692</setSpec><setName>RLE
+        Progress Report, No. 129 (1987)</setName></set><set><setSpec>col_1721.1_56679</setSpec><setName>RLE
+        Progress Report, No. 130 (1987)</setName></set><set><setSpec>hdl_1721.1_56679</setSpec><setName>RLE
+        Progress Report, No. 130 (1987)</setName></set><set><setSpec>col_1721.1_56678</setSpec><setName>RLE
+        Progress Report, No. 131 (1988)</setName></set><set><setSpec>hdl_1721.1_56678</setSpec><setName>RLE
+        Progress Report, No. 131 (1988)</setName></set><set><setSpec>col_1721.1_56675</setSpec><setName>RLE
+        Progress Report, No. 132 (1989)</setName></set><set><setSpec>hdl_1721.1_56675</setSpec><setName>RLE
+        Progress Report, No. 132 (1989)</setName></set><set><setSpec>col_1721.1_56674</setSpec><setName>RLE
+        Progress Report, No. 133 (1990)</setName></set><set><setSpec>hdl_1721.1_56674</setSpec><setName>RLE
+        Progress Report, No. 133 (1990)</setName></set><set><setSpec>col_1721.1_56673</setSpec><setName>RLE
+        Progress Report, No. 134 (1991)</setName></set><set><setSpec>hdl_1721.1_56673</setSpec><setName>RLE
+        Progress Report, No. 134 (1991)</setName></set><set><setSpec>col_1721.1_56672</setSpec><setName>RLE
+        Progress Report, No. 135 (1992)</setName></set><set><setSpec>hdl_1721.1_56672</setSpec><setName>RLE
+        Progress Report, No. 135 (1992)</setName></set><set><setSpec>col_1721.1_56661</setSpec><setName>RLE
+        Progress Report, No. 136 (1993)</setName></set><set><setSpec>hdl_1721.1_56661</setSpec><setName>RLE
+        Progress Report, No. 136 (1993)</setName></set><set><setSpec>col_1721.1_56647</setSpec><setName>RLE
+        Progress Report, No. 137 (1994)</setName></set><set><setSpec>hdl_1721.1_56647</setSpec><setName>RLE
+        Progress Report, No. 137 (1994)</setName></set><set><setSpec>col_1721.1_56644</setSpec><setName>RLE
+        Progress Report, No. 138 (1995)</setName></set><set><setSpec>hdl_1721.1_56644</setSpec><setName>RLE
+        Progress Report, No. 138 (1995)</setName></set><set><setSpec>col_1721.1_56638</setSpec><setName>RLE
+        Progress Report, No. 139 (1996)</setName></set><set><setSpec>hdl_1721.1_56638</setSpec><setName>RLE
+        Progress Report, No. 139 (1996)</setName></set><set><setSpec>col_1721.1_56637</setSpec><setName>RLE
+        Progress Report, No. 140 (1997)</setName></set><set><setSpec>hdl_1721.1_56637</setSpec><setName>RLE
+        Progress Report, No. 140 (1997)</setName></set><set><setSpec>col_1721.1_4059</setSpec><setName>RLE
+        Technical Reports</setName></set><set><setSpec>hdl_1721.1_4059</setSpec><setName>RLE
+        Technical Reports</setName></set><set><setSpec>col_1721.1_139736</setSpec><setName>RLE
+        White Papers</setName></set><set><setSpec>hdl_1721.1_139736</setSpec><setName>RLE
+        White Papers</setName></set><set><setSpec>col_1721.1_5552</setSpec><setName>Rohsenow
+        Symposium on Future Trends in Heat Transfer</setName></set><set><setSpec>hdl_1721.1_5552</setSpec><setName>Rohsenow
+        Symposium on Future Trends in Heat Transfer</setName></set><set><setSpec>col_1721.1_101610</setSpec><setName>SCALE
+        Research Reports</setName></set><set><setSpec>hdl_1721.1_101610</setSpec><setName>SCALE
+        Research Reports</setName></set><set><setSpec>col_1721.1_101403</setSpec><setName>SCALE
+        Working Paper Series</setName></set><set><setSpec>hdl_1721.1_101403</setSpec><setName>SCALE
+        Working Paper Series</setName></set><set><setSpec>col_1721.1_34003</setSpec><setName>Science,
+        Technology, and Society (STS) - Archived</setName></set><set><setSpec>hdl_1721.1_34003</setSpec><setName>Science,
+        Technology, and Society (STS) - Archived</setName></set><set><setSpec>col_1721.1_122782</setSpec><setName>Seeds
+        of Silicon: Internet of Things for Smallholder Agriculture</setName></set><set><setSpec>hdl_1721.1_122782</setSpec><setName>Seeds
+        of Silicon: Internet of Things for Smallholder Agriculture</setName></set><set><setSpec>col_1721.1_46704</setSpec><setName>Selected
+        Publications</setName></set><set><setSpec>hdl_1721.1_46704</setSpec><setName>Selected
+        Publications</setName></set><set><setSpec>col_1721.1_62800</setSpec><setName>Selected
+        Publications</setName></set><set><setSpec>hdl_1721.1_62800</setSpec><setName>Selected
+        Publications</setName></set><set><setSpec>col_1721.1_65423</setSpec><setName>Selected
+        Publications</setName></set><set><setSpec>hdl_1721.1_65423</setSpec><setName>Selected
+        Publications</setName></set><set><setSpec>col_1721.1_40283</setSpec><setName>Selected
+        Publications</setName></set><set><setSpec>hdl_1721.1_40283</setSpec><setName>Selected
+        Publications</setName></set><set><setSpec>col_1721.1_76637</setSpec><setName>Selected
+        Publications</setName></set><set><setSpec>hdl_1721.1_76637</setSpec><setName>Selected
+        Publications</setName></set><set><setSpec>col_1721.1_85574</setSpec><setName>Selected
+        Publications</setName></set><set><setSpec>hdl_1721.1_85574</setSpec><setName>Selected
+        Publications</setName></set><set><setSpec>col_1721.1_144244</setSpec><setName>Selected
+        Publications</setName></set><set><setSpec>hdl_1721.1_144244</setSpec><setName>Selected
+        Publications</setName></set><set><setSpec>col_1721.1_130630</setSpec><setName>Selected
+        Publications</setName></set><set><setSpec>hdl_1721.1_130630</setSpec><setName>Selected
+        Publications</setName></set><set><setSpec>col_1721.1_46333</setSpec><setName>Selected
+        Publications</setName></set><set><setSpec>hdl_1721.1_46333</setSpec><setName>Selected
+        Publications</setName></set><set><setSpec>col_1721.1_102236</setSpec><setName>Selected
+        Publications</setName></set><set><setSpec>hdl_1721.1_102236</setSpec><setName>Selected
+        Publications</setName></set><set><setSpec>col_1721.1_16545</setSpec><setName>Selected
+        Stories</setName></set><set><setSpec>hdl_1721.1_16545</setSpec><setName>Selected
+        Stories</setName></set><set><setSpec>col_1721.1_16551</setSpec><setName>Selected
+        Stories</setName></set><set><setSpec>hdl_1721.1_16551</setSpec><setName>Selected
+        Stories</setName></set><resumptionToken completeListSize="966" cursor="8">////900</resumptionToken></ListSets></OAI-PMH>'
     headers:
       Connection:
       - close
@@ -595,7 +1217,127 @@ interactions:
       Content-Type:
       - text/xml;charset=UTF-8
       Date:
-      - Tue, 19 Apr 2022 13:53:32 GMT
+      - Mon, 03 Jun 2024 19:51:09 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?resumptionToken=%2F%2F%2F%2F900&verb=ListSets
+  response:
+    body:
+      string: <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl"
+        href="static/style.xsl"?><OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"><responseDate>2024-06-03T19:51:10Z</responseDate><request
+        verb="ListSets" resumptionToken="////900">https://dspace.mit.edu//oai/request</request><ListSets><set><setSpec>col_1721.1_80739</setSpec><setName>Theses</setName></set><set><setSpec>hdl_1721.1_80739</setSpec><setName>Theses</setName></set><set><setSpec>col_1721.1_88077</setSpec><setName>Theses</setName></set><set><setSpec>hdl_1721.1_88077</setSpec><setName>Theses</setName></set><set><setSpec>col_1721.1_18219</setSpec><setName>Theses</setName></set><set><setSpec>hdl_1721.1_18219</setSpec><setName>Theses</setName></set><set><setSpec>col_1721.1_26674</setSpec><setName>Theses</setName></set><set><setSpec>hdl_1721.1_26674</setSpec><setName>Theses</setName></set><set><setSpec>col_1721.1_26585</setSpec><setName>Theses</setName></set><set><setSpec>hdl_1721.1_26585</setSpec><setName>Theses</setName></set><set><setSpec>col_1721.1_153223</setSpec><setName>Theses</setName></set><set><setSpec>hdl_1721.1_153223</setSpec><setName>Theses</setName></set><set><setSpec>col_1721.1_91571</setSpec><setName>Theses</setName></set><set><setSpec>hdl_1721.1_91571</setSpec><setName>Theses</setName></set><set><setSpec>col_1721.1_26680</setSpec><setName>Theses</setName></set><set><setSpec>hdl_1721.1_26680</setSpec><setName>Theses</setName></set><set><setSpec>col_1721.1_18899</setSpec><setName>Theses</setName></set><set><setSpec>hdl_1721.1_18899</setSpec><setName>Theses</setName></set><set><setSpec>col_1721.1_18230</setSpec><setName>Theses</setName></set><set><setSpec>hdl_1721.1_18230</setSpec><setName>Theses</setName></set><set><setSpec>col_1721.1_29798</setSpec><setName>Theses</setName></set><set><setSpec>hdl_1721.1_29798</setSpec><setName>Theses</setName></set><set><setSpec>col_1721.1_18235</setSpec><setName>Theses
+        - BS</setName></set><set><setSpec>hdl_1721.1_18235</setSpec><setName>Theses
+        - BS</setName></set><set><setSpec>col_1721.1_115155</setSpec><setName>Theses
+        - CITE</setName></set><set><setSpec>hdl_1721.1_115155</setSpec><setName>Theses
+        - CITE</setName></set><set><setSpec>col_1721.1_18225</setSpec><setName>Theses
+        - MS</setName></set><set><setSpec>hdl_1721.1_18225</setSpec><setName>Theses
+        - MS</setName></set><set><setSpec>col_1721.1_18224</setSpec><setName>Theses
+        - PhD</setName></set><set><setSpec>hdl_1721.1_18224</setSpec><setName>Theses
+        - PhD</setName></set><set><setSpec>col_1721.1_55586</setSpec><setName>The
+        Simulating of Things</setName></set><set><setSpec>hdl_1721.1_55586</setSpec><setName>The
+        Simulating of Things</setName></set><set><setSpec>col_1721.1_55719</setSpec><setName>The
+        Specific Modeling of Things</setName></set><set><setSpec>hdl_1721.1_55719</setSpec><setName>The
+        Specific Modeling of Things</setName></set><set><setSpec>col_1721.1_55588</setSpec><setName>The
+        Visualizing of Things</setName></set><set><setSpec>hdl_1721.1_55588</setSpec><setName>The
+        Visualizing of Things</setName></set><set><setSpec>col_1721.1_151172</setSpec><setName>Topic
+        Briefs</setName></set><set><setSpec>hdl_1721.1_151172</setSpec><setName>Topic
+        Briefs</setName></set><set><setSpec>col_1721.1_78860</setSpec><setName>Trope
+        Report Technical Report Series</setName></set><set><setSpec>hdl_1721.1_78860</setSpec><setName>Trope
+        Report Technical Report Series</setName></set><set><setSpec>col_1721.1_131024</setSpec><setName>Undergraduate
+        Theses</setName></set><set><setSpec>hdl_1721.1_131024</setSpec><setName>Undergraduate
+        Theses</setName></set><set><setSpec>col_1721.1_18226</setSpec><setName>Unpublished
+        Work</setName></set><set><setSpec>hdl_1721.1_18226</setSpec><setName>Unpublished
+        Work</setName></set><set><setSpec>col_1721.1_121132</setSpec><setName>Unsorted
+        theses</setName></set><set><setSpec>hdl_1721.1_121132</setSpec><setName>Unsorted
+        theses</setName></set><set><setSpec>col_1721.1_34006</setSpec><setName>Urban
+        Studies and Planning (11) - Archived</setName></set><set><setSpec>hdl_1721.1_34006</setSpec><setName>Urban
+        Studies and Planning (11) - Archived</setName></set><set><setSpec>col_1721.1_114207</setSpec><setName>USAID
+        Feed the Future Value Chain Project in Uganda</setName></set><set><setSpec>hdl_1721.1_114207</setSpec><setName>USAID
+        Feed the Future Value Chain Project in Uganda</setName></set><set><setSpec>col_1721.1_127275</setSpec><setName>USAID/Uganda
+        Feed the Future Market System Monitoring Activity</setName></set><set><setSpec>hdl_1721.1_127275</setSpec><setName>USAID/Uganda
+        Feed the Future Market System Monitoring Activity</setName></set><set><setSpec>col_1721.1_114205</setSpec><setName>Vegetable
+        Cooling and Storage Evaluation in Mali</setName></set><set><setSpec>hdl_1721.1_114205</setSpec><setName>Vegetable
+        Cooling and Storage Evaluation in Mali</setName></set><set><setSpec>col_1721.1_18240</setSpec><setName>Video
+        and images</setName></set><set><setSpec>hdl_1721.1_18240</setSpec><setName>Video
+        and images</setName></set><set><setSpec>col_1721.1_7358</setSpec><setName>Videos</setName></set><set><setSpec>hdl_1721.1_7358</setSpec><setName>Videos</setName></set><set><setSpec>col_1721.1_3771</setSpec><setName>Virtual
+        Customer (VC)</setName></set><set><setSpec>hdl_1721.1_3771</setSpec><setName>Virtual
+        Customer (VC)</setName></set><set><setSpec>col_1721.1_114196</setSpec><setName>Water
+        Filter Evaluation in India</setName></set><set><setSpec>hdl_1721.1_114196</setSpec><setName>Water
+        Filter Evaluation in India</setName></set><set><setSpec>col_1721.1_114198</setSpec><setName>Water
+        Test Kit Evaluation in India</setName></set><set><setSpec>hdl_1721.1_114198</setSpec><setName>Water
+        Test Kit Evaluation in India</setName></set><set><setSpec>col_1721.1_147049</setSpec><setName>Wax
+        Propulsion</setName></set><set><setSpec>hdl_1721.1_147049</setSpec><setName>Wax
+        Propulsion</setName></set><set><setSpec>col_1721.1_141480</setSpec><setName>Websites</setName></set><set><setSpec>hdl_1721.1_141480</setSpec><setName>Websites</setName></set><set><setSpec>col_1721.1_114206</setSpec><setName>Wheelchair
+        Evaluation in Indonesia</setName></set><set><setSpec>hdl_1721.1_114206</setSpec><setName>Wheelchair
+        Evaluation in Indonesia</setName></set><set><setSpec>col_1721.1_151136</setSpec><setName>White
+        Papers</setName></set><set><setSpec>hdl_1721.1_151136</setSpec><setName>White
+        Papers</setName></set><set><setSpec>col_1721.1_91573</setSpec><setName>White
+        Papers</setName></set><set><setSpec>hdl_1721.1_91573</setSpec><setName>White
+        Papers</setName></set><set><setSpec>col_1721.1_40088</setSpec><setName>Women's
+        and Gender Studies (WGS) - Archived</setName></set><set><setSpec>hdl_1721.1_40088</setSpec><setName>Women's
+        and Gender Studies (WGS) - Archived</setName></set><set><setSpec>col_1721.1_34007</setSpec><setName>Women's
+        Studies (WMN) - Archived</setName></set><set><setSpec>hdl_1721.1_34007</setSpec><setName>Women's
+        Studies (WMN) - Archived</setName></set><set><setSpec>col_1721.1_143680</setSpec><setName>Workforce
+        Roadmaps</setName></set><set><setSpec>hdl_1721.1_143680</setSpec><setName>Workforce
+        Roadmaps</setName></set><set><setSpec>col_1721.1_33228</setSpec><setName>Working
+        papers</setName></set><set><setSpec>hdl_1721.1_33228</setSpec><setName>Working
+        papers</setName></set><set><setSpec>col_1721.1_131250</setSpec><setName>Working
+        Papers</setName></set><set><setSpec>hdl_1721.1_131250</setSpec><setName>Working
+        Papers</setName></set><set><setSpec>col_1721.1_145477</setSpec><setName>Working
+        Papers</setName></set><set><setSpec>hdl_1721.1_145477</setSpec><setName>Working
+        Papers</setName></set><set><setSpec>col_1721.1_97717</setSpec><setName>Working
+        Papers</setName></set><set><setSpec>hdl_1721.1_97717</setSpec><setName>Working
+        Papers</setName></set><set><setSpec>col_1721.1_80740</setSpec><setName>Working
+        Papers</setName></set><set><setSpec>hdl_1721.1_80740</setSpec><setName>Working
+        Papers</setName></set><set><setSpec>col_1721.1_18229</setSpec><setName>Working
+        Papers</setName></set><set><setSpec>hdl_1721.1_18229</setSpec><setName>Working
+        Papers</setName></set><set><setSpec>col_1721.1_108818</setSpec><setName>Working
+        Papers</setName></set><set><setSpec>hdl_1721.1_108818</setSpec><setName>Working
+        Papers</setName></set><set><setSpec>col_1721.1_26586</setSpec><setName>Working
+        Papers</setName></set><set><setSpec>hdl_1721.1_26586</setSpec><setName>Working
+        Papers</setName></set><set><setSpec>col_1721.1_18898</setSpec><setName>Working
+        Papers</setName></set><set><setSpec>hdl_1721.1_18898</setSpec><setName>Working
+        Papers</setName></set><set><setSpec>col_1721.1_18214</setSpec><setName>Working
+        Papers</setName></set><set><setSpec>hdl_1721.1_18214</setSpec><setName>Working
+        Papers</setName></set><resumptionToken completeListSize="966" cursor="9"/></ListSets></OAI-PMH>
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Mon, 03 Jun 2024 19:51:10 GMT
       Set-cookie:
       - HttpOnly;Secure
       Strict-Transport-Security:

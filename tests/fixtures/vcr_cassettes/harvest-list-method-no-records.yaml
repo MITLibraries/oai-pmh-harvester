@@ -9,19 +9,17 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1
+      - python-requests/2.32.3
     method: GET
     uri: https://dspace.mit.edu/oai/request?metadataPrefix=oai_dc&set=com_1721.1_100263&verb=ListRecords
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAAA4yRQU/DMAyF/0rke5u0FTBVbRESQiBtMMGQEJcppIZGWpMSG9r9e9IxDrtxs6zv
-        +fnZ1eXU78Q3BrLe1ZClCgQ641vrPmp43twkC7hsqplKiPc7pA6RBe8HrIFxYjnRDkQX8L0GYs3W
-        yAOXzv2ofLi6S9arWxEHOKqhYx5KKcdxTP2ATgfT2W+k1IcPGVGZp0rCL1xOZE8EY3HAcqUy+bJa
-        PpkOe51YF22dwagiW9KhufQmbjIH+o+f+A90zBFjtdBUAWnwjvBaMza5yvNELZLsfJMVZXFW5uq1
-        kidIFHx+IfF86bcalpb4EY0PLYHokXWrWa/jDe1Ug9d22xoQhFyD8f02u8izNNtmSuXnBTTzthTX
-        bWnQBtPecortl5RRJ4821V/RVBiCDyI+NP7L+aPpSrPpoLn3op8rJPEeIe5QRFXYV/Kgaqq/1M0P
-        AAAA//8DAB0k/FonAgAA
+      string: <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl"
+        href="static/style.xsl"?><OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"><responseDate>2024-06-03T19:51:07Z</responseDate><request
+        verb="ListRecords" metadataPrefix="oai_dc" set="com_1721.1_100263">https://dspace.mit.edu//oai/request</request><error
+        code="noRecordsMatch">No matches for the query</error></OAI-PMH>
     headers:
       Connection:
       - close
@@ -30,7 +28,7 @@ interactions:
       Content-Type:
       - text/xml;charset=UTF-8
       Date:
-      - Tue, 16 Aug 2022 13:35:20 GMT
+      - Mon, 03 Jun 2024 19:51:07 GMT
       Set-cookie:
       - HttpOnly;Secure
       Strict-Transport-Security:
