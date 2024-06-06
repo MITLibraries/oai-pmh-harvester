@@ -9,20 +9,18 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.27.1
+      - python-requests/2.32.3
     method: GET
     uri: https://dspace.mit.edu/oai/request?metadataPrefix=oai_dc&from=2017-12-14&until=2017-12-14&verb=ListIdentifiers
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAAA4ySX2vbMBTFv4rQu60/SevWyCqDMVZIWaEpjL4ETbqpBbblWUrjfvtdJ03WdKwt
-        6EFIv3vuPUdSV2PbkCcYog9dRUXOKYHOBue7x4reL79lF/RKq4nKYnpuINYAiaTnHiqaYExsjA0l
-        9QDrisZkkrdsx+XTOVb++HKd3d58JyjQxYrWKfUlY9vtNg89dGawtX+CmIfhkSHKZM4Z3cPlGP1J
-        wXa2wyTngv28WdzZGlqT+Q7bdhawKvoy7g4XweIkk6HP9COfgV58oC1HtRog9qGL8NUk0JJLmfF5
-        Ji6X4qzkRSnPHxQ7QbDg9wZimpL+VdGFj+naQZf82mP0lLSQjDPJ3GKOfqxoMH7lLCXrIbQVlVwU
-        mZCZmC85L3frgZINljf/udSTpYieXOyNhbz1KQe3YQyF2css6rDR6s08WtVgHAxketANvpqDBhJM
-        xv2R0ihVnsqXopAiF0wIWczPFXsFK3SHrUzb61cDT3HNyrNLjOvvvYqQ7nqw2oZ2tVdcFRd8ptjh
-        4kjUrvmAsOFIzKeP877IW4Ttc8DNPwkdPoT+AwAA//8DAGpVOzRCAwAA
+      string: <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl"
+        href="static/style.xsl"?><OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"><responseDate>2024-06-03T19:51:11Z</responseDate><request
+        verb="ListIdentifiers" metadataPrefix="oai_dc" from="2017-12-14T00:00:00Z"
+        until="2017-12-14T00:00:00Z">https://dspace.mit.edu//oai/request</request><ListIdentifiers><header
+        status="deleted"><identifier>oai:dspace.mit.edu:1721.1/112746</identifier><datestamp>2017-12-14T15:03:59Z</datestamp><setSpec>com_1721.1_7803</setSpec><setSpec>hdl_1721.1_7803</setSpec><setSpec>col_1721.1_42001</setSpec><setSpec>hdl_1721.1_42001</setSpec></header></ListIdentifiers></OAI-PMH>
     headers:
       Connection:
       - close
@@ -31,57 +29,7 @@ interactions:
       Content-Type:
       - text/xml;charset=UTF-8
       Date:
-      - Tue, 19 Apr 2022 15:07:26 GMT
-      Set-cookie:
-      - HttpOnly;Secure
-      Strict-Transport-Security:
-      - max-age=63072000
-      Transfer-Encoding:
-      - chunked
-      Vary:
-      - Accept-Encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-XSS-Protection:
-      - 1; mode=block
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.27.1
-    method: GET
-    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F112746&metadataPrefix=oai_dc&verb=GetRecord
-  response:
-    body:
-      string: !!binary |
-        H4sIAAAAAAAAA4yS3U7cMBCFXyXyfeLYuxCIHKNKVX8kUFGhUsXNytgDsZTYaTzLhrevnbAL24vC
-        VSLPd2bmHFtcTH2XPcEYrHcNYUVJMnDaG+seG/Lr9kt+Ri6kSFQe8LmD0AJghs8DNARhQjqFjmTt
-        CA8NCajQajpzRTqPyh+fvufXV9+y2MCFhrSIQ03pbrcr/ABOjbq1TxAKPz7SiFJelJQscD0FeyTY
-        rWaMlyWjv68ub3QLvcqti2OdhqgKtg7z4aXXcZNk6CPzso9ALz6iLUOkGCEM3gX4rBAkLznPy3XO
-        zm/ZSV1WNT+9E/QIiYI/WwiYkr5vyFfAn6D9aEhmDTi0DxbGhnhlaxMGpaHoLRZgtjWrOCsYZYxX
-        61OS9YDKKFTXMW87zYqN0UQmByFaOFZTGuv0ZbTY/0hxGJ/2Wr4tKANjlm5wG6/JQAcIyenrfvK9
-        9QR9A4u4Zhym+iHmw6qc8Zyt53xW9cl5zOe1LgLgzQBaat9vlo6b6qxcCbovHIjWdO8Q2h+IdXop
-        /2/yL0KXHGQKawmGvglr/wjkXwAAAP//AwDL5/MDNgMAAA==
-    headers:
-      Connection:
-      - close
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - text/xml;charset=UTF-8
-      Date:
-      - Tue, 19 Apr 2022 15:07:26 GMT
+      - Mon, 03 Jun 2024 19:51:11 GMT
       Set-cookie:
       - HttpOnly;Secure
       Strict-Transport-Security:

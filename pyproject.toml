@@ -18,7 +18,15 @@ ignore_missing_imports=true
 log_level = "INFO"
 
 [tool.ruff]
-target-version = "py311"
+target-version = "py312"
+
+# set max line length
+line-length = 90
+
+# enumerate all fixed violations
+show-fixes = true
+
+[tool.ruff.lint]
 select = ["ALL", "PT"]
 
 ignore = [
@@ -47,27 +55,21 @@ ignore = [
 # allow autofix behavior for specified rules
 fixable = ["E", "F", "I", "Q"]
 
-# set max line length
-line-length = 90
-
-# enumerate all fixed violations
-show-fixes = true
-
-[tool.ruff.flake8-annotations]
+[tool.ruff.lint.flake8-annotations]
 mypy-init-return = true
 
-[tool.ruff.flake8-pytest-style]
+[tool.ruff.lint.flake8-pytest-style]
 fixture-parentheses = false
 
-[tool.ruff.per-file-ignores]
+[tool.ruff.lint.per-file-ignores]
 "tests/**/*" = [
     "ANN",
     "ARG001",
     "S101",
 ]
 
-[tool.ruff.pycodestyle]
+[tool.ruff.lint.pycodestyle]
 max-doc-length = 90
 
-[tool.ruff.pydocstyle]
+[tool.ruff.lint.pydocstyle]
 convention = "google"

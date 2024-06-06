@@ -1,4 +1,4 @@
-FROM python:3.11-slim AS py3
+FROM python:3.12-slim AS py3
 RUN pip install pipenv
 
 FROM py3 AS wheel
