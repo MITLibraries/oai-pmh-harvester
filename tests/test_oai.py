@@ -1,5 +1,10 @@
+# ruff: noqa: D205, D209
+
+from unittest import mock
+
 import pytest
 import vcr
+from requests.exceptions import ConnectTimeout, HTTPError
 from sickle import Sickle
 from sickle.oaiexceptions import NoRecordsMatch
 
@@ -272,3 +277,29 @@ def test_aborted_harvest_with_max_errors_reached_and_report(
             )
         )
     assert mock_sentry_capture_message.called
+
+
+@pytest.mark.parametrize(
+    "request_lib_exception",
+    [ConnectTimeout, HTTPError],
+    ids=["ConnectTimeout", "HTTPError"],
+)
+def test_get_records_handles_requests_lib_errors(
+    request_lib_exception, mock_sentry_capture_message
+):
+    """Tests both ConnectTimeout and HTTPError exceptions raised by requests library
+    will get handled gracefully by OAIClient.get_records().  Both of these inherit from
+    the more base RequestException.  Error handling was previously missing connection
+    errors by focusing only on HTTPError."""
+    with mock.patch("sickle.app.Sickle.GetRecord") as mocked_sickle_get_record:
+        mocked_sickle_get_record.side_effect = request_lib_exception()
+        oai_client = OAIClient(
+            "https://dspace.mit.edu/oai/request",
+            metadata_format="oai_dc",
+            retry_status_codes=(),
+        )
+        identifiers = ["oai:not-real:will-fail"]
+        records = list(oai_client.get_records(identifier for identifier in identifiers))
+        expected_records_count = 0
+        assert len(records) == expected_records_count
+        assert mock_sentry_capture_message.called

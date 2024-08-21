@@ -8,7 +8,7 @@ from collections.abc import Iterator
 from typing import Any, Literal
 
 import smart_open
-from requests import HTTPError
+from requests import RequestException
 from sickle import Sickle
 from sickle.models import Record
 from sickle.oaiexceptions import IdDoesNotExist, OAIError
@@ -99,12 +99,13 @@ class OAIClient:
                     identifier,
                 )
                 continue
+
             try:
                 record = self.client.GetRecord(
                     identifier=identifier, metadataPrefix=self.metadata_format
                 )
                 logger.debug("Record retrieved: %s", identifier)
-            except (HTTPError, OAIError) as e:
+            except (RequestException, OAIError) as e:
                 logger.warning(
                     "GetRecord error for identifier %s, reporting to Sentry", identifier
                 )

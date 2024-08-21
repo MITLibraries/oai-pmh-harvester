@@ -1,0 +1,501 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?metadataPrefix=oai_dc&from=2022-03-01&until=2022-03-01&verb=ListIdentifiers
+  response:
+    body:
+      string: <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl"
+        href="static/style.xsl"?><OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"><responseDate>2024-08-21T17:16:23Z</responseDate><request
+        verb="ListIdentifiers" metadataPrefix="oai_dc" from="2022-03-01T00:00:00Z"
+        until="2022-03-01T00:00:00Z">https://dspace.mit.edu//oai/request</request><ListIdentifiers><header><identifier>oai:dspace.mit.edu:1721.1/140805</identifier><datestamp>2022-03-01T03:33:00Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/135829.2</identifier><datestamp>2022-03-01T23:28:08Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/140854.2</identifier><datestamp>2022-03-01T18:42:35Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/140823</identifier><datestamp>2022-03-01T03:19:03Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/138472</identifier><datestamp>2022-03-01T03:48:19Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/140800</identifier><datestamp>2022-03-01T03:01:03Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header></ListIdentifiers></OAI-PMH>
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:23 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F140805&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:23Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/140805\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/140805</identifier><datestamp>2022-03-01T03:33:00Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Structure, Ferroelectricity, and Magnetism in Self\u2010Assembled
+        BiFeO            3            \u2013CoFe            2            O            4
+        \           Nanocomposites on (110)\u2010LaAlO            3            Substrates</dc:title>\n
+        \  <dc:creator>Tian, Guo</dc:creator>\n   <dc:creator>Ojha, Shuchi</dc:creator>\n
+        \  <dc:creator>Ning, Shuai</dc:creator>\n   <dc:creator>Gao, Xingsen</dc:creator>\n
+        \  <dc:creator>Ross, Caroline A.</dc:creator>\n   <dc:date>2022-02-28T16:20:29Z</dc:date>\n
+        \  <dc:date>2022-02-28T16:20:29Z</dc:date>\n   <dc:date>2019-05-06</dc:date>\n
+        \  <dc:type>Article</dc:type>\n   <dc:type>http://purl.org/eprint/type/JournalArticle</dc:type>\n
+        \  <dc:identifier>2199-160X</dc:identifier>\n   <dc:identifier>2199-160X</dc:identifier>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/140805</dc:identifier>\n   <dc:identifier>Tian,
+        Guo, Ojha, Shuchi, Ning, Shuai, Gao, Xingsen and Ross, Caroline A. 2019. \"Structure,
+        Ferroelectricity, and Magnetism in Self\u2010Assembled BiFeO            3
+        \           \u2013CoFe            2            O            4            Nanocomposites
+        on (110)\u2010LaAlO            3            Substrates.\" Advanced Electronic
+        Materials, 5 (7).</dc:identifier>\n   <dc:language>en</dc:language>\n   <dc:relation>http://dx.doi.org/10.1002/aelm.201900012</dc:relation>\n
+        \  <dc:relation>Advanced Electronic Materials</dc:relation>\n   <dc:rights>Creative
+        Commons Attribution-Noncommercial-Share Alike</dc:rights>\n   <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:publisher>Wiley</dc:publisher>\n
+        \  <dc:source>Wiley</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:23 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F135829.2&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:23Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/135829.2\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/135829.2</identifier><datestamp>2022-03-01T23:28:08Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Structure, Chemistry, and Charge Transfer Resistance of the Interface
+        between Li7La3Zr2O12 Electrolyte and LiCoO2 Cathode</dc:title>\n   <dc:creator>Vardar,
+        Gulin</dc:creator>\n   <dc:creator>Bowman, William J</dc:creator>\n   <dc:creator>Lu,
+        Qiyang</dc:creator>\n   <dc:creator>Wang, Jiayue</dc:creator>\n   <dc:creator>Chater,
+        Richard J</dc:creator>\n   <dc:creator>Aguadero, Ainara</dc:creator>\n   <dc:creator>Seibert,
+        Rachel</dc:creator>\n   <dc:creator>Terry, Jeff</dc:creator>\n   <dc:creator>Hunt,
+        Adrian</dc:creator>\n   <dc:creator>Waluyo, Iradwikanari</dc:creator>\n   <dc:creator>Fong,
+        Dillon D</dc:creator>\n   <dc:creator>Jarry, Angelique</dc:creator>\n   <dc:creator>Crumlin,
+        Ethan J</dc:creator>\n   <dc:creator>Hellstrom, Sondra L</dc:creator>\n   <dc:creator>Chiang,
+        Yet-Ming</dc:creator>\n   <dc:creator>Yildiz, Bilge</dc:creator>\n   <dc:contributor>Massachusetts
+        Institute of Technology. Department of Nuclear Science and Engineering</dc:contributor>\n
+        \  <dc:contributor>Massachusetts Institute of Technology. Department of Materials
+        Science and Engineering</dc:contributor>\n   <dc:contributor>Massachusetts
+        Institute of Technology. Laboratory for Electrochemical Interfaces</dc:contributor>\n
+        \  <dc:description>Copyright \xA9 2018 American Chemical Society. All-solid-state
+        batteries promise significant safety and energy density advantages over liquid-electrolyte
+        batteries. The interface between the cathode and the solid electrolyte is
+        an important contributor to charge transfer resistance. Strong bonding of
+        solid oxide electrolytes and cathodes requires sintering at elevated temperatures.
+        Knowledge of the temperature dependence of the composition and charge transfer
+        properties of this interface is important for determining the ideal sintering
+        conditions. To understand the interfacial decomposition processes and their
+        onset temperatures, model systems of LiCoO2 (LCO) thin films deposited on
+        cubic Al-doped Li7La3Zr2O12 (LLZO) pellets were studied as a function of temperature
+        using interface-sensitive techniques. X-ray photoelectron spectroscopy, secondary
+        ion mass spectroscopy, and energy-dispersive X-ray spectroscopy data indicated
+        significant cation interdiffusion and structural changes starting at temperatures
+        as low as 300 \xB0C. La2Zr2O7 and Li2CO3 were identified as decomposition
+        products after annealing at 500 \xB0C by synchrotron X-ray diffraction. X-ray
+        absorption spectroscopy results indicate the presence of also LaCoO3 in addition
+        to La2Zr2O7 and Li2CO3. On the basis of electrochemical impedance spectroscopy
+        and depth profiling of the Li distribution upon potentiostatic hold experiments
+        on symmetric LCO|LLZO|LCO cells, the interfaces exhibited significantly increased
+        impedance, up to 8 times that of the as-deposited samples after annealing
+        at 500 \xB0C. Our results indicate that lower-temperature processing conditions,
+        shorter annealing time scales, and CO2-free environments are desirable for
+        obtaining ceramic cathode|electrolyte interfaces that enable fast Li transfer
+        and high capacity.</dc:description>\n   <dc:description>Bosch Energy Research
+        Network (BERN) grant</dc:description>\n   <dc:description>MISTI MIT-Imperial
+        College grant</dc:description>\n   <dc:description>NSF (DMR 14-19807)</dc:description>\n
+        \  <dc:description>DOE Office of Basic Energy Sciences (Contract No. DE-AC02-06CH11357)</dc:description>\n
+        \  <dc:description>DOE Office of Science (Contract No. DE-SC0012704)</dc:description>\n
+        \  <dc:description>U.S. DOE Contract (DE-AC02-05CH11231)</dc:description>\n
+        \  <dc:date>2022-03-01T23:28:07Z</dc:date>\n   <dc:date>2021-10-27T20:29:31Z</dc:date>\n
+        \  <dc:date>2022-03-01T23:28:07Z</dc:date>\n   <dc:date>2018</dc:date>\n   <dc:date>2019-09-17T17:31:23Z</dc:date>\n
+        \  <dc:type>Article</dc:type>\n   <dc:type>http://purl.org/eprint/type/JournalArticle</dc:type>\n
+        \  <dc:identifier>1520-5002</dc:identifier>\n   <dc:identifier>https://hdl.handle.net/1721.1/135829.2</dc:identifier>\n
+        \  <dc:language>en</dc:language>\n   <dc:relation>https://dx.doi.org/10.1021/ACS.CHEMMATER.8B01713</dc:relation>\n
+        \  <dc:relation>Chemistry of Materials</dc:relation>\n   <dc:rights>Article
+        is made available in accordance with the publisher's policy and may be subject
+        to US copyright law. Please refer to the publisher's site for terms of use.</dc:rights>\n
+        \  <dc:format>application/octet-stream</dc:format>\n   <dc:publisher>American
+        Chemical Society (ACS)</dc:publisher>\n   <dc:source>Other repository</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:23 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F140854.2&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:23Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/140854.2\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/140854.2</identifier><datestamp>2022-03-01T18:42:35Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Reflections on Joan Acker's influence on us and on her legacy:
+        A dialogue</dc:title>\n   <dc:creator>Bailyn, Lotte</dc:creator>\n   <dc:creator>Fletcher,
+        Joyce K.</dc:creator>\n   <dc:date>2022-03-01T18:42:34Z</dc:date>\n   <dc:date>2022-03-01T16:37:13Z</dc:date>\n
+        \  <dc:date>2022-03-01T18:42:34Z</dc:date>\n   <dc:date>2018-02</dc:date>\n
+        \  <dc:date>2017-11</dc:date>\n   <dc:type>Article</dc:type>\n   <dc:type>http://purl.org/eprint/type/JournalArticle</dc:type>\n
+        \  <dc:identifier>0968-6673</dc:identifier>\n   <dc:identifier>1468-0432</dc:identifier>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/140854.2</dc:identifier>\n
+        \  <dc:identifier>Bailyn, Lotte and Fletcher, Joyce K. 2018. \"Reflections
+        on Joan Acker's influence on us and on her legacy: A dialogue.\" Gender, Work
+        &amp; Organization, 26 (12).</dc:identifier>\n   <dc:language>en</dc:language>\n
+        \  <dc:relation>http://dx.doi.org/10.1111/gwao.12235</dc:relation>\n   <dc:relation>Gender,
+        Work &amp; Organization</dc:relation>\n   <dc:rights>Article is made available
+        in accordance with the publisher's policy and may be subject to US copyright
+        law. Please refer to the publisher's site for terms of use.</dc:rights>\n
+        \  <dc:format>application/octet-stream</dc:format>\n   <dc:publisher>Wiley</dc:publisher>\n
+        \  <dc:source>Wiley</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:23 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F140823&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:24Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/140823\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/140823</identifier><datestamp>2022-03-01T03:19:03Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Continuous            N            \u2010Hydroxyphthalimide (NHPI)\u2010Mediated
+        Electrochemical Aerobic Oxidation of Benzylic C\u2212H Bonds</dc:title>\n
+        \  <dc:creator>Mo, Yiming</dc:creator>\n   <dc:creator>Jensen, Klavs F.</dc:creator>\n
+        \  <dc:date>2022-02-28T18:49:40Z</dc:date>\n   <dc:date>2022-02-28T18:49:40Z</dc:date>\n
+        \  <dc:date>2018-06-25</dc:date>\n   <dc:type>Article</dc:type>\n   <dc:type>http://purl.org/eprint/type/JournalArticle</dc:type>\n
+        \  <dc:identifier>0947-6539</dc:identifier>\n   <dc:identifier>1521-3765</dc:identifier>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/140823</dc:identifier>\n   <dc:identifier>Mo,
+        Yiming and Jensen, Klavs F. 2018. \"Continuous            N            \u2010Hydroxyphthalimide
+        (NHPI)\u2010Mediated Electrochemical Aerobic Oxidation of Benzylic C\u2212H
+        Bonds.\" Chemistry \u2013 A European Journal, 24 (40).</dc:identifier>\n   <dc:language>en</dc:language>\n
+        \  <dc:relation>http://dx.doi.org/10.1002/chem.201802588</dc:relation>\n   <dc:relation>Chemistry
+        \u2013 A European Journal</dc:relation>\n   <dc:rights>Creative Commons Attribution-Noncommercial-Share
+        Alike</dc:rights>\n   <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:publisher>Wiley</dc:publisher>\n
+        \  <dc:source>Wiley</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:24 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F138472&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:24Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/138472\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/138472</identifier><datestamp>2022-03-01T03:48:19Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Structures and topological defects in pressure-driven lyotropic
+        chromonic liquid crystals</dc:title>\n   <dc:creator>Zhang, Qing</dc:creator>\n
+        \  <dc:creator>Zhang, Rui</dc:creator>\n   <dc:creator>Ge, Baoliang</dc:creator>\n
+        \  <dc:creator>Yaqoob, Zahid</dc:creator>\n   <dc:creator>So, Peter TC</dc:creator>\n
+        \  <dc:creator>Bischofberger, Irmgard</dc:creator>\n   <dc:description>Lyotropic
+        chromonic liquid crystals are water-based materials composed of self-assembled
+        cylindrical aggregates. Their behavior under flow is poorly understood, and
+        quantitatively resolving the optical retardance of the flowing liquid crystal
+        has so far been limited by the imaging speed of current polarization-resolved
+        imaging techniques. Here, we employ a single-shot quantitative polarization
+        imaging method, termed polarized shearing interference microscopy, to quantify
+        the spatial distribution and the dynamics of the structures emerging in nematic
+        disodium cromoglycate solutions in a microfluidic channel. We show that pure-twist
+        disclination loops nucleate in the bulk flow over a range of shear rates.
+        These loops are elongated in the flow direction and exhibit a constant aspect
+        ratio that is governed by the nonnegligible splay-bend anisotropy at the loop
+        boundary. The size of the loops is set by the balance between nucleation forces
+        and annihilation forces acting on the disclination. The fluctuations of the
+        pure-twist disclination loops reflect the tumbling character of nematic disodium
+        cromoglycate. Our study, including experiment, simulation, and scaling analysis,
+        provides a comprehensive understanding of the structure and dynamics of pressure-driven
+        lyotropic chromonic liquid crystals and might open new routes for using these
+        materials to control assembly and flow of biological systems or particles
+        in microfluidic devices.</dc:description>\n   <dc:date>2021-12-14T13:14:41Z</dc:date>\n
+        \  <dc:date>2021-12-14T13:14:41Z</dc:date>\n   <dc:date>2021-08-31</dc:date>\n
+        \  <dc:date>2021-12-14T13:11:50Z</dc:date>\n   <dc:type>Article</dc:type>\n
+        \  <dc:type>http://purl.org/eprint/type/JournalArticle</dc:type>\n   <dc:identifier>https://hdl.handle.net/1721.1/138472</dc:identifier>\n
+        \  <dc:identifier>Zhang, Qing, Zhang, Rui, Ge, Baoliang, Yaqoob, Zahid, So,
+        Peter TC et al. 2021. \"Structures and topological defects in pressure-driven
+        lyotropic chromonic liquid crystals.\" Proceedings of the National Academy
+        of Sciences, 118 (35).</dc:identifier>\n   <dc:language>en</dc:language>\n
+        \  <dc:relation>10.1073/pnas.2108361118</dc:relation>\n   <dc:relation>Proceedings
+        of the National Academy of Sciences</dc:relation>\n   <dc:rights>Article is
+        made available in accordance with the publisher's policy and may be subject
+        to US copyright law. Please refer to the publisher's site for terms of use.</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:publisher>Proceedings of
+        the National Academy of Sciences</dc:publisher>\n   <dc:source>PNAS</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:24 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F140800&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:24Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/140800\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/140800</identifier><datestamp>2022-03-01T03:01:03Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>A Water-Soluble NaCMC/NaPAA Binder for Exceptional Improvement
+        of Sodium-Ion Batteries with an SnO2-Ordered Mesoporous Carbon Anode</dc:title>\n
+        \  <dc:creator>Patra, Jagabandhu</dc:creator>\n   <dc:creator>Rath, Purna
+        Chandra</dc:creator>\n   <dc:creator>Li, Chi</dc:creator>\n   <dc:creator>Kao,
+        Hsien-Ming</dc:creator>\n   <dc:creator>Wang, Fu-Ming</dc:creator>\n   <dc:creator>Li,
+        Ju</dc:creator>\n   <dc:creator>Chang, Jeng-Kuei</dc:creator>\n   <dc:date>2022-02-28T15:16:11Z</dc:date>\n
+        \  <dc:date>2022-02-28T15:16:11Z</dc:date>\n   <dc:date>2018-11-08</dc:date>\n
+        \  <dc:type>Article</dc:type>\n   <dc:type>http://purl.org/eprint/type/JournalArticle</dc:type>\n
+        \  <dc:identifier>1864-5631</dc:identifier>\n   <dc:identifier>https://hdl.handle.net/1721.1/140800</dc:identifier>\n
+        \  <dc:identifier>Patra, Jagabandhu, Rath, Purna Chandra, Li, Chi, Kao, Hsien-Ming,
+        Wang, Fu-Ming et al. 2018. \"A Water-Soluble NaCMC/NaPAA Binder for Exceptional
+        Improvement of Sodium-Ion Batteries with an SnO2-Ordered Mesoporous Carbon
+        Anode.\" ChemSusChem, 11 (22).</dc:identifier>\n   <dc:language>en</dc:language>\n
+        \  <dc:relation>http://dx.doi.org/10.1002/cssc.201801962</dc:relation>\n   <dc:relation>ChemSusChem</dc:relation>\n
+        \  <dc:rights>Creative Commons Attribution-Noncommercial-Share Alike</dc:rights>\n
+        \  <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:publisher>Wiley</dc:publisher>\n
+        \  <dc:source>Wiley</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:24 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1
