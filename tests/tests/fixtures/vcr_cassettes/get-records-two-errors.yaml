@@ -1,0 +1,339 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F152958&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:24Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/152958\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/152958</identifier><datestamp>2023-11-14T04:00:09Z</datestamp><setSpec>com_1721.1_7582</setSpec><setSpec>hdl_1721.1_7582</setSpec><setSpec>com_1721.1_7581</setSpec><setSpec>hdl_1721.1_7581</setSpec><setSpec>col_1721.1_131022</setSpec><setSpec>hdl_1721.1_131022</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Studying Electronic Textures with Coherent Lensless Imaging</dc:title>\n
+        \  <dc:creator>Levitan, Abraham Lewis</dc:creator>\n   <dc:contributor>Comin,
+        Riccardo</dc:contributor>\n   <dc:contributor>Massachusetts Institute of Technology.
+        Department of Physics</dc:contributor>\n   <dc:description>X-ray microscopes
+        have opened our collective eyes to the richness of nanoscale texture in systems
+        such as correlated and quantum materials. These microscopes draw their power
+        from the combination of short wavelengths, which provide high resolution,
+        and interaction with atomic resonances, which makes them sensitive to subtle
+        changes in electronic structure. However, x-ray microscopy remains an area
+        where the main limits are technological rather than fundamental. Therefore,
+        major progress is still possible with methodological improvements.&#xd;\n&#xd;\nIn
+        the past twenty years, research has exploded into the use of coherent x-ray
+        light to improve the quality and resolution of x-ray microscopes. In many
+        cases, using coherent light makes it possible to remove the objective lens
+        in a microscope, replacing it with an algorithmic analysis of the direct scattering
+        data. This can increase the quality and resolution of the resulting quantitative
+        images.&#xd;\n&#xd;\nIn this thesis, I present the results from a collection
+        of projects aimed at using coherent imaging methods to study the real-space
+        texture of electronic phases of matter with soft x-ray light. I first discuss
+        the methods we developed and implemented to counteract the experimental errors
+        that we found to be ubiquitous in our data, focusing on ptychography, the
+        most commonly used lensless imaging method. Then, I turn to the development
+        of an entirely new single-shot lensless imaging method, randomized probe imaging
+        (RPI).&#xd;\n&#xd;\nRPI has proven to be reliable and robust across a broad
+        range of scenarios. The remainder of the thesis is devoted to applications
+        of RPI at a free electron laser and a synchrotron. Also reported are further
+        projects designed to improve the method, as well as attempts to expand our
+        understanding of the mechanisms behind it and its limitations. I sincerely
+        hope that the availability of RPI will help bring x-ray imaging to a broader
+        group of scientists and lead to a better understanding of the nanoscale details
+        of electronic texture.</dc:description>\n   <dc:description>Ph.D.</dc:description>\n
+        \  <dc:date>2023-11-13T19:57:16Z</dc:date>\n   <dc:date>2023-11-13T19:57:16Z</dc:date>\n
+        \  <dc:date>2023-06</dc:date>\n   <dc:date>2023-10-25T18:00:00.654Z</dc:date>\n
+        \  <dc:type>Thesis</dc:type>\n   <dc:identifier>https://hdl.handle.net/1721.1/152958</dc:identifier>\n
+        \  <dc:rights>In Copyright - Educational Use Permitted</dc:rights>\n   <dc:rights>Copyright
+        retained by author(s)</dc:rights>\n   <dc:rights>https://rightsstatements.org/page/InC-EDU/1.0/</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:publisher>Massachusetts
+        Institute of Technology</dc:publisher>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:24 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F152786&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:24Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/152786\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/152786</identifier><datestamp>2023-11-30T12:25:40Z</datestamp><setSpec>com_1721.1_7582</setSpec><setSpec>hdl_1721.1_7582</setSpec><setSpec>com_1721.1_7581</setSpec><setSpec>hdl_1721.1_7581</setSpec><setSpec>col_1721.1_131023</setSpec><setSpec>hdl_1721.1_131023</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Performing Distance Queries on Social Networks in Sublinear Time</dc:title>\n
+        \  <dc:creator>K\u014Dshima, Nadia</dc:creator>\n   <dc:contributor>Rubinfeld,
+        Ronitt</dc:contributor>\n   <dc:contributor>Massachusetts Institute of Technology.
+        Department of Electrical Engineering and Computer Science</dc:contributor>\n
+        \  <dc:description>Shortest path computation is an important base task in
+        many applications. While there have been improvements to the shortest path
+        algorithms, all require preprocessing the entirety of the graph, creating
+        inefficiencies, especially when applied to large social networks. Considering
+        that social networks often appear with power law distributions, we present
+        the question of utilizing this insight for sublinearity. We thus propose Wormhole,
+        an algorithm that can perform reasonably accurate shortest distance estimations
+        in sublinear runtime. On large graphs, scaling up to billions of edges, Wormhole
+        empirically demonstrates the ability to provide reasonable accuracy over 10,000
+        distance queries while only seeing \U0001D442( \u221A \U0001D45B) vertices.
+        This shows an improvement over the baseline method of Bi-directional BFS,
+        which has shown similar results on the scale of \U0001D442(\U0001D45B).</dc:description>\n
+        \  <dc:description>M.Eng.</dc:description>\n   <dc:date>2023-11-02T20:16:10Z</dc:date>\n
+        \  <dc:date>2023-11-02T20:16:10Z</dc:date>\n   <dc:date>2023-09</dc:date>\n
+        \  <dc:date>2023-10-03T18:21:01.754Z</dc:date>\n   <dc:type>Thesis</dc:type>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/152786</dc:identifier>\n   <dc:rights>In
+        Copyright - Educational Use Permitted</dc:rights>\n   <dc:rights>Copyright
+        retained by author(s)</dc:rights>\n   <dc:rights>https://rightsstatements.org/page/InC-EDU/1.0/</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:publisher>Massachusetts
+        Institute of Technology</dc:publisher>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:24 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F147573&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:24Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/147573\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/147573</identifier><datestamp>2023-11-30T12:36:04Z</datestamp><setSpec>com_1721.1_7582</setSpec><setSpec>hdl_1721.1_7582</setSpec><setSpec>com_1721.1_7581</setSpec><setSpec>hdl_1721.1_7581</setSpec><setSpec>col_1721.1_131023</setSpec><setSpec>hdl_1721.1_131023</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Combining density functional theory and machine learning for
+        optimization of multicomponent oxide electrocatalysts</dc:title>\n   <dc:creator>Karaguesian,
+        Jessica</dc:creator>\n   <dc:contributor>G\xF3mez-Bombarelli, Rafael</dc:contributor>\n
+        \  <dc:contributor>Massachusetts Institute of Technology. Center for Computational
+        Science and Engineering</dc:contributor>\n   <dc:description>Multicomponent
+        metal oxides, such as perovskite oxides, hold promise for use as sustainable
+        alternatives to Ir-, Ru-, and Pt-based electrocatalysts at scale. Perovskites
+        can accommodate a wide variety of elements in their A- and B-sites, enabling
+        tuning of their structural and electronic properties through compositional
+        alloying. These properties, which are obtainable from density functional theory
+        (DFT) calculations, can be used as low-dimensional descriptors that correlate
+        with experimental stability and activity in, for example, the oxygen evolution
+        reaction (OER). Established descriptors of stability include energy above
+        convex hull and energy above Pourbaix hull, while those for catalytic activity
+        include oxygen 2p- and B-site metal d-band centers, for example. We are therefore
+        presented with a combinatorial problem of determining which A- and B-site
+        compositions optimize such descriptors. The compositional search space of
+        \U0001D434\u2093\U0001D434\u2032\u2081\u208B\u2093\U0001D435\u1D67\U0001D435\u2032\u2081\u208B\u1D67\U0001D442\u2083
+        perovskites with up to two different elements in A- and B-sites is at least
+        \U0001D442(10\u2076), making it intractable to calculate descriptors exhaustively
+        using DFT. We therefore combine high-throughput DFT calculations with crystal-based
+        graph neural networks to screen multicomponent perovskites. Using a high-throughput
+        virtual screening platform, a DFT-simulated dataset of over 5,000 multicomponent
+        perovskites was generated, with varied A- and Bsite alloying ratios and over
+        3,000 unique cationic combinations. Leveraging this dataset, alongside calculations
+        available in the literature, graph convolutional neural networks (GNNs) were
+        trained to predict the aforementioned crystal descriptors from unrelaxed cubic
+        structures and used to predict descriptors for \U0001D442(10\u2076) \U0001D434\u2093\U0001D434\u2032\u2081\u208B\u2093\U0001D435\u1D67\U0001D435\u2032\u2081\u208B\u1D67\U0001D442\u2083
+        perovskites. GNNs were also combined with baseline estimates of multicomponent
+        perovskite properties calculated as interpolations of constituent \U0001D434\U0001D435\U0001D442\u2083
+        perovskites, thereby achieving improved model performance. Moreover, impacts
+        of varied cationic ordering were modelled, showing that different decorations
+        of cations within the perovskite lattice can modulate resulting properties
+        to the same degree as\u2014or more than\u2014varying compositional ratios.
+        Equivariant message passing neural networks were thus implemented to achieve
+        cation decoration-aware property predictions. Lastly, GNNs predicting per-site
+        properties were established, encoding local chemical environments to provide
+        physical insights about each atom in a crystal lattice. The presented work
+        provides the community with a benchmark multicomponent perovskite dataset,
+        improved machine learning models, and physical insights to be used in further
+        studies of alloyed perovskites, and thus lays groundwork for improved design
+        of multicomponent oxide electrocatalysts.</dc:description>\n   <dc:description>S.M.</dc:description>\n
+        \  <dc:date>2023-01-19T19:59:32Z</dc:date>\n   <dc:date>2023-01-19T19:59:32Z</dc:date>\n
+        \  <dc:date>2022-09</dc:date>\n   <dc:date>2022-09-12T19:54:20.853Z</dc:date>\n
+        \  <dc:type>Thesis</dc:type>\n   <dc:identifier>https://hdl.handle.net/1721.1/147573</dc:identifier>\n
+        \  <dc:rights>In Copyright - Educational Use Permitted</dc:rights>\n   <dc:rights>Copyright
+        MIT</dc:rights>\n   <dc:rights>http://rightsstatements.org/page/InC-EDU/1.0/</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:publisher>Massachusetts
+        Institute of Technology</dc:publisher>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:24 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F152939&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:24Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/152939\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/152939</identifier><datestamp>2024-01-24T19:51:25Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Mechanisms of Shock Dissipation in Semicrystalline Polyethylene</dc:title>\n
+        \  <dc:creator>Mikhail, John P.</dc:creator>\n   <dc:creator>Rutledge, Gregory
+        C.</dc:creator>\n   <dc:contributor>Massachusetts Institute of Technology.
+        Department of Chemical Engineering</dc:contributor>\n   <dc:contributor>Massachusetts
+        Institute of Technology. Institute for Soldier Nanotechnologies</dc:contributor>\n
+        \  <dc:description>Semicrystalline polymers are lightweight, multiphase materials
+        that exhibit attractive shock dissipation characteristics and have potential
+        applications as protective armor for people and equipment. For shocks of 10
+        GPa or less, we analyzed various mechanisms for the storage and dissipation
+        of shock wave energy in a realistic, united atom (UA) model of semicrystalline
+        polyethylene. Systems characterized by different levels of crystallinity were
+        simulated using equilibrium molecular dynamics with a Hugoniostat to ensure
+        that the resulting states conform to the Rankine&amp;ndash;Hugoniot conditions.
+        To determine the role of structural rearrangements, order parameters and configuration
+        time series were collected during the course of the shock simulations. We
+        conclude that the major mechanisms responsible for the storage and dissipation
+        of shock energy in semicrystalline polyethylene are those associated with
+        plastic deformation and melting of the crystalline domain. For this UA model,
+        plastic deformation occurs primarily through fine crystallographic slip and
+        the formation of kink bands, whose long period decreases with increasing shock
+        pressure.</dc:description>\n   <dc:date>2023-11-13T16:58:51Z</dc:date>\n   <dc:date>2023-11-13T16:58:51Z</dc:date>\n
+        \  <dc:date>2023-10-30</dc:date>\n   <dc:date>2023-11-10T14:57:56Z</dc:date>\n
+        \  <dc:type>Article</dc:type>\n   <dc:type>http://purl.org/eprint/type/JournalArticle</dc:type>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/152939</dc:identifier>\n   <dc:identifier>Polymers
+        15 (21): 4262 (2023)</dc:identifier>\n   <dc:identifier>PUBLISHER_CC</dc:identifier>\n
+        \  <dc:relation>http://dx.doi.org/10.3390/polym15214262</dc:relation>\n   <dc:rights>Creative
+        Commons Attribution</dc:rights>\n   <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:publisher>Multidisciplinary
+        Digital Publishing Institute</dc:publisher>\n   <dc:source>Multidisciplinary
+        Digital Publishing Institute</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:24 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

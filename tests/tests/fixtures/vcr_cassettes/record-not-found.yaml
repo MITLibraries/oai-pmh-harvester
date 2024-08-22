@@ -1,0 +1,2111 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?metadataPrefix=oai_dc&from=2021-11-09T03%3A30%3A00Z&until=2021-11-09T04%3A00%3A00Z&verb=ListIdentifiers
+  response:
+    body:
+      string: <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl"
+        href="static/style.xsl"?><OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"><responseDate>2024-08-21T17:16:17Z</responseDate><request
+        verb="ListIdentifiers" metadataPrefix="oai_dc" from="2021-11-09T03:30:00Z"
+        until="2021-11-09T04:00:00Z">https://dspace.mit.edu//oai/request</request><ListIdentifiers><header><identifier>oai:dspace.mit.edu:1721.1/137646</identifier><datestamp>2021-11-09T03:44:19Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/137627</identifier><datestamp>2021-11-09T03:43:43Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/137807</identifier><datestamp>2021-11-09T03:43:07Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/137641</identifier><datestamp>2021-11-09T03:42:51Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/137692</identifier><datestamp>2021-11-09T03:42:42Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/137762</identifier><datestamp>2021-11-09T03:42:34Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/137710</identifier><datestamp>2021-11-09T03:42:16Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/137683</identifier><datestamp>2021-11-09T03:41:36Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/137785</identifier><datestamp>2021-11-09T03:41:23Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/137740</identifier><datestamp>2021-11-09T03:40:36Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/137775</identifier><datestamp>2021-11-09T03:38:47Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/137650</identifier><datestamp>2021-11-09T03:37:17Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/137678</identifier><datestamp>2021-11-09T03:36:34Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/137638</identifier><datestamp>2021-11-09T03:36:22Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/137766</identifier><datestamp>2021-11-09T03:35:40Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/137687</identifier><datestamp>2021-11-09T03:35:24Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/137828</identifier><datestamp>2021-11-09T03:34:44Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/137831</identifier><datestamp>2021-11-09T03:34:35Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/137791</identifier><datestamp>2021-11-09T03:34:22Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/137743</identifier><datestamp>2021-11-09T03:33:38Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/137685</identifier><datestamp>2021-11-09T03:32:47Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/137796</identifier><datestamp>2021-11-09T03:32:29Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/137660</identifier><datestamp>2021-11-09T03:32:07Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/137734</identifier><datestamp>2021-11-09T03:31:34Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/137686</identifier><datestamp>2021-11-09T03:31:12Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/137658</identifier><datestamp>2021-11-09T03:31:11Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/137761</identifier><datestamp>2021-11-09T03:31:02Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><header><identifier>oai:dspace.mit.edu:1721.1/137801</identifier><datestamp>2021-11-09T03:30:07Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header></ListIdentifiers></OAI-PMH>
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:17 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F137646&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:18Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/137646\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/137646</identifier><datestamp>2021-11-09T03:44:19Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Top quark mass calibration for Monte-Carlo event generators</dc:title>\n
+        \  <dc:creator>Hoang, Andre</dc:creator>\n   <dc:creator>Butenschoen, Mathias</dc:creator>\n
+        \  <dc:creator>Dehnadi, Bahmand</dc:creator>\n   <dc:creator>Mateu, Vicent</dc:creator>\n
+        \  <dc:creator>Preisser, Moritz</dc:creator>\n   <dc:creator>Stewart, Iain
+        W.</dc:creator>\n   <dc:description>The most precise top quark mass measurements
+        use kinematic reconstruction methods, determining the top mass parameter of
+        a Monte Carlo event generator, mMCt. Due to the complicated interplay of hadronization
+        and parton shower dynamics in Monte Carlo event generators, relating mMCt
+        to field theory masses is a non-trivial task. In this talk we present a calibration
+        procedure to determine this relation using hadron level QCD predictions for
+        2-Jettiness in e+e- annihilation, an observable which has kinematic top mass
+        sensitivity and has a close relation to the invariant mass of the particles
+        coming from the top decay. The theoretical ingredients of the QCD prediction
+        are explained. Fitting e+e- 2-Jettiness calculations at NLL/NNLL order to
+        PYTHIA 8.205, we find that mMCt agrees with the MSR mass at the scale 1 GeV
+        within uncertainties, mMCt mMSRt;1GeV, but differs from the pole mass by 900/600MeV.</dc:description>\n
+        \  <dc:date>2021-11-08T13:17:36Z</dc:date>\n   <dc:date>2021-11-08T13:17:36Z</dc:date>\n
+        \  <dc:date>2016-11-09</dc:date>\n   <dc:date>2019-06-03T20:27:56Z</dc:date>\n
+        \  <dc:type>Article</dc:type>\n   <dc:type>http://purl.org/eprint/type/ConferencePaper</dc:type>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/137646</dc:identifier>\n   <dc:identifier>Hoang,
+        Andre, Butenschoen, Mathias, Dehnadi, Bahmand, Mateu, Vicent, Preisser, Moritz
+        et al. 2016. \"Top quark mass calibration for Monte-Carlo event generators.\"</dc:identifier>\n
+        \  <dc:language>en</dc:language>\n   <dc:relation>10.22323/1.265.0153</dc:relation>\n
+        \  <dc:rights>Creative Commons Attribution-NonCommercial-NoDerivs License</dc:rights>\n
+        \  <dc:rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:publisher>Sissa Medialab</dc:publisher>\n
+        \  <dc:source>Proceedings of Science</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:17 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F137627&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:18Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/137627\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/137627</identifier><datestamp>2021-11-09T03:43:43Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>LVIS: Learning from Value Function Intervals for Contact-Aware
+        Robot Controllers</dc:title>\n   <dc:creator>Deits, Robin</dc:creator>\n   <dc:creator>Koolen,
+        Twan</dc:creator>\n   <dc:creator>Tedrake, Russ</dc:creator>\n   <dc:date>2021-11-08T12:15:29Z</dc:date>\n
+        \  <dc:date>2021-11-08T12:15:29Z</dc:date>\n   <dc:date>2019-05</dc:date>\n
+        \  <dc:date>2021-01-27T18:09:34Z</dc:date>\n   <dc:type>Article</dc:type>\n
+        \  <dc:type>http://purl.org/eprint/type/ConferencePaper</dc:type>\n   <dc:identifier>https://hdl.handle.net/1721.1/137627</dc:identifier>\n
+        \  <dc:identifier>Deits, Robin, Koolen, Twan and Tedrake, Russ. 2019. \"LVIS:
+        Learning from Value Function Intervals for Contact-Aware Robot Controllers.\"
+        2019 International Conference on Robotics and Automation (ICRA).</dc:identifier>\n
+        \  <dc:language>en</dc:language>\n   <dc:relation>10.1109/ICRA.2019.8794352</dc:relation>\n
+        \  <dc:relation>2019 International Conference on Robotics and Automation (ICRA)</dc:relation>\n
+        \  <dc:rights>Creative Commons Attribution-Noncommercial-Share Alike</dc:rights>\n
+        \  <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:publisher>Institute of Electrical
+        and Electronics Engineers (IEEE)</dc:publisher>\n   <dc:source>arXiv</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:18 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F137807&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:18Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/137807\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/137807</identifier><datestamp>2021-11-09T03:43:07Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Mobile Communication Signatures of Unemployment</dc:title>\n
+        \  <dc:creator>Almaatouq, Abdullah</dc:creator>\n   <dc:creator>Prieto-Castrillo,
+        Francisco</dc:creator>\n   <dc:creator>Pentland, Alex</dc:creator>\n   <dc:contributor>Massachusetts
+        Institute of Technology. Media Laboratory</dc:contributor>\n   <dc:description>\xA9
+        Springer International Publishing AG 2016. The mapping of populations socio-economic
+        well-being is highly constrained by the logistics of censuses and surveys.
+        Consequently, spatially detailed changes across scales of days, weeks, or
+        months, or even year to year, are difficult to assess; thus the speed of which
+        policies can be designed and evaluated is limited. However, recent studies
+        have shown the value of mobile phone data as an enabling methodology for demographic
+        modeling and measurement. In this work, we investigate whether indicators
+        extracted from mobile phone usage can reveal information about the socio-economical
+        status of microregions such as districts (i.e., average spatial resolution
+        &lt;2.7 km). For this we examine anonymized mobile phone metadata combined
+        with beneficiaries records from unemployment benefit program. We find that
+        aggregated activity, social, and mobility patterns strongly correlate with
+        unemployment. Furthermore, we construct a simple model to produce accurate
+        reconstruction of district level unemployment from their mobile communication
+        patterns alone. Our results suggest that reliable and cost-effective economical
+        indicators could be built based on passively collected and anonymized mobile
+        phone data. With similar data being collected every day by telecommunication
+        services across the world, survey-based methods of measuring community socioeconomic
+        status could potentially be augmented or replaced by such passive sensing
+        methods in the future.</dc:description>\n   <dc:date>2021-11-08T19:58:10Z</dc:date>\n
+        \  <dc:date>2021-11-08T19:58:10Z</dc:date>\n   <dc:date>2016</dc:date>\n   <dc:date>2019-07-26T16:41:54Z</dc:date>\n
+        \  <dc:type>Article</dc:type>\n   <dc:type>http://purl.org/eprint/type/ConferencePaper</dc:type>\n
+        \  <dc:identifier>0302-9743</dc:identifier>\n   <dc:identifier>1611-3349</dc:identifier>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/137807</dc:identifier>\n   <dc:identifier>Almaatouq,
+        Abdullah, Prieto-Castrillo, Francisco and Pentland, Alex. 2016. \"Mobile Communication
+        Signatures of Unemployment.\"</dc:identifier>\n   <dc:language>en</dc:language>\n
+        \  <dc:relation>10.1007/978-3-319-47880-7_25</dc:relation>\n   <dc:rights>Creative
+        Commons Attribution-Noncommercial-Share Alike</dc:rights>\n   <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:publisher>Springer Nature</dc:publisher>\n
+        \  <dc:source>arXiv</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:18 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F137641&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:18Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/137641\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/137641</identifier><datestamp>2021-11-09T03:42:51Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Development of low dark current SiGe-detector arrays for visible-NIR
+        imaging sensor</dc:title>\n   <dc:creator>Sood, Ashok K.</dc:creator>\n   <dc:creator>Richwine,
+        Robert A.</dc:creator>\n   <dc:creator>Puri, Yash R.</dc:creator>\n   <dc:creator>DiLello,
+        Nicole</dc:creator>\n   <dc:creator>Hoyt, Judy L.</dc:creator>\n   <dc:creator>Akinwande,
+        Tayo I.</dc:creator>\n   <dc:creator>Dhar, Nibir</dc:creator>\n   <dc:creator>Horn,
+        Stuart</dc:creator>\n   <dc:creator>Balcerak, Raymond S.</dc:creator>\n   <dc:creator>Bramhall,
+        Thomas G.</dc:creator>\n   <dc:description>SiGe based focal plane arrays offer
+        a low cost alternative for developing visible- near-infrared focal plane arrays
+        that will cover the spectral band from 0.4 to 1.6 microns. The attractive
+        features of SiGe based foal plane arrays take advantage of silicon based technology
+        that promises small feature size, low dark current and compatibility with
+        the low power silicon CMOS circuits for signal processing. This paper will
+        discuss performance characteristics for the SiGe based VIS-NIR Sensors for
+        a variety of defense and commercial applications using small unit cell size
+        and compare performance with InGaAs, InSb, and HgCdTe IRFPA's. We will present
+        results on the approach and device design for reducing the dark current in
+        SiGe detector arrays. We will discuss electrical and optical properties of
+        SiGe arrays at room temperature and as a function of temperature. We will
+        also discuss future integration path for SiGe devices with Si-MEMS Bolometers.
+        \xA9 2010 Copyright SPIE - The International Society for Optical Engineering.</dc:description>\n
+        \  <dc:date>2021-11-08T13:10:17Z</dc:date>\n   <dc:date>2021-11-08T13:10:17Z</dc:date>\n
+        \  <dc:date>2010-04-23</dc:date>\n   <dc:date>2019-05-31T13:16:09Z</dc:date>\n
+        \  <dc:type>Article</dc:type>\n   <dc:type>http://purl.org/eprint/type/ConferencePaper</dc:type>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/137641</dc:identifier>\n   <dc:identifier>Sood,
+        Ashok K., Richwine, Robert A., Puri, Yash R., DiLello, Nicole, Hoyt, Judy
+        L. et al. 2010. \"Development of low dark current SiGe-detector arrays for
+        visible-NIR imaging sensor.\"</dc:identifier>\n   <dc:language>en</dc:language>\n
+        \  <dc:relation>10.1117/12.852682</dc:relation>\n   <dc:rights>Article is
+        made available in accordance with the publisher's policy and may be subject
+        to US copyright law. Please refer to the publisher's site for terms of use.</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:publisher>SPIE</dc:publisher>\n
+        \  <dc:source>SPIE</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:18 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F137692&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:18Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/137692\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/137692</identifier><datestamp>2021-11-09T03:42:42Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Non-Gaussian belief space planning: Correctness and complexity</dc:title>\n
+        \  <dc:creator>Platt, Robert</dc:creator>\n   <dc:creator>Kaelbling, Leslie</dc:creator>\n
+        \  <dc:creator>Lozano-Perez, Tomas</dc:creator>\n   <dc:creator>Tedrake, Russ</dc:creator>\n
+        \  <dc:description>We consider the partially observable control problem where
+        it is potentially necessary to perform complex information-gathering operations
+        in order to localize state. One approach to solving these problems is to create
+        plans in belief-space, the space of probability distributions over the underlying
+        state of the system. The belief-space plan encodes a strategy for performing
+        a task while gaining information as necessary. Unlike most approaches in the
+        literature which rely upon representing belief state as a Gaussian distribution,
+        we have recently proposed an approach to non-Gaussian belief space planning
+        based on solving a non-linear optimization problem defined in terms of a set
+        of state samples [1]. In this paper, we show that even though our approach
+        makes optimistic assumptions about the content of future observations for
+        planning purposes, all low-cost plans are guaranteed to gain information in
+        a specific way under certain conditions. We show that eventually, the algorithm
+        is guaranteed to localize the true state of the system and to reach a goal
+        region with high probability. Although the computational complexity of the
+        algorithm is dominated by the number of samples used to define the optimization
+        problem, our convergence guarantee holds with as few as two samples. Moreover,
+        we show empirically that it is unnecessary to use large numbers of samples
+        in order to obtain good performance. \xA9 2012 IEEE.</dc:description>\n   <dc:date>2021-11-08T16:01:36Z</dc:date>\n
+        \  <dc:date>2021-11-08T16:01:36Z</dc:date>\n   <dc:date>2012-05</dc:date>\n
+        \  <dc:date>2019-06-04T14:02:36Z</dc:date>\n   <dc:type>Article</dc:type>\n
+        \  <dc:type>http://purl.org/eprint/type/ConferencePaper</dc:type>\n   <dc:identifier>https://hdl.handle.net/1721.1/137692</dc:identifier>\n
+        \  <dc:identifier>Platt, Robert, Kaelbling, Leslie, Lozano-Perez, Tomas and
+        Tedrake, Russ. 2012. \"Non-Gaussian belief space planning: Correctness and
+        complexity.\"</dc:identifier>\n   <dc:language>en</dc:language>\n   <dc:relation>10.1109/icra.2012.6225223</dc:relation>\n
+        \  <dc:rights>Creative Commons Attribution-Noncommercial-Share Alike</dc:rights>\n
+        \  <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:publisher>IEEE</dc:publisher>\n
+        \  <dc:source>MIT web domain</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:18 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F137762&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:18Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/137762\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/137762</identifier><datestamp>2021-11-09T03:42:34Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Spectral Signatures in Backdoor Attacks</dc:title>\n   <dc:creator>Tran,
+        Brandon</dc:creator>\n   <dc:creator>Li, Jerry</dc:creator>\n   <dc:creator>Madry,
+        Aleksander</dc:creator>\n   <dc:contributor>Massachusetts Institute of Technology.
+        Department of Electrical Engineering and Computer Science</dc:contributor>\n
+        \  <dc:description>\xA9 2018 Curran Associates Inc. All rights reserved. A
+        recent line of work has uncovered a new form of data poisoning: so-called
+        backdoor attacks. These attacks are particularly dangerous because they do
+        not affect a network's behavior on typical, benign data. Rather, the network
+        only deviates from its expected output when triggered by a perturbation planted
+        by an adversary. In this paper, we identify a new property of all known backdoor
+        attacks, which we call spectral signatures. This property allows us to utilize
+        tools from robust statistics to thwart the attacks. We demonstrate the efficacy
+        of these signatures in detecting and removing poisoned examples on real image
+        sets and state of the art neural network architectures. We believe that understanding
+        spectral signatures is a crucial first step towards designing ML systems secure
+        against such backdoor attacks.</dc:description>\n   <dc:date>2021-11-08T18:28:18Z</dc:date>\n
+        \  <dc:date>2021-11-08T18:28:18Z</dc:date>\n   <dc:date>2018</dc:date>\n   <dc:date>2019-06-13T17:40:55Z</dc:date>\n
+        \  <dc:type>Article</dc:type>\n   <dc:type>http://purl.org/eprint/type/ConferencePaper</dc:type>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/137762</dc:identifier>\n   <dc:identifier>Tran,
+        Brandon, Li, Jerry and Madry, Aleksander. 2018. \"Spectral Signatures in Backdoor
+        Attacks.\"</dc:identifier>\n   <dc:language>en</dc:language>\n   <dc:relation>https://papers.nips.cc/paper/8024-spectral-signatures-in-backdoor-attacks</dc:relation>\n
+        \  <dc:rights>Article is made available in accordance with the publisher's
+        policy and may be subject to US copyright law. Please refer to the publisher's
+        site for terms of use.</dc:rights>\n   <dc:format>application/pdf</dc:format>\n
+        \  <dc:source>Neural Information Processing Systems (NIPS)</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:18 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F137710&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:18Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/137710\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/137710</identifier><datestamp>2021-11-09T03:42:16Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>The materials science procedural text corpus: Annotating materials
+        synthesis procedures with shallow semantic structures</dc:title>\n   <dc:description>\xA9
+        2019 Association for Computational Linguistics Materials science literature
+        contains millions of materials synthesis procedures described in unstructured
+        natural language text. Large-scale analysis of these synthesis procedures
+        would facilitate deeper scientific understanding of materials synthesis and
+        enable automated synthesis planning. Such analysis requires extracting structured
+        representations of synthesis procedures from the raw text as a first step.
+        To facilitate the training and evaluation of synthesis extraction models,
+        we introduce a dataset of 230 synthesis procedures annotated by domain experts
+        with labeled graphs that express the semantics of the synthesis sentences.
+        The nodes in this graph are synthesis operations and their typed arguments,
+        and labeled edges specify relations between the nodes. We describe this new
+        resource in detail and highlight some specific challenges to annotating scientific
+        text with shallow semantic structure. We make the corpus available to the
+        community to promote further research and development of scientific information
+        extraction systems.</dc:description>\n   <dc:date>2021-11-08T16:54:24Z</dc:date>\n
+        \  <dc:date>2021-11-08T16:54:24Z</dc:date>\n   <dc:date>2019-07</dc:date>\n
+        \  <dc:date>2020-09-10T16:55:47Z</dc:date>\n   <dc:type>Article</dc:type>\n
+        \  <dc:type>http://purl.org/eprint/type/ConferencePaper</dc:type>\n   <dc:identifier>https://hdl.handle.net/1721.1/137710</dc:identifier>\n
+        \  <dc:identifier>2019. \"The materials science procedural text corpus: Annotating
+        materials synthesis procedures with shallow semantic structures.\" LAW 2019
+        - 13th Linguistic Annotation Workshop, Proceedings of the Workshop.</dc:identifier>\n
+        \  <dc:language>en</dc:language>\n   <dc:relation>https://www.aclweb.org/anthology/W19-4007.pdf</dc:relation>\n
+        \  <dc:relation>LAW 2019 - 13th Linguistic Annotation Workshop, Proceedings
+        of the Workshop</dc:relation>\n   <dc:rights>Creative Commons Attribution-Noncommercial-Share
+        Alike</dc:rights>\n   <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:source>arXiv</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:18 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F137683&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:18Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/137683\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/137683</identifier><datestamp>2021-11-09T03:41:36Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Learning to guide task and motion planning using score-space
+        representation</dc:title>\n   <dc:creator>Kim, Beomjoon</dc:creator>\n   <dc:creator>Kaelbling,
+        Leslie Pack</dc:creator>\n   <dc:creator>Lozano-Perez, Tomas</dc:creator>\n
+        \  <dc:description>\xA9 2017 IEEE. In this paper, we propose a learning algorithm
+        that speeds up the search in task and motion planning problems. Our algorithm
+        proposes solutions to three different challenges that arise in learning to
+        improve planning efficiency: what to predict, how to represent a planning
+        problem instance, and how to transfer knowledge from one problem instance
+        to another. We propose a method that predicts constraints on the search space
+        based on a generic representation of a planning problem instance, called score
+        space, where we represent a problem instance in terms of performance of a
+        set of solutions attempted so far. Using this representation, we transfer
+        knowledge, in the form of constraints, from previous problems based on the
+        similarity in score space. We design a sequential algorithm that efficiently
+        predicts these constraints, and evaluate it in three different challenging
+        task and motion planning problems. Results indicate that our approach perform
+        orders of magnitudes faster than an unguided planner.</dc:description>\n   <dc:date>2021-11-08T15:29:20Z</dc:date>\n
+        \  <dc:date>2021-11-08T15:29:20Z</dc:date>\n   <dc:date>2017-05</dc:date>\n
+        \  <dc:date>2019-06-04T14:34:58Z</dc:date>\n   <dc:type>Article</dc:type>\n
+        \  <dc:type>http://purl.org/eprint/type/ConferencePaper</dc:type>\n   <dc:identifier>https://hdl.handle.net/1721.1/137683</dc:identifier>\n
+        \  <dc:identifier>Kim, Beomjoon, Kaelbling, Leslie Pack and Lozano-Perez,
+        Tomas. 2017. \"Learning to guide task and motion planning using score-space
+        representation.\"</dc:identifier>\n   <dc:language>en</dc:language>\n   <dc:relation>10.1109/icra.2017.7989327</dc:relation>\n
+        \  <dc:rights>Creative Commons Attribution-Noncommercial-Share Alike</dc:rights>\n
+        \  <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:publisher>IEEE</dc:publisher>\n
+        \  <dc:source>MIT web domain</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:18 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F137785&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl"
+        href="static/style.xsl"?><OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"><responseDate>2024-08-21T17:16:19Z</responseDate><request
+        verb="GetRecord" identifier="oai:dspace.mit.edu:1721.1/137785" metadataPrefix="oai_dc">https://dspace.mit.edu//oai/request</request><error
+        code="idDoesNotExist">The given id does not exist</error></OAI-PMH>
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:19 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F137740&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:19Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/137740\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/137740</identifier><datestamp>2021-11-09T03:40:36Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Shaping Long-lived Electron Wavepackets to Create Customizable
+        Optical Spectra</dc:title>\n   <dc:creator>Dangovski, Rumen</dc:creator>\n
+        \  <dc:creator>Rivera, Nicholas</dc:creator>\n   <dc:creator>Solja\u010Di\u0107,
+        Marin</dc:creator>\n   <dc:creator>Kaminer, Ido</dc:creator>\n   <dc:contributor>Massachusetts
+        Institute of Technology. Department of Physics</dc:contributor>\n   <dc:description>\xA9
+        2018 OSA. We introduce new shape-invariant electron wavepackets constructed
+        via superpositions of states in the ionization continuum, enabling customizable
+        optical emission spectra in the eV-keV range. Their shape-invariance is prolonged
+        indefinitely in exchange for larger spatial spreads.</dc:description>\n   <dc:date>2021-11-08T18:00:33Z</dc:date>\n
+        \  <dc:date>2021-11-08T18:00:33Z</dc:date>\n   <dc:date>2018</dc:date>\n   <dc:date>2019-06-10T13:53:22Z</dc:date>\n
+        \  <dc:type>Article</dc:type>\n   <dc:type>http://purl.org/eprint/type/ConferencePaper</dc:type>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/137740</dc:identifier>\n   <dc:identifier>Dangovski,
+        Rumen, Rivera, Nicholas, Solja\u010Di\u0107, Marin and Kaminer, Ido. 2018.
+        \"Shaping Long-lived Electron Wavepackets to Create Customizable Optical Spectra.\"</dc:identifier>\n
+        \  <dc:language>en</dc:language>\n   <dc:relation>10.1364/cleo_qels.2018.fm1q.3</dc:relation>\n
+        \  <dc:rights>Creative Commons Attribution-Noncommercial-Share Alike</dc:rights>\n
+        \  <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:publisher>The Optical Society</dc:publisher>\n
+        \  <dc:source>Prof. Soljacic via Barbara Williams</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:19 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F137775&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:19Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/137775\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/137775</identifier><datestamp>2021-11-09T03:38:47Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>RADON: Repairable Atomic Data Object in Networks</dc:title>\n
+        \  <dc:creator>Lynch, Nancy</dc:creator>\n   <dc:creator>Medard, Muriel</dc:creator>\n
+        \  <dc:description>\xA9 Kishori M. Konwar, N. Prakash, Nancy A. Lynch, and
+        Muriel Medard. Erasure codes offer an efficient way to decrease storage and
+        communication costs while implementing atomic memory service in asynchronous
+        distributed storage systems. In this paper, we provide erasure-code-based
+        algorithms having the additional ability to perform background repair of crashed
+        nodes. A repair operation of a node in the crashed state is triggered externally,
+        and is carried out by the concerned node via message exchanges with other
+        active nodes in the system. Upon completion of repair, the node re-enters
+        active state, and resumes participation in ongoing and future read, write,
+        and repair operations. To guarantee liveness and atomicity simultaneously,
+        existing works assume either the presence of nodes with stable storage, or
+        presence of nodes that never crash during the execution. We demand neither
+        of these; instead we consider a natural, yet practical network stability condition
+        N 1 that only restricts the number of nodes in the crashed/repair state during
+        broadcast of any message. We present an erasure-code based algorithm RADONC
+        that is always live, and guarantees atomicity as long as condition N1 holds.
+        In situations when the number of concurrent writes is limited, RADONC has
+        significantly improved storage and communication cost over a replication-based
+        algorithm RADONR, which also works under N1. We further show how a slightly
+        stronger network stability condition N2 can be used to construct algorithms
+        that never violate atomicity. The guarantee of atomicity comes at the expense
+        of having an additional phase during the read and write operations.</dc:description>\n
+        \  <dc:date>2021-11-08T18:51:20Z</dc:date>\n   <dc:date>2021-11-08T18:51:20Z</dc:date>\n
+        \  <dc:date>2016</dc:date>\n   <dc:date>2019-06-13T16:20:50Z</dc:date>\n   <dc:type>Article</dc:type>\n
+        \  <dc:type>http://purl.org/eprint/type/ConferencePaper</dc:type>\n   <dc:identifier>https://hdl.handle.net/1721.1/137775</dc:identifier>\n
+        \  <dc:identifier>Lynch, Nancy and Medard, Muriel. 2016. \"RADON: Repairable
+        Atomic Data Object in Networks.\"</dc:identifier>\n   <dc:language>en</dc:language>\n
+        \  <dc:relation>10.4230/LIPIcs.OPODIS.2016.28</dc:relation>\n   <dc:rights>Creative
+        Commons Attribution 4.0 International license</dc:rights>\n   <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:source>DROPS</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:19 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F137650&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:19Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/137650\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/137650</identifier><datestamp>2021-11-09T03:37:17Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Adverse Ocular Events following COVID-19 Vaccination</dc:title>\n
+        \  <dc:creator>Eleiwa, Taher K.</dc:creator>\n   <dc:creator>Gaier, Eric D.</dc:creator>\n
+        \  <dc:creator>Haseeb, Abid</dc:creator>\n   <dc:creator>ElSheikh, Reem H.</dc:creator>\n
+        \  <dc:creator>Sallam, Ahmed B.</dc:creator>\n   <dc:creator>Elhusseiny, Abdelrahman
+        M.</dc:creator>\n   <dc:date>2021-11-08T13:36:06Z</dc:date>\n   <dc:date>2021-11-08T13:36:06Z</dc:date>\n
+        \  <dc:date>2021-09-24</dc:date>\n   <dc:date>2021-11-08T04:08:42Z</dc:date>\n
+        \  <dc:type>Article</dc:type>\n   <dc:type>http://purl.org/eprint/type/JournalArticle</dc:type>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/137650</dc:identifier>\n   <dc:identifier>Eleiwa,
+        Taher K., Gaier, Eric D., Haseeb, Abid, ElSheikh, Reem H., Sallam, Ahmed B.
+        et al. 2021. \"Adverse Ocular Events following COVID-19 Vaccination.\"</dc:identifier>\n
+        \  <dc:language>en</dc:language>\n   <dc:relation>https://doi.org/10.1007/s00011-021-01506-6</dc:relation>\n
+        \  <dc:rights>Article is made available in accordance with the publisher's
+        policy and may be subject to US copyright law. Please refer to the publisher's
+        site for terms of use.</dc:rights>\n   <dc:rights>The Author(s), under exclusive
+        licence to Springer Nature Switzerland AG</dc:rights>\n   <dc:format>application/pdf</dc:format>\n
+        \  <dc:publisher>Springer International Publishing</dc:publisher>\n   <dc:source>Springer
+        International Publishing</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:19 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F137678&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:19Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/137678\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/137678</identifier><datestamp>2021-11-09T03:36:34Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Deep Metric Learning via Facility Location</dc:title>\n   <dc:creator>Song,
+        Hyun Oh</dc:creator>\n   <dc:creator>Jegelka, Stefanie</dc:creator>\n   <dc:creator>Rathod,
+        Vivek</dc:creator>\n   <dc:creator>Murphy, Kevin</dc:creator>\n   <dc:description>\xA9
+        2017 IEEE. Learning image similarity metrics in an end-to-end fashion with
+        deep networks has demonstrated excellent results on tasks such as clustering
+        and retrieval. However, current methods, all focus on a very local view of
+        the data. In this paper, we propose a new metric learning scheme, based on
+        structured prediction, that is aware of the global structure of the embedding
+        space, and which is designed to optimize a clustering quality metric (NMI).
+        We show state of the art performance on standard datasets, such as CUB200-2011
+        [37], Cars196 [18], and Stanford online products [30] on NMI and R@K evaluation
+        metrics.</dc:description>\n   <dc:date>2021-11-08T15:12:27Z</dc:date>\n   <dc:date>2021-11-08T15:12:27Z</dc:date>\n
+        \  <dc:date>2017-07</dc:date>\n   <dc:date>2019-06-03T16:26:05Z</dc:date>\n
+        \  <dc:type>Article</dc:type>\n   <dc:type>http://purl.org/eprint/type/ConferencePaper</dc:type>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/137678</dc:identifier>\n   <dc:identifier>Song,
+        Hyun Oh, Jegelka, Stefanie, Rathod, Vivek and Murphy, Kevin. 2017. \"Deep
+        Metric Learning via Facility Location.\"</dc:identifier>\n   <dc:language>en</dc:language>\n
+        \  <dc:relation>10.1109/cvpr.2017.237</dc:relation>\n   <dc:rights>Creative
+        Commons Attribution-Noncommercial-Share Alike</dc:rights>\n   <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:publisher>IEEE</dc:publisher>\n
+        \  <dc:source>arXiv</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:19 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F137638&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:19Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/137638\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/137638</identifier><datestamp>2021-11-09T03:36:22Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Filling the terahertz gap with sand: High-power terahertz radiators
+        in silicon</dc:title>\n   <dc:creator>Han, Ruonan</dc:creator>\n   <dc:creator>Afshari,
+        Ehsan</dc:creator>\n   <dc:description>\xA9 2015 IEEE. This paper reviews
+        our recent work on Si and SiGe THz sources that generate high-power coherent
+        radiation. Our design approach blends the optimization of device operation
+        near or above fmax with unconventional circuit topologies and energy-efficient
+        electromagnetic structures. Using a 130-nm SiGe HBT process (fmax=3D280 GHz),
+        our 320-GHz transmitter produces a record radiated power (3.3 mW) and DC-to-THz
+        radiation efficiency (0.54%) among all THz signal sources in silicon. This
+        transmitter also demonstrates fully-integrated phase-locking capability for
+        THz radiators for the first time. In this paper, a 260-GHz pulse radiator
+        and a 340-GHz phased array, which are based on a 65-nm bulk CMOS process,
+        are also presented. The former generates a radiated power of 1.1 mW, and provides
+        THz pulses with 25-GHz bandwidth. The latter generates a radiated power of
+        0.8 mW and has a 50\xB0 beam-steering capability. These works demonstrate
+        a promising roadmap towards future THz microsystems using silicon integrated-circuit
+        technologies.</dc:description>\n   <dc:date>2021-11-08T12:51:53Z</dc:date>\n
+        \  <dc:date>2021-11-08T12:51:53Z</dc:date>\n   <dc:date>2015-10</dc:date>\n
+        \  <dc:date>2019-05-30T17:36:26Z</dc:date>\n   <dc:type>Article</dc:type>\n
+        \  <dc:type>http://purl.org/eprint/type/ConferencePaper</dc:type>\n   <dc:identifier>https://hdl.handle.net/1721.1/137638</dc:identifier>\n
+        \  <dc:identifier>Han, Ruonan and Afshari, Ehsan. 2015. \"Filling the terahertz
+        gap with sand: High-power terahertz radiators in silicon.\"</dc:identifier>\n
+        \  <dc:language>en</dc:language>\n   <dc:relation>10.1109/bctm.2015.7340574</dc:relation>\n
+        \  <dc:rights>Creative Commons Attribution-Noncommercial-Share Alike</dc:rights>\n
+        \  <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:publisher>IEEE</dc:publisher>\n
+        \  <dc:source>MIT web domain</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:19 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F137766&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:19Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/137766\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/137766</identifier><datestamp>2021-11-09T03:35:40Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>On the Universality of the Logistic Loss Function</dc:title>\n
+        \  <dc:creator>Painsky, Amichai</dc:creator>\n   <dc:creator>Wornell, Gregory</dc:creator>\n
+        \  <dc:description>\xA9 2018 IEEE. A loss function measures the discrepancy
+        between the true values (observations) and their estimated fits, for a given
+        instance of data. A loss function is said to be proper (unbiased, Fisher consistent)
+        if the fits are defined over a unit simplex, and the minimizer of the expected
+        loss is the true underlying probability of the data. Typical examples are
+        the zero-one loss, the quadratic loss and the Bernoulli log-likelihood loss
+        (log-loss). In this work we show that for binary classification problems,
+        the divergence associated with smooth, proper and convex loss functions is
+        bounded from above by the Kullback-Leibler (KL) divergence, up to a multiplicative
+        normalization constant. It implies that by minimizing the log-loss (associated
+        with the KL divergence), we minimize an upper bound to any choice of loss
+        functions from this set. This property justifies the broad use of log-loss
+        in regression, decision trees, deep neural networks and many other applications.
+        In addition, we show that the KL divergence bounds from above any separable
+        Bregman divergence that is convex in its second argument (up to a multiplicative
+        normalization constant). This result introduces a new set of divergence inequalities,
+        similar to the well-known Pinsker inequality.</dc:description>\n   <dc:date>2021-11-08T18:32:56Z</dc:date>\n
+        \  <dc:date>2021-11-08T18:32:56Z</dc:date>\n   <dc:date>2018-06</dc:date>\n
+        \  <dc:date>2019-07-09T12:57:43Z</dc:date>\n   <dc:type>Article</dc:type>\n
+        \  <dc:type>http://purl.org/eprint/type/ConferencePaper</dc:type>\n   <dc:identifier>https://hdl.handle.net/1721.1/137766</dc:identifier>\n
+        \  <dc:identifier>Painsky, Amichai and Wornell, Gregory. 2018. \"On the Universality
+        of the Logistic Loss Function.\"</dc:identifier>\n   <dc:language>en</dc:language>\n
+        \  <dc:relation>10.1109/isit.2018.8437786</dc:relation>\n   <dc:rights>Creative
+        Commons Attribution-Noncommercial-Share Alike</dc:rights>\n   <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:publisher>IEEE</dc:publisher>\n
+        \  <dc:source>arXiv</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:19 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F137687&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:19Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/137687\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/137687</identifier><datestamp>2021-11-09T03:35:24Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Random Linear Network Coding on Programmable Switches</dc:title>\n
+        \  <dc:description>\xA9 2019 IEEE. By extending the traditional store-and-forward
+        mechanism, network coding has the capability to improve a network's throughput,
+        robustness, and security. Given the fundamentally different packet processing
+        required by this new paradigm and the inflexibility of hardware, existing
+        solutions are based on software. As a result, they have limited performance
+        and scalability, creating a barrier to its wide-spread adoption. By leveraging
+        the recent advances in programmable networking hardware, in this paper we
+        propose a random linear network coding data plane written in P4, as a first
+        step towards a production-level platform. Our solution includes the ability
+        to combine the payload of multiple packets and of executing the required Galois
+        field operations, and shows promise to be practical even under the strict
+        memory and processing constraints of switching hardware.</dc:description>\n
+        \  <dc:date>2021-11-08T15:40:19Z</dc:date>\n   <dc:date>2021-11-08T15:40:19Z</dc:date>\n
+        \  <dc:date>2019-09</dc:date>\n   <dc:date>2021-03-09T17:02:07Z</dc:date>\n
+        \  <dc:type>Article</dc:type>\n   <dc:type>http://purl.org/eprint/type/ConferencePaper</dc:type>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/137687</dc:identifier>\n   <dc:identifier>2019.
+        \"Random Linear Network Coding on Programmable Switches.\" 2019 ACM/IEEE Symposium
+        on Architectures for Networking and Communications Systems, ANCS 2019.</dc:identifier>\n
+        \  <dc:language>en</dc:language>\n   <dc:relation>10.1109/ANCS.2019.8901883</dc:relation>\n
+        \  <dc:relation>2019 ACM/IEEE Symposium on Architectures for Networking and
+        Communications Systems, ANCS 2019</dc:relation>\n   <dc:rights>Creative Commons
+        Attribution-Noncommercial-Share Alike</dc:rights>\n   <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:publisher>Institute of Electrical
+        and Electronics Engineers (IEEE)</dc:publisher>\n   <dc:source>arXiv</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:19 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F137828&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:20Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/137828\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/137828</identifier><datestamp>2021-11-09T03:34:44Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Bond Graph Based Coupled Reactor Simulations</dc:title>\n   <dc:creator>Sosnovsky,
+        Eugeny</dc:creator>\n   <dc:creator>Forget, Benoit</dc:creator>\n   <dc:creator>Newman,
+        Christopher</dc:creator>\n   <dc:contributor>Massachusetts Institute of Technology.
+        Department of Nuclear Science and Engineering</dc:contributor>\n   <dc:description>The
+        bond graph formalism was first introduced to solve the multiphysics problem
+        in electromechanical systems. Over the years, it has been used in many fields
+        including nuclear engineering, but with limited scope due to its perceived
+        impracticality in large systems. This paper introduces this not so well known
+        formalism and presents results from an automated bond graph processing code
+        that simplifies the solution of multiphysics problems. The bond graph of a
+        fully coupled 1D heat transfer and neutron diffusion reactor is derived and
+        the transient solution obtained from the proof-of-concept code is verified
+        using a manufactured solution.</dc:description>\n   <dc:date>2021-11-08T20:56:12Z</dc:date>\n
+        \  <dc:date>2021-11-08T20:56:12Z</dc:date>\n   <dc:date>2010</dc:date>\n   <dc:date>2019-06-20T12:38:10Z</dc:date>\n
+        \  <dc:type>Article</dc:type>\n   <dc:type>http://purl.org/eprint/type/ConferencePaper</dc:type>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/137828</dc:identifier>\n   <dc:identifier>Sosnovsky,
+        Eugeny, Forget, Benoit and Newman, Christopher. 2010. \"Bond Graph Based Coupled
+        Reactor Simulations.\"</dc:identifier>\n   <dc:language>en</dc:language>\n
+        \  <dc:relation>http://toc.proceedings.com/09515webtoc.pdf</dc:relation>\n
+        \  <dc:rights>Creative Commons Attribution-Noncommercial-Share Alike</dc:rights>\n
+        \  <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:source>Prof. Forget via
+        Chris Sherratt</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:20 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F137831&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:20Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/137831\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/137831</identifier><datestamp>2021-11-09T03:34:35Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Learning to Infer Graphics Programs from Hand-Drawn Images</dc:title>\n
+        \  <dc:creator>Ellis, Kevin</dc:creator>\n   <dc:creator>Ritchie, Daniel</dc:creator>\n
+        \  <dc:creator>Solar-Lezama, Armando</dc:creator>\n   <dc:creator>Tenenbaum,
+        Joshua B.</dc:creator>\n   <dc:contributor>Massachusetts Institute of Technology.
+        Computer Science and Artificial Intelligence Laboratory</dc:contributor>\n
+        \  <dc:description>\xA9 2018 Curran Associates Inc.All rights reserved.  We
+        introduce a model that learns to convert simple hand drawings into graphics
+        programs written in a subset of LAT E X. The model combines techniques from
+        deep learning and program synthesis. We learn a convolutional neural network
+        that proposes plausible drawing primitives that explain an image. These drawing
+        primitives are a specification (spec) of what the graphics program needs to
+        draw. We learn a model that uses program synthesis techniques to recover a
+        graphics program from that spec. These programs have constructs like variable
+        bindings, iterative loops, or simple kinds of conditionals. With a graphics
+        program in hand, we can correct errors made by the deep network and extrapolate
+        drawings.</dc:description>\n   <dc:date>2021-11-08T21:02:24Z</dc:date>\n   <dc:date>2021-11-08T21:02:24Z</dc:date>\n
+        \  <dc:date>2018</dc:date>\n   <dc:date>2019-07-10T13:27:12Z</dc:date>\n   <dc:type>Article</dc:type>\n
+        \  <dc:type>http://purl.org/eprint/type/ConferencePaper</dc:type>\n   <dc:identifier>https://hdl.handle.net/1721.1/137831</dc:identifier>\n
+        \  <dc:identifier>Ellis, Kevin, Ritchie, Daniel, Solar-Lezama, Armando and
+        Tenenbaum, Joshua B. 2018. \"Learning to Infer Graphics Programs from Hand-Drawn
+        Images.\"</dc:identifier>\n   <dc:language>en</dc:language>\n   <dc:relation>https://papers.nips.cc/paper/7845-learning-to-infer-graphics-programs-from-hand-drawn-images</dc:relation>\n
+        \  <dc:rights>Article is made available in accordance with the publisher's
+        policy and may be subject to US copyright law. Please refer to the publisher's
+        site for terms of use.</dc:rights>\n   <dc:format>application/pdf</dc:format>\n
+        \  <dc:source>Neural Information Processing Systems (NIPS)</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:20 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F137791&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:20Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/137791\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/137791</identifier><datestamp>2021-11-09T03:34:22Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Pervasive Stress Recognition for Sustainable Living</dc:title>\n
+        \  <dc:creator>Bogomolov, Andrey</dc:creator>\n   <dc:creator>Lepri, Bruno</dc:creator>\n
+        \  <dc:creator>Ferron, Michela</dc:creator>\n   <dc:creator>Pianesi, Fabio</dc:creator>\n
+        \  <dc:creator>Pentland, Alex Sandy</dc:creator>\n   <dc:contributor>Massachusetts
+        Institute of Technology. Media Laboratory</dc:contributor>\n   <dc:description>In
+        this paper we provide the evidence that daily stress can be reliably recognized
+        based on human behavior metrics derived from the mobile phone activity (call
+        log, sms log, bluetooth interactions). We introduce an original approach for
+        feature extraction, selection, recognition model training and discuss the
+        experimental results based on Random Forest and Gradient Boosted Machine algorithms.
+        Random Forest based model showed low variance comparing to the GBM-based one,
+        thus winning the bias-variance tradeoff and preventing over-fitting, given
+        the noisy source data. Potential impact of the technology is reducing stress
+        and enhancing subjective well-being for sustainable living. \xA9 2014 IEEE.</dc:description>\n
+        \  <dc:date>2021-11-08T19:24:44Z</dc:date>\n   <dc:date>2021-11-08T19:24:44Z</dc:date>\n
+        \  <dc:date>2014-03</dc:date>\n   <dc:date>2019-07-26T13:59:29Z</dc:date>\n
+        \  <dc:type>Article</dc:type>\n   <dc:type>http://purl.org/eprint/type/ConferencePaper</dc:type>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/137791</dc:identifier>\n   <dc:identifier>Bogomolov,
+        Andrey, Lepri, Bruno, Ferron, Michela, Pianesi, Fabio and Pentland, Alex Sandy.
+        2014. \"Pervasive Stress Recognition for Sustainable Living.\"</dc:identifier>\n
+        \  <dc:language>en</dc:language>\n   <dc:relation>10.1109/percomw.2014.6815230</dc:relation>\n
+        \  <dc:rights>Creative Commons Attribution-Noncommercial-Share Alike</dc:rights>\n
+        \  <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:publisher>Institute of Electrical
+        and Electronics Engineers (IEEE)</dc:publisher>\n   <dc:source>Other repository</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:20 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F137743&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:20Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/137743\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/137743</identifier><datestamp>2021-11-09T03:33:38Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Ant-Inspired Dynamic Task Allocation via Gossiping</dc:title>\n
+        \  <dc:creator>Su, Hsin-Hao</dc:creator>\n   <dc:creator>Su, Lili</dc:creator>\n
+        \  <dc:creator>Dornhaus, Anna</dc:creator>\n   <dc:creator>Lynch, Nancy</dc:creator>\n
+        \  <dc:description>\xA9 Springer International Publishing AG 2017. We study
+        the distributed task allocation problem in multi-agent systems, where each
+        agent selects a task in such a way that, collectively, they achieve a proper
+        global task allocation. In this paper, inspired by specialization on division
+        of labor in ant colonies, we propose several scalable and efficient algorithms
+        to dynamically allocate the agents as the task demands change. The algorithms
+        have their own pros and cons, with respect to (1) how fast they react to dynamic
+        demands change, (2) how many agents need to switch tasks, (3) whether extra
+        agents are needed, and (4) whether they are resilient to faults.</dc:description>\n
+        \  <dc:date>2021-11-08T18:01:49Z</dc:date>\n   <dc:date>2021-11-08T18:01:49Z</dc:date>\n
+        \  <dc:date>2017</dc:date>\n   <dc:date>2019-06-13T16:12:15Z</dc:date>\n   <dc:type>Article</dc:type>\n
+        \  <dc:type>http://purl.org/eprint/type/ConferencePaper</dc:type>\n   <dc:identifier>0302-9743</dc:identifier>\n
+        \  <dc:identifier>1611-3349</dc:identifier>\n   <dc:identifier>https://hdl.handle.net/1721.1/137743</dc:identifier>\n
+        \  <dc:identifier>Su, Hsin-Hao, Su, Lili, Dornhaus, Anna and Lynch, Nancy.
+        2017. \"Ant-Inspired Dynamic Task Allocation via Gossiping.\"</dc:identifier>\n
+        \  <dc:language>en</dc:language>\n   <dc:relation>10.1007/978-3-319-69084-1_11</dc:relation>\n
+        \  <dc:rights>Creative Commons Attribution-Noncommercial-Share Alike</dc:rights>\n
+        \  <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:publisher>Springer Nature</dc:publisher>\n
+        \  <dc:source>MIT web domain</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:20 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F137685&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:20Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/137685\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/137685</identifier><datestamp>2021-11-09T03:32:47Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Origamizer: A practical algorithm for folding any polyhedron</dc:title>\n
+        \  <dc:creator>Demaine, Erik</dc:creator>\n   <dc:creator>Tachi, Tomohiro</dc:creator>\n
+        \  <dc:description>\xA9 Erik D. Demaine and Tomohiro Tachi. It was established
+        at SoCG'99 that every polyhedral complex can be folded from a sufficiently
+        large square of paper, but the known algorithms are extremely impractical,
+        wasting most of the material and making folds through many layers of paper.
+        At a deeper level, these foldings get the topology wrong, introducing many
+        gaps (boundaries) in the surface, which results in flimsy foldings in practice.
+        We develop a new algorithm designed specifically for the practical folding
+        of real paper into complicated polyhedral models. We prove that the algorithm
+        correctly folds any oriented polyhedral manifold, plus an arbitrarily small
+        amount of additional structure on one side of the surface (so for closed manifolds,
+        inside the model). This algorithm is the first to attain the watertight property:
+        for a specified cutting of the manifold into a topological disk with boundary,
+        the folding maps the boundary of the paper to within \u03F5 of the specified
+        boundary of the surface (in Fr\xE9chet distance). Our foldings also have the
+        geometric feature that every convex face is folded seamlessly, i.e., as one
+        unfolded convex polygon of the piece of paper. This work provides the theoretical
+        underpinnings for Origamizer, freely available software written by the second
+        author, which has enabled practical folding of many complex polyhedral models
+        such as the Stanford bunny.</dc:description>\n   <dc:date>2021-11-08T15:38:21Z</dc:date>\n
+        \  <dc:date>2021-11-08T15:38:21Z</dc:date>\n   <dc:date>2017</dc:date>\n   <dc:date>2019-06-04T12:50:10Z</dc:date>\n
+        \  <dc:type>Article</dc:type>\n   <dc:type>http://purl.org/eprint/type/ConferencePaper</dc:type>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/137685</dc:identifier>\n   <dc:identifier>Demaine,
+        Erik and Tachi, Tomohiro. 2017. \"Origamizer: A practical algorithm for folding
+        any polyhedron.\"</dc:identifier>\n   <dc:language>en</dc:language>\n   <dc:relation>10.4230/LIPIcs.SoCG.2017.34</dc:relation>\n
+        \  <dc:rights>Creative Commons Attribution 4.0 International license</dc:rights>\n
+        \  <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>\n   <dc:format>application/pdf</dc:format>\n
+        \  <dc:source>DROPS</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:20 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F137796&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:20Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/137796\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/137796</identifier><datestamp>2021-11-09T03:32:29Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Bots as Virtual Confederates: Design and Ethics</dc:title>\n
+        \  <dc:creator>Krafft, Peter M.</dc:creator>\n   <dc:creator>Macy, Michael</dc:creator>\n
+        \  <dc:creator>Pentland, Alex \"Sandy\"</dc:creator>\n   <dc:description>The
+        use of bots as virtual confederates in online field experiments holds extreme
+        promise as a new methodological tool in computational social science. However,
+        this potential tool comes with inherent ethical challenges. Informed consent
+        can be difficult to obtain in many cases, and the use of confederates necessarily
+        implies the use of deception. In this work we outline a design space for bots
+        as virtual confederates, and we propose a set of guidelines for meeting the
+        status quo for ethical experimentation. We draw upon examples from prior work
+        in the CSCW community and the broader social science literature for illustration.
+        While a handful of prior researchers have used bots in online experimentation,
+        our work is meant to inspire future work in this area and raise awareness
+        of the associated ethical issues.</dc:description>\n   <dc:date>2021-11-08T19:30:39Z</dc:date>\n
+        \  <dc:date>2021-11-08T19:30:39Z</dc:date>\n   <dc:date>2017-02</dc:date>\n
+        \  <dc:date>2019-07-26T16:55:01Z</dc:date>\n   <dc:type>Article</dc:type>\n
+        \  <dc:type>http://purl.org/eprint/type/ConferencePaper</dc:type>\n   <dc:identifier>https://hdl.handle.net/1721.1/137796</dc:identifier>\n
+        \  <dc:identifier>Krafft, Peter M., Macy, Michael and Pentland, Alex \"Sandy\".
+        2017. \"Bots as Virtual Confederates: Design and Ethics.\"</dc:identifier>\n
+        \  <dc:language>en</dc:language>\n   <dc:relation>10.1145/2998181.2998354</dc:relation>\n
+        \  <dc:rights>Creative Commons Attribution-Noncommercial-Share Alike</dc:rights>\n
+        \  <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:publisher>Association for
+        Computing Machinery (ACM)</dc:publisher>\n   <dc:source>arXiv</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:20 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F137660&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:20Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/137660\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/137660</identifier><datestamp>2021-11-09T03:32:07Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Cormorant Webbed-feet Support Water-surface Takeoff: Quantitative
+        Analysis via CFD</dc:title>\n   <dc:creator>Huang, Jinguo</dc:creator>\n   <dc:creator>Liang,
+        Jianhong</dc:creator>\n   <dc:creator>Yang, Xingbang</dc:creator>\n   <dc:creator>Chen,
+        Hongyu</dc:creator>\n   <dc:creator>Wang, Tianmiao</dc:creator>\n   <dc:description>Abstract&#xd;\n
+        \             The bio-inspired aerial\u2013aquatic vehicle offers attractive
+        perspectives for future intelligent robotic systems. Cormorant\u2019s webbed-feet
+        support water-surface takeoff is a typical locomotion pattern of amphibious
+        water birds, but its highly maneuverable and agile kinetic behaviors are inconvenient
+        to measure directly and challenging to calculate convergently. This paper
+        presents a numerical Computational Fluid Dynamic (CFD) technique to simulate
+        and reproduce the cormorant's surface takeoff process by modeling the three-dimensional
+        biomimetic cormorant. Quantitative numerical analysis of the fluid flows and
+        hydrodynamic forces around a cormorant\u2019s webbed feet, body, and wings
+        are conducted, which are consistent with experimental results and theoretical
+        verification. The results show that the webbed feet indeed produced a large
+        majority of the takeoff power during the initial takeoff stage. Prior lift
+        and greater angle of attack are generated to bring the body off the water
+        as soon as possible. With the discussion of the mechanism of the cormorant\u2019s
+        water-surface takeoff and the relevant characteristics of biology, the impetus
+        and attitude adjustment strategies of the aerial\u2013aquatic vehicle in the
+        takeoff process are illustrated.</dc:description>\n   <dc:date>2021-11-08T14:18:41Z</dc:date>\n
+        \  <dc:date>2021-11-08T14:18:41Z</dc:date>\n   <dc:date>2021-10-11</dc:date>\n
+        \  <dc:date>2021-11-06T04:17:07Z</dc:date>\n   <dc:type>Article</dc:type>\n
+        \  <dc:type>http://purl.org/eprint/type/JournalArticle</dc:type>\n   <dc:identifier>https://hdl.handle.net/1721.1/137660</dc:identifier>\n
+        \  <dc:identifier>Huang, Jinguo, Liang, Jianhong, Yang, Xingbang, Chen, Hongyu
+        and Wang, Tianmiao. 2021. \"Cormorant Webbed-feet Support Water-surface Takeoff:
+        Quantitative Analysis via CFD.\"</dc:identifier>\n   <dc:language>en</dc:language>\n
+        \  <dc:relation>https://doi.org/10.1007/s42235-021-00090-z</dc:relation>\n
+        \  <dc:rights>Article is made available in accordance with the publisher's
+        policy and may be subject to US copyright law. Please refer to the publisher's
+        site for terms of use.</dc:rights>\n   <dc:rights>Jilin University 2021</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:publisher>Springer Singapore</dc:publisher>\n
+        \  <dc:source>Springer Singapore</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:20 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F137734&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:21Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/137734\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/137734</identifier><datestamp>2021-11-09T03:31:34Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Planar-lens Enabled Beam Steering for Chip-scale LIDAR</dc:title>\n
+        \  <dc:creator>L\xF3pez, Josu\xE9 J.</dc:creator>\n   <dc:creator>Skirlo,
+        Scott A.</dc:creator>\n   <dc:creator>Kharas, Dave</dc:creator>\n   <dc:creator>Sloan,
+        Jamison</dc:creator>\n   <dc:creator>Herd, Jeffrey</dc:creator>\n   <dc:creator>Juodawlkis,
+        Paul</dc:creator>\n   <dc:creator>Solja\u010Di\u0107, Marin</dc:creator>\n
+        \  <dc:creator>Sorace-Agaskar, Cheryl</dc:creator>\n   <dc:contributor>Lincoln
+        Laboratory</dc:contributor>\n   <dc:description>\xA9 2018 OSA. A lens-enabled
+        chip-scale beam steering device for LIDAR is theoretically analyzed and experimentally
+        demonstrated with azimuthal, \u03C6range = 38.8\xB0, and polar, \u03B8range
+        = 12.0\xB0, beam-steering. The device allows for beam-steering at low power
+        and low cost.</dc:description>\n   <dc:date>2021-11-08T17:52:19Z</dc:date>\n
+        \  <dc:date>2021-11-08T17:52:19Z</dc:date>\n   <dc:date>2018</dc:date>\n   <dc:date>2019-06-10T13:46:33Z</dc:date>\n
+        \  <dc:type>Article</dc:type>\n   <dc:type>http://purl.org/eprint/type/ConferencePaper</dc:type>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/137734</dc:identifier>\n   <dc:identifier>L\xF3pez,
+        Josu\xE9 J., Skirlo, Scott A., Kharas, Dave, Sloan, Jamison, Herd, Jeffrey
+        et al. 2018. \"Planar-lens Enabled Beam Steering for Chip-scale LIDAR.\"</dc:identifier>\n
+        \  <dc:language>en</dc:language>\n   <dc:relation>10.1364/cleo_si.2018.sm3i.1</dc:relation>\n
+        \  <dc:rights>Creative Commons Attribution-Noncommercial-Share Alike</dc:rights>\n
+        \  <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:publisher>The Optical Society</dc:publisher>\n
+        \  <dc:source>Prof. Soljacic via Barbara Williams</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:21 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F137686&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:21Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/137686\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/137686</identifier><datestamp>2021-11-09T03:31:12Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>The CUORE slow monitoring systems</dc:title>\n   <dc:creator>Gladstone,
+        L</dc:creator>\n   <dc:creator>Biare, D</dc:creator>\n   <dc:creator>Cappelli,
+        L</dc:creator>\n   <dc:creator>Cushman, J S</dc:creator>\n   <dc:creator>Del
+        Corso, F</dc:creator>\n   <dc:creator>Fujikawa, B K</dc:creator>\n   <dc:creator>Hickerson,
+        K P</dc:creator>\n   <dc:creator>Moggi, N</dc:creator>\n   <dc:creator>Pagliarone,
+        C E</dc:creator>\n   <dc:creator>Schmidt, B</dc:creator>\n   <dc:creator>Wagaarachchi,
+        S L</dc:creator>\n   <dc:creator>Welliver, B</dc:creator>\n   <dc:creator>Winslow,
+        L A</dc:creator>\n   <dc:description>\xA9 Published under licence by IOP Publishing
+        Ltd.  CUORE is a cryogenic experiment searching primarily for neutrinoless
+        double decay in 130 Te. It will begin data-taking operations in 2016. To monitor
+        the cryostat and detector during commissioning and data taking, we have designed
+        and developed Slow Monitoring systems. In addition to real-time systems using
+        LabVIEW, we have an alarm, analysis, and archiving website that uses MongoDB,
+        AngularJS, and Bootstrap software. These modern, state of the art software
+        packages make the monitoring system transparent, easily maintainable, and
+        accessible on many platforms including mobile devices.</dc:description>\n
+        \  <dc:date>2021-11-08T15:39:42Z</dc:date>\n   <dc:date>2021-11-08T15:39:42Z</dc:date>\n
+        \  <dc:date>2017-09</dc:date>\n   <dc:date>2019-06-04T12:42:35Z</dc:date>\n
+        \  <dc:type>Article</dc:type>\n   <dc:type>http://purl.org/eprint/type/ConferencePaper</dc:type>\n
+        \  <dc:identifier>1742-6588</dc:identifier>\n   <dc:identifier>1742-6596</dc:identifier>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/137686</dc:identifier>\n   <dc:identifier>Gladstone,
+        L, Biare, D, Cappelli, L, Cushman, J S, Del Corso, F et al. 2017. \"The CUORE
+        slow monitoring systems.\" 888.</dc:identifier>\n   <dc:language>en</dc:language>\n
+        \  <dc:relation>10.1088/1742-6596/888/1/012234</dc:relation>\n   <dc:rights>Creative
+        Commons Attribution 3.0 unported license</dc:rights>\n   <dc:rights>https://creativecommons.org/licenses/by/3.0/</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:publisher>IOP Publishing</dc:publisher>\n
+        \  <dc:source>IOP Publishing</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:21 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F137658&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:21Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/137658\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/137658</identifier><datestamp>2021-11-09T03:31:11Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>A Simple Bound on the BER of the Map Decoder for Massive MIMO
+        Systems</dc:title>\n   <dc:description>\xA9 2019 IEEE. The deployment of massive
+        MIMO systems has revived much of the interest in the study of the large-system
+        performance of multiuser detection systems. In this paper, we prove a non-trivial
+        upper bound on the bit-error rate (BER) of the MAP detector for BPSK signal
+        transmission and equal-power condition. In particular, our bound is approximately
+        tight at high-SNR. The proof is simple and relies on Gordon's comparison inequality.
+        Interestingly, we show that under the assumption that Gordon's inequality
+        is tight, the resulting BER prediction matches that of the replica method
+        under the replica symmetry (RS) ansatz. Also, we prove that, when the ratio
+        of receive to transmit antennas exceeds 0.9251, the replica prediction matches
+        the matched filter lower bound (MFB) at high-SNR. We corroborate our results
+        by numerical evidence.</dc:description>\n   <dc:date>2021-11-08T14:13:26Z</dc:date>\n
+        \  <dc:date>2021-11-08T14:13:26Z</dc:date>\n   <dc:date>2019-03</dc:date>\n
+        \  <dc:date>2021-03-09T19:46:43Z</dc:date>\n   <dc:type>Article</dc:type>\n
+        \  <dc:type>http://purl.org/eprint/type/ConferencePaper</dc:type>\n   <dc:identifier>https://hdl.handle.net/1721.1/137658</dc:identifier>\n
+        \  <dc:identifier>2019. \"A Simple Bound on the BER of the Map Decoder for
+        Massive MIMO Systems.\" ICASSP, IEEE International Conference on Acoustics,
+        Speech and Signal Processing - Proceedings, 2019-May.</dc:identifier>\n   <dc:language>en</dc:language>\n
+        \  <dc:relation>10.1109/ICASSP.2019.8682440</dc:relation>\n   <dc:relation>ICASSP,
+        IEEE International Conference on Acoustics, Speech and Signal Processing -
+        Proceedings</dc:relation>\n   <dc:rights>Creative Commons Attribution-Noncommercial-Share
+        Alike</dc:rights>\n   <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:publisher>Institute of Electrical
+        and Electronics Engineers (IEEE)</dc:publisher>\n   <dc:source>arXiv</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:21 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F137761&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:21Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/137761\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/137761</identifier><datestamp>2021-11-09T03:31:02Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Brief announcement: On simple back-off in unreliable radio networks</dc:title>\n
+        \  <dc:creator>Lynch, Nancy</dc:creator>\n   <dc:description>\xA9 Seth Gilbert,
+        Nancy Lynch, Calvin Newport, and Dominik Pajak. In this paper, we study local
+        broadcast in the dual graph model, which describes communication in a radio
+        network with both reliable and unreliable links. Existing work proved that
+        efficient solutions to these problems are impossible in the dual graph model
+        under standard assumptions. In real networks, however, simple back-off strategies
+        tend to perform well for solving these basic communication tasks. We address
+        this apparent paradox by introducing a new set of constraints to the dual
+        graph model that better generalize the slow/fast fading behavior common in
+        real networks. We prove that in the context of these new constraints, simple
+        back-off strategies now provide efficient solutions to local broadcast in
+        the dual graph model. These results provide theoretical foundations for the
+        practical observation that simple back-off algorithms tend to work well even
+        amid the complicated link dynamics of real radio networks.</dc:description>\n
+        \  <dc:date>2021-11-08T18:27:35Z</dc:date>\n   <dc:date>2021-11-08T18:27:35Z</dc:date>\n
+        \  <dc:date>2018</dc:date>\n   <dc:date>2019-06-13T14:55:29Z</dc:date>\n   <dc:type>Article</dc:type>\n
+        \  <dc:type>http://purl.org/eprint/type/ConferencePaper</dc:type>\n   <dc:identifier>https://hdl.handle.net/1721.1/137761</dc:identifier>\n
+        \  <dc:identifier>Lynch, Nancy. 2018. \"Brief announcement: On simple back-off
+        in unreliable radio networks.\"</dc:identifier>\n   <dc:language>en</dc:language>\n
+        \  <dc:relation>10.4230/LIPIcs.DISC.2018.48</dc:relation>\n   <dc:rights>Creative
+        Commons Attribution 4.0 International license</dc:rights>\n   <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:source>DROPS</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:21 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://dspace.mit.edu/oai/request?identifier=oai%3Adspace.mit.edu%3A1721.1%2F137801&metadataPrefix=oai_dc&verb=GetRecord
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet type=\"text/xsl\"
+        href=\"static/style.xsl\"?><OAI-PMH xmlns=\"http://www.openarchives.org/OAI/2.0/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/
+        http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd\"><responseDate>2024-08-21T17:16:21Z</responseDate><request
+        verb=\"GetRecord\" identifier=\"oai:dspace.mit.edu:1721.1/137801\" metadataPrefix=\"oai_dc\">https://dspace.mit.edu//oai/request</request><GetRecord><record><header><identifier>oai:dspace.mit.edu:1721.1/137801</identifier><datestamp>2021-11-09T03:30:07Z</datestamp><setSpec>com_1721.1_49432</setSpec><setSpec>hdl_1721.1_49432</setSpec><setSpec>col_1721.1_49433</setSpec><setSpec>hdl_1721.1_49433</setSpec></header><metadata><oai_dc:dc
+        xmlns:oai_dc=\"http://www.openarchives.org/OAI/2.0/oai_dc/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\"
+        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:doc=\"http://www.lyncode.com/xoai\"
+        xsi:schemaLocation=\"http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd\">\n
+        \  <dc:title>Online learning in repeated auctions</dc:title>\n   <dc:creator>Rigolette,
+        Philippe</dc:creator>\n   <dc:creator>Weed, Jonathan</dc:creator>\n   <dc:description>\xA9
+        2016 J. Weed, V. Perchet  &amp;  P. Rigollet. Motivated by online advertising
+        auctions, we consider repeated Vickrey auctions where goods of unknown value
+        are sold sequentially and bidders only learn (potentially noisy) information
+        about a good's value once it is purchased. We adopt an online learning approach
+        with bandit feedback to model this problem and derive bidding strategies for
+        two models: stochastic and adversarial. In the stochastic model, the observed
+        values of the goods are random variables centered around the true value of
+        the good. In this case, logarithmic regret is achievable when competing against
+        well behaved adversaries. In the adversarial model, the goods need not be
+        identical. Comparing our performance against that of the best fixed bid in
+        hindsight, we show that sublinear regret is also achievable in this case.
+        For both the stochastic and adversarial models, we prove matching minimax
+        lower bounds showing our strategies to be optimal up to lower-order terms.
+        To our knowledge, this is the first complete set of strategies for bidders
+        participating in auctions of this type.</dc:description>\n   <dc:date>2021-11-08T19:41:47Z</dc:date>\n
+        \  <dc:date>2021-11-08T19:41:47Z</dc:date>\n   <dc:date>2019-11-19T17:08:43Z</dc:date>\n
+        \  <dc:type>Article</dc:type>\n   <dc:type>http://purl.org/eprint/type/ConferencePaper</dc:type>\n
+        \  <dc:identifier>https://hdl.handle.net/1721.1/137801</dc:identifier>\n   <dc:identifier>Rigolette,
+        Philippe and Weed, Jonathan. \"Online learning in repeated auctions.\"</dc:identifier>\n
+        \  <dc:language>en</dc:language>\n   <dc:relation>http://proceedings.mlr.press/v49/weed16.pdf</dc:relation>\n
+        \  <dc:rights>Creative Commons Attribution-Noncommercial-Share Alike</dc:rights>\n
+        \  <dc:rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</dc:rights>\n
+        \  <dc:format>application/pdf</dc:format>\n   <dc:source>arXiv</dc:source>\n</oai_dc:dc></metadata></record></GetRecord></OAI-PMH>"
+    headers:
+      Connection:
+      - close
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Wed, 21 Aug 2024 17:16:21 GMT
+      Set-cookie:
+      - HttpOnly;Secure
+      Strict-Transport-Security:
+      - max-age=63072000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1
