@@ -57,9 +57,6 @@ Additional notes:
 ```shell
 # Set to dev for local development, this will be set to 'stage' and 'prod' in those environments by Terraform.
 WORKSPACE=dev
-
-# If set to a valid Sentry DSN, enables Sentry exception monitoring. Otherwise, this should be set to 'none'.
-SENTRY_DSN=<sentry-dsn-for-oai-pmh-harvester>
 ```
 
 ### Optional
@@ -69,7 +66,10 @@ SENTRY_DSN=<sentry-dsn-for-oai-pmh-harvester>
 RECORD_SKIP_LIST=<oai-pmh-id1> <oai-pmh-id2>
 
 # Sets the interval for logging status updates as records are written to the output file. Defaults to 1000, which will log a status update for every thousandth record.
-STATUS_UPDATE_INTERVAL = 1000
+STATUS_UPDATE_INTERVAL=1000
+
+# If set to a valid Sentry DSN, enables Sentry exception monitoring. This can also be set to 'none'.
+SENTRY_DSN=<sentry-dsn-for-oai-pmh-harvester>
 ```
 
 ## CLI commands
