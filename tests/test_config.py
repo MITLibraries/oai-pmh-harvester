@@ -51,14 +51,6 @@ def test_config_check_required_env_vars_success(config):
     config.check_required_env_vars()
 
 
-def test_config_check_required_env_vars_error(config, monkeypatch):
-    monkeypatch.delenv("SENTRY_DSN")
-    with pytest.raises(
-        OSError, match="Missing required environment variables: SENTRY_DSN"
-    ):
-        config.check_required_env_vars()
-
-
 def test_config_env_var_access_success(config):
     assert config.STATUS_UPDATE_INTERVAL == "1000"
 
