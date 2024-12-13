@@ -14,8 +14,8 @@ MAX_ALLOWED_ERRORS = 10
 
 
 class Config:
-    REQUIRED_ENV_VARS = ("WORKSPACE", "SENTRY_DSN")
-    OPTIONAL_ENV_VARS = ("RECORD_SKIP_LIST", "STATUS_UPDATE_INTERVAL")
+    REQUIRED_ENV_VARS = ("WORKSPACE",)
+    OPTIONAL_ENV_VARS = ("RECORD_SKIP_LIST", "SENTRY_DSN", "STATUS_UPDATE_INTERVAL")
 
     def __init__(self, logger: logging.Logger | None = None):
         """Set root logger as default when creating class instance."""
