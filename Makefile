@@ -41,8 +41,8 @@ mypy: # run 'mypy' linter
 ruff: # run 'ruff' linter and print a preview of errors
 	pipenv run ruff check .
 
-safety: # check for security vulnerabilities and verify Pipfile.lock is up-to-date
-	pipenv check
+safety: # Check for security vulnerabilities and verify Pipfile.lock is up-to-date
+	pipenv run pip-audit
 	pipenv verify
 
 lint-apply: # apply changes with 'black' and resolve fixable errors with 'ruff'
