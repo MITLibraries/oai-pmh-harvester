@@ -4,7 +4,7 @@ line-length = 90
 [tool.mypy]
 disallow_untyped_calls = true
 disallow_untyped_defs = true
-exclude = ["tests/"]
+exclude = ["tests/","output/"]
 
 [[tool.mypy.overrides]]
 module = [
@@ -30,15 +30,10 @@ show-fixes = true
 select = ["ALL", "PT"]
 
 ignore = [
-    # default
-    "ANN101", 
-    "ANN102", 
-    "COM812", 
+    "COM812",
     "D107", 
     "N812", 
     "PTH", 
-
-    # project-specific
     "C90",
     "D100",
     "D101", 
@@ -48,8 +43,7 @@ ignore = [
     "PLR0912",
     "PLR0913", 
     "PLR0915",
-    "S320",
-    "S321", 
+    "S321",
 ]
 
 # allow autofix behavior for specified rules
