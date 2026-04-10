@@ -1,6 +1,7 @@
 # ruff: noqa: FBT001
 
 """harvester.cli module."""
+
 import logging
 import sys
 from datetime import timedelta
@@ -83,8 +84,7 @@ def main(ctx: click.Context, host: str, output_file: str, verbose: bool) -> None
     "--set-spec",
     default=None,
     show_default=True,
-    help="SetSpec of set to be harvested. Limits harvest to records in the "
-    "provided set.",
+    help="SetSpec of set to be harvested. Limits harvest to records in the provided set.",
 )
 @click.option(
     "-sr",

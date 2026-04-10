@@ -108,5 +108,7 @@ out.xml
 .DS_Store
 .vscode
 .idea
+.arch_tag
+.tool-versions
 
 output/

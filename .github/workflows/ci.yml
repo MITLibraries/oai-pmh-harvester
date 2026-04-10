@@ -1,7 +1,11 @@
 name: CI
-on: push
+permissions: read-all
+on:
+  pull_request:
+    paths-ignore:
+      - '.github/**'
 jobs:
   test:
-    uses: mitlibraries/.github/.github/workflows/python-shared-test.yml@main
+    uses: mitlibraries/.github/.github/workflows/python-uv-shared-test.yml@main
   lint:
-    uses: mitlibraries/.github/.github/workflows/python-shared-lint.yml@main
+    uses: mitlibraries/.github/.github/workflows/python-uv-shared-lint.yml@main

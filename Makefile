@@ -1,86 +1,113 @@
-.PHONY: install test coveralls lint bandit black flake8 isort mypy dist-dev update publish-dev
 SHELL=/bin/bash
 DATETIME:=$(shell date -u +%Y%m%dT%H%M%SZ)
 
-### This is the Terraform-generated header for oai-pmh-harvester-dev ###
 ECR_NAME_DEV:=oai-pmh-harvester-dev
 ECR_URL_DEV:=222053980223.dkr.ecr.us-east-1.amazonaws.com/oai-pmh-harvester-dev
-### End of Terraform-generated header ###
+CPU_ARCH ?= $(shell cat .aws-architecture 2>/dev/null || echo "linux/amd64")
 
-help: # preview Makefile commands
+# ensure OS binaries aren't called if naming conflict with Make recipes
+.PHONY: help install venv update test coveralls lint lint-fix security check-arch dist-dev publish-dev docker-clean oai dist-stage publish-stage
+
+help: # Preview Makefile commands
 	@awk 'BEGIN { FS = ":.*#"; print "Usage:  make <target>\n\nTargets:" } \
 /^[-_[:alpha:]]+:.?*#/ { printf "  %-15s%s\n", $$1, $$2 }' $(MAKEFILE_LIST)
 
-## Dependency commands
-install: # install Python dependencies and pre-commit hook
-	pipenv install --dev
-	pipenv run pre-commit install
+##############################################
+# Python Environment and Dependency commands
+##############################################
 
-update: install # update Python dependencies
-	pipenv clean
-	pipenv update --dev
+install: .venv .git/hooks/pre-commit .git/hooks/pre-push # Install Python dependencies and create virtual environment if not exists
+	uv sync --dev
 
-## Unit test commands
-test: # run tests and print a coverage report
-	pipenv run coverage run --source=harvester -m pytest -vv
-	pipenv run coverage report -m
+.venv: # Creates virtual environment if not found
+	@echo "Creating virtual environment at .venv..."
+	uv venv .venv
 
-coveralls: test # write coverage data to an LCOV report
-	pipenv run coverage lcov -o ./coverage/lcov.info
+.git/hooks/pre-commit: # Sets up pre-commit commit hooks if not setup
+	@echo "Installing pre-commit commit hooks..."
+	uv run pre-commit install --hook-type pre-commit
 
-## Code quality and safety commands
+.git/hooks/pre-push: # Sets up pre-commit push hooks if not setup
+	@echo "Installing pre-commit push hooks..."
+	uv run pre-commit install --hook-type pre-push
 
-lint: black mypy ruff safety # run linters
+venv: .venv # Create the Python virtual environment
 
-black: # run 'black' linter and print a preview of suggested changes
-	pipenv run black --check --diff .
+update: # Update Python dependencies
+	uv lock --upgrade
+	uv sync --dev
 
-mypy: # run 'mypy' linter
-	pipenv run mypy .
+######################
+# Unit test commands
+######################
 
-ruff: # run 'ruff' linter and print a preview of errors
-	pipenv run ruff check .
+test: # Run tests and print a coverage report
+	uv run coverage run --source=harvester -m pytest -vv
+	uv run coverage report -m
 
-safety: # Check for security vulnerabilities and verify Pipfile.lock is up-to-date
-	pipenv run pip-audit
-	pipenv verify
+coveralls: test # Write coverage data to an LCOV report
+	uv run coverage lcov -o ./coverage/lcov.info
 
-lint-apply: # apply changes with 'black' and resolve fixable errors with 'ruff'
-	black-apply ruff-apply
+####################################
+# Code linting and formatting
+####################################
 
-black-apply: # apply changes with 'black'
-	pipenv run black .
+lint: # Run linting, alerts only, no code changes
+	uv run ruff format --diff
+	uv run mypy .
+	uv run ruff check .
 
-ruff-apply: # resolve fixable errors with 'ruff'
-	pipenv run ruff check --fix .
+lint-fix: # Run linting, auto fix behaviors where supported
+	uv run ruff format .
+	uv run ruff check --fix .
 
-## Terraform-generated commands for container build and deployment in dev
-dist-dev: # build docker container (intended for developer-based manual build)
-	docker build --platform linux/amd64 \
-	    -t $(ECR_URL_DEV):latest \
-		-t $(ECR_URL_DEV):`git describe --always` \
-		-t $(ECR_NAME_DEV):latest .
+security: # Run security / vulnerability checks
+	uv run pip-audit
 
-publish-dev: dist-dev # build, tag and push (intended for developer-based manual publish)
-	docker login -u AWS -p $$(aws ecr get-login-password --region us-east-1) $(ECR_URL_DEV)
-	docker push $(ECR_URL_DEV):latest
-	docker push $(ECR_URL_DEV):`git describe --always`
+oai: # CLI without any arguments, utilizing uv script entrypoint
+	uv run oai
 
-## Terraform-generated commands for container build and deployment in stage \
-This requires that ECR_NAME_STAGE and ECR_URL_STAGE environment variables \
-are set locally by the developer and that the developer has \
-authenticated to the correct AWS Account. The values for the environment \
-variables can be found in the stage_build.yml caller workflow. \
-While Stage should generally only be used in an emergency for most repos, \
-it is necessary for any testing requiring access to the Data Warehouse \
-because Cloud Connector is not enabled on Dev1.
-dist-stage:
-	docker build --platform linux/amd64 \
-	    -t $(ECR_URL_STAGE):latest \
-		-t $(ECR_URL_STAGE):`git describe --always` \
-		-t $(ECR_NAME_STAGE):latest .
+###############################################
+# Docker image, ECR, and Lambda Management
+###############################################
+check-arch:
+	@ARCH_FILE=".aws-architecture"; \
+	if [[ "$(CPU_ARCH)" != "linux/amd64" && "$(CPU_ARCH)" != "linux/arm64" ]]; then \
+        echo "Invalid CPU_ARCH: $(CPU_ARCH)"; exit 1; \
+    fi; \
+	if [[ -f $$ARCH_FILE ]]; then \
+		echo "latest-$(shell echo $(CPU_ARCH) | cut -d'/' -f2)" > .arch_tag; \
+	else \
+		echo "latest" > .arch_tag; \
+	fi
 
-publish-stage:
-	docker login -u AWS -p $$(aws ecr get-login-password --region us-east-1) $(ECR_URL_STAGE)
-	docker push $(ECR_URL_STAGE):latest
-	docker push $(ECR_URL_STAGE):`git describe --always`
+dist-dev: check-arch # Build docker container (intended for developer-based manual build)
+	@ARCH_TAG=$$(cat .arch_tag); \
+	docker buildx inspect $(ECR_NAME_DEV) >/dev/null 2>&1 || docker buildx create --name $(ECR_NAME_DEV) --use; \
+	docker buildx use $(ECR_NAME_DEV); \
+	docker buildx build --platform $(CPU_ARCH) \
+		--load \
+		--tag $(ECR_URL_DEV):$$ARCH_TAG \
+		--tag $(ECR_URL_DEV):make-$$ARCH_TAG \
+		--tag $(ECR_URL_DEV):make-$(shell git describe --always) \
+		--tag $(ECR_NAME_DEV):$$ARCH_TAG \
+		.
+
+publish-dev: dist-dev # Build, tag and push (intended for developer-based manual publish)
+	@ARCH_TAG=$$(cat .arch_tag); \
+	aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin $(ECR_URL_DEV); \
+	docker push $(ECR_URL_DEV):$$ARCH_TAG; \
+	docker push $(ECR_URL_DEV):make-$$ARCH_TAG; \
+	docker push $(ECR_URL_DEV):make-$(shell git describe --always); \
+	echo "Cleaning up dangling Docker images..."; \
+	docker image prune -f --filter "dangling=true"
+
+docker-clean: # Clean up Docker detritus
+	@ARCH_TAG=$$(cat .arch_tag); \
+	echo "Cleaning up Docker leftovers (containers, images, builders)"; \
+	docker rmi -f $(ECR_URL_DEV):$$ARCH_TAG; \
+	docker rmi -f $(ECR_URL_DEV):make-$$ARCH_TAG; \
+	docker rmi -f $(ECR_URL_DEV):make-$(shell git describe --always) || true; \
+	docker rmi -f $(ECR_NAME_DEV):$$ARCH_TAG || true; \
+	docker buildx rm $(ECR_NAME_DEV) || true
+	@rm -rf .arch_tag

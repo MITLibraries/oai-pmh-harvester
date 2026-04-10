@@ -1,16 +1,18 @@
-FROM python:3.12-slim AS py3
-RUN pip install pipenv
+FROM python:3.13-slim
 
-FROM py3 AS wheel
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends git ca-certificates && \
+    rm -rf /var/lib/apt/lists/*
+
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /bin/uv
+ENV UV_SYSTEM_PYTHON=1
+
 WORKDIR /app
-COPY . .
-RUN python3 setup.py bdist_wheel
 
-FROM py3
-COPY Pipfile* /
-RUN pipenv install --system --ignore-pipfile --deploy
-COPY --from=wheel /app/dist/harvest*-py3-none-any.whl .
-RUN pip3 install harvest*-py3-none-any.whl
+COPY pyproject.toml uv.lock* ./
+COPY harvester ./harvester
+
+RUN uv pip install --system .
 
 ENTRYPOINT ["oai"]
-CMD ["--help"]
+CMD []

@@ -1,52 +1,78 @@
-[tool.black]
-line-length = 90
+[project]
+name = "oai-pmh-harvester"
+version = "1.0.0"
+requires-python = ">=3.13"
+dependencies = [
+    "click",
+    "requests",
+    "sentry-sdk",
+    "sickle",
+    "smart-open[s3]",
+    "urllib3",
+]
+
+[project.scripts]
+oai = "harvester.cli:main"
+
+[dependency-groups]
+dev = [
+    "coverage",
+    "coveralls",
+    "mypy",
+    "pip-audit",
+    "pre-commit",
+    "pytest",
+    "ruff",
+    "types-requests",
+    "vcrpy",
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["harvester*"]
 
 [tool.mypy]
 disallow_untyped_calls = true
 disallow_untyped_defs = true
-exclude = ["tests/","output/"]
+exclude = ["tests/", "output/"]
 
 [[tool.mypy.overrides]]
 module = [
     "setuptools",
     "sickle.*",
-    "smart_open"
+    "smart_open",
 ]
-ignore_missing_imports=true
+ignore_missing_imports = true
 
 [tool.pytest.ini_options]
 log_level = "INFO"
 
 [tool.ruff]
-target-version = "py312"
-
-# set max line length
+target-version = "py313"
 line-length = 90
-
-# enumerate all fixed violations
 show-fixes = true
 
 [tool.ruff.lint]
 select = ["ALL", "PT"]
-
 ignore = [
     "COM812",
-    "D107", 
-    "N812", 
-    "PTH", 
+    "D107",
+    "N812",
+    "PTH",
     "C90",
     "D100",
-    "D101", 
+    "D101",
     "D102",
     "D103",
-    "D104", 
+    "D104",
     "PLR0912",
-    "PLR0913", 
+    "PLR0913",
     "PLR0915",
     "S321",
 ]
-
-# allow autofix behavior for specified rules
 fixable = ["E", "F", "I", "Q"]
 
 [tool.ruff.lint.flake8-annotations]
