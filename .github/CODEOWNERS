@@ -1,0 +1,20 @@
+# CODEOWNERS file (from GitHub template at
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners)
+# Each line is a file pattern followed by one or more owners.
+
+##############################################################################
+# These owners will be the default owners for everything in the repo. Unless a
+# later match takes precedence, @ghukill will be requested for review
+# when someone opens a pull request.This is commented out in favor of using a
+# team as the default (see below). It is left here as a comment to indicate
+# the primary expert for this code.
+# * @ghukill
+
+# Teams can be specified as code owners as well. Teams should be identified in
+# the format @org/team-name. Teams must have explicit write access to the
+# repository.
+* @mitlibraries/dataeng
+
+# We set the senior engineer in the team as the owner of the CODEOWNERS file as
+# a layer of protection for unauthorized changes.
+/.github/CODEOWNERS @ghukill
