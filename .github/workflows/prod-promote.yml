@@ -1,21 +1,23 @@
-### This is the Terraform-generated prod-promote.yml workflow for the oai-pmh-harvester-prod repository. ###
-### If this is a Lambda repo, uncomment the FUNCTION line at the end of the document.         ###
-name: Prod Container Promote
+name: Prod Image Promote
 on:
   workflow_dispatch:
   release:
     types: [published]
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
-  deploy:
-    name: Prod Container Promote
-    uses: mitlibraries/.github/.github/workflows/ecr-shared-promote-prod.yml@main
+
+  promote:
+    name: Prod promote
+    uses: mitlibraries/.github/.github/workflows/ecr-multi-arch-promote-prod.yml@main
     secrets: inherit
     with:
-      AWS_REGION: "us-east-1"
+      AWS_REGION: us-east-1
       GHA_ROLE_STAGE: oai-pmh-harvester-gha-stage
       GHA_ROLE_PROD: oai-pmh-harvester-gha-prod
-      ECR_STAGE: "oai-pmh-harvester-stage"
-      ECR_PROD: "oai-pmh-harvester-prod"
-      # FUNCTION: ""
- 
+      ECR_STAGE: oai-pmh-harvester-stage
+      ECR_PROD: oai-pmh-harvester-prod
+      # DEFAULT_BRANCH: # Only if the default branch is not "main"!

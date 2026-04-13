@@ -10,7 +10,9 @@ OAI-PMH-Harvester is a Python CLI application for harvesting metadata from repos
 - To update dependencies: `make update`
 - To run unit tests: `make test`
 - To lint the repo: `make lint`
-- To run the app: `pipenv run oai --help`
+- To auto-fix formatting and lint issues: `make lint-fix`
+- To run dependency vulnerability checks: `make security`
+- To run the app: `uv run oai --help`
 
 ### Running the application on your local machine
 
@@ -47,7 +49,7 @@ Additional notes:
 1. To run a harvest, execute the following command in your terminal:
 
    ```
-   pipenv run oai -h <url-to-oai-pmh-repo> -o <output-filename>.xml harvest <optional-command-args>
+   uv run oai -h <url-to-oai-pmh-repo> -o <output-filename>.xml harvest <optional-command-args>
    ```
 
 ## Environment variables
@@ -74,7 +76,7 @@ SENTRY_DSN=<sentry-dsn-for-oai-pmh-harvester>
 
 ## CLI commands
 
-All CLI commands can be run with pipenv run <COMMAND>.
+All CLI commands can be run with `uv run <COMMAND>`.
 
 ### `oai`
 

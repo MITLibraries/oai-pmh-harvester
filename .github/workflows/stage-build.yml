@@ -1,8 +1,4 @@
-### This is the Terraform-generated dev-build.yml workflow for the oai-pmh-harvester-stage app repository ###
-### If this is a Lambda repo, uncomment the FUNCTION line at the end of the document     ###
-### If the container requires any additional pre-build commands, uncomment and edit      ###
-### the PREBUILD line at the end of the document.                                        ###
-name: Stage Container Build and Deploy
+name: Stage Image Build and Deploy
 on:
   workflow_dispatch:
   push:
@@ -11,14 +7,19 @@ on:
     paths-ignore:
       - '.github/**'
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
-  deploy:
-    name: Stage Container Deploy
-    uses: mitlibraries/.github/.github/workflows/ecr-shared-deploy-stage.yml@main
+
+  build-push:
+    name: Stage Build and Push
+    uses: mitlibraries/.github/.github/workflows/ecr-multi-arch-deploy-stage.yml@main
     secrets: inherit
     with:
-      AWS_REGION: "us-east-1"
-      GHA_ROLE: "oai-pmh-harvester-gha-stage"
-      ECR: "oai-pmh-harvester-stage"
-      # FUNCTION: ""
-      # PREBUILD: 
+      AWS_REGION: us-east-1
+      GHA_ROLE: oai-pmh-harvester-gha-stage
+      ECR: oai-pmh-harvester-stage
+      # DOCKERFILE: # only if the name of the Dockerfile is not "Dockerfile"!
+      # PREBUILD: # only if there is some pre-build dependency
