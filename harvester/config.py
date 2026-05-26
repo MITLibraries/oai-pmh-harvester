@@ -10,13 +10,18 @@ import sentry_sdk
 
 DEFAULT_RETRY_AFTER = 30
 MAX_RETRIES = 10
-RETRY_STATUS_CODES = [429, 500, 503]
+RETRY_STATUS_CODES = [429, 500, 502, 503]
 MAX_ALLOWED_ERRORS = 10
 
 
 class Config:
-    REQUIRED_ENV_VARS = ("WORKSPACE",)
-    OPTIONAL_ENV_VARS = ("RECORD_SKIP_LIST", "SENTRY_DSN", "STATUS_UPDATE_INTERVAL")
+    REQUIRED_ENV_VARS: tuple = ()
+    OPTIONAL_ENV_VARS: tuple = (
+        "WORKSPACE",
+        "RECORD_SKIP_LIST",
+        "SENTRY_DSN",
+        "STATUS_UPDATE_INTERVAL",
+    )
 
     def __init__(self, logger: logging.Logger | None = None):
         """Set root logger as default when creating class instance."""
