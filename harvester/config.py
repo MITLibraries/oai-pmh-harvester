@@ -19,6 +19,7 @@ class Config:
     OPTIONAL_ENV_VARS: tuple = (
         "WORKSPACE",
         "RECORD_SKIP_LIST",
+        "OAI_REQUEST_HEADER_MIXINS",
         "SENTRY_DSN",
         "STATUS_UPDATE_INTERVAL",
     )

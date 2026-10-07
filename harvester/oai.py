@@ -38,13 +38,19 @@ class OAIClient:
         set_spec: str | None = None,
         max_retries: int | None = MAX_RETRIES,
         retry_status_codes: list[int] = RETRY_STATUS_CODES,
+        request_headers: dict[str, str] | None = None,
     ) -> None:
         self.source_url = source_url
+        # sickle passes extra kwargs through to requests for every HTTP request
+        request_args: dict[str, Any] = {}
+        if request_headers:
+            request_args["headers"] = request_headers
         self.client = Sickle(
             self.source_url,
             default_retry_after=DEFAULT_RETRY_AFTER,
             max_retries=max_retries,
             retry_status_codes=retry_status_codes,
+            **request_args,
         )
         self.metadata_format = metadata_format
         self._set_params(metadata_format, from_date, until_date, set_spec)

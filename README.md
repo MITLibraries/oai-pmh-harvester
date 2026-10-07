@@ -67,6 +67,9 @@ WORKSPACE=dev
 # Required only if a source has records that cause errors during a harvest and --method=get. The value provided must be a space-separated list of OAI-PMH record identifiers to skip during harvest.
 RECORD_SKIP_LIST=<oai-pmh-id1> <oai-pmh-id2>
 
+# JSON object string of custom headers to include in all HTTP requests to the OAI-PMH source. Used as the default for the --request-header-mixins CLI option; the CLI option takes precedence if both are set. If neither is set, no custom headers are applied.
+OAI_REQUEST_HEADER_MIXINS='{"User-Agent": "my-harvester"}'
+
 # Sets the interval for logging status updates as records are written to the output file. Defaults to 1000, which will log a status update for every thousandth record.
 STATUS_UPDATE_INTERVAL=1000
 
@@ -84,15 +87,20 @@ All CLI commands can be run with `uv run <COMMAND>`.
 Usage: -c [OPTIONS] COMMAND [ARGS]...
 
 Options:
-  -h, --host TEXT         Hostname of server for an OAI-PMH compliant source.
-                          [required]
-  -o, --output-file TEXT  Filepath for generated output (either an XML file
-                          with harvested metadata or a JSON file describing
-                          set structure of an OAI-PMH compliant source). This
-                          value can be a local filepath or an S3 URI.
-                          [required]
-  -v, --verbose           Pass to log at debug level instead of info
-  --help                  Show this message and exit.
+  -h, --host TEXT               Hostname of server for an OAI-PMH compliant
+                                source.  [required]
+  -o, --output-file TEXT        Filepath for generated output (either an XML
+                                file with harvested metadata or a JSON file
+                                describing set structure of an OAI-PMH
+                                compliant source). This value can be a local
+                                filepath or an S3 URI.  [required]
+  --request-header-mixins TEXT  JSON object string of custom headers to
+                                include in all HTTP requests to the OAI-PMH
+                                source, e.g. '{"User-Agent": "my-harvester"}'.
+                                Values can also be retrieved through the
+                                OAI_REQUEST_HEADER_MIXINS env var.
+  -v, --verbose                 Pass to log at debug level instead of info
+  --help                        Show this message and exit.
 
 Commands:
   harvest  Harvest command to retrieve records from an OAI-PMH compliant source.
