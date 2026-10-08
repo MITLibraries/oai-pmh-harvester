@@ -2,6 +2,7 @@
 
 """harvester.cli module."""
 
+import json
 import logging
 import sys
 from datetime import timedelta
@@ -17,6 +18,25 @@ from harvester.oai import OAIClient, write_records, write_sets
 logger = logging.getLogger(__name__)
 
 CONFIG = Config()
+
+
+def parse_request_header_mixins(
+    _ctx: click.Context, _param: click.Parameter, value: str | None
+) -> dict[str, str] | None:
+    """Parse a JSON object string of custom request headers."""
+    if not value:
+        return None
+    try:
+        headers = json.loads(value)
+    except json.JSONDecodeError as exception:
+        message = f"must be a JSON object string: {exception}"
+        raise click.BadParameter(message) from exception
+    if not isinstance(headers, dict) or not all(
+        isinstance(key, str) and isinstance(val, str) for key, val in headers.items()
+    ):
+        message = "must be a JSON object with string keys and string values"
+        raise click.BadParameter(message)
+    return headers
 
 
 @click.group()
@@ -35,17 +55,38 @@ CONFIG = Config()
     "This value can be a local filepath or an S3 URI.",
 )
 @click.option(
+    "--request-header-mixins",
+    envvar="OAI_REQUEST_HEADER_MIXINS",
+    default=None,
+    callback=parse_request_header_mixins,
+    help="JSON object string of custom headers to include in all HTTP requests to "
+    'the OAI-PMH source, e.g. \'{"User-Agent": "my-harvester"}\'. Values can '
+    "also be retrieved through the OAI_REQUEST_HEADER_MIXINS env var.",
+)
+@click.option(
     "-v", "--verbose", help="Pass to log at debug level instead of info", is_flag=True
 )
 @click.pass_context
-def main(ctx: click.Context, host: str, output_file: str, verbose: bool) -> None:
+def main(
+    ctx: click.Context,
+    host: str,
+    output_file: str,
+    request_header_mixins: dict[str, str] | None,
+    verbose: bool,
+) -> None:
     ctx.ensure_object(dict)
     ctx.obj["START_TIME"] = perf_counter()
     ctx.obj["HOST"] = host
     ctx.obj["OUTPUT_FILE"] = output_file
+    ctx.obj["REQUEST_HEADERS"] = request_header_mixins
     logger.info(CONFIG.configure_logger(verbose))
     logger.info(CONFIG.configure_sentry())
     CONFIG.check_required_env_vars()
+    if request_header_mixins:
+        logger.info(
+            "Custom request headers will be applied: %s",
+            list(request_header_mixins.keys()),
+        )
 
 
 @main.command()
@@ -129,7 +170,12 @@ def harvest(
     )
 
     oai_client = OAIClient(
-        ctx.obj["HOST"], metadata_format, from_date, until_date, set_spec
+        ctx.obj["HOST"],
+        metadata_format,
+        from_date,
+        until_date,
+        set_spec,
+        request_headers=ctx.obj["REQUEST_HEADERS"],
     )
     if method == "list" and skip_record:
         logger.warning(
@@ -169,7 +215,7 @@ def setlist(ctx: click.Context) -> None:
     Uses the OAI-PMH ListSets verbs to retrieve all sets from a repository, and writes
     the set names and specs to a JSON output file.
     """
-    oai_client = OAIClient(ctx.obj["HOST"])
+    oai_client = OAIClient(ctx.obj["HOST"], request_headers=ctx.obj["REQUEST_HEADERS"])
     logger.info("Getting set list from source: %s", ctx.obj["HOST"])
     sets = oai_client.get_sets()
     logger.info("Writing setlist to output file %s", ctx.obj["OUTPUT_FILE"])

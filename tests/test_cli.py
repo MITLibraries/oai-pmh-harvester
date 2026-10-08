@@ -1,3 +1,5 @@
+from unittest import mock
+
 import vcr
 
 from harvester.cli import main
@@ -181,3 +183,40 @@ def test_setlist(caplog, runner, tmp_path):
         )
         assert "Writing setlist to output file " in caplog.text
         assert "Setlist completed" in caplog.text
+
+
+def test_request_header_mixins_from_cli_option_passed_to_client(runner, tmp_path):
+    with mock.patch("harvester.cli.OAIClient") as mocked_client:
+        mocked_client.return_value.get_sets.return_value = []
+        result = runner.invoke(
+            main,
+            [
+                "-h",
+                "https://example.com/oai",
+                "-o",
+                tmp_path / "sets.json",
+                "--request-header-mixins",
+                '{"User-Agent": "from-cli"}',
+                "setlist",
+            ],
+        )
+    assert result.exit_code == 0
+    mocked_client.assert_called_once_with(
+        "https://example.com/oai", request_headers={"User-Agent": "from-cli"}
+    )
+
+
+def test_request_header_mixins_from_env_var_passed_to_client(
+    monkeypatch, runner, tmp_path
+):
+    monkeypatch.setenv("OAI_REQUEST_HEADER_MIXINS", '{"User-Agent": "from-env"}')
+    with mock.patch("harvester.cli.OAIClient") as mocked_client:
+        mocked_client.return_value.get_sets.return_value = []
+        result = runner.invoke(
+            main,
+            ["-h", "https://example.com/oai", "-o", tmp_path / "sets.json", "setlist"],
+        )
+    assert result.exit_code == 0
+    mocked_client.assert_called_once_with(
+        "https://example.com/oai", request_headers={"User-Agent": "from-env"}
+    )

@@ -39,6 +39,13 @@ def test_oai_client_init_with_args():
     }
 
 
+def test_oai_client_init_with_request_headers_sets_request_args():
+    client = OAIClient(
+        "https://example.com/oai", request_headers={"User-Agent": "test-harvester"}
+    )
+    assert client.client.request_args == {"headers": {"User-Agent": "test-harvester"}}
+
+
 @vcr.use_cassette("tests/fixtures/vcr_cassettes/get-identifiers.yaml")
 def test_get_identifiers():
     oai_client = OAIClient(
