@@ -4,6 +4,7 @@ version = "1.0.0"
 requires-python = ">=3.13"
 dependencies = [
     "click",
+    "pre-commit>=4.7.0",
     "requests",
     "sentry-sdk",
     "sickle",
@@ -71,7 +72,11 @@ ignore = [
     "PLR0912",
     "PLR0913",
     "PLR0915",
+    "PLR0917",
     "S321",
+    "CPY001",
+    "TD002",
+    "TD003",
 ]
 fixable = ["E", "F", "I", "Q"]
 
